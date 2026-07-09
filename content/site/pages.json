@@ -1,0 +1,737 @@
+{
+  "sustainability": {
+    "slug": "sustainability",
+    "title": "SUSTAINABILITY",
+    "hero_heading": "SUSTAINABILITY",
+    "hero_image": {
+      "src": "/images/original/RDV-Sustentabilidad.jpg",
+      "alt": "RDV Sustentabilidad",
+      "w": 1920,
+      "h": 600
+    },
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "SUSTAINABILITY"
+      },
+      {
+        "type": "heading",
+        "text": "We want to be part of the change for a more sustainable world, we are small producers in the Colchagua Valley, we want to maintain our ecosystems and preserve our local culture. \nWe are working on sustainable projects that impact our local community and are an example to motivate caring for the environment. \nHelp us to be part of the solution and not the problem."
+      },
+      {
+        "type": "heading",
+        "text": "ORGANIC AGRICULTURE"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "We are developing organic agriculture diagnostics throughout the local countryside in order to establish the gaps to be reached in the medium term and long term conversion.",
+          "We will start with a pilot area from our small producers to convert a field into organic agriculture in three years which will serve as an example in leading the organic conversion.",
+          "We are also creating capacities and skills of organic agriculture for the small producers of Colchagua, Chile, through training, field activities and technological tours."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "RENEWABLE ENERGY"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "We currently have solar panels at our commercial office, which provides renewable energy at our facility.",
+          "We are showing our clients and community that we too can contribute to a more sustainable and environmentally conscious world.",
+          "Since the beginning of this renewable energy project in 2021 we have achieved a reduction of 2,025 kilograms of carbon dioxide."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "RECYCLING"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "We created a recycling area in our wine store to store empty wine bottles, in order to encourage our producers, customers and community to contribute to recycling.",
+          "Since the beginning of this recycling project in 2021 we have collected 50 kilos of recycled glass, achieving a reduction of 16 kilograms of carbon dioxide.",
+          "The protection of nature, waste management and concern about climate change are priority factors for our company."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "FLORA AND FAUNA"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Caring for nature is a fundamental principle for the small producers of Colchagua.",
+          "Maintaining biodiversity in rural communities and within vineyards to maintain healthy ecosystems that directly influence productive areas are very important to our company.",
+          "We recognize and value the importance of native ecosystems and their processes in our production activities, for this reason we have developed a book on local flora and fauna to support their conservation."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "ORGANIC GARDENS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Young people recognize Climate Change as an ongoing phenomenon, with a risk of impact on people’s lives, ecosystems and productive processes. At Red del Vino we want to work to incorporate these young people as a new force for sustainable change.",
+          "We will implement organic gardens in their rural communities for the promotion of healthy life and the development of projects that promote the production of organic food for family and tourist food.",
+          "For us, care for the environment and the families of Red del Vino are fundamental, we believe that organic agriculture is essential to achieve cultural change and healthier people."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "RUTA DEL VINO ARTESANAL"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "The objective is to strengthen and increase the infrastructure of the route of small producers of the Colchagua Wine Network to offer greater points of interest and more accessible routes for cycling and hiking activities.",
+          "We want to differentiate ourselves as a more sustainable and ecological wine route, friendly to the environment, respecting the flora and fauna of rural localities, as well as contributing to their preservation and social awareness of their care."
+        ]
+      }
+    ]
+  },
+  "home": {
+    "slug": "home",
+    "title": "HOME",
+    "hero_heading": "MAINTAINING THE TRADITIONS \nAND THE IDENTITY OF RURAL \nWINE FARMERS IN CHILE",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Fair-Trade-Producers.jpg",
+      "alt": "Red del Vino Fair Trade Producer",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "eyebrow",
+        "text": "WELCOME TO RED DEL VINO"
+      },
+      {
+        "type": "heading",
+        "text": "MAINTAINING THE TRADITIONS \nAND THE IDENTITY OF RURAL \nWINE FARMERS IN CHILE"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Red del Vino is a private organization formed by small wine producers in Colchagua Valley. The vision of Red del Vino is the promotion, dissemination, and preservation of its land and fruits through support and encouragement of active participation from farm families while also supporting their traditions and customs."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "We’re are committed to sustainable winegrowing"
+      },
+      {
+        "type": "heading",
+        "text": "OUR \nSUPPORTERS"
+      },
+      {
+        "type": "eyebrow",
+        "text": "FOLLOW US ON INSTAGRAM"
+      },
+      {
+        "type": "heading",
+        "text": "@REDDELVINO"
+      }
+    ]
+  },
+  "reservation-policy": {
+    "slug": "reservation-policy",
+    "title": "RESERVATION POLICY",
+    "hero_heading": "RESERVATION POLICY",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Office.jpg",
+      "alt": "Red del Vino Office",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "RESERVATION POLICY"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Reservation Request:",
+          "We require that all reservations are booked 24 hours in advance. All requests must be sent to reservas@reddelvino.com. A confirmation will be sent to you within 12 hours via e-mail with availability.",
+          "Reservations Hours:",
+          "Monday to Friday: 9:00am to 7:00pm by phone or email",
+          "Saturday and Sunday: 10:00am to 6:00pm by phone or email",
+          "Monday to Sunday: After hours (past 7:00pm) only email.",
+          "Forms of Payment and Credit:",
+          "Individuals: We accept cash and credit cards directly at our office in Santa Cruz. The full payment must be made at the time of the reservation.",
+          "Groups: A 50% deposit is required 48 hours in advance for groups exceeding 10 people. The balance is due 24 hours before the event. We accept cash, bank transfers and credit cards.",
+          "Cancellations:",
+          "Individuals: Cancellations made 12 hours prior to the event or No Shows will be charged 100% of cost.",
+          "Groups: Cancellations made 24 hours prior to the event or No Shows will be charged the remaining balance of 50%."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "IMPORTANT"
+      },
+      {
+        "type": "heading",
+        "text": "SUPPORT FAIR TRADE AND LOCAL PRODUCERS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "VISIT OUR WINE SHOP IN SANTA CRUZ CHILE"
+        ]
+      }
+    ]
+  },
+  "fair-trade-wines-chile": {
+    "slug": "fair-trade-wines-chile",
+    "title": "WINES",
+    "hero_heading": "CAMPESINO WINES",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Colchagua-Chile-Wines.jpg",
+      "alt": "Red del Vino Colchagua Chile Wines",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "eyebrow",
+        "text": "FAIR TRADE CERTIFIED"
+      },
+      {
+        "type": "heading",
+        "text": "CAMPESINO WINES"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "The following wines that we carry are from our small producers which follow sustainable practices. Our wines are the result of the mixture and balance of mother earth, the climate and the passion that the generations of families of Colchagua Valley have committed to their land."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Red del Vino produces \nits wines from grapes certified Fair Trade."
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Campesino Wine is our signature line of wine, produced with the variety of reds and white strains, with the producers personal seal which represents the production process and development of the wine. The name Campesino Wine signifies the great value of the “farmer and his family” because they are a fundamental part of the development of local wine in Colchagua Valley."
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "FOR MORE INFORMATION"
+      },
+      {
+        "type": "heading",
+        "text": "SEND US A MESSAGE"
+      },
+      {
+        "type": "eyebrow",
+        "text": "GENERAL MANAGER"
+      },
+      {
+        "type": "heading",
+        "text": "RODRIGO VALENZUELA"
+      },
+      {
+        "type": "heading",
+        "text": "EMAIL"
+      },
+      {
+        "type": "heading",
+        "text": "WhatsApp"
+      }
+    ]
+  },
+  "event-center": {
+    "slug": "event-center",
+    "title": "EVENT CENTER",
+    "hero_heading": "EVENT CENTER",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Centro-de-Eventos-Colchagua.jpg",
+      "alt": "Centro de Eventos",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "EVENT CENTER"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "If you are looking for a space to host weddings, christenings, special celebrations and corporate events, our Event Center is just minutes from Santa Cruz in Palmilla.",
+          "The location is tranquil & private and the space is rustic & set in the countryside on a vineyard. The outdoor area is large which makes it easy for guests to mingle."
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "EVENT CENTER"
+      },
+      {
+        "type": "heading",
+        "text": "Space and Capacity"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Our Event Center has a capacity of 50 to 200 people.",
+          "The space includes:",
+          "Oven / Grill / Rustic Barbecue",
+          "Dance floor",
+          "Garden",
+          "Inner courtyard",
+          "Swimming pool",
+          "Private parking",
+          "Bathrooms"
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "EVENT CENTER"
+      },
+      {
+        "type": "heading",
+        "text": "Services"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "The Events Center has a team of experts that provides high standards to create top notch events for your special celebration. They can provide the following services:",
+          "Advice / Consulting",
+          "Furniture",
+          "Tableware",
+          "Glassware"
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "EVENT CENTER"
+      },
+      {
+        "type": "heading",
+        "text": "Photo Gallery"
+      },
+      {
+        "type": "eyebrow",
+        "text": "CONTACT US"
+      },
+      {
+        "type": "heading",
+        "text": "SEND US A REQUEST"
+      },
+      {
+        "type": "eyebrow",
+        "text": "EVENT CENTER"
+      },
+      {
+        "type": "heading",
+        "text": "LOCATION"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "The Event Center is located at:",
+          "Parcela N° 15, Las Garzas, Palmilla"
+        ]
+      }
+    ]
+  },
+  "social-responsibility": {
+    "slug": "social-responsibility",
+    "title": "SOCIAL RESPONSIBILITY",
+    "hero_heading": "SOCIAL RESPONSIBILITY",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Vendimia.jpg",
+      "alt": "Red del Vino Vendimia",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "SOCIAL RESPONSIBILITY"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Red del Vino in Colchagua Valley, Chile is committed to helping small wine producers, their families and the preservation of their culture. Our mission is to also contribute to improving the quality of life in rural communities throughout Chile."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "SUPPORT FAIR TRADE AND LOCAL PRODUCERS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "VISIT OUR WINE SHOP IN SANTA CRUZ CHILE"
+        ]
+      }
+    ]
+  },
+  "our-team": {
+    "slug": "our-team",
+    "title": "OUR TEAM",
+    "hero_heading": "OUR TEAM",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Office.jpg",
+      "alt": "Red del Vino Office",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "OUR TEAM"
+      },
+      {
+        "type": "heading",
+        "text": "SUPPORT FAIR TRADE AND LOCAL PRODUCERS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "VISIT OUR WINE SHOP IN SANTA CRUZ CHILE"
+        ]
+      }
+    ]
+  },
+  "board-of-directors": {
+    "slug": "board-of-directors",
+    "title": "BOARD OF DIRECTORS",
+    "hero_heading": "BOARD OF DIRECTORS",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Office.jpg",
+      "alt": "Red del Vino Office",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "BOARD OF DIRECTORS"
+      },
+      {
+        "type": "heading",
+        "text": "SUPPORT FAIR TRADE AND LOCAL PRODUCERS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "VISIT OUR WINE SHOP IN SANTA CRUZ CHILE"
+        ]
+      }
+    ]
+  },
+  "tourism-colchagua-chile": {
+    "slug": "tourism-colchagua-chile",
+    "title": "TOURISM",
+    "hero_heading": "TOURISM",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Office.jpg",
+      "alt": "Red del Vino Office",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "eyebrow",
+        "text": "RURAL"
+      },
+      {
+        "type": "heading",
+        "text": "TOURISM"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Red del Vino invites you to experience a unique and unforgettable wine activity in Colchagua Valley which consists of “a travel day” learning and experiencing the connection between the farmer and the land.",
+          "We’ll discuss the management of vines, the wine-making process, the architectural heritage and the environment that a peasant family experiences during their life. You will learn about the landscape of the central valley and get to visit scenic locations including vineyards, the countryside and national monuments along with the enjoying local cuisine."
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "EXPLORE THIS BEAUTIFUL WINE REGION"
+      },
+      {
+        "type": "heading",
+        "text": "DISCOVER COLCHAGUA VALLEY"
+      },
+      {
+        "type": "eyebrow",
+        "text": "TOURISM"
+      },
+      {
+        "type": "heading",
+        "text": "Photo Gallery"
+      },
+      {
+        "type": "eyebrow",
+        "text": "NEED MORE INFORMATION"
+      },
+      {
+        "type": "heading",
+        "text": "CONTACT US"
+      },
+      {
+        "type": "heading",
+        "text": "TOURISM OFFICE"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "The Tourism Office is located at:",
+          "Av Diego Portales 957, Santa Cruz, O’Higgins"
+        ]
+      }
+    ]
+  },
+  "fair-trade-certified-grapes-chile": {
+    "slug": "fair-trade-certified-grapes-chile",
+    "title": "FAIR TRADE CERTIFIED",
+    "hero_heading": "FAIR TRADE CERTIFIED",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Fair-Trade-Chile-Cea.jpg",
+      "alt": "Fair Trade Chile",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "FAIR TRADE CERTIFIED"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Fair trade, defined simply, is when producers in developing countries are paid a fair price for their work, by companies in developed countries.",
+          "It’s when the price we pay for products gives enough to producers for them to afford life’s essentials such as food, education and healthcare.",
+          "The Fair trade standards are designed to reduce poverty for farmers and workers in developing countries, improve employment conditions by improving their skills & working conditions, protect the rights of workers, provide community development funds to empower and improve their communities, and protect the local environment so its resources will be there for future generations.",
+          "For more information on Fair Trade and the seal (certification) of Trade Fair visit."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "WHAT IS \nFAIRTRADE"
+      },
+      {
+        "type": "heading",
+        "text": "WHAT IS \nFLO CERT"
+      },
+      {
+        "type": "heading",
+        "text": "FAIRTRADE \nWEBSITE"
+      },
+      {
+        "type": "heading",
+        "text": "SUPPORT FAIR TRADE AND LOCAL PRODUCERS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "VISIT OUR WINE SHOP IN SANTA CRUZ CHILE"
+        ]
+      }
+    ]
+  },
+  "privacy-policy": {
+    "slug": "privacy-policy",
+    "title": "PRIVACY POLICY",
+    "hero_heading": "PRIVACY POLICY",
+    "hero_image": null,
+    "blocks": [
+      {
+        "type": "text",
+        "paragraphs": [
+          "Privacy Policy",
+          "Your privacy is important to us and we are committed to ensuring that your personal data is protected.",
+          "This privacy policy sets out how we use and protect any personal data that you give us or that we collect when you use this website (www.reddelvino.com).",
+          "This policy is limited to the information which we collect and use about you.",
+          "What information do we collect?",
+          "We collect information from you when you request one of our services or ask a question.",
+          "As needed, you may be asked to enter your name or e-mail address. You may, however, choose to visit our web site anonymously.",
+          "What do we use your information for?",
+          "Any of the information we collect from you may be used in one of the following ways:",
+          "To personalize your experience. Your information helps us to better respond to your individual needs. To improve our website. We continually strive to improve our website based on the information and feedback we receive from you.",
+          "How do we protect your information?",
+          "All information is only accessible by those authorized with special access rights, and is kept confidential.",
+          "Your information, whether public or private, will not be sold, exchanged, transferred, or given to any other company for any reason whatsoever, without your consent.",
+          "Do we use cookies?",
+          "Yes. We use cookies to understand and save your preferences for future visits and compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.",
+          "Cookies are small files that a site or its service provider transfers to your computer through your Web browser that enables the site or service provider to recognize your browser and capture and remember certain information.",
+          "If you prefer, you can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies via your browser settings. Some of our services may not function properly if you turn your cookies off, but you can still place orders by contacting us directly via phone or e-mail.",
+          "Do we disclose any information to outside parties?",
+          "We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect our or others rights, property, or safety.",
+          "Online Privacy Policy Only",
+          "This online privacy policy applies only to information collected through our website and not to information collected offline.",
+          "Your Consent",
+          "By using our website, you consent to our online privacy policy.",
+          "Changes to our Privacy Policy",
+          "If we decide to change our privacy policy, we will post those changes on this page, and/or update the Privacy Policy modification date below.",
+          "This policy was last modified on October 2020."
+        ]
+      }
+    ]
+  },
+  "fair-trade-wine-grape-producers": {
+    "slug": "fair-trade-wine-grape-producers",
+    "title": "PRODUCERS",
+    "hero_heading": "OUR PRODUCERS",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Fair-Trade-Producers.jpg",
+      "alt": "Red del Vino Fair Trade Producer",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "OUR PRODUCERS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "FILTER BY GRAPE VARIETY"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "SUPPORT FAIR TRADE AND LOCAL PRODUCERS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "VISIT OUR WINE SHOP IN SANTA CRUZ CHILE"
+        ]
+      }
+    ]
+  },
+  "contact-us": {
+    "slug": "contact-us",
+    "title": "CONTACT US",
+    "hero_heading": "PHONE",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Office.jpg",
+      "alt": "Red del Vino Office",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "PHONE"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "+56 9 94352981"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "WHATSAPP"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "+56 9 94352981"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "EMAIL"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "info@reddelvino.com"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "GPS DIRECTIONS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Google Maps",
+          "-34.632441 , -71.357832"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "ADDRESS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "AVENIDA DIEGO PORTALES N° 957",
+          "SANTA CRUZ, COLCHAGUA CHILE"
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "FOR MORE INFORMATION"
+      },
+      {
+        "type": "heading",
+        "text": "SEND US A MESSAGE"
+      },
+      {
+        "type": "eyebrow",
+        "text": "GENERAL MANAGER"
+      },
+      {
+        "type": "heading",
+        "text": "RODRIGO VALENZUELA"
+      },
+      {
+        "type": "heading",
+        "text": "EMAIL"
+      },
+      {
+        "type": "heading",
+        "text": "WhatsApp"
+      }
+    ]
+  },
+  "about-us": {
+    "slug": "about-us",
+    "title": "ABOUT US",
+    "hero_heading": "MAINTAINING THE \nTRADITIONS AND CUSTOMS \nOF RURAL FAMILIES",
+    "hero_image": {
+      "src": "/images/original/Red-del-Vino-Fair-Trade-Producers.jpg",
+      "alt": "Red del Vino Fair Trade Producer",
+      "w": 1200,
+      "h": 628
+    },
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "MAINTAINING THE \nTRADITIONS AND CUSTOMS \nOF RURAL FAMILIES"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Red del Vino S.A., is a private association of small wine producers in Colchagua Valley, Chile and it was officially formed in 2004 with a group of 19 producers.",
+          "The vision of Red del Vino is the promotion, dissemination, and preservation of its land and fruits through support and encouragement of active participation from farm families living in Colchagua Valley.",
+          "The mission of Red del Vino is to offer high quality products in the wine market and to tourists by controlling and standardizing the production processes without interrupting the traditions and customs of the rural families in Colchagua Valley.",
+          "In 2007, the association formed a strategic alliance, with the company San Nicolás Wine and CORFO (a government supplier development program) along with the support of Agricultural Management, which allowed Red del Vino to obtain a Flo Fair-Trade Certification. They became the first certified peasant association organization in the region.",
+          "This has been made possible thanks to everyone’s effort including their operations manager, Rodrigo Valenzuela and the President, Gerardo Orellana."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "SUPPORT FAIR TRADE AND LOCAL PRODUCERS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "VISIT OUR WINE SHOP IN SANTA CRUZ CHILE"
+        ]
+      }
+    ]
+  }
+}

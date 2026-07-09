@@ -1,0 +1,450 @@
+{
+  "pages": [
+    {
+      "id": 16067,
+      "slug": "sustainability",
+      "title": "SUSTAINABILITY",
+      "link": "https://reddelvino.com/sustainability/",
+      "text_len": 3891,
+      "featured_media": 16079
+    },
+    {
+      "id": 13588,
+      "slug": "home",
+      "title": "HOME",
+      "link": "https://reddelvino.com/",
+      "text_len": 3330,
+      "featured_media": 15906
+    },
+    {
+      "id": 15556,
+      "slug": "reservation-policy",
+      "title": "RESERVATION POLICY",
+      "link": "https://reddelvino.com/reservation-policy/",
+      "text_len": 1959,
+      "featured_media": 15908
+    },
+    {
+      "id": 14770,
+      "slug": "fair-trade-wines-chile",
+      "title": "WINES",
+      "link": "https://reddelvino.com/fair-trade-wines-chile/",
+      "text_len": 1602,
+      "featured_media": 15904
+    },
+    {
+      "id": 14583,
+      "slug": "event-center",
+      "title": "EVENT CENTER",
+      "link": "https://reddelvino.com/event-center/",
+      "text_len": 4009,
+      "featured_media": 15913
+    },
+    {
+      "id": 14560,
+      "slug": "social-responsibility",
+      "title": "SOCIAL RESPONSIBILITY",
+      "link": "https://reddelvino.com/social-responsibility/",
+      "text_len": 2409,
+      "featured_media": 15909
+    },
+    {
+      "id": 14556,
+      "slug": "our-team",
+      "title": "OUR TEAM",
+      "link": "https://reddelvino.com/our-team/",
+      "text_len": 702,
+      "featured_media": 15908
+    },
+    {
+      "id": 14553,
+      "slug": "board-of-directors",
+      "title": "BOARD OF DIRECTORS",
+      "link": "https://reddelvino.com/board-of-directors/",
+      "text_len": 822,
+      "featured_media": 15908
+    },
+    {
+      "id": 14535,
+      "slug": "tourism-colchagua-chile",
+      "title": "TOURISM",
+      "link": "https://reddelvino.com/tourism-colchagua-chile/",
+      "text_len": 3604,
+      "featured_media": 15908
+    },
+    {
+      "id": 14532,
+      "slug": "fair-trade-certified-grapes-chile",
+      "title": "FAIR TRADE CERTIFIED",
+      "link": "https://reddelvino.com/fair-trade-certified-grapes-chile/",
+      "text_len": 1734,
+      "featured_media": 15905
+    },
+    {
+      "id": 3,
+      "slug": "privacy-policy",
+      "title": "PRIVACY POLICY",
+      "link": "https://reddelvino.com/privacy-policy/",
+      "text_len": 3097,
+      "featured_media": 0
+    },
+    {
+      "id": 14066,
+      "slug": "fair-trade-wine-grape-producers",
+      "title": "PRODUCERS",
+      "link": "https://reddelvino.com/fair-trade-wine-grape-producers/",
+      "text_len": 908,
+      "featured_media": 15906
+    },
+    {
+      "id": 1339,
+      "slug": "contact-us",
+      "title": "CONTACT US",
+      "link": "https://reddelvino.com/contact-us/",
+      "text_len": 2947,
+      "featured_media": 15908
+    },
+    {
+      "id": 1316,
+      "slug": "about-us",
+      "title": "ABOUT US",
+      "link": "https://reddelvino.com/about-us/",
+      "text_len": 1959,
+      "featured_media": 15906
+    }
+  ],
+  "posts": [
+    {
+      "id": 15797,
+      "slug": "viticultural-tour",
+      "title": "VITICULTURAL TOUR",
+      "link": "https://reddelvino.com/tourism/viticultural-tour/",
+      "categories": [
+        "Tourism"
+      ],
+      "text_len": 3589,
+      "featured_media": 15405
+    },
+    {
+      "id": 15794,
+      "slug": "wine-tastings",
+      "title": "WINE TASTINGS",
+      "link": "https://reddelvino.com/tourism/wine-tastings/",
+      "categories": [
+        "Tourism"
+      ],
+      "text_len": 3380,
+      "featured_media": 15544
+    },
+    {
+      "id": 15790,
+      "slug": "kayak-rentals",
+      "title": "KAYAK RENTALS",
+      "link": "https://reddelvino.com/tourism/kayak-rentals/",
+      "categories": [
+        "Tourism"
+      ],
+      "text_len": 3342,
+      "featured_media": 15527
+    },
+    {
+      "id": 15788,
+      "slug": "bike-rentals",
+      "title": "BIKE RENTALS",
+      "link": "https://reddelvino.com/tourism/bike-rentals/",
+      "categories": [
+        "Tourism"
+      ],
+      "text_len": 3491,
+      "featured_media": 15525
+    },
+    {
+      "id": 15659,
+      "slug": "campesino-chardonnay-gran-reserva",
+      "title": "CAMPESINO CHARDONNAY GRAN RESERVA",
+      "link": "https://reddelvino.com/chile-fair-trade-wine/campesino-chardonnay-gran-reserva/",
+      "categories": [
+        "Wines"
+      ],
+      "text_len": 1176,
+      "featured_media": 15662
+    },
+    {
+      "id": 15649,
+      "slug": "campesino-carmenere",
+      "title": "CAMPESINO CARMÉNÈRE",
+      "link": "https://reddelvino.com/chile-fair-trade-wine/campesino-carmenere/",
+      "categories": [
+        "Wines"
+      ],
+      "text_len": 1359,
+      "featured_media": 15656
+    },
+    {
+      "id": 15636,
+      "slug": "campesino-cabernet-sauvignon-reserva",
+      "title": "CAMPESINO CABERNET SAUVIGNON RESERVA",
+      "link": "https://reddelvino.com/chile-fair-trade-wine/campesino-cabernet-sauvignon-reserva/",
+      "categories": [
+        "Wines"
+      ],
+      "text_len": 1376,
+      "featured_media": 16025
+    },
+    {
+      "id": 15585,
+      "slug": "campesino-chardonnay",
+      "title": "CAMPESINO CHARDONNAY",
+      "link": "https://reddelvino.com/chile-fair-trade-wine/campesino-chardonnay/",
+      "categories": [
+        "Wines"
+      ],
+      "text_len": 1394,
+      "featured_media": 15589
+    },
+    {
+      "id": 14985,
+      "slug": "jose-luis-caceres",
+      "title": "JOSÉ LUIS CÁCERES",
+      "link": "https://reddelvino.com/producers/jose-luis-caceres/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Producers"
+      ],
+      "text_len": 3775,
+      "featured_media": 15237
+    },
+    {
+      "id": 14983,
+      "slug": "segundo-castro-gaete",
+      "title": "SEGUNDO CASTRO GAETE",
+      "link": "https://reddelvino.com/producers/segundo-castro-gaete/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Carmenere",
+        "Producers"
+      ],
+      "text_len": 3892,
+      "featured_media": 15210
+    },
+    {
+      "id": 14981,
+      "slug": "juan-castro-gaete",
+      "title": "JUAN CASTRO GAETE",
+      "link": "https://reddelvino.com/producers/juan-castro-gaete/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Carmenere",
+        "Producers"
+      ],
+      "text_len": 3943,
+      "featured_media": 15203
+    },
+    {
+      "id": 14979,
+      "slug": "jose-castro-gaete",
+      "title": "JOSÉ CASTRO GAETE",
+      "link": "https://reddelvino.com/producers/jose-castro-gaete/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Carmenere",
+        "Producers"
+      ],
+      "text_len": 3647,
+      "featured_media": 15216
+    },
+    {
+      "id": 14975,
+      "slug": "benito-castro-gaete",
+      "title": "BENITO CASTRO GAETE",
+      "link": "https://reddelvino.com/producers/benito-castro-gaete/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Carmenere",
+        "Producers"
+      ],
+      "text_len": 3964,
+      "featured_media": 15228
+    },
+    {
+      "id": 14971,
+      "slug": "jose-raimundo-lopez",
+      "title": "JOSÉ RAIMUNDO LÓPEZ",
+      "link": "https://reddelvino.com/producers/jose-raimundo-lopez/",
+      "categories": [
+        "Chardonnay",
+        "Producers"
+      ],
+      "text_len": 3894,
+      "featured_media": 15249
+    },
+    {
+      "id": 14968,
+      "slug": "carlos-lorca-sandoval",
+      "title": "CARLOS LORCA SANDOVAL",
+      "link": "https://reddelvino.com/producers/carlos-lorca-sandoval/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Producers"
+      ],
+      "text_len": 3821,
+      "featured_media": 15245
+    },
+    {
+      "id": 14964,
+      "slug": "osvaldo-diaz-poblete",
+      "title": "OSVALDO DÍAZ POBLETE",
+      "link": "https://reddelvino.com/producers/osvaldo-diaz-poblete/",
+      "categories": [
+        "Carmenere",
+        "Producers"
+      ],
+      "text_len": 4032,
+      "featured_media": 15195
+    },
+    {
+      "id": 14962,
+      "slug": "rosa-sanchez-bravo",
+      "title": "ROSA SÁNCHEZ BRAVO",
+      "link": "https://reddelvino.com/producers/rosa-sanchez-bravo/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Carmenere",
+        "Producers"
+      ],
+      "text_len": 4196,
+      "featured_media": 15133
+    },
+    {
+      "id": 14960,
+      "slug": "gilberto-lopez-arias",
+      "title": "GILBERTO LÓPEZ ARIAS",
+      "link": "https://reddelvino.com/producers/gilberto-lopez-arias/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Producers"
+      ],
+      "text_len": 3932,
+      "featured_media": 15141
+    },
+    {
+      "id": 14958,
+      "slug": "juan-amador-perez",
+      "title": "JUAN AMADOR PÉREZ",
+      "link": "https://reddelvino.com/producers/juan-amador-perez/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Carmenere",
+        "Producers"
+      ],
+      "text_len": 4159,
+      "featured_media": 15167
+    },
+    {
+      "id": 14956,
+      "slug": "jaime-cea-morales",
+      "title": "JAIME CEA MORALES",
+      "link": "https://reddelvino.com/producers/jaime-cea-morales/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Carmenere",
+        "Producers"
+      ],
+      "text_len": 4256,
+      "featured_media": 15102
+    },
+    {
+      "id": 14954,
+      "slug": "gerardo-orellana-diaz",
+      "title": "GERARDO ORELLANA DÍAZ",
+      "link": "https://reddelvino.com/producers/gerardo-orellana-diaz/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Chardonnay",
+        "Producers",
+        "Sauvignon Blanc"
+      ],
+      "text_len": 3839,
+      "featured_media": 15247
+    },
+    {
+      "id": 14952,
+      "slug": "luis-orellana-aliaga",
+      "title": "LUIS ORELLANA ALIAGA",
+      "link": "https://reddelvino.com/producers/luis-orellana-aliaga/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Producers",
+        "Semillón"
+      ],
+      "text_len": 3801,
+      "featured_media": 15192
+    },
+    {
+      "id": 14948,
+      "slug": "dagoberto-munoz-diaz",
+      "title": "DAGOBERTO MUÑOZ DÍAZ",
+      "link": "https://reddelvino.com/producers/dagoberto-munoz-diaz/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Producers"
+      ],
+      "text_len": 4073,
+      "featured_media": 15184
+    },
+    {
+      "id": 14946,
+      "slug": "angel-caceres",
+      "title": "ÁNGEL CÁCERES",
+      "link": "https://reddelvino.com/producers/angel-caceres/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Producers"
+      ],
+      "text_len": 3780,
+      "featured_media": 15231
+    },
+    {
+      "id": 14943,
+      "slug": "adrian-lorca-sandoval",
+      "title": "ADRIÁN LORCA SANDOVAL",
+      "link": "https://reddelvino.com/producers/adrian-lorca-sandoval/",
+      "categories": [
+        "Carmenere",
+        "Producers"
+      ],
+      "text_len": 3696,
+      "featured_media": 15221
+    },
+    {
+      "id": 14940,
+      "slug": "adan-galvez-leon",
+      "title": "ADÁN GÁLVEZ LEÓN",
+      "link": "https://reddelvino.com/producers/adan-galvez-leon/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Carmenere",
+        "Merlot",
+        "Producers",
+        "Sirah"
+      ],
+      "text_len": 3913,
+      "featured_media": 15233
+    },
+    {
+      "id": 14929,
+      "slug": "abelardo-becerra-meneses",
+      "title": "ABELARDO BECERRA MENESES",
+      "link": "https://reddelvino.com/producers/abelardo-becerra-meneses/",
+      "categories": [
+        "Cabernet Sauvignon",
+        "Producers",
+        "Semillón"
+      ],
+      "text_len": 3841,
+      "featured_media": 15092
+    }
+  ],
+  "media_count": 98
+}

@@ -1,0 +1,1906 @@
+[
+  {
+    "id": 54,
+    "count": 16,
+    "description": "",
+    "link": "https://reddelvino.com/category/producers/cabernet-sauvignon/",
+    "name": "Cabernet Sauvignon",
+    "slug": "cabernet-sauvignon",
+    "taxonomy": "category",
+    "parent": 53,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Cabernet Sauvignon Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/producers/cabernet-sauvignon/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Cabernet Sauvignon Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/producers/cabernet-sauvignon/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/cabernet-sauvignon\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/cabernet-sauvignon\\/\",\"name\":\"Cabernet Sauvignon Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/cabernet-sauvignon\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/cabernet-sauvignon\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Producers\",\"item\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Cabernet Sauvignon\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Cabernet Sauvignon Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/producers/cabernet-sauvignon/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Cabernet Sauvignon Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/producers/cabernet-sauvignon/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/producers/cabernet-sauvignon/",
+            "url": "https://reddelvino.com/category/producers/cabernet-sauvignon/",
+            "name": "Cabernet Sauvignon Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/producers/cabernet-sauvignon/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/producers/cabernet-sauvignon/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Producers",
+                "item": "https://reddelvino.com/category/producers/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Cabernet Sauvignon"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/54",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/53"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=54"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "count": 10,
+    "description": "",
+    "link": "https://reddelvino.com/category/producers/carmenere/",
+    "name": "Carmenere",
+    "slug": "carmenere",
+    "taxonomy": "category",
+    "parent": 53,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Carmenere Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/producers/carmenere/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Carmenere Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/producers/carmenere/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/carmenere\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/carmenere\\/\",\"name\":\"Carmenere Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/carmenere\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/carmenere\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Producers\",\"item\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Carmenere\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Carmenere Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/producers/carmenere/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Carmenere Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/producers/carmenere/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/producers/carmenere/",
+            "url": "https://reddelvino.com/category/producers/carmenere/",
+            "name": "Carmenere Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/producers/carmenere/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/producers/carmenere/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Producers",
+                "item": "https://reddelvino.com/category/producers/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Carmenere"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/55",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/53"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=55"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "count": 2,
+    "description": "",
+    "link": "https://reddelvino.com/category/producers/chardonnay/",
+    "name": "Chardonnay",
+    "slug": "chardonnay",
+    "taxonomy": "category",
+    "parent": 53,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Chardonnay Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/producers/chardonnay/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Chardonnay Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/producers/chardonnay/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/chardonnay\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/chardonnay\\/\",\"name\":\"Chardonnay Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/chardonnay\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/chardonnay\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Producers\",\"item\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Chardonnay\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Chardonnay Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/producers/chardonnay/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Chardonnay Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/producers/chardonnay/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/producers/chardonnay/",
+            "url": "https://reddelvino.com/category/producers/chardonnay/",
+            "name": "Chardonnay Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/producers/chardonnay/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/producers/chardonnay/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Producers",
+                "item": "https://reddelvino.com/category/producers/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Chardonnay"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/56",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/53"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=56"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "count": 0,
+    "description": "",
+    "link": "https://reddelvino.com/category/events/",
+    "name": "Events",
+    "slug": "events",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Events Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/events/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Events Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/events/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/events\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/events\\/\",\"name\":\"Events Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/events\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/events\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Events\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Events Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/events/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Events Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/events/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/events/",
+            "url": "https://reddelvino.com/category/events/",
+            "name": "Events Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/events/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/events/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Events"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/62",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=62"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "count": 2,
+    "description": "",
+    "link": "https://reddelvino.com/category/producers/merlot/",
+    "name": "Merlot",
+    "slug": "merlot",
+    "taxonomy": "category",
+    "parent": 53,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Merlot Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/producers/merlot/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Merlot Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/producers/merlot/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/merlot\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/merlot\\/\",\"name\":\"Merlot Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/merlot\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/merlot\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Producers\",\"item\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Merlot\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Merlot Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/producers/merlot/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Merlot Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/producers/merlot/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/producers/merlot/",
+            "url": "https://reddelvino.com/category/producers/merlot/",
+            "name": "Merlot Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/producers/merlot/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/producers/merlot/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Producers",
+                "item": "https://reddelvino.com/category/producers/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Merlot"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/57",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/53"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=57"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "count": 0,
+    "description": "",
+    "link": "https://reddelvino.com/category/news/",
+    "name": "News",
+    "slug": "news",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>News Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/news/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"News Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/news/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/news\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/news\\/\",\"name\":\"News Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/news\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/news\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"News\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "News Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/news/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "News Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/news/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/news/",
+            "url": "https://reddelvino.com/category/news/",
+            "name": "News Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/news/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/news/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "News"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/61",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=61"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "count": 19,
+    "description": "",
+    "link": "https://reddelvino.com/category/producers/",
+    "name": "Producers",
+    "slug": "producers",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Producers Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/producers/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Producers Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/producers/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/\",\"name\":\"Producers Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Producers\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Producers Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/producers/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Producers Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/producers/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/producers/",
+            "url": "https://reddelvino.com/category/producers/",
+            "name": "Producers Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/producers/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/producers/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Producers"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/53",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=53"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "count": 1,
+    "description": "",
+    "link": "https://reddelvino.com/category/producers/sauvignon-blanc/",
+    "name": "Sauvignon Blanc",
+    "slug": "sauvignon-blanc",
+    "taxonomy": "category",
+    "parent": 53,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Sauvignon Blanc Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/producers/sauvignon-blanc/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Sauvignon Blanc Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/producers/sauvignon-blanc/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/sauvignon-blanc\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/sauvignon-blanc\\/\",\"name\":\"Sauvignon Blanc Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/sauvignon-blanc\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/sauvignon-blanc\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Producers\",\"item\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sauvignon Blanc\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Sauvignon Blanc Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/producers/sauvignon-blanc/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Sauvignon Blanc Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/producers/sauvignon-blanc/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/producers/sauvignon-blanc/",
+            "url": "https://reddelvino.com/category/producers/sauvignon-blanc/",
+            "name": "Sauvignon Blanc Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/producers/sauvignon-blanc/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/producers/sauvignon-blanc/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Producers",
+                "item": "https://reddelvino.com/category/producers/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Sauvignon Blanc"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/58",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/53"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=58"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "count": 2,
+    "description": "",
+    "link": "https://reddelvino.com/category/producers/semillon/",
+    "name": "Semillón",
+    "slug": "semillon",
+    "taxonomy": "category",
+    "parent": 53,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Semillón Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/producers/semillon/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Semillón Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/producers/semillon/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/semillon\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/semillon\\/\",\"name\":\"Semillón Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/semillon\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/semillon\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Producers\",\"item\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Semillón\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Semillón Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/producers/semillon/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Semillón Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/producers/semillon/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/producers/semillon/",
+            "url": "https://reddelvino.com/category/producers/semillon/",
+            "name": "Semillón Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/producers/semillon/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/producers/semillon/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Producers",
+                "item": "https://reddelvino.com/category/producers/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Semillón"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/59",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/53"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=59"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "count": 1,
+    "description": "",
+    "link": "https://reddelvino.com/category/producers/sirah/",
+    "name": "Sirah",
+    "slug": "sirah",
+    "taxonomy": "category",
+    "parent": 53,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Sirah Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/producers/sirah/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Sirah Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/producers/sirah/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/sirah\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/sirah\\/\",\"name\":\"Sirah Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/sirah\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/sirah\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Producers\",\"item\":\"https:\\/\\/reddelvino.com\\/category\\/producers\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sirah\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Sirah Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/producers/sirah/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Sirah Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/producers/sirah/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/producers/sirah/",
+            "url": "https://reddelvino.com/category/producers/sirah/",
+            "name": "Sirah Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/producers/sirah/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/producers/sirah/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Producers",
+                "item": "https://reddelvino.com/category/producers/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Sirah"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/60",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/53"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=60"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 74,
+    "count": 4,
+    "description": "",
+    "link": "https://reddelvino.com/category/tourism/",
+    "name": "Tourism",
+    "slug": "tourism",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Tourism Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/tourism/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Tourism Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/tourism/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/tourism\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/tourism\\/\",\"name\":\"Tourism Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/tourism\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/tourism\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Tourism\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Tourism Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/tourism/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Tourism Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/tourism/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/tourism/",
+            "url": "https://reddelvino.com/category/tourism/",
+            "name": "Tourism Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/tourism/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/tourism/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tourism"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/74",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=74"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "count": 0,
+    "description": "",
+    "link": "https://reddelvino.com/category/uncategorized/",
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Uncategorized Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/uncategorized/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Uncategorized Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/uncategorized/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/uncategorized\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/uncategorized\\/\",\"name\":\"Uncategorized Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/uncategorized\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/uncategorized\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Uncategorized\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Uncategorized Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/uncategorized/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Uncategorized Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/uncategorized/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/uncategorized/",
+            "url": "https://reddelvino.com/category/uncategorized/",
+            "name": "Uncategorized Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/uncategorized/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/uncategorized/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Uncategorized"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/1",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 73,
+    "count": 4,
+    "description": "",
+    "link": "https://reddelvino.com/category/chile-fair-trade-wine/",
+    "name": "Wines",
+    "slug": "chile-fair-trade-wine",
+    "taxonomy": "category",
+    "parent": 0,
+    "meta": [],
+    "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Wines Archives - ReddelVino</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://reddelvino.com/category/chile-fair-trade-wine/\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Wines Archives - ReddelVino\" />\n<meta property=\"og:url\" content=\"https://reddelvino.com/category/chile-fair-trade-wine/\" />\n<meta property=\"og:site_name\" content=\"ReddelVino\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/chile-fair-trade-wine\\/\",\"url\":\"https:\\/\\/reddelvino.com\\/category\\/chile-fair-trade-wine\\/\",\"name\":\"Wines Archives - ReddelVino\",\"isPartOf\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/chile-fair-trade-wine\\/#breadcrumb\"},\"inLanguage\":\"en-US\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/reddelvino.com\\/category\\/chile-fair-trade-wine\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/reddelvino.com\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Wines\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/reddelvino.com\\/#website\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"name\":\"ReddelVino\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/reddelvino.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/reddelvino.com\\/#organization\",\"name\":\"ReddelVino\",\"url\":\"https:\\/\\/reddelvino.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"\",\"contentUrl\":\"\",\"caption\":\"ReddelVino\"},\"image\":{\"@id\":\"https:\\/\\/reddelvino.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+    "yoast_head_json": {
+      "title": "Wines Archives - ReddelVino",
+      "robots": {
+        "index": "index",
+        "follow": "follow",
+        "max-snippet": "max-snippet:-1",
+        "max-image-preview": "max-image-preview:large",
+        "max-video-preview": "max-video-preview:-1"
+      },
+      "canonical": "https://reddelvino.com/category/chile-fair-trade-wine/",
+      "og_locale": "en_US",
+      "og_type": "article",
+      "og_title": "Wines Archives - ReddelVino",
+      "og_url": "https://reddelvino.com/category/chile-fair-trade-wine/",
+      "og_site_name": "ReddelVino",
+      "twitter_card": "summary_large_image",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://reddelvino.com/category/chile-fair-trade-wine/",
+            "url": "https://reddelvino.com/category/chile-fair-trade-wine/",
+            "name": "Wines Archives - ReddelVino",
+            "isPartOf": {
+              "@id": "https://reddelvino.com/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://reddelvino.com/category/chile-fair-trade-wine/#breadcrumb"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://reddelvino.com/category/chile-fair-trade-wine/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://reddelvino.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Wines"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://reddelvino.com/#website",
+            "url": "https://reddelvino.com/",
+            "name": "ReddelVino",
+            "description": "",
+            "publisher": {
+              "@id": "https://reddelvino.com/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://reddelvino.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://reddelvino.com/#organization",
+            "name": "ReddelVino",
+            "url": "https://reddelvino.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://reddelvino.com/#/schema/logo/image/",
+              "url": "",
+              "contentUrl": "",
+              "caption": "ReddelVino"
+            },
+            "image": {
+              "@id": "https://reddelvino.com/#/schema/logo/image/"
+            }
+          }
+        ]
+      }
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories/73",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/categories"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/taxonomies/category"
+        }
+      ],
+      "wp:post_type": [
+        {
+          "href": "https://reddelvino.com/wp-json/wp/v2/posts?categories=73"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

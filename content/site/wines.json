@@ -1,0 +1,95 @@
+[
+  {
+    "slug": "campesino-chardonnay-gran-reserva",
+    "name": "CAMPESINO CHARDONNAY GRAN RESERVA",
+    "varietal": "Chardonnay",
+    "color": "white",
+    "image": {
+      "src": "/images/original/Campesino-Chardonnay-Gran-Reserva.jpg",
+      "alt": "Campesino Chardonnay Gran Reserva",
+      "w": 500,
+      "h": 611
+    },
+    "notes": [
+      "View: The appearance of this wine is a very clear and clean yellow tone.",
+      "Nose: Initially mineral with notes of almond, hazelnut and melon, citrus notes lime / lemon, and peach.",
+      "Mouth: Moderate acidity, medium structure and short finish.",
+      "Pairing: Ideal for seafood and smoked fish, pasta dishes with not very spicy white sauce and vegan food.",
+      "Serving temperature: 12 °"
+    ],
+    "description": "View: The appearance of this wine is a very clear and clean yellow tone. Nose: Initially mineral with notes of almond, hazelnut and melon, citrus notes lime / lemon, and peach. Mouth: Moderate acidity, medium structure and short finish. Pai",
+    "price": 28,
+    "currency": "USD",
+    "vintage": 2021,
+    "abv": "13.5%"
+  },
+  {
+    "slug": "campesino-carmenere",
+    "name": "CAMPESINO CARMÉNÈRE",
+    "varietal": "Carménère",
+    "color": "red",
+    "image": {
+      "src": "/images/original/Campesino-Carmenere.jpg",
+      "alt": "Campesino Carmenere",
+      "w": 500,
+      "h": 611
+    },
+    "notes": [
+      "View: Clean wine without sediment and bright (young), has a high layer, deep ruby red color.",
+      "Smells: Fruit aromas such as plum and cherries, its aging in barrels provides notes such as chocolate and vanilla, leaving a pleasant aroma before tasting In mouth: This wine has a good structure in the mouth, its tannins are balanced and very rich in acidity.",
+      "Pairing: Ideal to accompany red meats of beef, and game meats of intense flavor. It also goes well with mature and penetrating cheeses such as Parmesan, Gruyere and Camembert.",
+      "Serving temperature: 16 ° and 18 °"
+    ],
+    "description": "View: Clean wine without sediment and bright (young), has a high layer, deep ruby red color. Smells: Fruit aromas such as plum and cherries, its aging in barrels provides notes such as chocolate and vanilla, leaving a pleasant aroma before ",
+    "price": 22,
+    "currency": "USD",
+    "vintage": 2021,
+    "abv": "13.5%"
+  },
+  {
+    "slug": "campesino-cabernet-sauvignon-reserva",
+    "name": "CAMPESINO CABERNET SAUVIGNON RESERVA",
+    "varietal": "Cabernet Sauvignon",
+    "color": "red",
+    "image": {
+      "src": "/images/original/Campesino-Cabernet-Sauvignon-Reserve-1.jpg",
+      "alt": "Campesino Cabernet Sauvignon Reserve",
+      "w": 500,
+      "h": 611
+    },
+    "notes": [
+      "View: Clean wine without sediment and bright (young), has a high layer, deep ruby red color.",
+      "Smells: Fruit aromas such as plum and cherries, its aging in barrels provides notes such as chocolate and vanilla, leaving a pleasant aroma before tasting In mouth: This wine has a good structure in the mouth, its tannins are balanced and very rich in acidity.",
+      "Pairing: Ideal to accompany red meats of beef, and game meats of intense flavor. It also goes well with mature and penetrating cheeses such as Parmesan, Gruyere and Camembert.",
+      "Serving temperature: 16 ° and 18 °"
+    ],
+    "description": "View: Clean wine without sediment and bright (young), has a high layer, deep ruby red color. Smells: Fruit aromas such as plum and cherries, its aging in barrels provides notes such as chocolate and vanilla, leaving a pleasant aroma before ",
+    "price": 24,
+    "currency": "USD",
+    "vintage": 2021,
+    "abv": "14.0%"
+  },
+  {
+    "slug": "campesino-chardonnay",
+    "name": "CAMPESINO CHARDONNAY",
+    "varietal": "Chardonnay",
+    "color": "white",
+    "image": {
+      "src": "/images/original/Campesino-Chardonnay-Fair-Trade-Wines-Chile.jpg",
+      "alt": "Campesino Chardonnay",
+      "w": 500,
+      "h": 611
+    },
+    "notes": [
+      "View: The appearance of this wine is a very clear and clean yellow tone.",
+      "Smell: The first impression on the nose is very fruity, mainly to mangoes, ripe tropical fruits and evolves towards notes of citrus and spices such as cinnamon. In the mouth: In the mouth it has a medium, soft and rich body, which ends with a vibrant acidity that gives it a medium length and palate. The aftertaste evolves towards more oak nuances, like vanilla and toasted.",
+      "Pairing: Perfect to accompany delicate fish such as croaker, sole and turbot, grilled with creamy sauces or capers or herbs",
+      "Serving temperature: 12 °"
+    ],
+    "description": "View: The appearance of this wine is a very clear and clean yellow tone. Smell: The first impression on the nose is very fruity, mainly to mangoes, ripe tropical fruits and evolves towards notes of citrus and spices such as cinnamon. In the",
+    "price": 19,
+    "currency": "USD",
+    "vintage": 2022,
+    "abv": "13.0%"
+  }
+]

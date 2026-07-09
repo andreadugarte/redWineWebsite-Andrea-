@@ -1,0 +1,36 @@
+const O = "/images/original";
+
+/** Curated hero + section photography, hand-picked from the real Red del Vino library. */
+export const IMG = {
+  logo: `${O}/Red-del-Vino-logo-dark.png`,
+  logoLight: `${O}/Red-del-Vino-logo.png`,
+  fairtradeBadge: `${O}/FairTrade.png`,
+  certBadge: `${O}/ReddelVino-Cert.jpg`,
+
+  heroHome: `${O}/Vinos-Campesino-Slider-2.jpg`,
+  heroValley: `${O}/Valle-Herradura-Red-del-Vino.jpg`,
+  heroValleyAlt: `${O}/Valle-Herradura-Colchagua.jpg`,
+  vineyard: `${O}/Red-del-Vino-Grapes.jpg`,
+  redGrapes: `${O}/Red-del-Vino-Red-Grapes.jpg`,
+  whiteGrapes: `${O}/Red-del-Vino-White-Grapes.jpg`,
+  harvest: `${O}/Red-del-Vino-Wine-Harvest.jpg`,
+  harvester: `${O}/Red-del-Vino-Grape-Harvester.jpg`,
+  barrels: `${O}/Red-del-Vino-Wine-Barrels.jpg`,
+  grower: `${O}/Red-del-Vino-Chilean-Wine-Grower.jpg`,
+  producers: `${O}/Red-del-Vino-Fair-Trade-Producers.jpg`,
+  office: `${O}/Red-del-Vino-Office.jpg`,
+  sunflower: `${O}/Red-del-Vino-Sunflower.jpg`,
+  sustainability: `${O}/RDV-Sustentabilidad.jpg`,
+  organic: `${O}/Red-del-Vino-Agricultura-Organica.jpg`,
+  renewable: `${O}/Red-del-Vino-Energia-Renovable.jpg`,
+  eventCenter: `${O}/Event-Center.jpg`,
+  eventGallery: `${O}/Event-Center-Gallery-1.jpg`,
+  tasting: `${O}/Wine-Tasting-Colchagua.jpg`,
+  tourGlass: `${O}/Red-del-Vino-Tour-Wine-Glass.jpg`,
+  tourism: `${O}/Red-del-Vino-Tourism-Slider.jpg`,
+  culture: `${O}/RDV-Chilean-Culture.jpg`,
+  community: `${O}/RDV-Community-Outreach.jpg`,
+  fairWages: `${O}/RDV-Fair-Wages.jpg`,
+  bottlesLine: `${O}/Red-del-Vino-Vinos-Campesino.jpg`,
+  wineShop: `${O}/Red-del-Vino-WineShop.jpg`,
+};
