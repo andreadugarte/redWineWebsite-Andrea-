@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { ProducerGrid } from "@/components/producers/ProducerGrid";
-import { producers } from "@/lib/content";
+import { activeProducers } from "@/lib/content";
 import { IMG } from "@/lib/images";
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function ProducersPage() {
         image={IMG.producers}
         intro="Red del Vino was formed in 2004 by a group of nineteen small wine-growing families. These are the hands that tend the vines."
       />
-      <ProducerGrid producers={producers} />
+      <ProducerGrid producers={activeProducers} />
     </>
   );
 }

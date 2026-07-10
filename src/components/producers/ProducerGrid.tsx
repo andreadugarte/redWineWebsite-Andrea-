@@ -47,6 +47,7 @@ export function ProducerGrid({ producers }: { producers: Producer[] }) {
                   />
                 </div>
                 <p className="mt-4 font-serif text-xl leading-tight">{tc(p.name)}</p>
+                {p.winery && <p className="font-serif text-sm italic text-charcoal/60">{p.winery}</p>}
                 <p className="font-sans text-xs uppercase tracking-[0.12em] text-charcoal/50">{p.varietals.join(" · ")}</p>
               </Link>
             </motion.div>

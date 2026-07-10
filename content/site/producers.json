@@ -2,6 +2,7 @@
   {
     "slug": "jose-luis-caceres",
     "name": "JOSÉ LUIS CÁCERES",
+    "status": "active",
     "varietals": [
       "Cabernet Sauvignon"
     ],
@@ -23,6 +24,8 @@
   {
     "slug": "segundo-castro-gaete",
     "name": "SEGUNDO CASTRO GAETE",
+    "status": "active",
+    "winery": "Viña La Pascuala",
     "varietals": [
       "Cabernet Sauvignon",
       "Carmenere"
@@ -39,6 +42,8 @@
   {
     "slug": "juan-castro-gaete",
     "name": "JUAN CASTRO GAETE",
+    "status": "active",
+    "winery": "Viña La Pascuala",
     "varietals": [
       "Cabernet Sauvignon",
       "Carmenere"
@@ -57,6 +62,8 @@
   {
     "slug": "jose-castro-gaete",
     "name": "JOSÉ CASTRO GAETE",
+    "status": "active",
+    "winery": "Viña La Pascuala",
     "varietals": [
       "Cabernet Sauvignon",
       "Carmenere"
@@ -73,6 +80,8 @@
   {
     "slug": "benito-castro-gaete",
     "name": "BENITO CASTRO GAETE",
+    "status": "active",
+    "winery": "Viña La Pascuala",
     "varietals": [
       "Cabernet Sauvignon",
       "Carmenere"
@@ -95,6 +104,7 @@
   {
     "slug": "jose-raimundo-lopez",
     "name": "JOSÉ RAIMUNDO LÓPEZ",
+    "status": "active",
     "varietals": [
       "Chardonnay"
     ],
@@ -115,6 +125,7 @@
   {
     "slug": "carlos-lorca-sandoval",
     "name": "CARLOS LORCA SANDOVAL",
+    "status": "active",
     "varietals": [
       "Cabernet Sauvignon"
     ],
@@ -136,6 +147,8 @@
   {
     "slug": "osvaldo-diaz-poblete",
     "name": "OSVALDO DÍAZ POBLETE",
+    "status": "active",
+    "winery": "Viña La Manda de Don Clemente",
     "varietals": [
       "Carmenere"
     ],
@@ -154,6 +167,7 @@
   {
     "slug": "rosa-sanchez-bravo",
     "name": "ROSA SÁNCHEZ BRAVO",
+    "status": "active",
     "varietals": [
       "Cabernet Sauvignon",
       "Carmenere"
@@ -170,6 +184,8 @@
   {
     "slug": "gilberto-lopez-arias",
     "name": "GILBERTO LÓPEZ ARIAS",
+    "status": "active",
+    "winery": "Viña Parcela 33",
     "varietals": [
       "Cabernet Sauvignon"
     ],
@@ -186,6 +202,7 @@
   {
     "slug": "juan-amador-perez",
     "name": "JUAN AMADOR PÉREZ",
+    "status": "active",
     "varietals": [
       "Cabernet Sauvignon",
       "Carmenere"
@@ -202,6 +219,8 @@
   {
     "slug": "jaime-cea-morales",
     "name": "JAIME CEA MORALES",
+    "status": "active",
+    "winery": "Viña Cea",
     "varietals": [
       "Cabernet Sauvignon",
       "Carmenere"
@@ -221,6 +240,7 @@
   {
     "slug": "gerardo-orellana-diaz",
     "name": "GERARDO ORELLANA DÍAZ",
+    "status": "inactive",
     "varietals": [
       "Cabernet Sauvignon",
       "Chardonnay",
@@ -243,6 +263,7 @@
   {
     "slug": "luis-orellana-aliaga",
     "name": "LUIS ORELLANA ALIAGA",
+    "status": "inactive",
     "varietals": [
       "Cabernet Sauvignon",
       "Semillón"
@@ -261,6 +282,8 @@
   {
     "slug": "dagoberto-munoz-diaz",
     "name": "DAGOBERTO MUÑOZ DÍAZ",
+    "status": "active",
+    "winery": "Viña Don Dago",
     "varietals": [
       "Cabernet Sauvignon",
       "Merlot"
@@ -278,6 +301,7 @@
   {
     "slug": "angel-caceres",
     "name": "ÁNGEL CÁCERES",
+    "status": "active",
     "varietals": [
       "Cabernet Sauvignon"
     ],
@@ -299,6 +323,7 @@
   {
     "slug": "adrian-lorca-sandoval",
     "name": "ADRIÁN LORCA SANDOVAL",
+    "status": "active",
     "varietals": [
       "Carmenere"
     ],
@@ -316,6 +341,7 @@
   {
     "slug": "adan-galvez-leon",
     "name": "ADÁN GÁLVEZ LEÓN",
+    "status": "active",
     "varietals": [
       "Cabernet Sauvignon",
       "Carmenere",
@@ -339,6 +365,8 @@
   {
     "slug": "abelardo-becerra-meneses",
     "name": "ABELARDO BECERRA MENESES",
+    "status": "active",
+    "winery": "Viña Un Buen Caballero",
     "varietals": [
       "Cabernet Sauvignon",
       "Semillón"

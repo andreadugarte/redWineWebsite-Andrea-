@@ -38,6 +38,7 @@ export function ProducersStrip({ producers }: { producers: Producer[] }) {
                   />
                 </div>
                 <p className="mt-3 font-serif text-lg leading-tight">{p.name.toLowerCase().replace(/(^|\s)\S/g, (c) => c.toUpperCase())}</p>
+                {p.winery && <p className="font-serif text-sm italic text-charcoal/60">{p.winery}</p>}
                 <p className="font-sans text-xs uppercase tracking-[0.12em] text-charcoal/50">{p.varietals[0]}</p>
               </Link>
             </Reveal>

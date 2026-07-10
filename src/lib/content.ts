@@ -22,6 +22,8 @@ export type Page = {
 export type Producer = {
   slug: string;
   name: string;
+  status?: "active" | "inactive";
+  winery?: string;
   varietals: string[];
   portrait: ImageRef | null;
   bio: string[];
@@ -39,6 +41,7 @@ export type Wine = {
   currency: string;
   vintage: number;
   abv: string;
+  stock?: number;
 };
 
 export type Tour = {
@@ -53,6 +56,13 @@ const pages = pagesJson as Record<string, Page>;
 export const producers = producersJson as Producer[];
 export const wines = winesJson as Wine[];
 export const tours = tourismJson as Tour[];
+
+/**
+ * Producers shown by default in public listings. A producer is considered
+ * active unless explicitly marked "inactive" — so the entries whose status
+ * has not been confirmed yet stay visible.
+ */
+export const activeProducers = producers.filter((p) => p.status !== "inactive");
 
 export function getPage(slug: string): Page | undefined {
   return pages[slug];
