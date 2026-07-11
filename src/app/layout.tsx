@@ -8,6 +8,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AgeGate } from "@/components/AgeGate";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
+import { ScrollProgress } from "@/components/motion/ScrollProgress";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <OrganizationJsonLd />
         <CartProvider>
           <AgeGate />
+          <ScrollProgress />
           <Header />
           <main>{children}</main>
           <Footer />

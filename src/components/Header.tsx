@@ -12,7 +12,6 @@ export function Header() {
   const isHome = pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [lang, setLang] = useState<"EN" | "ES">("EN");
   const { count, open } = useCart();
   const { scrollY } = useScroll();
 
@@ -28,7 +27,7 @@ export function Header() {
         className={`fixed inset-x-0 top-0 z-[70] transition-colors duration-500 ${solid ? "bg-bone/95 backdrop-blur-md shadow-[0_1px_0_rgba(38,34,31,0.08)]" : "bg-transparent"}`}
       >
         <div className="container-x flex items-center justify-between py-4">
-          <button className={`lg:hidden ${text}`} aria-label="Menu" onClick={() => setMenuOpen((o) => !o)}>
+          <button className={`lg:hidden ${text}`} aria-label="Menu" aria-expanded={menuOpen} onClick={() => setMenuOpen((o) => !o)}>
             <span className="block h-px w-7 bg-current" />
             <span className="mt-1.5 block h-px w-7 bg-current" />
             <span className="mt-1.5 block h-px w-5 bg-current" />
@@ -39,26 +38,29 @@ export function Header() {
           </Link>
 
           <nav className="hidden items-center gap-7 lg:flex">
-            {NAV.map((n) => (
-              <Link
-                key={n.href}
-                href={n.href}
-                className={`link-underline font-sans text-[13px] uppercase tracking-[0.14em] ${text} ${pathname.startsWith(n.href) ? "opacity-100" : "opacity-80 hover:opacity-100"}`}
-              >
-                {n.label}
-              </Link>
-            ))}
+            {NAV.map((n) => {
+              const active = pathname.startsWith(n.href);
+              return (
+                <Link
+                  key={n.href}
+                  href={n.href}
+                  aria-current={active ? "page" : undefined}
+                  className={`link-underline relative font-sans text-[13px] uppercase tracking-[0.14em] ${text} ${active ? "opacity-100" : "opacity-80 hover:opacity-100"}`}
+                >
+                  {n.label}
+                  {active && (
+                    <motion.span
+                      layoutId="nav-active"
+                      className="absolute -bottom-1.5 left-0 h-px w-full bg-current"
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </Link>
+              );
+            })}
           </nav>
 
           <div className={`flex items-center gap-4 ${text}`}>
-            <button
-              onClick={() => setLang((l) => (l === "EN" ? "ES" : "EN"))}
-              className="hidden font-sans text-[12px] font-semibold tracking-[0.14em] opacity-80 hover:opacity-100 sm:block"
-              aria-label="Switch language"
-              title="Language (ES coming soon)"
-            >
-              {lang} <span className="opacity-40">/ {lang === "EN" ? "ES" : "EN"}</span>
-            </button>
             <button onClick={open} className="relative" aria-label="Open cart">
               <CartIcon />
               {count > 0 && (
@@ -79,12 +81,22 @@ export function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
+            <button
+              className="absolute right-6 top-6 text-charcoal"
+              aria-label="Close menu"
+              onClick={() => setMenuOpen(false)}
+            >
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+                <path d="M5 5l14 14M19 5L5 19" />
+              </svg>
+            </button>
             <nav className="flex flex-col gap-1">
               {NAV.map((n, i) => (
                 <motion.div
                   key={n.href}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -12 }}
                   transition={{ delay: 0.05 * i }}
                 >
                   <Link href={n.href} className="block border-b border-charcoal/10 py-4 font-serif text-3xl">

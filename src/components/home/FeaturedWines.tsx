@@ -7,6 +7,7 @@ import { useRef } from "react";
 import type { Wine } from "@/lib/content";
 import { FALLBACK_IMAGE } from "@/lib/content";
 import { formatPrice } from "@/components/cart/CartProvider";
+import { SectionHeading } from "@/components/layout/SectionHeading";
 
 /**
  * Signature interaction: a pinned section where the wines scroll HORIZONTALLY
@@ -23,12 +24,7 @@ export function FeaturedWines({ wines }: { wines: Wine[] }) {
     <section ref={ref} className="relative bg-charcoal text-bone" style={{ height: reduce ? "auto" : "300vh" }}>
       <div className={reduce ? "py-24" : "sticky top-0 flex h-screen flex-col justify-center overflow-hidden"}>
         <div className="container-x flex items-end justify-between pb-10">
-          <div>
-            <p className="eyebrow text-gold-soft">The Campesino Line</p>
-            <h2 className="mt-4 max-w-xl font-serif text-display-md font-light">
-              Four wines, nineteen families, one valley.
-            </h2>
-          </div>
+          <SectionHeading tone="dark" eyebrow="The Campesino Line" title="Four wines, nineteen families, one valley." />
           <Link href="/wines" className="link-underline hidden font-sans text-sm uppercase tracking-[0.14em] text-bone/80 md:block">
             View all wines
           </Link>

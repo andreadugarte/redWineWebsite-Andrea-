@@ -2,14 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Reveal } from "@/components/motion/Reveal";
+import { SectionHeading } from "@/components/layout/SectionHeading";
 import { Parallax } from "@/components/motion/Parallax";
 import { Counter } from "@/components/motion/Counter";
 import { IMG } from "@/lib/images";
 
 export function StoryIntro({ body }: { body: string }) {
   return (
-    <section className="bg-bone py-24 md:py-36">
+    <section className="section-y bg-bone">
       <div className="container-x grid items-center gap-16 lg:grid-cols-2">
         <div className="relative order-2 lg:order-1">
           <Parallax className="relative aspect-[4/5] overflow-hidden" distance={60}>
@@ -22,16 +22,15 @@ export function StoryIntro({ body }: { body: string }) {
         </div>
 
         <div className="order-1 lg:order-2">
-          <Reveal>
-            <p className="eyebrow">Welcome to Red del Vino</p>
-            <h2 className="mt-5 font-serif text-display-md font-light">
-              Maintaining the traditions and identity of rural wine farmers.
-            </h2>
+          <SectionHeading
+            eyebrow="Welcome to Red del Vino"
+            title="Maintaining the traditions and identity of rural wine farmers."
+          >
             <p className="mt-6 max-w-lg font-sans text-base leading-relaxed text-charcoal-soft">{body}</p>
             <Link href="/story" className="mt-8 inline-block link-underline font-sans text-sm uppercase tracking-[0.14em] text-oxblood">
               Read our story
             </Link>
-          </Reveal>
+          </SectionHeading>
 
           <div className="mt-14 grid grid-cols-3 gap-6 border-t border-charcoal/15 pt-10">
             <Stat n={2004} label="Founded" />

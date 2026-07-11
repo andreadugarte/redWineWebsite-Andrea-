@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/motion/Reveal";
+import { SectionHeading } from "@/components/layout/SectionHeading";
 import type { Producer } from "@/lib/content";
 import { FALLBACK_IMAGE } from "@/lib/content";
 
@@ -10,15 +11,10 @@ export function ProducersStrip({ producers }: { producers: Producer[] }) {
   const featured = producers.filter((p) => p.portrait).slice(0, 5);
 
   return (
-    <section className="bg-bone py-24 md:py-32">
+    <section className="section-y bg-bone">
       <div className="container-x">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
-          <Reveal>
-            <p className="eyebrow">The People</p>
-            <h2 className="mt-4 max-w-2xl font-serif text-display-md font-light">
-              Nineteen families, one shared devotion to the land.
-            </h2>
-          </Reveal>
+          <SectionHeading eyebrow="The People" title="Nineteen families, one shared devotion to the land." />
           <Link href="/producers" className="link-underline shrink-0 font-sans text-sm uppercase tracking-[0.14em] text-oxblood">
             Meet the producers
           </Link>
@@ -27,7 +23,7 @@ export function ProducersStrip({ producers }: { producers: Producer[] }) {
         <div className="mt-14 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
           {featured.map((p, i) => (
             <Reveal key={p.slug} delay={i * 0.06} as="div">
-              <Link href={`/producers/${p.slug}`} className="group block">
+              <Link href={`/producers/${p.slug}`} className="group block transition-transform duration-500 ease-out-expo hover:-translate-y-1.5">
                 <div className="relative aspect-[4/5] overflow-hidden bg-charcoal/5">
                   <Image
                     src={p.portrait?.src || FALLBACK_IMAGE}

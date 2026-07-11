@@ -36,7 +36,7 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             >
-              <Link href={`/wines/${w.slug}`} className="group block">
+              <Link href={`/wines/${w.slug}`} className="group block transition-transform duration-500 ease-out-expo hover:-translate-y-1.5">
                 <div className="relative aspect-[3/4] overflow-hidden bg-bone-warm">
                   <Image
                     src={w.image?.src || FALLBACK_IMAGE}
@@ -47,6 +47,9 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
                   />
                   <span className="absolute left-5 top-5 font-sans text-[11px] uppercase tracking-[0.14em] text-charcoal/40">
                     {w.vintage}
+                  </span>
+                  <span className="absolute bottom-5 right-5 font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                    View →
                   </span>
                 </div>
                 <div className="mt-5 flex items-baseline justify-between">
