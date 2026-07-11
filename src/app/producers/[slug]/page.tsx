@@ -41,6 +41,14 @@ export default function ProducerDetail({ params }: { params: { slug: string } })
           </Link>
           <p className="eyebrow mt-6">Producer · Colchagua Valley</p>
           <h1 className="mt-3 font-serif text-display-md font-light">{tc(p.name)}</h1>
+          {p.winery && <p className="mt-2 font-serif text-2xl font-light italic text-charcoal/70">{p.winery}</p>}
+          {p.status === "inactive" && (
+            <div className="mt-6 border-l-2 border-oxblood bg-oxblood/5 px-4 py-3">
+              <p className="font-sans text-sm leading-relaxed text-oxblood">
+                Este productor ya no forma parte activa de Red del Vino.
+              </p>
+            </div>
+          )}
           <div className="mt-4 flex flex-wrap gap-2">
             {p.varietals.map((v) => (
               <span key={v} className="border border-oxblood/30 px-3 py-1 font-sans text-xs uppercase tracking-[0.1em] text-oxblood">{v}</span>

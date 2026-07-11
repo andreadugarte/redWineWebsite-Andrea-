@@ -4,7 +4,7 @@ import { FeaturedWines } from "@/components/home/FeaturedWines";
 import { FeatureBand } from "@/components/home/FeatureBand";
 import { QuoteBand } from "@/components/home/QuoteBand";
 import { ProducersStrip } from "@/components/home/ProducersStrip";
-import { getPage, wines, producers } from "@/lib/content";
+import { getPage, wines, activeProducers } from "@/lib/content";
 import { IMG } from "@/lib/images";
 
 function firstText(slug: string): string {
@@ -38,7 +38,7 @@ export default function HomePage() {
         align="left"
       />
 
-      <ProducersStrip producers={producers} />
+      <ProducersStrip producers={activeProducers} />
 
       <FeatureBand
         image={IMG.tourism}

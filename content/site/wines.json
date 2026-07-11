@@ -21,7 +21,8 @@
     "price": 28,
     "currency": "USD",
     "vintage": 2021,
-    "abv": "13.5%"
+    "abv": "13.5%",
+    "stock": 300
   },
   {
     "slug": "campesino-carmenere",
@@ -44,7 +45,8 @@
     "price": 22,
     "currency": "USD",
     "vintage": 2021,
-    "abv": "13.5%"
+    "abv": "13.5%",
+    "stock": 300
   },
   {
     "slug": "campesino-cabernet-sauvignon-reserva",
@@ -67,7 +69,8 @@
     "price": 24,
     "currency": "USD",
     "vintage": 2021,
-    "abv": "14.0%"
+    "abv": "14.0%",
+    "stock": 300
   },
   {
     "slug": "campesino-chardonnay",
@@ -90,6 +93,7 @@
     "price": 19,
     "currency": "USD",
     "vintage": 2022,
-    "abv": "13.0%"
+    "abv": "13.0%",
+    "stock": 300
   }
 ]
