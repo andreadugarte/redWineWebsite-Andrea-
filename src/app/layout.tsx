@@ -9,6 +9,7 @@ import { Footer } from "@/components/Footer";
 import { AgeGate } from "@/components/AgeGate";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
 import { ScrollProgress } from "@/components/motion/ScrollProgress";
+import { LocaleProvider } from "@/components/i18n/LocaleProvider";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -49,14 +50,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <body className="grain font-sans antialiased">
         <OrganizationJsonLd />
-        <CartProvider>
-          <AgeGate />
-          <ScrollProgress />
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <CartDrawer />
-        </CartProvider>
+        <LocaleProvider>
+          <CartProvider>
+            <AgeGate />
+            <ScrollProgress />
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <CartDrawer />
+          </CartProvider>
+        </LocaleProvider>
       </body>
     </html>
   );

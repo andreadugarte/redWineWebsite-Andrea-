@@ -23,6 +23,20 @@ export function localizedPath(path: string, locale: Locale): string {
   return `/es${clean === "/" ? "" : clean}`;
 }
 
+/** Detect the locale from a pathname (`/es` or `/es/...` → es). */
+export function localeFromPath(pathname: string): Locale {
+  return pathname === "/es" || pathname.startsWith("/es/") ? "es" : "en";
+}
+
+/** The same page in the other language (for the language toggle). */
+export function otherLocalePath(pathname: string): string {
+  if (localeFromPath(pathname) === "es") {
+    const rest = pathname.slice(3); // drop "/es"
+    return rest === "" ? "/" : rest;
+  }
+  return pathname === "/" ? "/es" : `/es${pathname}`;
+}
+
 type Dict = Record<string, { en: string; es: string }>;
 
 /** UI string table. Spanish is written natively, not translated word-for-word. */
@@ -96,6 +110,31 @@ export const UI: Dict = {
   "footer.explore": { en: "Explore", es: "Explorar" },
   "footer.visit": { en: "Visit", es: "Visítanos" },
   "footer.privacy": { en: "Privacy", es: "Privacidad" },
+  "footer.tagline": {
+    en: "Fair-trade wines from the small producers of Colchagua Valley, Chile.",
+    es: "Vinos de comercio justo de los pequeños productores del Valle de Colchagua, Chile.",
+  },
+  // Footer link labels
+  "link.wines": { en: "Wines", es: "Vinos" },
+  "link.producers": { en: "Producers", es: "Productores" },
+  "link.story": { en: "Our Story", es: "Nuestra Historia" },
+  "link.socialResponsibility": { en: "Social Responsibility", es: "Responsabilidad Social" },
+  "link.tastings": { en: "Wine Tastings & Tours", es: "Catas y Tours" },
+  "link.eventCenter": { en: "Event Center", es: "Centro de Eventos" },
+  "link.reservationPolicy": { en: "Reservation Policy", es: "Política de Reservas" },
+  "link.contact": { en: "Contact", es: "Contacto" },
+};
+
+/** Map a footer/link href to its translation key. */
+export const HREF_LABEL_KEY: Record<string, string> = {
+  "/wines": "link.wines",
+  "/producers": "link.producers",
+  "/story": "link.story",
+  "/social-responsibility": "link.socialResponsibility",
+  "/tourism": "link.tastings",
+  "/event-center": "link.eventCenter",
+  "/reservation-policy": "link.reservationPolicy",
+  "/contact": "link.contact",
 };
 
 export function t(key: string, locale: Locale): string {
