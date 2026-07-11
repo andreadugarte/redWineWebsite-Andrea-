@@ -7,8 +7,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import type { Wine } from "@/lib/content";
 import { FALLBACK_IMAGE } from "@/lib/content";
 import { formatPrice } from "@/components/cart/CartProvider";
+import { useT } from "@/components/i18n/LocaleProvider";
 
 export function WineGrid({ wines }: { wines: Wine[] }) {
+  const tr = useT();
   const varietals = useMemo(() => ["All", ...Array.from(new Set(wines.map((w) => w.varietal)))], [wines]);
   const colors = ["All", "red", "white"];
   const [varietal, setVarietal] = useState("All");
@@ -21,8 +23,8 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
   return (
     <div className="container-x py-16 md:py-24">
       <div className="mb-12 flex flex-col gap-6 border-b border-charcoal/15 pb-8 md:flex-row md:items-end md:justify-between">
-        <Filter label="Varietal" options={varietals} value={varietal} onChange={setVarietal} />
-        <Filter label="Style" options={colors} value={color} onChange={setColor} cap />
+        <Filter label={tr("filter.varietal")} options={varietals} value={varietal} onChange={setVarietal} />
+        <Filter label={tr("filter.style")} options={colors} value={color} onChange={setColor} cap />
       </div>
 
       <motion.div layout className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
@@ -49,7 +51,7 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
                     {w.vintage}
                   </span>
                   <span className="absolute bottom-5 right-5 font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    View →
+                    {tr("common.view")} →
                   </span>
                 </div>
                 <div className="mt-5 flex items-baseline justify-between">
@@ -66,11 +68,13 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
       </motion.div>
 
       {filtered.length === 0 && (
-        <p className="py-20 text-center font-serif text-2xl text-charcoal/50">No wines match that selection.</p>
+        <p className="py-20 text-center font-serif text-2xl text-charcoal/50">{tr("wines.noMatch")}</p>
       )}
     </div>
   );
 }
+
+const OPTION_KEY: Record<string, string> = { All: "filter.all", red: "filter.red", white: "filter.white" };
 
 function Filter({
   label,
@@ -85,6 +89,7 @@ function Filter({
   onChange: (v: string) => void;
   cap?: boolean;
 }) {
+  const tr = useT();
   return (
     <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
       <span className="eyebrow text-charcoal/40">{label}</span>
@@ -94,7 +99,7 @@ function Filter({
           onClick={() => onChange(o)}
           className={`font-sans text-sm transition-colors ${value === o ? "text-oxblood" : "text-charcoal/50 hover:text-charcoal"} ${cap ? "capitalize" : ""}`}
         >
-          {o}
+          {OPTION_KEY[o] ? tr(OPTION_KEY[o]) : o}
           {value === o && <span className="ml-1 inline-block h-1 w-1 rounded-full bg-oxblood align-middle" />}
         </button>
       ))}
