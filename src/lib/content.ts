@@ -2,6 +2,7 @@ import pagesJson from "@content/site/pages.json";
 import producersJson from "@content/site/producers.json";
 import winesJson from "@content/site/wines.json";
 import tourismJson from "@content/site/tourism.json";
+import type { Locale } from "@/lib/i18n";
 
 export type ImageRef = { src: string; alt: string; w?: number | null; h?: number | null };
 
@@ -27,6 +28,8 @@ export type Producer = {
   varietals: string[];
   portrait: ImageRef | null;
   bio: string[];
+  /** Spanish bio (path-based i18n). Falls back to English when absent. */
+  bio_es?: string[];
 };
 
 export type Wine = {
@@ -42,6 +45,9 @@ export type Wine = {
   vintage: number;
   abv: string;
   stock?: number;
+  /** Spanish content (path-based i18n). Falls back to English when absent. */
+  notes_es?: string[];
+  description_es?: string;
 };
 
 export type Tour = {
@@ -67,11 +73,35 @@ export const activeProducers = producers.filter((p) => p.status !== "inactive");
 export function getPage(slug: string): Page | undefined {
   return pages[slug];
 }
-export function getProducer(slug: string): Producer | undefined {
-  return producers.find((p) => p.slug === slug);
+
+/** Swap a producer's text fields to Spanish, falling back to English. */
+export function localizeProducer(p: Producer, locale: Locale): Producer {
+  if (locale === "es" && p.bio_es?.length) return { ...p, bio: p.bio_es };
+  return p;
 }
-export function getWine(slug: string): Wine | undefined {
-  return wines.find((w) => w.slug === slug);
+/** Swap a wine's text fields to Spanish, falling back to English. */
+export function localizeWine(w: Wine, locale: Locale): Wine {
+  if (locale !== "es") return w;
+  return {
+    ...w,
+    notes: w.notes_es?.length ? w.notes_es : w.notes,
+    description: w.description_es || w.description,
+  };
+}
+export function localizedProducers(list: Producer[], locale: Locale): Producer[] {
+  return list.map((p) => localizeProducer(p, locale));
+}
+export function localizedWines(list: Wine[], locale: Locale): Wine[] {
+  return list.map((w) => localizeWine(w, locale));
+}
+
+export function getProducer(slug: string, locale: Locale = "en"): Producer | undefined {
+  const p = producers.find((x) => x.slug === slug);
+  return p ? localizeProducer(p, locale) : undefined;
+}
+export function getWine(slug: string, locale: Locale = "en"): Wine | undefined {
+  const w = wines.find((x) => x.slug === slug);
+  return w ? localizeWine(w, locale) : undefined;
 }
 
 /** Prefer a real portrait; otherwise fall back to a curated vineyard image. */

@@ -18,6 +18,14 @@
       "Serving temperature: 12 °"
     ],
     "description": "View: The appearance of this wine is a very clear and clean yellow tone. Nose: Initially mineral with notes of almond, hazelnut and melon, citrus notes lime / lemon, and peach. Mouth: Moderate acidity, medium structure and short finish. Pai",
+    "notes_es": [
+      "Vista: Este vino presenta un tono amarillo muy limpio y brillante.",
+      "Nariz: Inicialmente mineral, con notas de almendra, avellana y melón, matices cítricos de lima y limón, y durazno.",
+      "Boca: Acidez moderada, estructura media y final corto.",
+      "Maridaje: Ideal con mariscos y pescados ahumados, pastas con salsa blanca poco picante y comida vegana.",
+      "Temperatura de servicio: 12 °"
+    ],
+    "description_es": "Un Chardonnay Gran Reserva de tono amarillo limpio y brillante, mineral en nariz con notas de almendra, avellana, melón y cítricos. En boca, acidez moderada y estructura media.",
     "price": 28,
     "currency": "USD",
     "vintage": 2021,
@@ -42,6 +50,13 @@
       "Serving temperature: 16 ° and 18 °"
     ],
     "description": "View: Clean wine without sediment and bright (young), has a high layer, deep ruby red color. Smells: Fruit aromas such as plum and cherries, its aging in barrels provides notes such as chocolate and vanilla, leaving a pleasant aroma before ",
+    "notes_es": [
+      "Vista: Vino limpio, sin sedimentos y brillante (joven), de capa alta y color rojo rubí intenso.",
+      "Aromas: Aromas frutales de ciruela y cerezas; su crianza en barrica aporta notas de chocolate y vainilla, dejando un aroma agradable antes de la cata. En boca: buena estructura, taninos equilibrados y una acidez muy rica.",
+      "Maridaje: Ideal para acompañar carnes rojas de vacuno y carnes de caza de sabor intenso. También marida bien con quesos maduros y penetrantes como Parmesano, Gruyère y Camembert.",
+      "Temperatura de servicio: entre 16 ° y 18 °"
+    ],
+    "description_es": "Un Carménère joven, limpio y de color rojo rubí intenso. En nariz, ciruela y cerezas con notas de chocolate y vainilla de su paso por barrica; en boca, buena estructura y taninos equilibrados.",
     "price": 22,
     "currency": "USD",
     "vintage": 2021,
@@ -66,6 +81,13 @@
       "Serving temperature: 16 ° and 18 °"
     ],
     "description": "View: Clean wine without sediment and bright (young), has a high layer, deep ruby red color. Smells: Fruit aromas such as plum and cherries, its aging in barrels provides notes such as chocolate and vanilla, leaving a pleasant aroma before ",
+    "notes_es": [
+      "Vista: Vino limpio, sin sedimentos y brillante (joven), de capa alta y color rojo rubí intenso.",
+      "Aromas: Aromas frutales de ciruela y cerezas; su crianza en barrica aporta notas de chocolate y vainilla, dejando un aroma agradable antes de la cata. En boca: buena estructura, taninos equilibrados y una acidez muy rica.",
+      "Maridaje: Ideal para acompañar carnes rojas de vacuno y carnes de caza de sabor intenso. También marida bien con quesos maduros y penetrantes como Parmesano, Gruyère y Camembert.",
+      "Temperatura de servicio: entre 16 ° y 18 °"
+    ],
+    "description_es": "Un Cabernet Sauvignon Reserva de color rojo rubí intenso, con aromas de ciruela y cereza y notas de chocolate y vainilla de barrica. En boca, buena estructura y taninos equilibrados.",
     "price": 24,
     "currency": "USD",
     "vintage": 2021,
@@ -90,6 +112,13 @@
       "Serving temperature: 12 °"
     ],
     "description": "View: The appearance of this wine is a very clear and clean yellow tone. Smell: The first impression on the nose is very fruity, mainly to mangoes, ripe tropical fruits and evolves towards notes of citrus and spices such as cinnamon. In the",
+    "notes_es": [
+      "Vista: Este vino presenta un tono amarillo muy limpio y brillante.",
+      "Nariz: La primera impresión en nariz es muy frutal, principalmente a mango y frutas tropicales maduras, y evoluciona hacia notas cítricas y especias como la canela. En boca: cuerpo medio, suave y rico, que termina con una acidez vibrante de longitud media; el retrogusto evoluciona hacia matices amaderados, como vainilla y tostado.",
+      "Maridaje: Perfecto para acompañar pescados delicados como corvina, lenguado y rodaballo, a la parrilla con salsas cremosas, alcaparras o hierbas.",
+      "Temperatura de servicio: 12 °"
+    ],
+    "description_es": "Un Chardonnay de tono amarillo limpio y brillante, muy frutal en nariz —mango y frutas tropicales— con especias y un final de matices amaderados. Cuerpo medio y acidez vibrante.",
     "price": 19,
     "currency": "USD",
     "vintage": 2022,
