@@ -10,6 +10,7 @@ import { AgeGate } from "@/components/AgeGate";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
 import { ScrollProgress } from "@/components/motion/ScrollProgress";
 import { LocaleProvider } from "@/components/i18n/LocaleProvider";
+import { CounterBootstrap } from "@/components/CounterBootstrap";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <main>{children}</main>
             <Footer />
             <CartDrawer />
+            <CounterBootstrap />
           </CartProvider>
         </LocaleProvider>
       </body>
