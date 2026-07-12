@@ -5,43 +5,35 @@ import { useRef, useEffect, useState } from "react";
 export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [count, setCount] = useState(0);
-  const hasStarted = useRef(false);
-  // Animates on scroll without Framer Motion
 
   useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
+    const updateCount = () => {
+      const el = ref.current;
+      if (!el) return;
 
-    let unsubscribe: (() => void) | null = null;
+      const rect = el.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
 
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && !hasStarted.current) {
-        hasStarted.current = true;
+      // Calculate distance from bottom of viewport to element
+      // When element is below viewport: distance is positive
+      // When element is in viewport: distance decreases
+      // When element is above viewport: distance is negative
+      const elementCenter = rect.top + rect.height / 2;
+      const distanceFromCenter = viewportHeight / 2 - elementCenter;
+      const maxDistance = viewportHeight;
 
-        const handleScroll = () => {
-          const rect = ref.current?.getBoundingClientRect();
-          if (!rect) return;
+      // Progress: 0 when far below, 1 when centered, 0 when far above
+      const progress = Math.max(0, Math.min(1, (distanceFromCenter + maxDistance) / (maxDistance * 2)));
 
-          // Progress based on element position: 0 when entering from bottom, 1 when fully past top
-          const progress = Math.max(0, Math.min(1, 1 - rect.top / window.innerHeight));
-          setCount(Math.round(progress * to));
-        };
-
-        window.addEventListener("scroll", handleScroll, { passive: true });
-        handleScroll();
-
-        unsubscribe = () => {
-          window.removeEventListener("scroll", handleScroll);
-        };
-      }
-    });
-
-    observer.observe(el);
-
-    return () => {
-      observer.disconnect();
-      unsubscribe?.();
+      setCount(Math.round(progress * to));
     };
+
+    // Update on scroll
+    window.addEventListener("scroll", updateCount, { passive: true });
+    // Initial update
+    updateCount();
+
+    return () => window.removeEventListener("scroll", updateCount);
   }, [to]);
 
   return (
