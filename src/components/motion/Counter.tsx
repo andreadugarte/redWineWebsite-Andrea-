@@ -7,33 +7,46 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
+    let animationFrameId: number | null = null;
+
     const updateCount = () => {
       const el = ref.current;
       if (!el) return;
 
       const rect = el.getBoundingClientRect();
-      const viewportHeight = window.innerHeight;
+      const vh = window.innerHeight;
 
-      // Calculate distance from bottom of viewport to element
-      // When element is below viewport: distance is positive
-      // When element is in viewport: distance decreases
-      // When element is above viewport: distance is negative
-      const elementCenter = rect.top + rect.height / 2;
-      const distanceFromCenter = viewportHeight / 2 - elementCenter;
-      const maxDistance = viewportHeight;
+      // Element is at rect.top relative to viewport
+      // When rect.top = vh: element is below viewport (scroll up to see)
+      // When rect.top = 0: element is at top of viewport
+      // When rect.top = -vh: element is above viewport (scrolled past)
 
-      // Progress: 0 when far below, 1 when centered, 0 when far above
-      const progress = Math.max(0, Math.min(1, (distanceFromCenter + maxDistance) / (maxDistance * 2)));
+      // Progress should go from 0 to 1 as rect.top goes from vh to -vh
+      // That's a total range of 2*vh
+      const progress = Math.max(0, Math.min(1, (vh - rect.top) / (2 * vh)));
+      const newCount = Math.round(progress * to);
 
-      setCount(Math.round(progress * to));
+      if (newCount !== count) {
+        setCount(newCount);
+      }
     };
 
-    // Update on scroll
-    window.addEventListener("scroll", updateCount, { passive: true });
-    // Initial update
+    const handleScroll = () => {
+      if (animationFrameId !== null) {
+        cancelAnimationFrame(animationFrameId);
+      }
+      animationFrameId = requestAnimationFrame(updateCount);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
     updateCount();
 
-    return () => window.removeEventListener("scroll", updateCount);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (animationFrameId !== null) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
   }, [to]);
 
   return (
