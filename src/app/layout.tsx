@@ -53,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <LocaleProvider>
           <CartProvider>
             <AgeGate />
-            <ScrollProgress />
+            {/* Disabled: scroll performance */}
             <Header />
             <main>{children}</main>
             <Footer />
