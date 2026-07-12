@@ -11,35 +11,24 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
       const el = ref.current;
       if (!el) return;
 
-      const viewportHeight = window.innerHeight;
       const rect = el.getBoundingClientRect();
-      const elTop = rect.top;
+      const vh = window.innerHeight;
 
-      let value = 0;
-      if (elTop < viewportHeight && elTop > -rect.height) {
-        // Element is in viewport
-        const distanceFromTop = viewportHeight - elTop;
-        const percentOfViewport = distanceFromTop / viewportHeight;
-        value = Math.round(percentOfViewport * to);
+      // Progress: 0 when element is at bottom of viewport (rect.top = vh)
+      //          1 when element is at top of viewport (rect.top = 0)
+      const progress = Math.max(0, Math.min(1, (vh - rect.top) / vh));
+      const newCount = Math.round(progress * to);
+
+      if (newCount !== count) {
+        setCount(newCount);
       }
-
-      setCount(Math.max(0, Math.min(value, to)));
     };
 
-    // Update immediately
     updateCount();
+    window.addEventListener("scroll", updateCount, { passive: true });
 
-    // Update on scroll
-    const handleScroll = () => {
-      updateCount();
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [to]);
+    return () => window.removeEventListener("scroll", updateCount);
+  }, [to, count]);
 
   return (
     <span ref={ref}>
