@@ -1,17 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import { useT } from "@/components/i18n/LocaleProvider";
 
 type Variant = "reservation" | "contact" | "event";
 
-const CONFIG: Record<Variant, { fields: string[]; cta: string; endpoint: string }> = {
-  reservation: { fields: ["phone", "date", "group", "message"], cta: "Request a Tasting", endpoint: "/api/reservation" },
-  event: { fields: ["phone", "date", "group", "message"], cta: "Request Your Event", endpoint: "/api/reservation" },
-  contact: { fields: ["message"], cta: "Send Message", endpoint: "/api/contact" },
+const CONFIG: Record<Variant, { fields: string[]; ctaKey: string; endpoint: string }> = {
+  reservation: { fields: ["phone", "date", "group", "message"], ctaKey: "form.cta.reservation", endpoint: "/api/reservation" },
+  event: { fields: ["phone", "date", "group", "message"], ctaKey: "form.cta.event", endpoint: "/api/reservation" },
+  contact: { fields: ["message"], ctaKey: "form.cta.contact", endpoint: "/api/contact" },
 };
 
 export function InquiryForm({ variant = "contact", subject }: { variant?: Variant; subject?: string }) {
   const cfg = CONFIG[variant];
+  const tr = useT();
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
@@ -33,31 +35,29 @@ export function InquiryForm({ variant = "contact", subject }: { variant?: Varian
   if (state === "done")
     return (
       <div className="border border-vine/40 bg-vine/5 p-8 text-center">
-        <p className="font-serif text-2xl">Thank you.</p>
-        <p className="mt-2 font-sans text-sm text-charcoal-soft">
-          We&apos;ve received your request and will reply within one business day.
-        </p>
+        <p className="font-serif text-2xl">{tr("form.thankYou")}</p>
+        <p className="mt-2 font-sans text-sm text-charcoal-soft">{tr("form.thankYouBody")}</p>
       </div>
     );
 
   return (
     <form onSubmit={submit} className="grid gap-5">
       <div className="grid gap-5 sm:grid-cols-2">
-        <Field name="name" label="Name" required />
-        <Field name="email" label="Email" type="email" required />
+        <Field name="name" label={tr("form.name")} required />
+        <Field name="email" label={tr("form.email")} type="email" required />
       </div>
-      {cfg.fields.includes("phone") && <Field name="phone" label="Phone" type="tel" />}
+      {cfg.fields.includes("phone") && <Field name="phone" label={tr("form.phone")} type="tel" />}
       {cfg.fields.includes("date") && (
         <div className="grid gap-5 sm:grid-cols-2">
-          <Field name="date" label="Preferred date" type="date" />
-          <Field name="group" label="Group size" type="number" placeholder="e.g. 6" />
+          <Field name="date" label={tr("form.date")} type="date" />
+          <Field name="group" label={tr("form.group")} type="number" placeholder="6" />
         </div>
       )}
-      {cfg.fields.includes("message") && <Field name="message" label="Message" textarea />}
+      {cfg.fields.includes("message") && <Field name="message" label={tr("form.message")} textarea />}
       <button type="submit" disabled={state === "loading"} className="btn-primary justify-self-start disabled:opacity-60">
-        {state === "loading" ? "Sending…" : cfg.cta}
+        {state === "loading" ? tr("form.sending") : tr(cfg.ctaKey)}
       </button>
-      {state === "error" && <p className="font-sans text-sm text-oxblood">Something went wrong. Please email us directly.</p>}
+      {state === "error" && <p className="font-sans text-sm text-oxblood">{tr("form.error")}</p>}
     </form>
   );
 }

@@ -5,7 +5,7 @@ import { FeatureBand } from "@/components/home/FeatureBand";
 import { QuoteBand } from "@/components/home/QuoteBand";
 import { ProducersStrip } from "@/components/home/ProducersStrip";
 import { Seam } from "@/components/layout/Seam";
-import { wines, activeProducers, localizedWines } from "@/lib/content";
+import { winesByBrand, activeProducers, localizedWines } from "@/lib/content";
 import { IMG } from "@/lib/images";
 
 export default function HomePageEs() {
@@ -14,7 +14,7 @@ export default function HomePageEs() {
       <Hero heading="Preservando las tradiciones e identidad de los viñateros campesinos en Chile" />
       <StoryIntro body="Red del Vino nació en 2004 como una iniciativa de comercio justo para conectar a las familias productoras del Valle de Colchagua con el mundo, honrando su legado y su tierra." />
       <Seam from="bone" to="charcoal" />
-      <FeaturedWines wines={localizedWines(wines, "es")} />
+      <FeaturedWines wines={localizedWines(winesByBrand("Campesino"), "es")} />
       <Seam from="charcoal" to="oxblood" />
 
       <QuoteBand

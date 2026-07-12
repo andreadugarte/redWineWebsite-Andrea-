@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { WineGrid } from "@/components/wines/WineGrid";
-import { wines, localizedWines } from "@/lib/content";
+import { listedWines, localizedWines } from "@/lib/content";
 import { IMG } from "@/lib/images";
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function WinesPageEs() {
         image={IMG.bottlesLine}
         intro="Elaborados a mano por nuestras diecinueve familias productoras en el Valle de Colchagua — vinos honestos que llevan el carácter de su tierra."
       />
-      <WineGrid wines={localizedWines(wines, "es")} />
+      <WineGrid wines={localizedWines(listedWines, "es")} />
     </>
   );
 }

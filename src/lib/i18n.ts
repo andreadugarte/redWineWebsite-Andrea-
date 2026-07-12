@@ -137,6 +137,27 @@ export const UI: Dict = {
   "wine.continueTasting": { en: "Continue tasting", es: "Continúa probando" },
   "wine.moreFromCellar": { en: "More from the cellar", es: "Más de la bodega" },
 
+  // Inquiry / reservation form
+  "form.name": { en: "Name", es: "Nombre" },
+  "form.email": { en: "Email", es: "Correo electrónico" },
+  "form.phone": { en: "Phone", es: "Teléfono" },
+  "form.date": { en: "Preferred date", es: "Fecha preferida" },
+  "form.group": { en: "Group size", es: "Número de personas" },
+  "form.message": { en: "Message", es: "Mensaje" },
+  "form.sending": { en: "Sending…", es: "Enviando…" },
+  "form.thankYou": { en: "Thank you.", es: "Gracias." },
+  "form.thankYouBody": {
+    en: "We've received your request and will reply within one business day.",
+    es: "Hemos recibido tu solicitud y te responderemos dentro de un día hábil.",
+  },
+  "form.error": {
+    en: "Something went wrong. Please email us directly.",
+    es: "Algo salió mal. Por favor, escríbenos directamente por correo.",
+  },
+  "form.cta.reservation": { en: "Request a Tasting", es: "Solicitar reserva" },
+  "form.cta.event": { en: "Request Your Event", es: "Solicitar evento" },
+  "form.cta.contact": { en: "Send Message", es: "Enviar mensaje" },
+
   // Producer detail
   "producer.allProducers": { en: "All producers", es: "Todos los productores" },
   "producer.relatedWines": { en: "Wines from these grapes", es: "Vinos de estas uvas" },
