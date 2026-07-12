@@ -6,6 +6,7 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [count, setCount] = useState(0);
   const hasStarted = useRef(false);
+  // Animates on scroll without Framer Motion
 
   useEffect(() => {
     const el = ref.current;
