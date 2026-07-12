@@ -5,46 +5,41 @@ import { useRef, useEffect, useState } from "react";
 export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const [count, setCount] = useState(0);
-  const listenerRef = useRef<((e: Event) => void) | null>(null);
-  const hasRegistered = useRef(false);
+  const hasStarted = useRef(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasRegistered.current) {
-          hasRegistered.current = true;
+    let unsubscribe: (() => void) | null = null;
 
-          const handleScroll = () => {
-            const rect = ref.current?.getBoundingClientRect();
-            if (!rect) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !hasStarted.current) {
+        hasStarted.current = true;
 
-            // Element top position relative to viewport
-            // When entering from below: rect.top goes from window.innerHeight to 0
-            // Progress should go from 0 to 1 as element scrolls into view
-            const progress = Math.max(0, Math.min(1, (window.innerHeight - rect.top) / window.innerHeight));
-            const newCount = Math.floor(progress * to);
-            setCount(newCount);
-          };
+        const handleScroll = () => {
+          const rect = ref.current?.getBoundingClientRect();
+          if (!rect) return;
 
-          listenerRef.current = handleScroll;
-          window.addEventListener("scroll", handleScroll, { passive: true });
-          // Trigger immediately
-          handleScroll();
-        }
-      },
-      { threshold: 0.05 }
-    );
+          // Progress based on element position: 0 when entering from bottom, 1 when fully past top
+          const progress = Math.max(0, Math.min(1, 1 - rect.top / window.innerHeight));
+          setCount(Math.round(progress * to));
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        handleScroll();
+
+        unsubscribe = () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }
+    });
 
     observer.observe(el);
 
     return () => {
       observer.disconnect();
-      if (listenerRef.current) {
-        window.removeEventListener("scroll", listenerRef.current);
-      }
+      unsubscribe?.();
     };
   }, [to]);
 
