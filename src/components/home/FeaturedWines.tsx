@@ -19,8 +19,8 @@ export function FeaturedWines({ wines: winesEn }: { wines: Wine[] }) {
       <div className="container-x">
         <SectionHeading tone="dark" eyebrow="The Campesino Line" title="Four wines, nineteen families, one valley." />
 
-        {/* Horizontal scroll container (no Framer Motion animation) */}
-        <div className="mt-16 overflow-x-auto snap-x snap-mandatory">
+        {/* Horizontal scroll container */}
+        <div className="mt-16 overflow-x-auto">
           <div className="flex gap-8 pl-6 md:pl-16 pb-4">
             {wines.map((w) => (
               <WineCard key={w.slug} wine={w} />
