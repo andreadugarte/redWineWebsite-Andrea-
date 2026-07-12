@@ -27,7 +27,7 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
         <Filter label={tr("filter.style")} options={colors} value={color} onChange={setColor} cap />
       </div>
 
-      <motion.div layout className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+      <motion.div layout className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3 overflow-x-auto">
         <AnimatePresence mode="popLayout">
           {filtered.map((w) => (
             <motion.div

@@ -16,8 +16,7 @@ import { SectionHeading } from "@/components/layout/SectionHeading";
 export function FeaturedWines({ wines }: { wines: Wine[] }) {
   const ref = useRef<HTMLDivElement>(null);
   const reduce = useReducedMotion();
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
-  // travel across ~ (n panels). Keep the last card fully visible.
+    // travel across ~ (n panels). Keep the last card fully visible.
   const x = useTransform(scrollYProgress, [0, 1], ["2%", "-72%"]);
 
   return (
