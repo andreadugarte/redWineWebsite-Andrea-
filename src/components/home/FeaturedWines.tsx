@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { useRef } from "react";
 import type { Wine } from "@/lib/content";
 import { FALLBACK_IMAGE, localizedWines } from "@/lib/content";
