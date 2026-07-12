@@ -4,8 +4,8 @@ import { useRef, useEffect, useState } from "react";
 
 export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const [count, setCount] = useState(0);
-  const lastCountRef = useRef(0);
+  const [count, setCount] = useState(999);
+  const lastCountRef = useRef(999);
 
   useEffect(() => {
     const updateCount = () => {
