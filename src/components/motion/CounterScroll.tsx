@@ -20,17 +20,22 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
       if (newCount !== lastCountRef.current) {
         lastCountRef.current = newCount;
         setCount(newCount);
+        console.log(`Counter[${to}] updated to ${newCount}, progress=${progress.toFixed(2)}, rect.top=${rect.top}, vh=${vh}`);
       }
     };
 
+    console.log(`Counter[${to}] mounted, registering listener`);
     updateCount();
     window.addEventListener("scroll", updateCount, { passive: true });
 
-    return () => window.removeEventListener("scroll", updateCount);
+    return () => {
+      console.log(`Counter[${to}] unmounting`);
+      window.removeEventListener("scroll", updateCount);
+    };
   }, [to]);
 
   return (
-    <span ref={ref} data-counter-version="v6">
+    <span ref={ref} data-counter-version="v7-debug">
       {count}
       {suffix}
     </span>
