@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SectionHeading } from "@/components/layout/SectionHeading";
 import { Parallax } from "@/components/motion/Parallax";
-import { Counter } from "@/components/motion/CounterScroll";
+import { Counter } from "@/components/animations/StatCounter";
 import { IMG } from "@/lib/images";
 
 export function StoryIntro({ body }: { body: string }) {
