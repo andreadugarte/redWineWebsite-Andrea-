@@ -125,6 +125,23 @@ export const UI: Dict = {
   "link.eventCenter": { en: "Event Center", es: "Centro de Eventos" },
   "link.reservationPolicy": { en: "Reservation Policy", es: "Política de Reservas" },
   "link.contact": { en: "Contact", es: "Contacto" },
+
+  // Wine detail
+  "wine.allWines": { en: "All wines", es: "Todos los vinos" },
+  "wine.indicativePrice": { en: "Indicative pricing · 750ml", es: "Precio indicativo · 750ml" },
+  "wine.note": { en: "Note", es: "Nota" },
+  "wine.grownBy": { en: "Grown by", es: "Cultivado por" },
+  "wine.continueTasting": { en: "Continue tasting", es: "Continúa probando" },
+  "wine.moreFromCellar": { en: "More from the cellar", es: "Más de la bodega" },
+
+  // Producer detail
+  "producer.allProducers": { en: "All producers", es: "Todos los productores" },
+  "producer.relatedWines": { en: "Wines from these grapes", es: "Vinos de estas uvas" },
+  "producer.nextProducer": { en: "Next producer", es: "Siguiente productor" },
+  "producer.inactiveNotice": {
+    en: "This producer is no longer an active part of Red del Vino.",
+    es: "Este productor ya no forma parte activa de Red del Vino.",
+  },
 };
 
 /** Map a footer/link href to its translation key. */
