@@ -1,32 +1,55 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { useInView, useReducedMotion } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
 
-export function Counter({ to, suffix = "", duration = 1600 }: { to: number; suffix?: string; duration?: number }) {
+/**
+ * Animates a counter from 0 to `to` using a native scroll listener.
+ * When the element enters the viewport, the number increments as you scroll down.
+ */
+export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-20%" });
-  const reduce = useReducedMotion();
-  const [n, setN] = useState(0);
+  const [count, setCount] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (!inView) return;
-    if (reduce) return setN(to);
-    let raf = 0;
-    const start = performance.now();
-    const tick = (now: number) => {
-      const p = Math.min(1, (now - start) / duration);
-      const eased = 1 - Math.pow(1 - p, 3);
-      setN(Math.round(eased * to));
-      if (p < 1) raf = requestAnimationFrame(tick);
+    const el = ref.current;
+    if (!el) return;
+
+    // Intersection Observer: detect when element enters viewport
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(el);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible) {
+      setCount(0);
+      return;
+    }
+
+    // Scroll listener: increment count as user scrolls
+    const handleScroll = () => {
+      const rect = ref.current?.getBoundingClientRect();
+      if (!rect) return;
+
+      // Progress: 0 (top of viewport) to 1 (bottom of viewport)
+      const progress = Math.max(0, Math.min(1, 1 - rect.top / window.innerHeight));
+      setCount(Math.floor(progress * to));
     };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [inView, to, duration, reduce]);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isVisible, to]);
 
   return (
     <span ref={ref}>
-      {n}
+      {count}
       {suffix}
     </span>
   );

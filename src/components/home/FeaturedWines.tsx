@@ -2,66 +2,59 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef } from "react";
 import type { Wine } from "@/lib/content";
-import { FALLBACK_IMAGE } from "@/lib/content";
+import { FALLBACK_IMAGE, localizedWines } from "@/lib/content";
 import { formatPrice } from "@/components/cart/CartProvider";
 import { SectionHeading } from "@/components/layout/SectionHeading";
+import { useLocale } from "@/components/i18n/LocaleProvider";
 
-/**
- * Signature interaction: a pinned section where the wines scroll HORIZONTALLY
- * as the user scrolls vertically — bottles drift across the frame.
- */
-export function FeaturedWines({ wines }: { wines: Wine[] }) {
+export function FeaturedWines({ wines: winesEn }: { wines: Wine[] }) {
   const ref = useRef<HTMLDivElement>(null);
-  const reduce = useReducedMotion();
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
-  // travel across ~ (n panels). Keep the last card fully visible.
-  const x = useTransform(scrollYProgress, [0, 1], ["2%", "-72%"]);
+  const locale = useLocale();
+  const wines = localizedWines(winesEn, locale);
 
   return (
-    <section ref={ref} className="relative bg-charcoal text-bone" style={{ height: reduce ? "auto" : "300vh" }}>
-      <div className={reduce ? "py-24" : "sticky top-0 flex h-screen flex-col justify-center overflow-hidden"}>
-        <div className="container-x flex items-end justify-between pb-10">
-          <SectionHeading tone="dark" eyebrow="The Campesino Line" title="Four wines, nineteen families, one valley." />
-          <Link href="/wines" className="link-underline hidden font-sans text-sm uppercase tracking-[0.14em] text-bone/80 md:block">
-            View all wines
-          </Link>
-        </div>
+    <section ref={ref} className="overflow-hidden bg-bone-warm py-20 md:py-24">
+      <div className="container-x">
+        <SectionHeading tone="dark" eyebrow="The Campesino Line" title="Four wines, nineteen families, one valley." />
 
-        <motion.div style={{ x: reduce ? 0 : x }} className={reduce ? "container-x grid gap-8 sm:grid-cols-2 lg:grid-cols-4" : "flex gap-8 pl-6 md:pl-16"}>
-          {wines.map((w) => (
-            <WineCard key={w.slug} wine={w} horizontal={!reduce} />
-          ))}
-        </motion.div>
+        {/* Horizontal scroll container (no Framer Motion animation) */}
+        <div className="mt-16 overflow-x-auto snap-x snap-mandatory">
+          <div className="flex gap-8 pl-6 md:pl-16 pb-4">
+            {wines.map((w) => (
+              <WineCard key={w.slug} wine={w} />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
 }
 
-function WineCard({ wine, horizontal }: { wine: Wine; horizontal: boolean }) {
+function WineCard({ wine }: { wine: Wine }) {
   return (
-    <Link
-      href={`/wines/${wine.slug}`}
-      className={`group relative flex shrink-0 flex-col ${horizontal ? "w-[78vw] sm:w-[46vw] lg:w-[30vw]" : "w-full"}`}
-    >
+    <Link href={`/wines/${wine.slug}`} className="group relative flex shrink-0 flex-col w-[78vw] sm:w-[46vw] lg:w-[30vw]">
       <div className="relative aspect-[3/4] overflow-hidden bg-oxblood-deep/40">
         <Image
           src={wine.image?.src || FALLBACK_IMAGE}
           alt={wine.name}
           fill
-          sizes="(max-width:768px) 78vw, 30vw"
-          className="object-contain p-8 transition-transform duration-700 ease-out-expo group-hover:scale-105"
+          sizes="(max-width:640px) 78vw, (max-width:1024px) 46vw, 30vw"
+          className="object-contain p-10 transition-transform duration-700 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+        <span className="absolute left-5 top-5 font-sans text-[11px] uppercase tracking-[0.14em] text-bone/60">
+          {wine.vintage}
+        </span>
+        <span className="absolute bottom-5 right-5 font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+          View →
+        </span>
       </div>
-      <div className="mt-5 flex items-baseline justify-between border-t border-bone/15 pt-4">
-        <div>
-          <p className="eyebrow text-gold-soft">{wine.varietal}</p>
-          <p className="mt-1 font-serif text-2xl">{wine.name}</p>
-        </div>
-        <span className="font-sans text-sm text-bone/70">{formatPrice(wine.price, wine.currency)}</span>
+      <div className="mt-5">
+        <p className="eyebrow">{wine.varietal}</p>
+        <p className="mt-1 font-serif text-2xl leading-tight">{wine.name}</p>
+        <p className="mt-3 font-sans text-sm text-charcoal-soft">{formatPrice(wine.price, wine.currency)}</p>
       </div>
     </Link>
   );
