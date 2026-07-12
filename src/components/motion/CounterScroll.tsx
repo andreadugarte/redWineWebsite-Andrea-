@@ -30,7 +30,7 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   }, [to]);
 
   return (
-    <span ref={ref}>
+    <span ref={ref} data-counter-version="v6">
       {count}
       {suffix}
     </span>
