@@ -29,7 +29,7 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
     window.addEventListener("scroll", updateCount, { passive: true });
 
     return () => window.removeEventListener("scroll", updateCount);
-  }, [to, count]);
+  }, [to]);
 
   return (
     <span ref={ref}>
