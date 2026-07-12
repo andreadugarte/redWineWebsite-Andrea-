@@ -4,8 +4,8 @@ import { useRef, useEffect, useState } from "react";
 
 export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const [count, setCount] = useState(999);
-  const lastCountRef = useRef(999);
+  const [count, setCount] = useState(0);
+  const lastCountRef = useRef(0);
 
   useEffect(() => {
     const updateCount = () => {
@@ -14,28 +14,25 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
 
       const rect = el.getBoundingClientRect();
       const vh = window.innerHeight;
+      // 0 when the element sits at the bottom of the viewport,
+      // 1 when it reaches the top — count scales with that progress.
       const progress = Math.max(0, Math.min(1, (vh - rect.top) / vh));
       const newCount = Math.round(progress * to);
 
       if (newCount !== lastCountRef.current) {
         lastCountRef.current = newCount;
         setCount(newCount);
-        console.log(`Counter[${to}] updated to ${newCount}, progress=${progress.toFixed(2)}, rect.top=${rect.top}, vh=${vh}`);
       }
     };
 
-    console.log(`Counter[${to}] mounted, registering listener`);
     updateCount();
     window.addEventListener("scroll", updateCount, { passive: true });
 
-    return () => {
-      console.log(`Counter[${to}] unmounting`);
-      window.removeEventListener("scroll", updateCount);
-    };
+    return () => window.removeEventListener("scroll", updateCount);
   }, [to]);
 
   return (
-    <span ref={ref} data-counter-version="v7-debug">
+    <span ref={ref}>
       {count}
       {suffix}
     </span>
