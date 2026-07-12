@@ -15,6 +15,9 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
 
       const rect = el.getBoundingClientRect();
       const vh = window.innerHeight;
+      if (typeof window !== 'undefined' && count === 0 && to === 2004) {
+        console.log('[Counter] Animating 2004, rect.top:', rect.top, 'progress:', ((vh - rect.top) / (2 * vh)).toFixed(2));
+      }
 
       // Element is at rect.top relative to viewport
       // When rect.top = vh: element is below viewport (scroll up to see)
