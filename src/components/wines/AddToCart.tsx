@@ -2,12 +2,22 @@
 
 import { useState } from "react";
 import { useCart } from "@/components/cart/CartProvider";
+import { useT } from "@/components/i18n/LocaleProvider";
 import type { Wine } from "@/lib/content";
 import { FALLBACK_IMAGE } from "@/lib/content";
 
 export function AddToCart({ wine }: { wine: Wine }) {
   const { add, open } = useCart();
+  const tr = useT();
   const [qty, setQty] = useState(1);
+
+  if (wine.stock === 0) {
+    return (
+      <div className="inline-block border border-charcoal/25 bg-charcoal/5 px-6 py-3 font-sans text-sm uppercase tracking-[0.14em] text-charcoal/50">
+        {tr("wines.soldOut")}
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-wrap items-stretch gap-4">

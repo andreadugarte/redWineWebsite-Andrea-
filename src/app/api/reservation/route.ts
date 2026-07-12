@@ -9,6 +9,7 @@ export async function POST(req: Request) {
     d.subject ? `Subject: ${d.subject}` : "",
     `Name: ${d.name || ""}`,
     `Email: ${d.email || ""}`,
+    `Phone: ${d.phone || "—"}`,
     `Date: ${d.date || "—"}`,
     `Group size: ${d.group || "—"}`,
     "",

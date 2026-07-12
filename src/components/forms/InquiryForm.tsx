@@ -5,8 +5,8 @@ import { useState } from "react";
 type Variant = "reservation" | "contact" | "event";
 
 const CONFIG: Record<Variant, { fields: string[]; cta: string; endpoint: string }> = {
-  reservation: { fields: ["date", "group", "message"], cta: "Request a Tasting", endpoint: "/api/reservation" },
-  event: { fields: ["date", "group", "message"], cta: "Request Your Event", endpoint: "/api/reservation" },
+  reservation: { fields: ["phone", "date", "group", "message"], cta: "Request a Tasting", endpoint: "/api/reservation" },
+  event: { fields: ["phone", "date", "group", "message"], cta: "Request Your Event", endpoint: "/api/reservation" },
   contact: { fields: ["message"], cta: "Send Message", endpoint: "/api/contact" },
 };
 
@@ -46,6 +46,7 @@ export function InquiryForm({ variant = "contact", subject }: { variant?: Varian
         <Field name="name" label="Name" required />
         <Field name="email" label="Email" type="email" required />
       </div>
+      {cfg.fields.includes("phone") && <Field name="phone" label="Phone" type="tel" />}
       {cfg.fields.includes("date") && (
         <div className="grid gap-5 sm:grid-cols-2">
           <Field name="date" label="Preferred date" type="date" />

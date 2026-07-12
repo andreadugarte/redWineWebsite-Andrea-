@@ -42,7 +42,7 @@ export function ProductJsonLd({ wine }: { wine: Wine }) {
           "@type": "Offer",
           price: wine.price,
           priceCurrency: wine.currency,
-          availability: "https://schema.org/InStock",
+          availability: wine.stock === 0 ? "https://schema.org/OutOfStock" : "https://schema.org/InStock",
           url: `${SITE.url}/wines/${wine.slug}`,
         },
       }}

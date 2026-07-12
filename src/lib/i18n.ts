@@ -97,10 +97,13 @@ export const UI: Dict = {
   // Filters (shared)
   "filter.varietal": { en: "Varietal", es: "Cepa" },
   "filter.style": { en: "Style", es: "Estilo" },
+  "filter.brand": { en: "Brand", es: "Marca" },
   "filter.all": { en: "All", es: "Todos" },
   "filter.red": { en: "Red", es: "Tinto" },
   "filter.white": { en: "White", es: "Blanco" },
+  "filter.rose": { en: "Rosé", es: "Rosado" },
   "common.view": { en: "View", es: "Ver" },
+  "wines.soldOut": { en: "Sold out", es: "Sin stock" },
   "wines.noMatch": { en: "No wines match that selection.", es: "No hay vinos que coincidan con esa selección." },
 
   // Footer

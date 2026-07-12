@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { wines, getWine, producers, FALLBACK_IMAGE } from "@/lib/content";
+import { wines, listedWines, getWine, producers, FALLBACK_IMAGE } from "@/lib/content";
 import { formatPrice } from "@/lib/format";
 import { AddToCart } from "@/components/wines/AddToCart";
 import { Reveal } from "@/components/motion/Reveal";
@@ -42,9 +42,11 @@ export default function WineDetail({ params }: { params: { slug: string } }) {
   if (!wine) notFound();
 
   const notes = parseNotes(wine.notes);
-  const related = wines.filter((w) => w.slug !== wine.slug).slice(0, 3);
-  // producers who grow this varietal
-  const growers = producers.filter((p) => p.varietals.includes(wine.varietal)).slice(0, 4);
+  const related = listedWines.filter((w) => w.slug !== wine.slug).slice(0, 3);
+  // the confirmed producer behind this wine, else the growers of this varietal
+  const growers = wine.producerSlug
+    ? producers.filter((p) => p.slug === wine.producerSlug)
+    : producers.filter((p) => p.varietals.includes(wine.varietal)).slice(0, 4);
 
   return (
     <>
@@ -72,11 +74,12 @@ export default function WineDetail({ params }: { params: { slug: string } }) {
             <Link href="/wines" className="link-underline font-sans text-xs uppercase tracking-[0.16em] text-charcoal/50">
               ← All wines
             </Link>
-            <p className="eyebrow mt-6">{wine.varietal} · {wine.vintage}</p>
+            {wine.brand && <p className="mt-6 font-sans text-xs uppercase tracking-[0.16em] text-oxblood/70">{wine.brand}</p>}
+            <p className={`eyebrow ${wine.brand ? "mt-2" : "mt-6"}`}>{wine.varietal}{wine.vintage ? ` · ${wine.vintage}` : ""}</p>
             <h1 className="mt-3 font-serif text-display-md font-light">{wine.name}</h1>
             <p className="mt-5 font-serif text-3xl text-oxblood">{formatPrice(wine.price, wine.currency)}</p>
             <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.14em] text-charcoal/40">
-              Indicative pricing · 750ml · {wine.abv} ABV
+              Indicative pricing · 750ml{wine.abv ? ` · ${wine.abv} ABV` : ""}
             </p>
 
             <div className="mt-8">

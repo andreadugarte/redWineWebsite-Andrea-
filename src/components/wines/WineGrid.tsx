@@ -12,19 +12,30 @@ import { useT } from "@/components/i18n/LocaleProvider";
 export function WineGrid({ wines }: { wines: Wine[] }) {
   const tr = useT();
   const varietals = useMemo(() => ["All", ...Array.from(new Set(wines.map((w) => w.varietal)))], [wines]);
-  const colors = ["All", "red", "white"];
+  const brands = useMemo(
+    () => ["All", ...Array.from(new Set(wines.map((w) => w.brand).filter((b): b is string => Boolean(b)))).sort()],
+    [wines]
+  );
+  const colors = ["All", "red", "white", "rose"];
   const [varietal, setVarietal] = useState("All");
   const [color, setColor] = useState("All");
+  const [brand, setBrand] = useState("All");
 
   const filtered = wines.filter(
-    (w) => (varietal === "All" || w.varietal === varietal) && (color === "All" || w.color === color)
+    (w) =>
+      (varietal === "All" || w.varietal === varietal) &&
+      (color === "All" || w.color === color) &&
+      (brand === "All" || w.brand === brand)
   );
 
   return (
     <div className="container-x py-16 md:py-24">
-      <div className="mb-12 flex flex-col gap-6 border-b border-charcoal/15 pb-8 md:flex-row md:items-end md:justify-between">
-        <Filter label={tr("filter.varietal")} options={varietals} value={varietal} onChange={setVarietal} />
-        <Filter label={tr("filter.style")} options={colors} value={color} onChange={setColor} cap />
+      <div className="mb-12 flex flex-col gap-6 border-b border-charcoal/15 pb-8">
+        {brands.length > 1 && <Filter label={tr("filter.brand")} options={brands} value={brand} onChange={setBrand} />}
+        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <Filter label={tr("filter.varietal")} options={varietals} value={varietal} onChange={setVarietal} />
+          <Filter label={tr("filter.style")} options={colors} value={color} onChange={setColor} cap />
+        </div>
       </div>
 
       <motion.div layout className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
@@ -45,18 +56,26 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
                     alt={w.name}
                     fill
                     sizes="(max-width:640px) 100vw, 33vw"
-                    className="object-contain p-10 transition-transform duration-700 ease-out-expo group-hover:scale-105"
+                    className={`object-contain p-10 transition-transform duration-700 ease-out-expo group-hover:scale-105 ${w.stock === 0 ? "opacity-60" : ""}`}
                   />
-                  <span className="absolute left-5 top-5 font-sans text-[11px] uppercase tracking-[0.14em] text-charcoal/40">
-                    {w.vintage}
-                  </span>
+                  {w.vintage && (
+                    <span className="absolute left-5 top-5 font-sans text-[11px] uppercase tracking-[0.14em] text-charcoal/40">
+                      {w.vintage}
+                    </span>
+                  )}
+                  {w.stock === 0 && (
+                    <span className="absolute left-5 top-5 bg-charcoal/85 px-2 py-1 font-sans text-[10px] uppercase tracking-[0.14em] text-bone">
+                      {tr("wines.soldOut")}
+                    </span>
+                  )}
                   <span className="absolute bottom-5 right-5 font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                     {tr("common.view")} →
                   </span>
                 </div>
                 <div className="mt-5 flex items-baseline justify-between">
                   <div>
-                    <p className="eyebrow">{w.varietal}</p>
+                    {w.brand && <p className="font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood/70">{w.brand}</p>}
+                    <p className="eyebrow mt-1">{w.varietal}</p>
                     <p className="mt-1 font-serif text-2xl leading-tight">{w.name}</p>
                   </div>
                   <span className="font-sans text-sm text-charcoal-soft">{formatPrice(w.price, w.currency)}</span>
@@ -74,7 +93,7 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
   );
 }
 
-const OPTION_KEY: Record<string, string> = { All: "filter.all", red: "filter.red", white: "filter.white" };
+const OPTION_KEY: Record<string, string> = { All: "filter.all", red: "filter.red", white: "filter.white", rose: "filter.rose" };
 
 function Filter({
   label,

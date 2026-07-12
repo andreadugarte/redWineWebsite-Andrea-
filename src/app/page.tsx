@@ -5,7 +5,7 @@ import { FeatureBand } from "@/components/home/FeatureBand";
 import { QuoteBand } from "@/components/home/QuoteBand";
 import { ProducersStrip } from "@/components/home/ProducersStrip";
 import { Seam } from "@/components/layout/Seam";
-import { getPage, wines, activeProducers } from "@/lib/content";
+import { getPage, winesByBrand, activeProducers } from "@/lib/content";
 import { IMG } from "@/lib/images";
 
 function firstText(slug: string): string {
@@ -24,7 +24,7 @@ export default function HomePage() {
       <Hero heading={heading} />
       <StoryIntro body={intro} />
       <Seam from="bone" to="charcoal" />
-      <FeaturedWines wines={wines} />
+      <FeaturedWines wines={winesByBrand("Campesino")} />
       <Seam from="charcoal" to="oxblood" />
 
       <QuoteBand

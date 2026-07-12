@@ -36,15 +36,25 @@ export type Wine = {
   slug: string;
   name: string;
   varietal: string;
-  color: "red" | "white";
+  color: "red" | "white" | "rose";
   image: ImageRef | null;
   notes: string[];
   description: string;
   price: number;
   currency: string;
-  vintage: number;
-  abv: string;
+  /** Optional — absent for catalogue wines whose vintage isn't confirmed. */
+  vintage?: number;
+  /** Optional — absent for catalogue wines whose ABV isn't confirmed. */
+  abv?: string;
   stock?: number;
+  /** Producer brand / winery label this wine is sold under (e.g. "Campesino", "La Pascuala"). */
+  brand?: string;
+  /** Slug of the producer behind this wine, when a single one is confirmed. */
+  producerSlug?: string;
+  /** Internal-only note (not rendered) — e.g. a pending question about a wine. */
+  internalNote?: string;
+  /** Kept in the data but not part of the current public store (e.g. discontinued/unconfirmed). */
+  pending?: boolean;
   /** Spanish content (path-based i18n). Falls back to English when absent. */
   notes_es?: string[];
   description_es?: string;
@@ -62,6 +72,18 @@ const pages = pagesJson as Record<string, Page>;
 export const producers = producersJson as Producer[];
 export const wines = winesJson as Wine[];
 export const tours = tourismJson as Tour[];
+
+/**
+ * Wines shown in the public /wines catalogue. Excludes entries flagged
+ * `pending` — kept in the data but not part of the current store (e.g. the
+ * Campesino Cabernet Sauvignon Reserva, still unconfirmed with Rodrigo).
+ */
+export const listedWines = wines.filter((w) => !w.pending);
+
+/** All wines sold under a given brand (includes pending entries). */
+export function winesByBrand(brand: string): Wine[] {
+  return wines.filter((w) => w.brand === brand);
+}
 
 /**
  * Producers shown by default in public listings. A producer is considered
