@@ -14,8 +14,9 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
       const rect = el.getBoundingClientRect();
       const vh = window.innerHeight;
 
-      // Progress: 0 when element is at bottom of viewport (rect.top = vh)
-      //          1 when element is at top of viewport (rect.top = 0)
+      // Progress formula: animates from 0→1 as element scrolls from viewport bottom to top
+      // When rect.top = vh (element below viewport): progress = 0
+      // When rect.top = 0 (element at viewport top): progress = 1
       const progress = Math.max(0, Math.min(1, (vh - rect.top) / vh));
       const newCount = Math.round(progress * to);
 
