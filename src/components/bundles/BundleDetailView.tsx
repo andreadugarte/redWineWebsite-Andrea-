@@ -20,7 +20,7 @@ export function BundleDetailView({ slug, locale = "en" }: { slug: string; locale
         <div className="relative">
           <div className="sticky top-28 flex h-[420px] items-end justify-center gap-2 bg-bone-warm px-8 pb-8">
             {ws.map((w) => (
-              <Link key={w.slug} href={localizedPath(`/wines/${w.slug}`, locale)} className="relative h-80 w-20 transition-transform hover:-translate-y-2">
+              <Link key={w.slug} href={`/wines/${w.slug}`} className="relative h-80 w-20 transition-transform hover:-translate-y-2">
                 <Image src={w.image?.src || FALLBACK_IMAGE} alt={w.name} fill sizes="15vw" className="object-contain object-bottom" />
               </Link>
             ))}
@@ -57,7 +57,7 @@ export function BundleDetailView({ slug, locale = "en" }: { slug: string; locale
             <ul className="mt-4 divide-y divide-charcoal/10">
               {ws.map((w) => (
                 <li key={w.slug}>
-                  <Link href={localizedPath(`/wines/${w.slug}`, locale)} className="group flex items-baseline justify-between py-3">
+                  <Link href={`/wines/${w.slug}`} className="group flex items-baseline justify-between py-3">
                     <span>
                       <span className="font-serif text-lg group-hover:text-oxblood">{w.name}</span>
                       <span className="ml-3 font-sans text-xs uppercase tracking-[0.12em] text-charcoal/50">{w.varietal}</span>

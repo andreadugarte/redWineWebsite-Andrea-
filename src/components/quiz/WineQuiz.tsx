@@ -174,7 +174,7 @@ export function WineQuiz({ wines, bundles }: { wines: Wine[]; bundles: Bundle[] 
           )}
           <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
             {matches.map((w) => (
-              <Link key={w.slug} href={localizedPath(`/wines/${w.slug}`, locale)} className="group block">
+              <Link key={w.slug} href={`/wines/${w.slug}`} className="group block">
                 <div className="relative aspect-[3/4] overflow-hidden bg-bone-warm">
                   <Image src={w.image?.src || FALLBACK_IMAGE} alt={w.name} fill sizes="33vw" className="object-contain p-8 transition-transform duration-700 group-hover:scale-105" />
                 </div>
