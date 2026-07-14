@@ -3,10 +3,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { useCart, formatPrice } from "./CartProvider";
+import { useCart, formatPrice, FREE_SHIPPING_BOTTLES } from "./CartProvider";
+import { useT } from "@/components/i18n/LocaleProvider";
 
 export function CartDrawer() {
-  const { items, isOpen, close, subtotal, setQty, remove, count } = useCart();
+  const { items, isOpen, close, subtotal, setQty, remove, count, isGift, setGift } = useCart();
+  const tr = useT();
+  const bottlesToFree = Math.max(0, FREE_SHIPPING_BOTTLES - count);
 
   return (
     <AnimatePresence>
@@ -65,9 +68,38 @@ export function CartDrawer() {
                   ))}
                 </div>
                 <div className="border-t border-charcoal/10 px-6 py-5">
+                  {/* Free-shipping nudge: 6-bottle threshold to Santiago (live policy) */}
+                  <div className="mb-4">
+                    <div className="h-1.5 w-full overflow-hidden rounded-full bg-charcoal/10">
+                      <div
+                        className="h-full rounded-full bg-vine transition-all duration-500"
+                        style={{ width: `${Math.min(100, (count / FREE_SHIPPING_BOTTLES) * 100)}%` }}
+                      />
+                    </div>
+                    <p className="mt-2 font-sans text-xs text-charcoal-soft">
+                      {bottlesToFree === 0
+                        ? `✓ ${tr("cart.freeShipEarned")}`
+                        : `${bottlesToFree} ${tr("cart.freeShipRemaining")}`}
+                    </p>
+                  </div>
+
+                  {/* Gift option — recorded as an order note, no fulfillment automation yet */}
+                  <label className="mb-4 flex cursor-pointer items-start gap-3">
+                    <input
+                      type="checkbox"
+                      checked={isGift}
+                      onChange={(e) => setGift(e.target.checked)}
+                      className="mt-0.5 accent-oxblood"
+                    />
+                    <span>
+                      <span className="font-sans text-sm">{tr("cart.gift")}</span>
+                      {isGift && <span className="block font-sans text-xs text-charcoal/50">{tr("cart.giftNote")}</span>}
+                    </span>
+                  </label>
+
                   <div className="mb-4 flex items-center justify-between">
                     <span className="eyebrow">Subtotal · {count} {count === 1 ? "bottle" : "bottles"}</span>
-                    <span className="font-serif text-2xl">{formatPrice(subtotal)}</span>
+                    <span className="font-serif text-2xl">{formatPrice(subtotal, "CLP")}</span>
                   </div>
                   <Link href="/checkout" onClick={close} className="btn-primary w-full">
                     Proceed to Checkout

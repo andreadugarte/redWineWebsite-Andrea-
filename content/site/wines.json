@@ -4,6 +4,10 @@
     "name": "CAMPESINO CHARDONNAY GRAN RESERVA",
     "varietal": "Chardonnay",
     "color": "white",
+    "occasions": [
+      "beginner",
+      "light"
+    ],
     "image": {
       "src": "/images/original/Campesino-Chardonnay-Gran-Reserva.jpg",
       "alt": "Campesino Chardonnay Gran Reserva",
@@ -38,6 +42,11 @@
     "name": "CAMPESINO CARMÉNÈRE",
     "varietal": "Carménère",
     "color": "red",
+    "occasions": [
+      "asado",
+      "beginner",
+      "rich"
+    ],
     "image": {
       "src": "/images/original/Campesino-Carmenere.jpg",
       "alt": "Campesino Carmenere",
@@ -70,6 +79,11 @@
     "name": "CAMPESINO CABERNET SAUVIGNON RESERVA",
     "varietal": "Cabernet Sauvignon",
     "color": "red",
+    "occasions": [
+      "asado",
+      "beginner",
+      "rich"
+    ],
     "image": {
       "src": "/images/original/Campesino-Cabernet-Sauvignon-Reserve-1.jpg",
       "alt": "Campesino Cabernet Sauvignon Reserve",
@@ -104,6 +118,10 @@
     "name": "CAMPESINO CHARDONNAY",
     "varietal": "Chardonnay",
     "color": "white",
+    "occasions": [
+      "beginner",
+      "light"
+    ],
     "image": {
       "src": "/images/original/Campesino-Chardonnay-Fair-Trade-Wines-Chile.jpg",
       "alt": "Campesino Chardonnay",
@@ -136,6 +154,10 @@
     "name": "DON CLEMENTE CABERNET SAUVIGNON",
     "varietal": "Cabernet Sauvignon",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
     "image": null,
@@ -151,6 +173,10 @@
     "name": "DON CLEMENTE CARMÉNÈRE",
     "varietal": "Carménère",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
     "image": null,
@@ -166,6 +192,10 @@
     "name": "DON CLEMENTE CHARDONNAY LATE HARVEST",
     "varietal": "Chardonnay",
     "color": "white",
+    "occasions": [
+      "beginner",
+      "light"
+    ],
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
     "image": null,
@@ -181,6 +211,10 @@
     "name": "DON CLEMENTE MERLOT",
     "varietal": "Merlot",
     "color": "red",
+    "occasions": [
+      "asado",
+      "medium"
+    ],
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
     "image": null,
@@ -196,6 +230,10 @@
     "name": "DON CLEMENTE ROSÉ",
     "varietal": "Rosé",
     "color": "rose",
+    "occasions": [
+      "beginner",
+      "light"
+    ],
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
     "image": null,
@@ -211,6 +249,10 @@
     "name": "DON DAGO MERLOT",
     "varietal": "Merlot",
     "color": "red",
+    "occasions": [
+      "asado",
+      "medium"
+    ],
     "brand": "Don Dago",
     "producerSlug": "dagoberto-munoz-diaz",
     "image": null,
@@ -226,6 +268,11 @@
     "name": "UN BUEN CABALLERO CABERNET SAUVIGNON",
     "varietal": "Cabernet Sauvignon",
     "color": "red",
+    "occasions": [
+      "asado",
+      "beginner",
+      "rich"
+    ],
     "brand": "Un Buen Caballero",
     "producerSlug": "abelardo-becerra-meneses",
     "image": null,
@@ -241,6 +288,10 @@
     "name": "GUAIRABO CABERNET SAUVIGNON",
     "varietal": "Cabernet Sauvignon",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
     "image": null,
@@ -256,6 +307,10 @@
     "name": "GUAIRABO CARIGNAN",
     "varietal": "Carignan",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
     "image": null,
@@ -271,6 +326,10 @@
     "name": "GUAIRABO PETIT VERDOT",
     "varietal": "Petit Verdot",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
     "image": null,
@@ -286,6 +345,10 @@
     "name": "GUAIRABO ROSÉ LATE HARVEST",
     "varietal": "Rosé",
     "color": "rose",
+    "occasions": [
+      "beginner",
+      "light"
+    ],
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
     "image": null,
@@ -301,6 +364,10 @@
     "name": "GUAIRABO SEMILLÓN LATE HARVEST",
     "varietal": "Semillón",
     "color": "white",
+    "occasions": [
+      "beginner",
+      "light"
+    ],
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
     "image": null,
@@ -316,6 +383,10 @@
     "name": "LA PASCUALA CABERNET SAUVIGNON",
     "varietal": "Cabernet Sauvignon",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "La Pascuala",
     "producerSlug": "benito-castro-gaete",
     "image": null,
@@ -331,6 +402,10 @@
     "name": "LA PASCUALA CARMÉNÈRE",
     "varietal": "Carménère",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "La Pascuala",
     "producerSlug": "benito-castro-gaete",
     "image": null,
@@ -346,6 +421,10 @@
     "name": "LA PASCUALA MALBEC",
     "varietal": "Malbec",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "La Pascuala",
     "producerSlug": "benito-castro-gaete",
     "image": null,
@@ -361,6 +440,10 @@
     "name": "LA PASCUALA TINAJA",
     "varietal": "Ensamblaje",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "La Pascuala",
     "producerSlug": "benito-castro-gaete",
     "image": null,
@@ -376,6 +459,11 @@
     "name": "LOCO GERA",
     "varietal": "Ensamblaje",
     "color": "red",
+    "occasions": [
+      "asado",
+      "beginner",
+      "rich"
+    ],
     "brand": "El Huape",
     "producerSlug": "gerardo-orellana-diaz",
     "image": null,
@@ -391,6 +479,10 @@
     "name": "MITO CARMÉNÈRE",
     "varietal": "Carménère",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "Cea",
     "producerSlug": "jaime-cea-morales",
     "image": null,
@@ -406,6 +498,10 @@
     "name": "RELATO CABERNET SAUVIGNON",
     "varietal": "Cabernet Sauvignon",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "Cea",
     "producerSlug": "jaime-cea-morales",
     "image": null,
@@ -421,6 +517,10 @@
     "name": "PARCELA 33 CABERNET SAUVIGNON RESERVA",
     "varietal": "Cabernet Sauvignon",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "Parcela 33",
     "producerSlug": "gilberto-lopez-arias",
     "image": null,
@@ -436,6 +536,10 @@
     "name": "PARCELA 33 ENSAMBLAJE",
     "varietal": "Ensamblaje",
     "color": "red",
+    "occasions": [
+      "asado",
+      "rich"
+    ],
     "brand": "Parcela 33",
     "producerSlug": "gilberto-lopez-arias",
     "image": null,

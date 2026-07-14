@@ -2,6 +2,7 @@ import pagesJson from "@content/site/pages.json";
 import producersJson from "@content/site/producers.json";
 import winesJson from "@content/site/wines.json";
 import tourismJson from "@content/site/tourism.json";
+import bundlesJson from "@content/site/bundles.json";
 import type { Locale } from "@/lib/i18n";
 
 export type ImageRef = { src: string; alt: string; w?: number | null; h?: number | null };
@@ -37,6 +38,8 @@ export type Wine = {
   name: string;
   varietal: string;
   color: "red" | "white" | "rose";
+  /** Occasion/style tags used by the shop filter and the Find Your Wine quiz. */
+  occasions?: string[];
   image: ImageRef | null;
   notes: string[];
   description: string;
@@ -68,6 +71,22 @@ export type Tour = {
   blocks: Block[];
 };
 
+export type Bundle = {
+  slug: string;
+  name: string;
+  name_es?: string;
+  type: "discovery" | "occasion" | "beginner" | "gift" | "feria";
+  permanence: "permanent" | "seasonal" | "campaign";
+  wineSlugs: string[];
+  /** REQUIRES CONFIRMATION FROM RED DEL VINO — recommend 8-10%. Defaults to 0 (no discount). */
+  discountPercent: number;
+  valueAdd: "producerCard" | "giftPackaging" | "freeShippingIncluded";
+  description: string;
+  description_es?: string;
+  /** Internal-only note (not rendered). */
+  internalNote?: string;
+};
+
 const pages = pagesJson as Record<string, Page>;
 export const producers = producersJson as Producer[];
 export const wines = winesJson as Wine[];
@@ -83,6 +102,42 @@ export const listedWines = wines.filter((w) => !w.pending);
 /** All wines sold under a given brand (includes pending entries). */
 export function winesByBrand(brand: string): Wine[] {
   return wines.filter((w) => w.brand === brand);
+}
+
+export const bundles = bundlesJson as Bundle[];
+
+export function getBundle(slug: string): Bundle | undefined {
+  return bundles.find((b) => b.slug === slug);
+}
+
+/** Wines referenced by a bundle, in bundle order (skips unknown slugs). */
+export function bundleWines(bundle: Bundle): Wine[] {
+  return bundle.wineSlugs
+    .map((s) => wines.find((w) => w.slug === s))
+    .filter((w): w is Wine => Boolean(w));
+}
+
+/**
+ * Bundle price derived live from its wines' current prices so it never
+ * drifts out of sync. Returns the full summed price and the price after
+ * the (confirmed) discount — with discountPercent 0 they're equal.
+ */
+export function bundlePrice(bundle: Bundle): { full: number; final: number; currency: string } {
+  const ws = bundleWines(bundle);
+  const full = ws.reduce((n, w) => n + w.price, 0);
+  const final = Math.round(full * (1 - bundle.discountPercent / 100));
+  return { full, final, currency: ws[0]?.currency ?? "CLP" };
+}
+
+/** Every bundle that includes the given wine. */
+export function bundlesContaining(wineSlug: string): Bundle[] {
+  return bundles.filter((b) => b.wineSlugs.includes(wineSlug));
+}
+
+/** Localized bundle name/description. */
+export function localizeBundle(b: Bundle, locale: Locale): Bundle {
+  if (locale !== "es") return b;
+  return { ...b, name: b.name_es || b.name, description: b.description_es || b.description };
 }
 
 /**

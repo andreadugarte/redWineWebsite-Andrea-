@@ -16,6 +16,9 @@ type CartCtx = {
   count: number;
   subtotal: number;
   isOpen: boolean;
+  /** "Es un regalo" — adds gift presentation as an order note at checkout. */
+  isGift: boolean;
+  setGift: (v: boolean) => void;
   open: () => void;
   close: () => void;
   add: (item: Omit<CartItem, "qty">, qty?: number) => void;
@@ -26,9 +29,18 @@ type CartCtx = {
 
 const Ctx = createContext<CartCtx | null>(null);
 const KEY = "rdv-cart-v1";
+const GIFT_KEY = "rdv-cart-gift";
+
+/**
+ * Free-shipping threshold to Santiago, in bottles. Source: live
+ * reddelvino.com policy confirmed in the July 2026 email thread.
+ * REQUIRES CONFIRMATION FROM RED DEL VINO if it's to change.
+ */
+export const FREE_SHIPPING_BOTTLES = 6;
 
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
+  const [isGift, setIsGift] = useState(false);
   const [isOpen, setOpen] = useState(false);
   const [hydrated, setHydrated] = useState(false);
 
@@ -36,6 +48,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     try {
       const raw = localStorage.getItem(KEY);
       if (raw) setItems(JSON.parse(raw));
+      setIsGift(localStorage.getItem(GIFT_KEY) === "1");
     } catch {}
     setHydrated(true);
   }, []);
@@ -43,6 +56,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (hydrated) localStorage.setItem(KEY, JSON.stringify(items));
   }, [items, hydrated]);
+
+  useEffect(() => {
+    if (hydrated) localStorage.setItem(GIFT_KEY, isGift ? "1" : "0");
+  }, [isGift, hydrated]);
 
   const api = useMemo<CartCtx>(() => {
     const count = items.reduce((n, i) => n + i.qty, 0);
@@ -52,6 +69,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
       count,
       subtotal,
       isOpen,
+      isGift,
+      setGift: setIsGift,
       open: () => setOpen(true),
       close: () => setOpen(false),
       add: (item, qty = 1) =>
@@ -65,7 +84,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         setItems((prev) => prev.map((p) => (p.slug === slug ? { ...p, qty: Math.max(1, qty) } : p)).filter((p) => p.qty > 0)),
       clear: () => setItems([]),
     };
-  }, [items, isOpen]);
+  }, [items, isOpen, isGift]);
 
   return <Ctx.Provider value={api}>{children}</Ctx.Provider>;
 }

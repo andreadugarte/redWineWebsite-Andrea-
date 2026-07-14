@@ -5,10 +5,14 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 import { IMG } from "@/lib/images";
+import { useLocale, useT } from "@/components/i18n/LocaleProvider";
+import { localizedPath } from "@/lib/i18n";
 
 export function Hero({ heading }: { heading: string }) {
   const ref = useRef<HTMLElement>(null);
   const reduce = useReducedMotion();
+  const locale = useLocale();
+  const tr = useT();
   const lines = heading.split("\n");
 
   return (
@@ -26,7 +30,7 @@ export function Hero({ heading }: { heading: string }) {
             transition={{ duration: 1, delay: 0.2 }}
             className="eyebrow text-gold-pale"
           >
-            Colchagua Valley · Chile · Since 2004
+            {tr("hero.eyebrow")}
           </motion.p>
           <h1 className="mt-6 max-w-5xl font-serif font-light text-bone text-display-lg">
             {lines.map((line, i) => (
@@ -48,11 +52,12 @@ export function Hero({ heading }: { heading: string }) {
             transition={{ duration: 1, delay: 0.9 }}
             className="mt-10 flex flex-wrap items-center gap-4"
           >
-            <Link href="/wines" className="btn bg-bone px-8 py-4 text-charcoal hover:bg-gold hover:text-bone">
-              Explore the Wines
+            <Link href={localizedPath("/wines", locale)} className="btn bg-bone px-8 py-4 text-charcoal hover:bg-gold hover:text-bone">
+              {tr("hero.exploreWines")}
             </Link>
-            <Link href="/story" className="btn border border-bone/60 px-8 py-4 text-bone hover:bg-bone hover:text-charcoal">
-              Our Fair-Trade Story
+            {/* Secondary CTA: guided selling path (quiz), per CRO restructure */}
+            <Link href={localizedPath("/find-your-wine", locale)} className="btn border border-bone/60 px-8 py-4 text-bone hover:bg-bone hover:text-charcoal">
+              {tr("quiz.title")}
             </Link>
           </motion.div>
         </div>

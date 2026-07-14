@@ -1,5 +1,6 @@
 import { Hero } from "@/components/home/Hero";
 import { StoryIntro } from "@/components/home/StoryIntro";
+import { FeaturedPacks, QuizBanner } from "@/components/home/FeaturedPacks";
 import { FeaturedWines } from "@/components/home/FeaturedWines";
 import { FeatureBand } from "@/components/home/FeatureBand";
 import { QuoteBand } from "@/components/home/QuoteBand";
@@ -23,9 +24,10 @@ export default function HomePage() {
     <>
       <Hero heading={heading} />
       <StoryIntro body={intro} />
+      <FeaturedPacks />
       <Seam from="bone" to="charcoal" />
       <FeaturedWines wines={winesByBrand("Campesino")} />
-      <Seam from="charcoal" to="oxblood" />
+      <QuizBanner />
 
       <QuoteBand
         quote="High-quality wines, made without harming the environment, honouring the land and the families who tend it."

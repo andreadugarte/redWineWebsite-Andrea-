@@ -16,22 +16,26 @@ export const SITE = {
   instagram: "https://www.instagram.com/reddelvino",
 };
 
+// Commercial-path-first primary nav (CRO restructure): selling paths up front,
+// institutional pages move to the footer.
 export const NAV: { label: string; href: string }[] = [
   { label: "Wines", href: "/wines" },
+  { label: "Wine Packs", href: "/packs" },
+  { label: "Find Your Wine", href: "/find-your-wine" },
   { label: "Producers", href: "/producers" },
-  { label: "Our Story", href: "/story" },
-  { label: "Sustainability", href: "/sustainability" },
   { label: "Wine Tourism", href: "/tourism" },
-  { label: "Events", href: "/event-center" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const FOOTER_LINKS = {
   Explore: [
     { label: "Wines", href: "/wines" },
+    { label: "Wine Packs", href: "/packs" },
     { label: "Producers", href: "/producers" },
     { label: "Our Story", href: "/story" },
+    { label: "Sustainability", href: "/sustainability" },
     { label: "Social Responsibility", href: "/social-responsibility" },
+    { label: "Trade / B2B", href: "/trade" },
   ],
   Visit: [
     { label: "Wine Tastings & Tours", href: "/tourism" },

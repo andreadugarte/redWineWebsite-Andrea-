@@ -11,6 +11,8 @@ import { localizedPath, otherLocalePath } from "@/lib/i18n";
 
 const NAV_KEY: Record<string, string> = {
   "/wines": "nav.wines",
+  "/packs": "nav.packs",
+  "/find-your-wine": "nav.findWine",
   "/producers": "nav.producers",
   "/story": "nav.story",
   "/sustainability": "nav.sustainability",

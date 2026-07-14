@@ -2,11 +2,20 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { wines, listedWines, getWine, producers, FALLBACK_IMAGE } from "@/lib/content";
+import { wines, listedWines, getWine, producers, bundlesContaining, bundlePrice, FALLBACK_IMAGE } from "@/lib/content";
 import { formatPrice } from "@/lib/format";
 import { AddToCart } from "@/components/wines/AddToCart";
 import { Reveal } from "@/components/motion/Reveal";
 import { ProductJsonLd } from "@/components/seo/JsonLd";
+import { t } from "@/lib/i18n";
+
+const OCCASION_KEY: Record<string, string> = {
+  beginner: "occasion.beginner",
+  asado: "occasion.asado",
+  light: "occasion.light",
+  medium: "occasion.medium",
+  rich: "occasion.rich",
+};
 
 export function generateStaticParams() {
   return wines.map((w) => ({ slug: w.slug }));
@@ -42,7 +51,14 @@ export default function WineDetail({ params }: { params: { slug: string } }) {
   if (!wine) notFound();
 
   const notes = parseNotes(wine.notes);
-  const related = listedWines.filter((w) => w.slug !== wine.slug).slice(0, 3);
+  // Related: same producer/brand first, then same varietal, then the rest.
+  const others = listedWines.filter((w) => w.slug !== wine.slug);
+  const related = [
+    ...others.filter((w) => w.brand && w.brand === wine.brand),
+    ...others.filter((w) => w.brand !== wine.brand && w.varietal === wine.varietal),
+    ...others.filter((w) => w.brand !== wine.brand && w.varietal !== wine.varietal),
+  ].slice(0, 3);
+  const inBundles = bundlesContaining(wine.slug);
   // the confirmed producer behind this wine, else the growers of this varietal
   const growers = wine.producerSlug
     ? producers.filter((p) => p.slug === wine.producerSlug)
@@ -82,6 +98,14 @@ export default function WineDetail({ params }: { params: { slug: string } }) {
               Indicative pricing · 750ml{wine.abv ? ` · ${wine.abv} ABV` : ""}
             </p>
 
+            {/* Choice-helping info first: what the wine is ideal for */}
+            {wine.occasions && wine.occasions.length > 0 && (
+              <p className="mt-4 font-sans text-sm text-charcoal-soft">
+                <span className="eyebrow mr-3 text-oxblood">{t("wine.idealFor", "en")}</span>
+                {wine.occasions.map((o) => t(OCCASION_KEY[o] ?? "", "en")).filter(Boolean).join(" · ")}
+              </p>
+            )}
+
             <div className="mt-8">
               <AddToCart wine={wine} />
             </div>
@@ -104,6 +128,24 @@ export default function WineDetail({ params }: { params: { slug: string } }) {
                       {g.name.toLowerCase().replace(/(^|\s)\S/g, (c) => c.toUpperCase())}
                     </Link>
                   ))}
+                </div>
+              </div>
+            )}
+
+            {/* Upsell: which packs include this wine */}
+            {inBundles.length > 0 && (
+              <div className="mt-10 border-t border-charcoal/10 pt-8">
+                <p className="eyebrow text-charcoal/40">{t("wine.inBundles", "en")}</p>
+                <div className="mt-4 space-y-3">
+                  {inBundles.map((b) => {
+                    const price = bundlePrice(b);
+                    return (
+                      <Link key={b.slug} href={`/packs/${b.slug}`} className="flex items-baseline justify-between border border-charcoal/15 px-5 py-4 transition-colors hover:border-oxblood">
+                        <span className="font-serif text-lg">{b.name}</span>
+                        <span className="font-sans text-sm text-charcoal-soft">{formatPrice(price.final, price.currency)}</span>
+                      </Link>
+                    );
+                  })}
                 </div>
               </div>
             )}

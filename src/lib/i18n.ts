@@ -98,6 +98,8 @@ export const UI: Dict = {
   "filter.varietal": { en: "Varietal", es: "Cepa" },
   "filter.style": { en: "Style", es: "Estilo" },
   "filter.brand": { en: "Brand", es: "Marca" },
+  "filter.occasion": { en: "Occasion", es: "Ocasión" },
+  "filter.clear": { en: "Clear filters", es: "Limpiar filtros" },
   "filter.all": { en: "All", es: "Todos" },
   "filter.red": { en: "Red", es: "Tinto" },
   "filter.white": { en: "White", es: "Blanco" },
@@ -121,8 +123,11 @@ export const UI: Dict = {
   },
   // Footer link labels
   "link.wines": { en: "Wines", es: "Vinos" },
+  "link.packs": { en: "Wine Packs", es: "Packs de Vino" },
   "link.producers": { en: "Producers", es: "Productores" },
   "link.story": { en: "Our Story", es: "Nuestra Historia" },
+  "link.sustainability": { en: "Sustainability", es: "Sostenibilidad" },
+  "link.trade": { en: "Trade / B2B", es: "Ventas Mayoristas" },
   "link.socialResponsibility": { en: "Social Responsibility", es: "Responsabilidad Social" },
   "link.tastings": { en: "Wine Tastings & Tours", es: "Catas y Tours" },
   "link.eventCenter": { en: "Event Center", es: "Centro de Eventos" },
@@ -136,6 +141,131 @@ export const UI: Dict = {
   "wine.grownBy": { en: "Grown by", es: "Cultivado por" },
   "wine.continueTasting": { en: "Continue tasting", es: "Continúa probando" },
   "wine.moreFromCellar": { en: "More from the cellar", es: "Más de la bodega" },
+
+  // Nav additions (commercial-path-first)
+  "nav.packs": { en: "Wine Packs", es: "Packs de Vino" },
+  "nav.findWine": { en: "Find Your Wine", es: "Encuentra tu Vino" },
+  "nav.trade": { en: "Trade / B2B", es: "Ventas Mayoristas" },
+
+  // Packs / bundles
+  "packs.eyebrow": { en: "Curated Packs", es: "Packs Seleccionados" },
+  "packs.title": { en: "Wine packs, chosen for you", es: "Packs de vino, elegidos para ti" },
+  "packs.intro": {
+    en: "Nine producer families make choosing hard. These packs make it easy — by occasion, by budget, or to discover the whole cooperative in one case.",
+    es: "Con nueve familias productoras, elegir cuesta. Estos packs lo hacen fácil — por ocasión, por presupuesto, o para descubrir toda la cooperativa en una sola caja.",
+  },
+  "packs.bottles": { en: "bottles", es: "botellas" },
+  "packs.includes": { en: "What's inside", es: "Qué incluye" },
+  "packs.addAll": { en: "Add the pack to cart", es: "Agregar el pack al carrito" },
+  "packs.viewPack": { en: "View pack", es: "Ver el pack" },
+  "packs.valueAdd.producerCard": {
+    en: "Includes a meet-the-producers card",
+    es: "Incluye una tarjeta para conocer a los productores",
+  },
+  "packs.valueAdd.giftPackaging": { en: "Gift presentation included", es: "Incluye presentación de regalo" },
+  "packs.valueAdd.freeShippingIncluded": {
+    en: "Free shipping to Santiago included",
+    es: "Incluye envío gratis a Santiago",
+  },
+  "packs.feriaRotates": {
+    en: "This selection rotates with every feria.",
+    es: "Esta selección rota con cada feria.",
+  },
+  "packs.featuredTitle": { en: "Featured wine packs", es: "Packs destacados" },
+  "packs.viewAll": { en: "View all packs", es: "Ver todos los packs" },
+
+  // Quiz
+  "quiz.eyebrow": { en: "Guided choice", es: "Elección guiada" },
+  "quiz.title": { en: "Find your wine", es: "Encuentra tu vino" },
+  "quiz.intro": {
+    en: "Four quick questions — no wine vocabulary needed.",
+    es: "Cuatro preguntas rápidas — sin vocabulario de vino.",
+  },
+  "quiz.q1": { en: "What's the occasion?", es: "¿Cuál es la ocasión?" },
+  "quiz.q1.solo": { en: "Just for me", es: "Para tomar solo/a" },
+  "quiz.q1.meal": { en: "With a meal", es: "Para una comida" },
+  "quiz.q1.asado": { en: "For an asado", es: "Para un asado" },
+  "quiz.q1.gift": { en: "As a gift", es: "Para regalar" },
+  "quiz.q2": { en: "Red, white or rosé?", es: "¿Tinto, blanco o rosado?" },
+  "quiz.q2.red": { en: "Red", es: "Tinto" },
+  "quiz.q2.white": { en: "White", es: "Blanco" },
+  "quiz.q2.rose": { en: "Rosé", es: "Rosado" },
+  "quiz.q2.any": { en: "No preference", es: "No tengo preferencia" },
+  "quiz.q3": { en: "How intense?", es: "¿Qué tan intenso?" },
+  "quiz.q3.light": { en: "Light and fresh", es: "Ligero y fresco" },
+  "quiz.q3.medium": { en: "Somewhere in the middle", es: "Medio" },
+  "quiz.q3.bold": { en: "Bold and full-bodied", es: "Intenso y con cuerpo" },
+  "quiz.q4": { en: "What's your budget per bottle?", es: "¿Cuál es tu presupuesto por botella?" },
+  "quiz.q4.low": { en: "Up to $8.000", es: "Hasta $8.000" },
+  "quiz.q4.mid": { en: "$8.000–$14.000", es: "$8.000–$14.000" },
+  "quiz.q4.high": { en: "Over $14.000", es: "Más de $14.000" },
+  "quiz.back": { en: "Back", es: "Volver" },
+  "quiz.results.title": { en: "Your matches", es: "Tus vinos" },
+  "quiz.results.close": {
+    en: "These are the closest matches to what you're looking for.",
+    es: "Estos son los que más se acercan a lo que buscas.",
+  },
+  "quiz.results.bundle": { en: "Or take the easy route", es: "O toma el camino fácil" },
+  "quiz.results.restart": { en: "Start over", es: "Empezar de nuevo" },
+  "quiz.results.giftLead": {
+    en: "For a gift, we'd point you straight to our gift pack:",
+    es: "Para un regalo, te recomendamos directamente nuestro pack de regalo:",
+  },
+
+  // Cart extras
+  "cart.freeShipRemaining": {
+    en: "bottles to go for free shipping to Santiago",
+    es: "botellas para el envío gratis a Santiago",
+  },
+  "cart.freeShipEarned": {
+    en: "Free shipping to Santiago unlocked",
+    es: "¡Envío gratis a Santiago!",
+  },
+  "cart.gift": { en: "This is a gift", es: "Es un regalo" },
+  "cart.giftNote": {
+    en: "We'll include gift presentation and the producers' story.",
+    es: "Incluiremos presentación de regalo y la historia de los productores.",
+  },
+
+  // Wine detail upsell
+  "wine.idealFor": { en: "Ideal for", es: "Ideal para" },
+  "wine.inBundles": { en: "This wine is in", es: "Este vino está en" },
+  "wine.related": { en: "You might also like", es: "También te puede interesar" },
+  "occasion.beginner": { en: "Wines for beginners", es: "Vinos para empezar" },
+  "occasion.asado": { en: "Wines for an asado", es: "Vinos para un asado" },
+  "occasion.light": { en: "Light and fresh", es: "Ligeros y frescos" },
+  "occasion.medium": { en: "Medium-bodied", es: "De cuerpo medio" },
+  "occasion.rich": { en: "Rich and intense", es: "Intensos y con cuerpo" },
+  "wine.notifyMe": { en: "Notify me when available", es: "Avísame cuando esté disponible" },
+
+  // Trade / B2B
+  "trade.eyebrow": { en: "Trade & Wholesale", es: "Ventas Mayoristas" },
+  "trade.title": { en: "Bring fair-trade Colchagua to your list", es: "Lleva el Colchagua de comercio justo a tu carta" },
+  "trade.intro": {
+    en: "Restaurants, shops and distributors: work directly with a Fairtrade-certified cooperative of small family producers.",
+    es: "Restaurantes, tiendas y distribuidores: trabaja directamente con una cooperativa certificada Fairtrade de pequeños productores familiares.",
+  },
+  "trade.cta": { en: "Request wholesale pricing", es: "Solicitar precios mayoristas" },
+  "trade.businessType": { en: "Type of business", es: "Tipo de negocio" },
+  "trade.location": { en: "City / location", es: "Ciudad / ubicación" },
+  "trade.volume": { en: "Expected monthly volume", es: "Volumen mensual estimado" },
+  "trade.interest": { en: "Wines of interest", es: "Vinos de interés" },
+
+  // Feria / visita landings
+  "feria.eyebrow": { en: "From the feria", es: "Desde la feria" },
+  "feria.title": { en: "Take the feria home", es: "Llévate la feria a casa" },
+  "feria.intro": {
+    en: "Tasted something you liked at our stand? These are the wines we're pouring — order the same bottles online.",
+    es: "¿Probaste algo que te gustó en nuestro stand? Estos son los vinos que estamos sirviendo — pide las mismas botellas online.",
+  },
+  "feria.which": { en: "Which feria did you visit?", es: "¿Qué feria visitaste?" },
+  "visita.eyebrow": { en: "After your visit", es: "Después de tu visita" },
+  "visita.title": { en: "Wines from your visit", es: "Los vinos de tu visita" },
+  "visita.intro": {
+    en: "Pick the wines you tasted on your tour and add them to your cart in one go.",
+    es: "Marca los vinos que probaste en tu tour y agrégalos al carrito de una sola vez.",
+  },
+  "visita.addSelected": { en: "Add selected to cart", es: "Agregar seleccionados al carrito" },
 
   // Inquiry / reservation form
   "form.name": { en: "Name", es: "Nombre" },
@@ -171,9 +301,12 @@ export const UI: Dict = {
 /** Map a footer/link href to its translation key. */
 export const HREF_LABEL_KEY: Record<string, string> = {
   "/wines": "link.wines",
+  "/packs": "link.packs",
   "/producers": "link.producers",
   "/story": "link.story",
+  "/sustainability": "link.sustainability",
   "/social-responsibility": "link.socialResponsibility",
+  "/trade": "link.trade",
   "/tourism": "link.tastings",
   "/event-center": "link.eventCenter",
   "/reservation-policy": "link.reservationPolicy",

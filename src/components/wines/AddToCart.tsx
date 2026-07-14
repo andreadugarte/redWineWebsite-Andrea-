@@ -10,11 +10,49 @@ export function AddToCart({ wine }: { wine: Wine }) {
   const { add, open } = useCart();
   const tr = useT();
   const [qty, setQty] = useState(1);
+  const [email, setEmail] = useState("");
+  const [notifyState, setNotifyState] = useState<"idle" | "loading" | "done" | "error">("idle");
 
   if (wine.stock === 0) {
+    // Back-in-stock capture instead of a dead end (CRO: customer capture moment).
+    if (notifyState === "done") {
+      return <p className="font-sans text-sm text-vine">{tr("form.thankYou")}</p>;
+    }
     return (
-      <div className="inline-block border border-charcoal/25 bg-charcoal/5 px-6 py-3 font-sans text-sm uppercase tracking-[0.14em] text-charcoal/50">
-        {tr("wines.soldOut")}
+      <div>
+        <div className="mb-4 inline-block border border-charcoal/25 bg-charcoal/5 px-6 py-3 font-sans text-sm uppercase tracking-[0.14em] text-charcoal/50">
+          {tr("wines.soldOut")}
+        </div>
+        <form
+          className="flex max-w-md gap-3"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            setNotifyState("loading");
+            try {
+              const res = await fetch("/api/newsletter", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, context: `restock:${wine.slug}` }),
+              });
+              setNotifyState(res.ok ? "done" : "error");
+            } catch {
+              setNotifyState("error");
+            }
+          }}
+        >
+          <input
+            type="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder={tr("form.email")}
+            className="w-full border-b border-charcoal/25 bg-transparent py-2.5 font-sans text-sm focus:border-oxblood focus:outline-none"
+          />
+          <button type="submit" disabled={notifyState === "loading"} className="btn-primary whitespace-nowrap disabled:opacity-60">
+            {tr("wine.notifyMe")}
+          </button>
+        </form>
+        {notifyState === "error" && <p className="mt-2 font-sans text-sm text-oxblood">{tr("form.error")}</p>}
       </div>
     );
   }

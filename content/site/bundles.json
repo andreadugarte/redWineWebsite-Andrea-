@@ -1,0 +1,91 @@
+[
+  {
+    "slug": "descubre-red-del-vino",
+    "name": "Discover Red del Vino",
+    "name_es": "Descubre Red del Vino",
+    "type": "discovery",
+    "permanence": "permanent",
+    "wineSlugs": [
+      "campesino-chardonnay",
+      "cea-mito-carmenere",
+      "don-clemente-merlot",
+      "un-buen-caballero-cabernet-sauvignon",
+      "la-pascuala-malbec",
+      "guairabo-rose-late-harvest"
+    ],
+    "discountPercent": 0,
+    "valueAdd": "producerCard",
+    "description": "Six bottles from six different producer families — a white, a rosé and four distinct reds. The easiest way to meet the cooperative in one case, with free shipping to Santiago included at six bottles.",
+    "description_es": "Seis botellas de seis familias productoras distintas — un blanco, un rosado y cuatro tintos diferentes. La forma más fácil de conocer la cooperativa en una sola caja, con envío gratis a Santiago incluido por ser seis botellas.",
+    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: composición exacta y descuento (recomendado 8-10%). La pauta CRO sugería Don Dago Rosé LH, que no existe en la tienda actual; se usó Guairabo Rosé LH."
+  },
+  {
+    "slug": "asado-chileno",
+    "name": "Chilean Asado Pack",
+    "name_es": "Pack Asado Chileno",
+    "type": "occasion",
+    "permanence": "permanent",
+    "wineSlugs": [
+      "don-clemente-carmenere",
+      "cea-relato-cabernet-sauvignon",
+      "campesino-carmenere",
+      "la-pascuala-carmenere"
+    ],
+    "discountPercent": 0,
+    "valueAdd": "producerCard",
+    "description": "Four reds made for the grill — Carménère and Cabernet Sauvignon from four different family vineyards. You don't need to know wine; you just need an asado.",
+    "description_es": "Cuatro tintos hechos para la parrilla — Carménère y Cabernet Sauvignon de cuatro viñas familiares distintas. No necesitas saber de vino; solo necesitas un asado.",
+    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: la pauta CRO sugería Parcela 33 Carménère, que no existe en la tienda actual; se usó La Pascuala Carménère."
+  },
+  {
+    "slug": "vinos-para-empezar",
+    "name": "Beginner's Pack",
+    "name_es": "Vinos para Empezar",
+    "type": "beginner",
+    "permanence": "permanent",
+    "wineSlugs": [
+      "campesino-chardonnay",
+      "campesino-carmenere",
+      "guairabo-rose-late-harvest",
+      "guairabo-semillon-late-harvest"
+    ],
+    "discountPercent": 0,
+    "valueAdd": "producerCard",
+    "description": "Four friendly, easy-drinking bottles at the gentlest prices in the cellar — a white, a red and two late-harvest sweets. No wine vocabulary required.",
+    "description_es": "Cuatro botellas amables y fáciles de tomar, a los precios más accesibles de la bodega — un blanco, un tinto y dos cosechas tardías dulces. No se necesita vocabulario de vino.",
+    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: la pauta CRO sugería Don Dago White LH y Rosé LH, que no existen en la tienda actual; se usaron las cosechas tardías de Guairabo."
+  },
+  {
+    "slug": "regalo-colchagua",
+    "name": "Colchagua Gift Pack",
+    "name_es": "Regalo Colchagua",
+    "type": "gift",
+    "permanence": "permanent",
+    "wineSlugs": [
+      "la-pascuala-tinaja",
+      "parcela-33-cabernet-sauvignon-reserva"
+    ],
+    "discountPercent": 0,
+    "valueAdd": "giftPackaging",
+    "description": "The cellar's flagship — La Pascuala Tinaja, aged in Pañul clay amphorae — paired with Parcela 33's reserve Cabernet, in gift presentation with the story of the families who made them.",
+    "description_es": "Lo más destacado de la bodega — La Pascuala Tinaja, criado en tinajas de arcilla de Pañul — junto al Cabernet reserva de Parcela 33, en presentación de regalo con la historia de las familias que los hicieron.",
+    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: confirmar empaque de regalo disponible operativamente."
+  },
+  {
+    "slug": "vinos-de-la-feria",
+    "name": "Feria Favourites",
+    "name_es": "Vinos de la Feria",
+    "type": "feria",
+    "permanence": "campaign",
+    "wineSlugs": [
+      "campesino-carmenere",
+      "cea-mito-carmenere",
+      "un-buen-caballero-cabernet-sauvignon"
+    ],
+    "discountPercent": 0,
+    "valueAdd": "producerCard",
+    "description": "The wines being poured at our latest feria — tasted them at the stand? Take the same bottles home. This selection rotates with every feria.",
+    "description_es": "Los vinos que estamos sirviendo en la última feria — ¿los probaste en el stand? Llévate las mismas botellas a casa. Esta selección rota con cada feria.",
+    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: actualizar wineSlugs con los vinos de cada feria. Composición inicial provisoria."
+  }
+]

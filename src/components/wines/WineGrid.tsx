@@ -17,25 +17,44 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
     [wines]
   );
   const colors = ["All", "red", "white", "rose"];
+  // Occasion filter: genuinely useful categories only (CRO brief) — no
+  // grape-variety duplication, no fabricated "best sellers" (no sales data yet).
+  const occasions = ["All", "beginner", "asado", "light", "rich"];
   const [varietal, setVarietal] = useState("All");
   const [color, setColor] = useState("All");
   const [brand, setBrand] = useState("All");
+  const [occasion, setOccasion] = useState("All");
 
   const filtered = wines.filter(
     (w) =>
       (varietal === "All" || w.varietal === varietal) &&
       (color === "All" || w.color === color) &&
-      (brand === "All" || w.brand === brand)
+      (brand === "All" || w.brand === brand) &&
+      (occasion === "All" || w.occasions?.includes(occasion))
   );
+
+  const hasActiveFilters = varietal !== "All" || color !== "All" || brand !== "All" || occasion !== "All";
+  const clearFilters = () => {
+    setVarietal("All");
+    setColor("All");
+    setBrand("All");
+    setOccasion("All");
+  };
 
   return (
     <div className="container-x py-16 md:py-24">
       <div className="mb-12 flex flex-col gap-6 border-b border-charcoal/15 pb-8">
         {brands.length > 1 && <Filter label={tr("filter.brand")} options={brands} value={brand} onChange={setBrand} />}
+        <Filter label={tr("filter.occasion")} options={occasions} value={occasion} onChange={setOccasion} />
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <Filter label={tr("filter.varietal")} options={varietals} value={varietal} onChange={setVarietal} />
           <Filter label={tr("filter.style")} options={colors} value={color} onChange={setColor} cap />
         </div>
+        {hasActiveFilters && (
+          <button onClick={clearFilters} className="self-start font-sans text-xs uppercase tracking-[0.14em] text-oxblood link-underline">
+            {tr("filter.clear")}
+          </button>
+        )}
       </div>
 
       <motion.div layout className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
@@ -93,7 +112,16 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
   );
 }
 
-const OPTION_KEY: Record<string, string> = { All: "filter.all", red: "filter.red", white: "filter.white", rose: "filter.rose" };
+const OPTION_KEY: Record<string, string> = {
+  All: "filter.all",
+  red: "filter.red",
+  white: "filter.white",
+  rose: "filter.rose",
+  beginner: "occasion.beginner",
+  asado: "occasion.asado",
+  light: "occasion.light",
+  rich: "occasion.rich",
+};
 
 function Filter({
   label,
