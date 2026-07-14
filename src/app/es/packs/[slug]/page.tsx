@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import BundleDetail, { generateStaticParams as genParams } from "@/app/packs/[slug]/page";
-import { getBundle, localizeBundle } from "@/lib/content";
+import { bundles, getBundle, localizeBundle } from "@/lib/content";
+import { BundleDetailView } from "@/components/bundles/BundleDetailView";
 
 export function generateStaticParams() {
-  return genParams();
+  return bundles.map((b) => ({ slug: b.slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -20,6 +20,6 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function BundleDetailEs({ params }: { params: { slug: string } }) {
-  return <BundleDetail params={params} locale="es" />;
+export default function BundleDetailPageEs({ params }: { params: { slug: string } }) {
+  return <BundleDetailView slug={params.slug} locale="es" />;
 }
