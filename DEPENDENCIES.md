@@ -29,8 +29,18 @@ iniciales y accesos"); the rest are queued for the next email.
   flagged `pending: true` in `content/site/wines.json`, excluded from /wines.
 - **Stock** ✉️ — 300/bottle per Rodrigo; Loco Gera and Parcela 33 Ensamblaje
   out of stock (verified on store).
-- **Guairabo/Valle Herradura wines** — producer closed; still listed on the
-  live store. Keep selling or remove? (pending question)
+- **Campesino Chardonnay + Chardonnay Gran Reserva stock** — Rodrigo (Jul 10):
+  "los otros 3 quedan muy poco en la tienda". Andrea's decision (Jul 14): ask
+  Rodrigo the exact remaining units and set that as the real stock number
+  (no low-stock badge or delisting meanwhile). ADD TO NEXT EMAIL.
+- **Guairabo/Valle Herradura wines** — producer closed; still actively sold
+  on the live store. Andrea's decision (Jul 14): keep selling, mirroring the
+  store; removed from packs as a precaution; Rodrigo question stays open.
+- **Castro family pages** — Andrea's decision (Jul 14): keep the 4 individual
+  brother pages (matches reddelvino.com's own site; bios are distinct).
+- **Campesino Cabernet Sauvignon Reserva** — Andrea's decision (Jul 14): keep
+  hidden + pending (out of all merchandising; data preserved until Rodrigo
+  confirms discontinuation).
 - **Bundle compositions + discount %** — `content/site/bundles.json` ships
   with `discountPercent: 0`; recommend 8–10% but needs sign-off. Some CRO
   bundle wines don't exist in the store; substitutions are noted per-bundle
