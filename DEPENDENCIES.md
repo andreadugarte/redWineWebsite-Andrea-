@@ -9,6 +9,17 @@ iniciales y accesos"); the rest are queued for the next email.
   simulated mode until keys exist. Business/banking details were received by
   email for Stripe onboarding — they must be entered directly in Stripe's own
   onboarding flow and MUST NOT be committed to this repo in any form.
+- **Email delivery (Resend) — NOT wired to a real inbox yet.** Verified
+  2026-07-15 by POSTing directly to the live `/api/contact` endpoint: it
+  returns `{"ok":true,"simulated":true}` — no `RESEND_API_KEY` is set in
+  Vercel, so contact, newsletter, tourism-reservation, and trade-enquiry
+  forms all currently only `console.log` server-side (`src/lib/mail.ts`),
+  they don't reach a real inbox. The code path is otherwise ready — the
+  moment a real Resend API key (with a verified sending domain, e.g.
+  reddelvino.com) is added as a Vercel env var, all four forms start
+  delivering with zero code changes. This is the same class of blocker as
+  Stripe: an external credential I cannot obtain or invent on Andrea/
+  Rodrigo's behalf.
 - **Blue Express business account access** ✉️ — for automated domestic
   shipping (~10 USD/box per Rodrigo; cheaper than Starken). International DHL
   exists but has never been used (box value < shipping cost).
@@ -33,18 +44,29 @@ iniciales y accesos"); the rest are queued for the next email.
   "los otros 3 quedan muy poco en la tienda". Andrea's decision (Jul 14): ask
   Rodrigo the exact remaining units and set that as the real stock number
   (no low-stock badge or delisting meanwhile). ADD TO NEXT EMAIL.
-- **Guairabo/Valle Herradura wines** — producer closed; still actively sold
-  on the live store. Andrea's decision (Jul 14): keep selling, mirroring the
-  store; removed from packs as a precaution; Rodrigo question stays open.
+- **Guairabo/Valle Herradura wines** — producer closed (Rodrigo, Jul 9 + Jul
+  10: "cerró su producción de vino" / "La Viña dejó de funcionar"). REVERSED
+  2026-07-15: all 5 Guairabo SKUs now marked `stock: 0` / Sold out sitewide
+  (catalog, product pages, filters, quiz, bundles) per explicit instruction —
+  supersedes the Jul 14 "keep selling, mirror the store" decision. Still
+  matches Rodrigo's own words; the live WooCommerce store not reflecting this
+  is Red del Vino's issue to fix on their end, not a reason to keep selling
+  a wine from a closed producer here.
 - **Castro family pages** — Andrea's decision (Jul 14): keep the 4 individual
-  brother pages (matches reddelvino.com's own site; bios are distinct).
+  brother pages (matches reddelvino.com's own site; bios are distinct). Still
+  open per the new Arado/La Pascuala conflict below — consolidation question
+  unresolved either way.
 - **Campesino Cabernet Sauvignon Reserva** — Andrea's decision (Jul 14): keep
   hidden + pending (out of all merchandising; data preserved until Rodrigo
   confirms discontinuation).
-- **Bundle compositions + discount %** — `content/site/bundles.json` ships
-  with `discountPercent: 0`; recommend 8–10% but needs sign-off. Some CRO
-  bundle wines don't exist in the store; substitutions are noted per-bundle
-  in `internalNote`.
+- **Bundle discount** — set to 10% 2026-07-14 per Andrea's instruction;
+  `content/site/bundles.json` — the cart now correctly charges the
+  discounted per-bottle price when a pack is added (fixed 2026-07-15; it
+  previously added bottles at full price despite the pack page advertising a
+  discount). Rodrigo has not yet ratified the 10% figure. Some CRO-suggested
+  bundle wines don't exist in the store; substitutions noted per-bundle in
+  `internalNote`. Guairabo wines were never in any bundle (re-verified
+  2026-07-15).
 - **"Producción Limitada" badge** — condition unconfirmed; not implemented.
 - **Best-sellers ranking** — no real sales data; not implemented (no fake
   popularity sort).
@@ -61,6 +83,16 @@ iniciales y accesos"); the rest are queued for the next email.
 - **Viña Don Lalo vs "Viña Un Buen Caballero"** ✉️ — live site's own page
   says "VIÑA DON LALO" (kept); Rodrigo's email twice says "Viña Un Buen
   Caballero". Wine brand is "Un Buen Caballero" either way.
+- **NEW (2026-07-15) — Arado vs La Pascuala**: three of the four Castro
+  brothers' bios (Segundo, Juan, Benito — not José) state verbatim they
+  "produce Cabernet Sauvignon grapes and sell their wine under the label
+  'Arado'", but their `winery` field says "Viña La Pascuala" and the catalog
+  sells 4 wines under the "La Pascuala" brand (producerSlug →
+  benito-castro-gaete). Same family/vineyard under two different brand
+  names, never reconciled — this is a real, pre-existing content conflict
+  found on this pass, not invented. NOT resolved — left exactly as-is in the
+  data pending a direct answer from Rodrigo: same vineyard (which name is
+  current), or genuinely two things merged by mistake.
 - **El Huape wine name** ✉️ — store sells "Loco Gera"; consultancy brand doc
   says the brand is "Quelte" (from the Queltehue bird).
 - **Valle Herradura producer name** ✉️ — "Enrique Orellana" vs "Luis

@@ -207,9 +207,9 @@ export const UI: Dict = {
   "quiz.q3.medium": { en: "Somewhere in the middle", es: "Medio" },
   "quiz.q3.bold": { en: "Bold and full-bodied", es: "Intenso y con cuerpo" },
   "quiz.q4": { en: "What's your budget per bottle?", es: "¿Cuál es tu presupuesto por botella?" },
-  "quiz.q4.low": { en: "Up to $8.000", es: "Hasta $8.000" },
-  "quiz.q4.mid": { en: "$8.000–$14.000", es: "$8.000–$14.000" },
-  "quiz.q4.high": { en: "Over $14.000", es: "Más de $14.000" },
+  "quiz.q4.low": { en: "Up to CLP 8,000", es: "Hasta CLP 8,000" },
+  "quiz.q4.mid": { en: "CLP 8,000–14,000", es: "CLP 8,000–14,000" },
+  "quiz.q4.high": { en: "Over CLP 14,000", es: "Más de CLP 14,000" },
   "quiz.back": { en: "Back", es: "Volver" },
   "quiz.results.title": { en: "Your matches", es: "Tus vinos" },
   "quiz.results.close": {

@@ -13,6 +13,7 @@ export function AddBundleToCart({ bundle }: { bundle: Bundle }) {
 
   return (
     <button
+      type="button"
       className="btn-primary"
       onClick={() => {
         // Add each bottle at its bundle-discounted price so the cart total

@@ -60,11 +60,12 @@ export function AddToCart({ wine }: { wine: Wine }) {
   return (
     <div className="flex flex-wrap items-stretch gap-4">
       <div className="flex items-center border border-charcoal/25">
-        <button className="px-4 py-3 text-lg hover:text-oxblood" onClick={() => setQty((q) => Math.max(1, q - 1))} aria-label="Decrease quantity">−</button>
+        <button type="button" className="px-4 py-3 text-lg hover:text-oxblood" onClick={() => setQty((q) => Math.max(1, q - 1))} aria-label="Decrease quantity">−</button>
         <span className="w-10 text-center font-sans text-sm">{qty}</span>
-        <button className="px-4 py-3 text-lg hover:text-oxblood" onClick={() => setQty((q) => q + 1)} aria-label="Increase quantity">+</button>
+        <button type="button" className="px-4 py-3 text-lg hover:text-oxblood" onClick={() => setQty((q) => q + 1)} aria-label="Increase quantity">+</button>
       </div>
       <button
+        type="button"
         className="btn-primary flex-1 sm:flex-none"
         onClick={() => {
           add(

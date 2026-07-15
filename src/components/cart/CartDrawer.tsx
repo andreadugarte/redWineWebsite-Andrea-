@@ -17,9 +17,9 @@ export function CartDrawer() {
         <>
           <motion.div
             className="fixed inset-0 z-[80] bg-charcoal/50 backdrop-blur-sm"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, pointerEvents: "none" }}
+            animate={{ opacity: 1, pointerEvents: "auto" }}
+            exit={{ opacity: 0, pointerEvents: "none" }}
             onClick={close}
           />
           <motion.aside
@@ -31,7 +31,7 @@ export function CartDrawer() {
           >
             <div className="flex items-center justify-between border-b border-charcoal/10 px-6 py-5">
               <h2 className="font-serif text-2xl">Your Cellar Selection</h2>
-              <button onClick={close} aria-label="Close cart" className="text-2xl leading-none hover:text-oxblood">
+              <button type="button" onClick={close} aria-label="Close cart" className="text-2xl leading-none hover:text-oxblood">
                 &times;
               </button>
             </div>
@@ -56,14 +56,14 @@ export function CartDrawer() {
                         <p className="font-serif text-lg leading-tight">{it.name}</p>
                         <div className="mt-auto flex items-center justify-between">
                           <div className="flex items-center border border-charcoal/20">
-                            <button className="px-2 py-1 hover:text-oxblood" onClick={() => setQty(it.slug, it.qty - 1)} aria-label="Decrease">−</button>
+                            <button type="button" className="px-2 py-1 hover:text-oxblood" onClick={() => setQty(it.slug, it.qty - 1)} aria-label="Decrease">−</button>
                             <span className="w-8 text-center text-sm">{it.qty}</span>
-                            <button className="px-2 py-1 hover:text-oxblood" onClick={() => setQty(it.slug, it.qty + 1)} aria-label="Increase">+</button>
+                            <button type="button" className="px-2 py-1 hover:text-oxblood" onClick={() => setQty(it.slug, it.qty + 1)} aria-label="Increase">+</button>
                           </div>
-                          <span className="font-sans text-sm">{formatPrice(it.price * it.qty)}</span>
+                          <span className="font-sans text-sm">{formatPrice(it.price * it.qty, "CLP")}</span>
                         </div>
                       </div>
-                      <button onClick={() => remove(it.slug)} aria-label="Remove" className="self-start text-charcoal/40 hover:text-oxblood">×</button>
+                      <button type="button" onClick={() => remove(it.slug)} aria-label="Remove" className="self-start text-charcoal/40 hover:text-oxblood">×</button>
                     </div>
                   ))}
                 </div>

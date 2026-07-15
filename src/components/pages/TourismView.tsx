@@ -41,7 +41,7 @@ const COPY: Record<Locale, Copy> = {
     facts: [
       { term: "Hours", detail: "Every day, 10:00–18:00" },
       { term: "Duration", detail: "Approx. 1 hour" },
-      { term: "Price", detail: "$10.000 CLP per person (≈ US$13)" },
+      { term: "Price", detail: "CLP 10,000 per person (≈ USD 13)" },
       { term: "Payment", detail: "At the start of the tour — bank transfer or cash" },
       { term: "Language", detail: "Spanish" },
       { term: "Includes", detail: "One private vineyard in Patagua, Chépica, Palmilla, Nancagua or Peralillo" },
@@ -66,7 +66,7 @@ const COPY: Record<Locale, Copy> = {
     facts: [
       { term: "Horario", detail: "Todos los días, 10:00–18:00" },
       { term: "Duración", detail: "Aproximadamente 1 hora" },
-      { term: "Valor", detail: "$10.000 CLP por persona (≈ US$13)" },
+      { term: "Valor", detail: "CLP 10,000 por persona (≈ USD 13)" },
       { term: "Pago", detail: "Al inicio del tour — transferencia o efectivo" },
       { term: "Idioma", detail: "Español" },
       { term: "Incluye", detail: "Un viñedo privado en Patagua, Chépica, Palmilla, Nancagua o Peralillo" },

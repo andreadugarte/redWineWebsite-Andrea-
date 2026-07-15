@@ -300,7 +300,8 @@
     "description_es": "Un Cabernet Sauvignon de Viña Valle Herradura, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 8000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 0,
+    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio."
   },
   {
     "slug": "guairabo-carignan",
@@ -319,7 +320,8 @@
     "description_es": "Un Carignan de Viña Valle Herradura, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 8000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 0,
+    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio."
   },
   {
     "slug": "guairabo-petit-verdot",
@@ -338,7 +340,8 @@
     "description_es": "Un Petit Verdot de Viña Valle Herradura, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 8000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 0,
+    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio."
   },
   {
     "slug": "guairabo-rose-late-harvest",
@@ -357,7 +360,8 @@
     "description_es": "Un rosado de cosecha tardía de Viña Valle Herradura, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 6000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 0,
+    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio."
   },
   {
     "slug": "guairabo-semillon-late-harvest",
@@ -376,7 +380,8 @@
     "description_es": "Un Semillón de cosecha tardía de Viña Valle Herradura, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 6000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 0,
+    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio."
   },
   {
     "slug": "la-pascuala-cabernet-sauvignon",

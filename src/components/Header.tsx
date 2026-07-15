@@ -105,9 +105,9 @@ export function Header() {
         {menuOpen && (
           <motion.div
             className="fixed inset-0 z-[69] bg-bone px-6 pt-24"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, pointerEvents: "none" }}
+            animate={{ opacity: 1, pointerEvents: "auto" }}
+            exit={{ opacity: 0, pointerEvents: "none" }}
           >
             <button
               className="absolute right-6 top-6 text-charcoal"
