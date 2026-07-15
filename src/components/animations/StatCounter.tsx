@@ -14,9 +14,10 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
 
       const rect = el.getBoundingClientRect();
       const vh = window.innerHeight;
-      // 0 when the element sits at the bottom of the viewport,
-      // 1 when it reaches the top — count scales with that progress.
-      const progress = Math.max(0, Math.min(1, (vh - rect.top) / vh));
+      // 0 when the element enters at the bottom of the viewport; reaches 1
+      // (and settles on the real value) once the element is ~55% up the
+      // screen, so visitors see the true numbers without scrolling to the top.
+      const progress = Math.max(0, Math.min(1, (vh - rect.top) / (vh * 0.45)));
       const newCount = Math.round(progress * to);
 
       if (newCount !== lastCountRef.current) {

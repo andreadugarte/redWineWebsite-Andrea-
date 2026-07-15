@@ -5,9 +5,10 @@ in the July 2026 email thread with Rodrigo ("Respuestas a requerimientos
 iniciales y accesos"); the rest are queued for the next email.
 
 ## Commerce blockers
-- **Stripe account + API keys** ✉️ — checkout is cart-state only; no payment
-  is simulated. Bank data received (Red del Vino Sexta Región S.A., RUT
-  99.564.070-8, Scotiabank cta cte 971640715) but no keys yet.
+- **Stripe account + API keys** ✉️ — checkout runs in clearly-labelled
+  simulated mode until keys exist. Business/banking details were received by
+  email for Stripe onboarding — they must be entered directly in Stripe's own
+  onboarding flow and MUST NOT be committed to this repo in any form.
 - **Blue Express business account access** ✉️ — for automated domestic
   shipping (~10 USD/box per Rodrigo; cheaper than Starken). International DHL
   exists but has never been used (box value < shipping cost).

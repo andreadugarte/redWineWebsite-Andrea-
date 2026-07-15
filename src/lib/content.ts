@@ -25,6 +25,11 @@ export type Producer = {
   slug: string;
   name: string;
   status?: "active" | "inactive";
+  /**
+   * "grower" = cooperative member who grows grapes but doesn't bottle their
+   * own wine (Rodrigo, Jul 10 2026: "sólo elaboran uva"). Absent = winemaker.
+   */
+  role?: "grower";
   winery?: string;
   varietals: string[];
   portrait: ImageRef | null;

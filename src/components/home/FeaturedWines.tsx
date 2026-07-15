@@ -7,23 +7,25 @@ import type { Wine } from "@/lib/content";
 import { FALLBACK_IMAGE, localizedWines } from "@/lib/content";
 import { formatPrice } from "@/components/cart/CartProvider";
 import { SectionHeading } from "@/components/layout/SectionHeading";
-import { useLocale } from "@/components/i18n/LocaleProvider";
+import { useLocale, useT } from "@/components/i18n/LocaleProvider";
+import { localizedPath } from "@/lib/i18n";
 
 export function FeaturedWines({ wines: winesEn }: { wines: Wine[] }) {
   const ref = useRef<HTMLDivElement>(null);
   const locale = useLocale();
+  const tr = useT();
   const wines = localizedWines(winesEn, locale);
 
   return (
     <section ref={ref} className="overflow-hidden bg-bone-warm py-20 md:py-24">
       <div className="container-x">
-        <SectionHeading tone="dark" eyebrow="The Campesino Line" title="Four wines, nineteen families, one valley." />
+        <SectionHeading tone="dark" eyebrow={tr("wines.eyebrow")} title={tr("wines.featuredTitle")} />
 
         {/* Horizontal scroll container */}
         <div className="mt-16 overflow-x-auto">
           <div className="flex gap-8 pl-6 md:pl-16 pb-4">
             {wines.map((w) => (
-              <WineCard key={w.slug} wine={w} />
+              <WineCard key={w.slug} wine={w} locale={locale} />
             ))}
           </div>
         </div>
@@ -32,9 +34,9 @@ export function FeaturedWines({ wines: winesEn }: { wines: Wine[] }) {
   );
 }
 
-function WineCard({ wine }: { wine: Wine }) {
+function WineCard({ wine, locale }: { wine: Wine; locale: "en" | "es" }) {
   return (
-    <Link href={`/wines/${wine.slug}`} className="group relative flex shrink-0 flex-col w-[78vw] sm:w-[46vw] lg:w-[30vw]">
+    <Link href={localizedPath(`/wines/${wine.slug}`, locale)} className="group relative flex shrink-0 flex-col w-[78vw] sm:w-[46vw] lg:w-[30vw]">
       <div className="relative aspect-[3/4] overflow-hidden bg-oxblood-deep/40">
         <Image
           src={wine.image?.src || FALLBACK_IMAGE}

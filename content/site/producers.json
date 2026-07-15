@@ -3,6 +3,7 @@
     "slug": "jose-luis-caceres",
     "name": "JOSÉ LUIS CÁCERES",
     "status": "active",
+    "role": "grower",
     "varietals": [
       "Cabernet Sauvignon"
     ],
@@ -144,6 +145,7 @@
     "slug": "jose-raimundo-lopez",
     "name": "JOSÉ RAIMUNDO LÓPEZ",
     "status": "active",
+    "role": "grower",
     "varietals": [
       "Chardonnay"
     ],
@@ -172,6 +174,7 @@
     "slug": "carlos-lorca-sandoval",
     "name": "CARLOS LORCA SANDOVAL",
     "status": "active",
+    "role": "grower",
     "varietals": [
       "Cabernet Sauvignon"
     ],
@@ -232,6 +235,7 @@
     "slug": "rosa-sanchez-bravo",
     "name": "ROSA SÁNCHEZ BRAVO",
     "status": "active",
+    "role": "grower",
     "varietals": [
       "Cabernet Sauvignon",
       "Carmenere"
@@ -282,6 +286,7 @@
     "slug": "juan-amador-perez",
     "name": "JUAN AMADOR PÉREZ",
     "status": "active",
+    "role": "grower",
     "varietals": [
       "Cabernet Sauvignon",
       "Carmenere"
@@ -406,6 +411,7 @@
       "At the age of 17 he arrived with his parents and three brothers at the El Carmen farm in the Chépica commune. He studied until second year of high school, leaving his studies to dedicate himself to working in the fields.",
       "During the Agrarian Land Reform process, his employer voluntarily gave up the farm and lived in a settlement for 7 years with excellent results. When Dagoberto obtained his 12 hectare plot, for 20 years he dedicated himself to planting corn and having a cattle farm for consumption of meat and milk.",
       "In the late 90’s he decided to plant vineyards. Which he maintains to this day, producing Cabernet Sauvignon and Merlot grapes, he has been able to support his family with the fruit of his work in the fields, made up of four women and one man.",
+      "Today, Dagoberto's granddaughter Bárbara Moreno and her mother Magaly work alongside him in the making of the Don Dago wines, carrying the family legacy into its next generation. Bárbara also serves as President of Red del Vino's Gender Equity Committee.",
       "Parcela N° 36, El Carmen, Chépica",
       "VISIT OUR WINE SHOP IN SANTA CRUZ CHILE"
     ],
@@ -414,6 +420,7 @@
       "A los 17 años llegó con sus padres y tres hermanos a la hacienda El Carmen, en la comuna de Chépica. Estudió hasta segundo año de enseñanza media y dejó sus estudios para dedicarse a trabajar en el campo.",
       "Durante el proceso de Reforma Agraria, su empleador cedió voluntariamente la hacienda y vivieron en un asentamiento durante 7 años con excelentes resultados. Cuando Dagoberto obtuvo su predio de 12 hectáreas, se dedicó por 20 años a plantar maíz y a tener ganado para consumo de carne y leche.",
       "A fines de los años noventa decidió plantar viñedos, que mantiene hasta hoy, produciendo uva Cabernet Sauvignon y Merlot. Con el fruto de su trabajo en el campo ha podido mantener a su familia, compuesta por cuatro mujeres y un hombre.",
+      "Hoy, la nieta de Dagoberto, Bárbara Moreno, junto a su madre Magaly, lo acompañan en la elaboración de los vinos Don Dago, llevando el legado familiar a su siguiente generación. Bárbara es además Presidenta del Comité de Equidad de Género de Red del Vino.",
       "Parcela N° 36, El Carmen, Chépica",
       "VISITA NUESTRA TIENDA DE VINOS EN SANTA CRUZ, CHILE"
     ]
@@ -422,6 +429,7 @@
     "slug": "angel-caceres",
     "name": "ÁNGEL CÁCERES",
     "status": "active",
+    "role": "grower",
     "varietals": [
       "Cabernet Sauvignon"
     ],
@@ -452,6 +460,7 @@
     "slug": "adrian-lorca-sandoval",
     "name": "ADRIÁN LORCA SANDOVAL",
     "status": "active",
+    "role": "grower",
     "varietals": [
       "Carmenere"
     ],
@@ -478,6 +487,7 @@
     "slug": "adan-galvez-leon",
     "name": "ADÁN GÁLVEZ LEÓN",
     "status": "active",
+    "role": "grower",
     "varietals": [
       "Cabernet Sauvignon",
       "Carmenere",

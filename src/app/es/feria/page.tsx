@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import FeriaPage from "@/app/feria/page";
+import { FeriaView } from "@/components/pages/FeriaView";
 
 export const metadata: Metadata = {
   title: "Vinos de la Feria",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function FeriaPageEs() {
-  return <FeriaPage locale="es" />;
+  return <FeriaView locale="es" />;
 }

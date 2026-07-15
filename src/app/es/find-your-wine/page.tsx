@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import FindYourWinePage from "@/app/find-your-wine/page";
+import { FindYourWineView } from "@/components/pages/FindYourWineView";
 
 export const metadata: Metadata = {
   title: "Encuentra tu Vino",
@@ -12,5 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function FindYourWinePageEs() {
-  return <FindYourWinePage locale="es" />;
+  return <FindYourWineView locale="es" />;
 }

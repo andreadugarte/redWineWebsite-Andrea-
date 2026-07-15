@@ -6,8 +6,12 @@ import { SectionHeading } from "@/components/layout/SectionHeading";
 import { Parallax } from "@/components/motion/Parallax";
 import { Counter } from "@/components/animations/StatCounter";
 import { IMG } from "@/lib/images";
+import { useLocale, useT } from "@/components/i18n/LocaleProvider";
+import { localizedPath } from "@/lib/i18n";
 
 export function StoryIntro({ body }: { body: string }) {
+  const locale = useLocale();
+  const tr = useT();
   return (
     <section className="section-y bg-bone">
       <div className="container-x grid items-center gap-16 lg:grid-cols-2">
@@ -17,25 +21,25 @@ export function StoryIntro({ body }: { body: string }) {
           </Parallax>
           <div className="absolute -bottom-8 -right-4 hidden w-48 bg-oxblood p-6 text-bone md:block lg:-right-10">
             <Image src={IMG.fairtradeBadge} alt="Fairtrade certified" width={64} height={64} className="mb-3" />
-            <p className="font-sans text-xs leading-relaxed">Fairtrade certified — the first certified peasant association in the region.</p>
+            <p className="font-sans text-xs leading-relaxed">{tr("story.fairtradeCaption")}</p>
           </div>
         </div>
 
         <div className="order-1 lg:order-2">
           <SectionHeading
-            eyebrow="Welcome to Red del Vino"
-            title="Maintaining the traditions and identity of rural wine farmers."
+            eyebrow={tr("story.eyebrow")}
+            title={tr("story.title")}
           >
             <p className="mt-6 max-w-lg font-sans text-base leading-relaxed text-charcoal-soft">{body}</p>
-            <Link href="/story" className="mt-8 inline-block link-underline font-sans text-sm uppercase tracking-[0.14em] text-oxblood">
-              Read our story
+            <Link href={localizedPath("/story", locale)} className="mt-8 inline-block link-underline font-sans text-sm uppercase tracking-[0.14em] text-oxblood">
+              {tr("story.readMore")}
             </Link>
           </SectionHeading>
 
           <div className="mt-14 grid grid-cols-3 gap-6 border-t border-charcoal/15 pt-10">
-            <Stat n={2004} label="Founded" />
-            <Stat n={19} label="Producer families" />
-            <Stat n={1} label="Valley · Colchagua" />
+            <Stat n={2004} label={tr("story.stat.founded")} />
+            <Stat n={19} label={tr("story.stat.families")} />
+            <Stat n={1} label={tr("story.stat.valley")} />
           </div>
         </div>
       </div>

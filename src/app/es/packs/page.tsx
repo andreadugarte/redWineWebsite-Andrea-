@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import PacksPage from "@/app/packs/page";
+import { PacksView } from "@/components/pages/PacksView";
 
 export const metadata: Metadata = {
   title: "Packs de Vino",
@@ -12,5 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function PacksPageEs() {
-  return <PacksPage locale="es" />;
+  return <PacksView locale="es" />;
 }

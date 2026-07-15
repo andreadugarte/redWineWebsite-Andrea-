@@ -6,7 +6,7 @@ import { IMG } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "The Producers",
-  description: "Meet the nineteen fair-trade producer families behind Red del Vino in the Colchagua Valley, Chile.",
+  description: "Meet the fair-trade producer families behind Red del Vino — a cooperative founded in 2004 by nineteen families in the Colchagua Valley, Chile.",
 };
 
 export default function ProducersPage() {
@@ -16,7 +16,7 @@ export default function ProducersPage() {
         eyebrow="The People Behind the Wine"
         title="Our Producers"
         image={IMG.producers}
-        intro="Red del Vino was formed in 2004 by a group of nineteen small wine-growing families. These are the hands that tend the vines."
+        intro="Red del Vino was founded in 2004 by nineteen small wine-growing families. Today some bottle their own wine and others grow the grapes behind it — these are the hands that tend the vines."
       />
       <ProducerGrid producers={activeProducers} />
     </>

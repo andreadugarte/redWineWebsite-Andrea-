@@ -7,15 +7,19 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const wine = getWine(params.slug);
+  const wine = getWine(params.slug, "es");
   if (!wine) return {};
   return {
     title: wine.name,
     description: wine.description,
     openGraph: { images: wine.image ? [wine.image.src] : [] },
+    alternates: {
+      canonical: `/es/wines/${params.slug}`,
+      languages: { en: `/wines/${params.slug}`, es: `/es/wines/${params.slug}` },
+    },
   };
 }
 
-export default function WineDetailPage({ params }: { params: { slug: string } }) {
-  return <WineDetailView slug={params.slug} locale="en" />;
+export default function WineDetailPageEs({ params }: { params: { slug: string } }) {
+  return <WineDetailView slug={params.slug} locale="es" />;
 }

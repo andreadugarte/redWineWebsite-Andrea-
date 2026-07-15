@@ -80,7 +80,7 @@ export function AddToCart({ wine }: { wine: Wine }) {
           open();
         }}
       >
-        Add to Cart
+        {tr("cart.addToCart")}
       </button>
     </div>
   );

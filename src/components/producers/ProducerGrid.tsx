@@ -6,12 +6,14 @@ import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import type { Producer } from "@/lib/content";
 import { FALLBACK_IMAGE } from "@/lib/content";
-import { useT } from "@/components/i18n/LocaleProvider";
+import { useLocale, useT } from "@/components/i18n/LocaleProvider";
+import { localizedPath } from "@/lib/i18n";
 
 const tc = (s: string) => s.toLowerCase().replace(/(^|\s)\S/g, (c) => c.toUpperCase());
 
 export function ProducerGrid({ producers }: { producers: Producer[] }) {
   const tr = useT();
+  const locale = useLocale();
   const varietals = useMemo(
     () => ["All", ...Array.from(new Set(producers.flatMap((p) => p.varietals))).sort()],
     [producers]
@@ -38,7 +40,7 @@ export function ProducerGrid({ producers }: { producers: Producer[] }) {
         <AnimatePresence mode="popLayout">
           {filtered.map((p) => (
             <motion.div key={p.slug} layout initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
-              <Link href={`/producers/${p.slug}`} className="group block transition-transform duration-500 ease-out-expo hover:-translate-y-1.5">
+              <Link href={localizedPath(`/producers/${p.slug}`, locale)} className="group block transition-transform duration-500 ease-out-expo hover:-translate-y-1.5">
                 <div className="relative aspect-[4/5] overflow-hidden bg-charcoal/5">
                   <Image
                     src={p.portrait?.src || FALLBACK_IMAGE}
@@ -53,7 +55,11 @@ export function ProducerGrid({ producers }: { producers: Producer[] }) {
                 </div>
                 <p className="mt-4 font-serif text-xl leading-tight">{tc(p.name)}</p>
                 {p.winery && <p className="font-serif text-sm italic text-charcoal/60">{p.winery}</p>}
-                <p className="font-sans text-xs uppercase tracking-[0.12em] text-charcoal/50">{p.varietals.join(" · ")}</p>
+                {p.role === "grower" ? (
+                  <p className="font-sans text-xs uppercase tracking-[0.12em] text-gold">{tr("producers.grower")}</p>
+                ) : (
+                  <p className="font-sans text-xs uppercase tracking-[0.12em] text-charcoal/50">{p.varietals.join(" · ")}</p>
+                )}
               </Link>
             </motion.div>
           ))}

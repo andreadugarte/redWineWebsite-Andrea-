@@ -29,10 +29,10 @@ export default function CheckoutPage() {
     return (
       <div className="container-x flex min-h-[70vh] flex-col items-center justify-center pt-24 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-          <p className="eyebrow">Order Confirmed</p>
-          <h1 className="mt-4 font-serif text-display-md font-light">Thank you.</h1>
+          <p className="eyebrow">{order.simulated ? "Test order (no payment)" : "Order Confirmed"}</p>
+          <h1 className="mt-4 font-serif text-display-md font-light">{order.simulated ? "Almost there." : "Thank you."}</h1>
           <p className="mt-4 font-sans text-sm text-charcoal-soft">
-            Your order <span className="font-semibold">{order.orderId}</span> has been received.
+            {order.simulated ? "Reference" : "Your order"} <span className="font-semibold">{order.orderId}</span>{order.simulated ? " — payments are not enabled yet, so nothing was charged and no order was placed." : " has been received."}
           </p>
           {order.simulated && (
             <p className="mx-auto mt-6 max-w-md border border-gold/40 bg-gold/5 px-6 py-4 font-sans text-xs leading-relaxed text-charcoal-soft">

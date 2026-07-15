@@ -7,7 +7,7 @@ import { IMG } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Los Vinos",
   description:
-    "La línea Campesino — Cabernet Sauvignon, Carménère y Chardonnay, elaborados por los productores de comercio justo del Valle de Colchagua.",
+    "El catálogo completo de Red del Vino — vinos de comercio justo de nueve marcas de pequeños productores del Valle de Colchagua, Chile.",
   alternates: {
     canonical: "/es/wines",
     languages: { en: "/wines", es: "/es/wines" },
@@ -18,10 +18,10 @@ export default function WinesPageEs() {
   return (
     <>
       <PageHero
-        eyebrow="La Línea Campesino"
+        eyebrow="Vinos de Comercio Justo"
         title="Los Vinos"
         image={IMG.bottlesLine}
-        intro="Elaborados a mano por nuestras diecinueve familias productoras en el Valle de Colchagua — vinos honestos que llevan el carácter de su tierra."
+        intro="Elaborados a mano por las familias productoras de Red del Vino — una cooperativa fundada en 2004 por diecinueve familias del Valle de Colchagua. Vinos honestos que llevan el carácter de su tierra."
       />
       <WineGrid wines={localizedWines(listedWines, "es")} />
     </>

@@ -16,7 +16,7 @@ export default function HomePageEs() {
       <StoryIntro body="Red del Vino nació en 2004 como una iniciativa de comercio justo para conectar a las familias productoras del Valle de Colchagua con el mundo, honrando su legado y su tierra." />
       <FeaturedPacks />
       <Seam from="bone" to="charcoal" />
-      <FeaturedWines wines={localizedWines(winesByBrand("Campesino"), "es")} />
+      <FeaturedWines wines={localizedWines(winesByBrand("Campesino").filter((w) => !w.pending), "es")} />
       <QuizBanner />
 
       <QuoteBand

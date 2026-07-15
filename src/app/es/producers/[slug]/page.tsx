@@ -9,11 +9,18 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const p = getProducer(params.slug);
+  const p = getProducer(params.slug, "es");
   if (!p) return {};
-  return { title: tc(p.name), description: p.bio[0]?.slice(0, 160) };
+  return {
+    title: tc(p.name),
+    description: p.bio[0]?.slice(0, 160),
+    alternates: {
+      canonical: `/es/producers/${params.slug}`,
+      languages: { en: `/producers/${params.slug}`, es: `/es/producers/${params.slug}` },
+    },
+  };
 }
 
-export default function ProducerDetailPage({ params }: { params: { slug: string } }) {
-  return <ProducerDetailView slug={params.slug} locale="en" />;
+export default function ProducerDetailPageEs({ params }: { params: { slug: string } }) {
+  return <ProducerDetailView slug={params.slug} locale="es" />;
 }

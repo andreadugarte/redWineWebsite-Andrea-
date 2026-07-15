@@ -20,7 +20,7 @@ export function BundleDetailView({ slug, locale = "en" }: { slug: string; locale
         <div className="relative">
           <div className="sticky top-28 flex h-[420px] items-end justify-center gap-2 bg-bone-warm px-8 pb-8">
             {ws.map((w) => (
-              <Link key={w.slug} href={`/wines/${w.slug}`} className="relative h-80 w-20 transition-transform hover:-translate-y-2">
+              <Link key={w.slug} href={localizedPath(`/wines/${w.slug}`, locale)} className="relative h-80 w-20 transition-transform hover:-translate-y-2">
                 <Image src={w.image?.src || FALLBACK_IMAGE} alt={w.name} fill sizes="15vw" className="object-contain object-bottom" />
               </Link>
             ))}
@@ -36,7 +36,17 @@ export function BundleDetailView({ slug, locale = "en" }: { slug: string; locale
             {ws.length} {t("packs.bottles", locale)}
           </p>
           <h1 className="mt-3 font-serif text-display-md font-light">{b.name}</h1>
-          <p className="mt-5 font-serif text-3xl text-oxblood">{formatPrice(price.final, price.currency)}</p>
+          <div className="mt-5 flex items-baseline gap-3">
+            <p className="font-serif text-3xl text-oxblood">{formatPrice(price.final, price.currency)}</p>
+            {price.final < price.full && (
+              <p className="font-sans text-sm text-charcoal/40 line-through">{formatPrice(price.full, price.currency)}</p>
+            )}
+          </div>
+          {price.final < price.full && (
+            <p className="mt-1 font-sans text-sm text-vine">
+              {t("packs.save", locale)} {formatPrice(price.full - price.final, price.currency)} {t("packs.vsSeparately", locale)}
+            </p>
+          )}
           <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.14em] text-charcoal/40">
             {t(`packs.valueAdd.${raw.valueAdd}`, locale)}
           </p>
@@ -57,7 +67,7 @@ export function BundleDetailView({ slug, locale = "en" }: { slug: string; locale
             <ul className="mt-4 divide-y divide-charcoal/10">
               {ws.map((w) => (
                 <li key={w.slug}>
-                  <Link href={`/wines/${w.slug}`} className="group flex items-baseline justify-between py-3">
+                  <Link href={localizedPath(`/wines/${w.slug}`, locale)} className="group flex items-baseline justify-between py-3">
                     <span>
                       <span className="font-serif text-lg group-hover:text-oxblood">{w.name}</span>
                       <span className="ml-3 font-sans text-xs uppercase tracking-[0.12em] text-charcoal/50">{w.varietal}</span>

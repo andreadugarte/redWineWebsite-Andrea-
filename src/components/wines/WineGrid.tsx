@@ -7,10 +7,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import type { Wine } from "@/lib/content";
 import { FALLBACK_IMAGE } from "@/lib/content";
 import { formatPrice } from "@/components/cart/CartProvider";
-import { useT } from "@/components/i18n/LocaleProvider";
+import { useLocale, useT } from "@/components/i18n/LocaleProvider";
+import { localizedPath } from "@/lib/i18n";
 
 export function WineGrid({ wines }: { wines: Wine[] }) {
   const tr = useT();
+  const locale = useLocale();
   const varietals = useMemo(() => ["All", ...Array.from(new Set(wines.map((w) => w.varietal)))], [wines]);
   const brands = useMemo(
     () => ["All", ...Array.from(new Set(wines.map((w) => w.brand).filter((b): b is string => Boolean(b)))).sort()],
@@ -68,7 +70,7 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             >
-              <Link href={`/wines/${w.slug}`} className="group block transition-transform duration-500 ease-out-expo hover:-translate-y-1.5">
+              <Link href={localizedPath(`/wines/${w.slug}`, locale)} className="group block transition-transform duration-500 ease-out-expo hover:-translate-y-1.5">
                 <div className="relative aspect-[3/4] overflow-hidden bg-bone-warm">
                   <Image
                     src={w.image?.src || FALLBACK_IMAGE}

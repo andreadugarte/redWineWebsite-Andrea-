@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import TradePage from "@/app/trade/page";
+import { TradeView } from "@/components/pages/TradeView";
 
 export const metadata: Metadata = {
   title: "Ventas Mayoristas",
@@ -9,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function TradePageEs() {
-  return <TradePage locale="es" />;
+  return <TradeView locale="es" />;
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import VisitaPage from "@/app/visita/page";
+import { VisitaView } from "@/components/pages/VisitaView";
 
 export const metadata: Metadata = {
   title: "Los vinos de tu visita",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function VisitaPageEs() {
-  return <VisitaPage locale="es" />;
+  return <VisitaView locale="es" />;
 }

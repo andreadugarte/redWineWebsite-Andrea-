@@ -66,25 +66,34 @@ export const UI: Dict = {
     es: "Preservando las tradiciones y la identidad de los viñateros campesinos.",
   },
   "story.readMore": { en: "Read our story", es: "Lee nuestra historia" },
+  "story.fairtradeCaption": {
+    en: "Fairtrade certified — the first certified peasant association in the region.",
+    es: "Certificación Fairtrade — la primera asociación campesina certificada de la región.",
+  },
   "story.stat.founded": { en: "Founded", es: "Fundada" },
-  "story.stat.families": { en: "Producer families", es: "Familias productoras" },
+  "story.stat.families": { en: "Founding families", es: "Familias fundadoras" },
   "story.stat.valley": { en: "Valley · Colchagua", es: "Valle · Colchagua" },
 
   // Featured wines
   "wines.eyebrow": { en: "The Campesino Line", es: "La Línea Campesino" },
   "wines.featuredTitle": {
-    en: "Four wines, nineteen families, one valley.",
-    es: "Cuatro vinos, diecinueve familias, un solo valle.",
+    en: "One shared label, born of the cooperative's founding families.",
+    es: "Una etiqueta compartida, nacida de las familias fundadoras de la cooperativa.",
   },
   "wines.viewAll": { en: "View all wines", es: "Ver todos los vinos" },
 
   // Producers strip / grid
   "producers.eyebrow": { en: "The People", es: "La Gente" },
   "producers.stripTitle": {
-    en: "Nineteen families, one shared devotion to the land.",
-    es: "Diecinueve familias, una misma devoción por la tierra.",
+    en: "Founded by nineteen families — one shared devotion to the land.",
+    es: "Fundada por diecinueve familias — una misma devoción por la tierra.",
   },
   "producers.meet": { en: "Meet the producers", es: "Conoce a los productores" },
+  "producers.grower": { en: "Grape-growing member", es: "Socio productor de uva" },
+  "producers.growerNote": {
+    en: "This founding member grows grapes for the cooperative's winemaking families rather than bottling wine under an own label.",
+    es: "Este socio fundador cultiva uva para las familias vinificadoras de la cooperativa, y no embotella vino con etiqueta propia.",
+  },
   "producers.allProducers": { en: "All producers", es: "Todos los productores" },
   "producers.detailEyebrow": { en: "Producer · Colchagua Valley", es: "Productor · Valle de Colchagua" },
   "producers.theirWines": { en: "Wines from these grapes", es: "Vinos de estas uvas" },
@@ -117,6 +126,8 @@ export const UI: Dict = {
   "footer.explore": { en: "Explore", es: "Explorar" },
   "footer.visit": { en: "Visit", es: "Visítanos" },
   "footer.privacy": { en: "Privacy", es: "Privacidad" },
+  "footer.join": { en: "Join", es: "Únete" },
+  "footer.emailPlaceholder": { en: "Your email", es: "Tu correo" },
   "footer.tagline": {
     en: "Fair-trade wines from the small producers of Colchagua Valley, Chile.",
     es: "Vinos de comercio justo de los pequeños productores del Valle de Colchagua, Chile.",
@@ -222,6 +233,9 @@ export const UI: Dict = {
     es: "¡Envío gratis a Santiago!",
   },
   "cart.gift": { en: "This is a gift", es: "Es un regalo" },
+  "cart.addToCart": { en: "Add to Cart", es: "Añadir al carrito" },
+  "packs.save": { en: "Save", es: "Ahorra" },
+  "packs.vsSeparately": { en: "vs. buying separately", es: "vs. comprar por separado" },
   "cart.giftNote": {
     en: "We'll include gift presentation and the producers' story.",
     es: "Incluiremos presentación de regalo y la historia de los productores.",

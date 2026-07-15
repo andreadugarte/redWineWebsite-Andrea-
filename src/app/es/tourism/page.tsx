@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import TourismPage from "@/app/tourism/page";
+import { TourismView } from "@/components/pages/TourismView";
 
 export const metadata: Metadata = {
   title: "Enoturismo",
@@ -11,5 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function TourismPageEs() {
-  return <TourismPage locale="es" />;
+  return <TourismView locale="es" />;
 }

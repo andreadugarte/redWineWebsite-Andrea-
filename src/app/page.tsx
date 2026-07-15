@@ -26,7 +26,7 @@ export default function HomePage() {
       <StoryIntro body={intro} />
       <FeaturedPacks />
       <Seam from="bone" to="charcoal" />
-      <FeaturedWines wines={winesByBrand("Campesino")} />
+      <FeaturedWines wines={winesByBrand("Campesino").filter((w) => !w.pending)} />
       <QuizBanner />
 
       <QuoteBand

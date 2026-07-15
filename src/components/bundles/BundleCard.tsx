@@ -40,11 +40,21 @@ export function BundleCard({ bundle }: { bundle: Bundle }) {
         <p className="font-serif text-2xl leading-tight">{b.name}</p>
         <p className="mt-2 line-clamp-2 font-sans text-sm leading-relaxed text-charcoal-soft">{b.description}</p>
         <div className="mt-4 flex items-baseline justify-between">
-          <span className="font-serif text-xl text-oxblood">{formatPrice(price.final, price.currency)}</span>
+          <span className="flex items-baseline gap-2">
+            <span className="font-serif text-xl text-oxblood">{formatPrice(price.final, price.currency)}</span>
+            {price.final < price.full && (
+              <span className="font-sans text-xs text-charcoal/40 line-through">{formatPrice(price.full, price.currency)}</span>
+            )}
+          </span>
           <span className="link-underline font-sans text-xs uppercase tracking-[0.14em] text-oxblood">
             {tr("packs.viewPack")} →
           </span>
         </div>
+        {price.final < price.full && (
+          <p className="mt-1 font-sans text-xs text-vine">
+            {tr("packs.save")} {formatPrice(price.full - price.final, price.currency)} {tr("packs.vsSeparately")}
+          </p>
+        )}
         <p className="mt-3 font-sans text-[11px] uppercase tracking-[0.12em] text-charcoal/50">
           {tr(`packs.valueAdd.${bundle.valueAdd}`)}
         </p>
