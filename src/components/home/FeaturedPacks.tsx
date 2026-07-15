@@ -14,7 +14,7 @@ export function FeaturedPacks() {
   const featured = bundles.filter((b) => ["discovery", "occasion", "beginner"].includes(b.type)).slice(0, 3);
 
   return (
-    <section className="section-y bg-bone">
+    <section className="section-y overflow-hidden bg-bone">
       <div className="container-x">
         <SectionHeading eyebrow={tr("packs.eyebrow")} title={tr("packs.featuredTitle")}>
           <Link
@@ -24,9 +24,15 @@ export function FeaturedPacks() {
             {tr("packs.viewAll")}
           </Link>
         </SectionHeading>
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      </div>
+      {/* Horizontal scroll — side by side, not stacked, so the section doesn't
+          demand a long vertical scroll before reaching the wines below. */}
+      <div className="mt-12 overflow-x-auto">
+        <div className="flex gap-8 px-6 pb-4 md:px-16">
           {featured.map((b) => (
-            <BundleCard key={b.slug} bundle={b} />
+            <div key={b.slug} className="w-[80vw] shrink-0 sm:w-[50vw] lg:w-[32vw]">
+              <BundleCard bundle={b} />
+            </div>
           ))}
         </div>
       </div>

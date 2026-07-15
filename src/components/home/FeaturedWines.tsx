@@ -19,7 +19,7 @@ export function FeaturedWines({ wines: winesEn }: { wines: Wine[] }) {
   return (
     <section ref={ref} className="overflow-hidden bg-bone-warm py-20 md:py-24">
       <div className="container-x">
-        <SectionHeading tone="dark" eyebrow={tr("wines.eyebrow")} title={tr("wines.featuredTitle")} />
+        <SectionHeading tone="light" eyebrow={tr("wines.eyebrow")} title={tr("wines.featuredTitle")} />
 
         {/* Horizontal scroll container */}
         <div className="mt-16 overflow-x-auto">
