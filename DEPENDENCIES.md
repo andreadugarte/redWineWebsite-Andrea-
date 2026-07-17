@@ -247,13 +247,16 @@ iniciales y accesos"); the rest are queued for the next email.
   directly, not another link.
 
 ## Languages
-- **RESOLVED 2026-07-16 — Portuguese approved as priority** ("flujo de
-  turistas brasileños... representa un porcentaje clave de nuestra
-  conversión directa"). Should be the next language added after backend
-  (payments/shipping) is done, ahead of any other locale.
-- **Mandarin — conditionally approved, defer if it delays launch.** Rodrigo:
-  moderate commercial value, welcome if it doesn't push back going live,
-  fine to postpone otherwise. Recommend deferring past Portuguese.
+- **DONE 2026-07-16 — Portuguese and Mandarin implemented.** Andrea asked to
+  build both now rather than wait. `/pt` and `/zh` are live: full UI string
+  dictionary (`src/lib/i18n.ts`), all 24 wines' notes/descriptions, all 19
+  producers' bios, all 5 bundle descriptions, and the tourism page copy are
+  translated (facts preserved, not invented — verified against the English/
+  Spanish source). Header now has a 4-language dropdown (EN/ES/PT/中文).
+  Verified live in the browser: homepage, a wine detail page, a producer
+  detail page, and the packs page all render correctly in both languages,
+  prices and bundle discounts calculate correctly. `npm run build` passes
+  clean for all 4 locales.
 - fr — no request for this from either Rodrigo or Shaun; not planned unless
   asked.
 
