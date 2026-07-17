@@ -67,7 +67,7 @@
       "Temperatura de servicio: entre 16 ° y 18 °"
     ],
     "description_es": "Un Carménère joven, limpio y de color rojo rubí intenso. En nariz, ciruela y cerezas con notas de chocolate y vainilla de su paso por barrica; en boca, buena estructura y taninos equilibrados.",
-    "price": 7000,
+    "price": 9000,
     "currency": "CLP",
     "brand": "Campesino",
     "vintage": 2021,
@@ -108,7 +108,7 @@
     "currency": "USD",
     "brand": "Campesino",
     "pending": true,
-    "internalNote": "No aparece en la tienda WooCommerce actual; precio placeholder en USD. Pendiente confirmar con Rodrigo si está descontinuado — no borrar ni reprecio.",
+    "internalNote": "Confirmado descontinuado por Rodrigo (2026-07-15): \"Está descontinuado. No tenemos stock.\" Se mantiene oculto y pending permanentemente; precio placeholder en USD sin corregir porque el producto no se vende.",
     "vintage": 2021,
     "abv": "14.0%",
     "stock": 300
@@ -160,7 +160,12 @@
     ],
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
-    "image": null,
+    "image": {
+      "src": "/images/original/Don-Clemente-Cabernet-Sauvignon.jpg",
+      "alt": "Don Clemente Cabernet Sauvignon",
+      "w": 600,
+      "h": 600
+    },
     "notes": [],
     "description": "A Cabernet Sauvignon from Viña La Manda de Don Clemente, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Cabernet Sauvignon de Viña La Manda de Don Clemente, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -179,7 +184,12 @@
     ],
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
-    "image": null,
+    "image": {
+      "src": "/images/original/Don-Clemente-Carmenere.jpg",
+      "alt": "Don Clemente Carmenere",
+      "w": 600,
+      "h": 1863
+    },
     "notes": [],
     "description": "A Carménère from Viña La Manda de Don Clemente, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Carménère de Viña La Manda de Don Clemente, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -198,7 +208,12 @@
     ],
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
-    "image": null,
+    "image": {
+      "src": "/images/original/Don-Clemente-Chardonnay-Late-Harvest.jpg",
+      "alt": "Don Clemente Chardonnay Late Harvest",
+      "w": 600,
+      "h": 2221
+    },
     "notes": [],
     "description": "A late-harvest Chardonnay from Viña La Manda de Don Clemente, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Chardonnay de cosecha tardía de Viña La Manda de Don Clemente, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -217,7 +232,12 @@
     ],
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
-    "image": null,
+    "image": {
+      "src": "/images/original/Don-Clemente-Merlot.jpg",
+      "alt": "Don Clemente Merlot",
+      "w": 600,
+      "h": 1847
+    },
     "notes": [],
     "description": "A Merlot from Viña La Manda de Don Clemente, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Merlot de Viña La Manda de Don Clemente, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -236,7 +256,12 @@
     ],
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
-    "image": null,
+    "image": {
+      "src": "/images/original/Don-Clemente-Rose.jpg",
+      "alt": "Don Clemente Rose",
+      "w": 600,
+      "h": 2224
+    },
     "notes": [],
     "description": "A rosé from Viña La Manda de Don Clemente, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un rosado de Viña La Manda de Don Clemente, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -255,7 +280,12 @@
     ],
     "brand": "Don Dago",
     "producerSlug": "dagoberto-munoz-diaz",
-    "image": null,
+    "image": {
+      "src": "/images/original/Don-Dago-Merlot.jpg",
+      "alt": "Don Dago Merlot",
+      "w": 600,
+      "h": 1848
+    },
     "notes": [],
     "description": "A Merlot from Viña Don Dago, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Merlot de Viña Don Dago, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -275,7 +305,12 @@
     ],
     "brand": "Un Buen Caballero",
     "producerSlug": "abelardo-becerra-meneses",
-    "image": null,
+    "image": {
+      "src": "/images/original/Un-Buen-Caballero-Cabernet-Sauvignon.jpg",
+      "alt": "Un Buen Caballero Cabernet Sauvignon",
+      "w": 600,
+      "h": 1991
+    },
     "notes": [],
     "description": "A Cabernet Sauvignon from Viña Don Lalo, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Cabernet Sauvignon de Viña Don Lalo, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -294,7 +329,12 @@
     ],
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
-    "image": null,
+    "image": {
+      "src": "/images/original/Guairabo-Cabernet-Sauvignon.jpg",
+      "alt": "Guairabo Cabernet Sauvignon",
+      "w": 600,
+      "h": 600
+    },
     "notes": [],
     "description": "A Cabernet Sauvignon from Viña Valle Herradura, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Cabernet Sauvignon de Viña Valle Herradura, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -314,7 +354,12 @@
     ],
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
-    "image": null,
+    "image": {
+      "src": "/images/original/Guairabo-Carignan.jpg",
+      "alt": "Guairabo Carignan",
+      "w": 600,
+      "h": 1840
+    },
     "notes": [],
     "description": "A Carignan from Viña Valle Herradura, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Carignan de Viña Valle Herradura, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -334,7 +379,12 @@
     ],
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
-    "image": null,
+    "image": {
+      "src": "/images/original/Guairabo-Petit-Verdot.jpg",
+      "alt": "Guairabo Petit Verdot",
+      "w": 600,
+      "h": 1817
+    },
     "notes": [],
     "description": "A Petit Verdot from Viña Valle Herradura, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Petit Verdot de Viña Valle Herradura, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -354,7 +404,12 @@
     ],
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
-    "image": null,
+    "image": {
+      "src": "/images/original/Guairabo-Rose-Late-Harvest.jpg",
+      "alt": "Guairabo Rose Late Harvest",
+      "w": 600,
+      "h": 2192
+    },
     "notes": [],
     "description": "A late-harvest rosé from Viña Valle Herradura, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un rosado de cosecha tardía de Viña Valle Herradura, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -374,7 +429,12 @@
     ],
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
-    "image": null,
+    "image": {
+      "src": "/images/original/Guairabo-Semillon-Late-Harvest.jpg",
+      "alt": "Guairabo Semillon Late Harvest",
+      "w": 600,
+      "h": 2210
+    },
     "notes": [],
     "description": "A late-harvest Semillón from Viña Valle Herradura, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Semillón de cosecha tardía de Viña Valle Herradura, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -394,7 +454,12 @@
     ],
     "brand": "La Pascuala",
     "producerSlug": "benito-castro-gaete",
-    "image": null,
+    "image": {
+      "src": "/images/original/La-Pascuala-Cabernet-Sauvignon.jpg",
+      "alt": "La Pascuala Cabernet Sauvignon",
+      "w": 600,
+      "h": 645
+    },
     "notes": [],
     "description": "A Cabernet Sauvignon from Viña La Pascuala, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Cabernet Sauvignon de Viña La Pascuala, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -413,7 +478,12 @@
     ],
     "brand": "La Pascuala",
     "producerSlug": "benito-castro-gaete",
-    "image": null,
+    "image": {
+      "src": "/images/original/La-Pascuala-Carmenere.jpg",
+      "alt": "La Pascuala Carmenere",
+      "w": 600,
+      "h": 2072
+    },
     "notes": [],
     "description": "A Carménère from Viña La Pascuala, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Carménère de Viña La Pascuala, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -451,7 +521,12 @@
     ],
     "brand": "La Pascuala",
     "producerSlug": "benito-castro-gaete",
-    "image": null,
+    "image": {
+      "src": "/images/original/La-Pascuala-Tinaja.jpg",
+      "alt": "La Pascuala Tinaja",
+      "w": 600,
+      "h": 1066
+    },
     "notes": [],
     "description": "A Cabernet Sauvignon–Carménère blend aged in Pañul clay amphorae (tinajas), from Viña La Pascuala — the Castro family, Red del Vino fair-trade producers in the Colchagua Valley, Chile.",
     "description_es": "Un ensamblaje de Cabernet Sauvignon y Carménère criado en tinajas de arcilla de Pañul, de Viña La Pascuala — la familia Castro, productores de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -471,7 +546,12 @@
     ],
     "brand": "El Huape",
     "producerSlug": "gerardo-orellana-diaz",
-    "image": null,
+    "image": {
+      "src": "/images/original/El-Huape-Loco-Gera.jpg",
+      "alt": "El Huape Loco Gera",
+      "w": 600,
+      "h": 600
+    },
     "notes": [],
     "description": "Loco Gera, a red wine from El Huape (Gerardo Orellana Díaz) in the Colchagua Valley, Chile. Currently out of stock.",
     "description_es": "Loco Gera, un vino tinto de El Huape (Gerardo Orellana Díaz) en el Valle de Colchagua, Chile. Actualmente sin stock.",
@@ -490,7 +570,12 @@
     ],
     "brand": "Cea",
     "producerSlug": "jaime-cea-morales",
-    "image": null,
+    "image": {
+      "src": "/images/original/Cea-Mito-Carmenere.jpg",
+      "alt": "Cea Mito Carmenere",
+      "w": 600,
+      "h": 1955
+    },
     "notes": [],
     "description": "A Carménère from Viña Cea, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Carménère de Viña Cea, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -509,7 +594,12 @@
     ],
     "brand": "Cea",
     "producerSlug": "jaime-cea-morales",
-    "image": null,
+    "image": {
+      "src": "/images/original/Cea-Relato-Cabernet-Sauvignon.jpg",
+      "alt": "Cea Relato Cabernet Sauvignon",
+      "w": 600,
+      "h": 1885
+    },
     "notes": [],
     "description": "A Cabernet Sauvignon from Viña Cea, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Cabernet Sauvignon de Viña Cea, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -528,7 +618,12 @@
     ],
     "brand": "Parcela 33",
     "producerSlug": "gilberto-lopez-arias",
-    "image": null,
+    "image": {
+      "src": "/images/original/Parcela-33-Cabernet-Sauvignon-Reserva.jpg",
+      "alt": "Parcela 33 Cabernet Sauvignon Reserva",
+      "w": 600,
+      "h": 1844
+    },
     "notes": [],
     "description": "A Cabernet Sauvignon from Viña Parcela 33, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Cabernet Sauvignon de Viña Parcela 33, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
@@ -547,7 +642,12 @@
     ],
     "brand": "Parcela 33",
     "producerSlug": "gilberto-lopez-arias",
-    "image": null,
+    "image": {
+      "src": "/images/original/Parcela-33-Ensamblaje.jpg",
+      "alt": "Parcela 33 Ensamblaje",
+      "w": 600,
+      "h": 1809
+    },
     "notes": [],
     "description": "A red blend from Viña Parcela 33 (Gilberto López Arias) in the Colchagua Valley, Chile. Currently out of stock.",
     "description_es": "Un ensamblaje tinto de Viña Parcela 33 (Gilberto López Arias) en el Valle de Colchagua, Chile. Actualmente sin stock.",

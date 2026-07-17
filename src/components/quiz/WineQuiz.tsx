@@ -6,6 +6,7 @@ import Link from "next/link";
 import type { Bundle, Wine } from "@/lib/content";
 import { FALLBACK_IMAGE, bundlePrice, localizeBundle, localizeWine } from "@/lib/content";
 import { formatPrice } from "@/lib/format";
+import { useCart } from "@/components/cart/CartProvider";
 import { useLocale, useT } from "@/components/i18n/LocaleProvider";
 import { localizedPath } from "@/lib/i18n";
 
@@ -41,6 +42,7 @@ function scoreWine(w: Wine, a: Answers): number {
 export function WineQuiz({ wines, bundles }: { wines: Wine[]; bundles: Bundle[] }) {
   const locale = useLocale();
   const tr = useT();
+  const { add, open } = useCart();
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
   const [email, setEmail] = useState("");
@@ -174,14 +176,28 @@ export function WineQuiz({ wines, bundles }: { wines: Wine[]; bundles: Bundle[] 
           )}
           <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
             {matches.map((w) => (
-              <Link key={w.slug} href={localizedPath(`/wines/${w.slug}`, locale)} className="group block">
-                <div className="relative aspect-[3/4] overflow-hidden bg-bone-warm">
-                  <Image src={w.image?.src || FALLBACK_IMAGE} alt={w.name} fill sizes="33vw" className="object-contain p-8 transition-transform duration-700 group-hover:scale-105" />
-                </div>
-                <p className="mt-3 eyebrow">{w.varietal}</p>
-                <p className="font-serif text-lg leading-tight">{w.name}</p>
-                <p className="mt-1 font-sans text-sm text-charcoal-soft">{formatPrice(w.price, w.currency)}</p>
-              </Link>
+              <div key={w.slug}>
+                <Link href={localizedPath(`/wines/${w.slug}`, locale)} className="group block">
+                  <div className="relative aspect-[3/4] overflow-hidden bg-bone-warm">
+                    <Image src={w.image?.src || FALLBACK_IMAGE} alt={w.name} fill sizes="33vw" className="object-contain p-8 transition-transform duration-700 group-hover:scale-105" />
+                  </div>
+                  <p className="mt-3 eyebrow">{w.varietal}</p>
+                  <p className="font-serif text-lg leading-tight">{w.name}</p>
+                  <p className="mt-1 font-sans text-sm text-charcoal-soft">{formatPrice(w.price, w.currency)}</p>
+                </Link>
+                {w.stock !== 0 && (
+                  <button
+                    type="button"
+                    className="btn-primary mt-3 w-full"
+                    onClick={() => {
+                      add({ slug: w.slug, name: w.name, varietal: w.varietal, price: w.price, image: w.image?.src || FALLBACK_IMAGE }, 1);
+                      open();
+                    }}
+                  >
+                    {tr("cart.addToCart")}
+                  </button>
+                )}
+              </div>
             ))}
           </div>
           {matches.length === 0 && (

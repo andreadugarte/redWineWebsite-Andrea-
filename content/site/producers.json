@@ -209,7 +209,12 @@
     "varietals": [
       "Carmenere"
     ],
-    "portrait": null,
+    "portrait": {
+      "src": "/images/original/Osvaldo-Diaz-Poblete.jpg",
+      "alt": "Osvaldo Díaz Poblete",
+      "w": 1031,
+      "h": 1100
+    },
     "bio": [
       "Osvaldo is a founding partner of Red del Vino (6th region).",
       "His parents together with his three sisters and brother settled in the Las Garzas Estate.",
@@ -240,7 +245,12 @@
       "Cabernet Sauvignon",
       "Carmenere"
     ],
-    "portrait": null,
+    "portrait": {
+      "src": "/images/original/Rosa-Sanchez-Bravo.jpg",
+      "alt": "Rosa Sánchez Bravo",
+      "w": 1031,
+      "h": 1100
+    },
     "bio": [
       "Rosa is a founding partner of Red del Vino (6th Region) and the only female partner in the organization. She also holds the position of Secretary. Rosa grew up with her 4 siblings in Santiago. Her mother was a merchant and father a mechanic. From young she loved nature and the outdoors. Rosa eventually moved away from Santiago to El Huape where she married her husband Don Hugo.",
       "With the Agrarian Land Reform, the farm was organized as a community and her husband was elected president of the organization. After being awarded plots of land, they began to work with a diversity of crops, mainly vegetables. At the time of her husband’s death, they also had a tobacco plantation, which was not a successful business.",
@@ -264,7 +274,12 @@
     "varietals": [
       "Cabernet Sauvignon"
     ],
-    "portrait": null,
+    "portrait": {
+      "src": "/images/original/Gilberto-Lopez-Arias.jpg",
+      "alt": "Gilberto López Arias",
+      "w": 1031,
+      "h": 1100
+    },
     "bio": [
       "Gilberto is a founding partner of the Red del Vino (6th region). In 1977, he arrived to the area with his wife María and their eleven children.",
       "During the Agrarian Land Reform, they worked as a community on the farm where they lived. The community was large and the farm was not able to provide for everyone so Gilberto applied for government benefits since their family was so large. They grew wheat, beans, potatoes and corn.",
@@ -291,7 +306,12 @@
       "Cabernet Sauvignon",
       "Carmenere"
     ],
-    "portrait": null,
+    "portrait": {
+      "src": "/images/original/Juan-Amador-Perez.jpg",
+      "alt": "Juan Amador Pérez",
+      "w": 1031,
+      "h": 1100
+    },
     "bio": [
       "At 13, Juan and his mother moved to a new employer where he began to work in the fields. Juan began driving tractors and eventually became the manager of the farm’s machinery. At 19, he married his wife Carmen and they have five daughters and a son.",
       "With the Agrarian Land Reform, the land that he was working was transformed into a settlement, however after 3 years it was not prosperous. Juan moved his family to the Nancagua commune, where he continued to work in agriculture until the land was eligible for Agrarian Land Reform. He was awarded a plot with vineyards and a house. Juan did not have experience with vineyards so it was a new undertaking that he had to learn in order to succeed.",
@@ -316,7 +336,12 @@
       "Cabernet Sauvignon",
       "Carmenere"
     ],
-    "portrait": null,
+    "portrait": {
+      "src": "/images/original/Jaime-Cea-Morales.jpg",
+      "alt": "Jaime Cea Morales",
+      "w": 1031,
+      "h": 1100
+    },
     "bio": [
       "Jaime is a founding partner of the Red del Vino (6th region).",
       "Born is Santiago, his family moved to Colchagua (the Las Garzas Estate) when he was 15 years old. Shortly after their arrival his stepfather died so he was in charge of taking care of his family.",
@@ -370,13 +395,18 @@
   },
   {
     "slug": "luis-orellana-aliaga",
-    "name": "LUIS ORELLANA ALIAGA",
+    "name": "LUIS ENRIQUE ORELLANA ALIAGA",
     "status": "inactive",
     "varietals": [
       "Cabernet Sauvignon",
       "Semillón"
     ],
-    "portrait": null,
+    "portrait": {
+      "src": "/images/original/Luis-Enrique-Orellana-Aliaga.jpg",
+      "alt": "Luis Enrique Orellana Aliaga",
+      "w": 1031,
+      "h": 1100
+    },
     "bio": [
       "Luis Enrique is a founding partner of Red del Vino (6th region). and he is also their Account Auditor.",
       "Luis’ father received 13 hectares, of which 4.8 hectares were vineyards (Sauvignon Blanc) and the rest was land.",
@@ -405,7 +435,12 @@
       "Cabernet Sauvignon",
       "Merlot"
     ],
-    "portrait": null,
+    "portrait": {
+      "src": "/images/original/Dagoberto-Munoz-Diaz.jpg",
+      "alt": "Dagoberto Muñoz Díaz",
+      "w": 1031,
+      "h": 1100
+    },
     "bio": [
       "Dagoberto is a founding partner of the Red del Vino (6th region).",
       "At the age of 17 he arrived with his parents and three brothers at the El Carmen farm in the Chépica commune. He studied until second year of high school, leaving his studies to dedicate himself to working in the fields.",
@@ -464,7 +499,12 @@
     "varietals": [
       "Carmenere"
     ],
-    "portrait": null,
+    "portrait": {
+      "src": "/images/original/Adrian-Lorca-Sandoval.jpg",
+      "alt": "Adrián Lorca Sandoval",
+      "w": 1031,
+      "h": 1100
+    },
     "bio": [
       "Adrián is a founding partner of the Red del Vino (6th region) .",
       "His brother is Carlos Lorca Sandoval who is also part of the organization.",
@@ -524,7 +564,12 @@
       "Cabernet Sauvignon",
       "Semillón"
     ],
-    "portrait": null,
+    "portrait": {
+      "src": "/images/original/Abelardo-Becerra-Meneses.jpg",
+      "alt": "Abelardo Becerra Meneses",
+      "w": 1031,
+      "h": 1100
+    },
     "bio": [
       "José Abelardo is a founding partner and Treasurer of the Red del Vino (6th region) and has been an active member from the beginning of the organization.",
       "Jose and his wife, Gloria have 4 children, two of which work with him on the farm. His childhood was difficult as his parents worked from dawn to dusk. Lack of resources made a formal education difficult for Jose who wanted a degree in Agriculture.",
