@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -58,8 +59,12 @@ export function Header() {
             <span className="mt-1.5 block h-px w-5 bg-current" />
           </button>
 
-          <Link href={localizedPath("/", locale)} className={`font-serif text-2xl leading-none tracking-tight ${text}`}>
-            Red del Vino
+          <Link href={localizedPath("/", locale)} className="flex items-center leading-none">
+            {solid ? (
+              <Image src="/images/original/Red-del-Vino-logo-2026.png" alt="Red del Vino" width={44} height={44} className="h-11 w-11" priority />
+            ) : (
+              <span className={`font-serif text-2xl tracking-tight ${text}`}>Red del Vino</span>
+            )}
           </Link>
 
           <nav className="hidden items-center gap-7 lg:flex">

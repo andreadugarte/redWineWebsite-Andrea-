@@ -39,15 +39,26 @@ iniciales y accesos"); the rest are queued for the next email.
   2026-07-15). **Do NOT re-ask Rodrigo "are the current prices final" —
   that question is answered (no) and asking it again already caused a
   duplicate/confusing reply on Jul 15.**
-  Shaun followed up 2026-07-16 with the actual file: an attachment titled
-  "Red Del Vino Pricing Matrix.xlsx", pointing to the tab "Recommended
-  Prices", column G = "Off-Trade RRP" (highlighted yellow) — this has every
-  wine's real price, not just Carménère. **Blocked: I have no tool to open
-  Gmail attachments** (confirmed — searched for an attachment/download tool
-  and none exists in this environment). I cannot read the spreadsheet's
-  cell values. Someone needs to either open the attachment and paste column
-  G's values here, or forward them as plain text — not another image/xlsx,
-  since I can't parse either.
+  **RESOLVED 2026-07-17** — Andrea shared "Red Del Vino Pricing Matrix.xlsx"
+  directly (from her Downloads folder) rather than as a Gmail attachment,
+  which I was able to open with a Python script. Read the "Recommended
+  Prices" tab, column G = "Off-Trade RRP" in full and applied it to every
+  wine currently in the catalogue (17 price changes — see git history on
+  `content/site/wines.json` 2026-07-17 for the full old→new list). Confirmed
+  Campesino Carménère still comes out to 9,000, matching Shaun's earlier
+  figure exactly — good cross-check that the sheet and the read were both
+  correct. Bundle prices need no manual update — they're computed live from
+  each wine's `price` (`bundlePrice()` in `src/lib/content.ts`), so the 10%
+  discount recalculates automatically off the new base prices.
+  Guairabo/Valle Herradura and El Huape wines have NO row in the pricing
+  sheet at all (consistent with both producers being closed) — their prices
+  were left untouched.
+  The sheet also prices 9 wines not yet in the catalogue (Cea Enlace CLP
+  10,000; Don Dago White LH 6,500; Don Dago Rose LH 6,500; Don Dago Cabernet
+  Sauvignon 12,750; La Pascuala Chardonnay 15,000; Parcela 33 ISIS 6,500;
+  Parcela 33 Gestin 6,500; Parcela 33 Carménère 12,750) — noted here for
+  when Rodrigo says to add them, not applied since those SKUs don't exist
+  in `wines.json` yet.
 - **RESOLVED 2026-07-15 — wines not in the store.** Rodrigo confirmed (Jul
   15): Cea "Enlace", Don Dago Cosecha Tardía Blanco, Parcela 33 "ISIS"/
   "Gestin"/Carménère, La Pascuala Chardonnay, and the 3 Guairabo/Valle
@@ -163,6 +174,20 @@ iniciales y accesos"); the rest are queued for the next email.
   old, low-res portrait from the original WordPress site), suggesting their
   full names may include "Manuel" the way Luis Orellana's included
   "Enrique". Not swapped in without confirming the name match first.
+- **RESOLVED 2026-07-17 — new logo implemented.** Andrea shared the actual
+  Plumpton-designed logo file (`Red del Vino logo design.png`, from her
+  Desktop) — the emblem of a woman carrying a grape basket, with the
+  "JUNTOS SOMOS MÁS FUERTES" tagline. Replaces the old plain-text wordmark.
+  Applied to: the header (shown once the header has a solid background —
+  scrolled, or any non-transparent page — since the logo file has an opaque
+  white background; kept the original text wordmark for the transparent
+  state over hero images, since a white-boxed logo there would look broken)
+  and the browser favicon (`src/app/icon.png`, cropped to just the circular
+  emblem since the full logo's tagline text is illegible at favicon size).
+  Not touched: the footer (dark oxblood background — same white-box problem
+  as the transparent header state) and the Open Graph share image (still
+  the bottle photo) — a version of the logo with a transparent background
+  would resolve both if Rodrigo/Plumpton can provide one.
 
 ## Producer facts
 - **RESOLVED 2026-07-15 — Viña Don Lalo vs "Viña Un Buen Caballero".**
