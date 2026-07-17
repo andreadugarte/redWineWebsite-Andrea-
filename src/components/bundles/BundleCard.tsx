@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Bundle } from "@/lib/content";
-import { bundlePrice, bundleWines, localizeBundle, FALLBACK_IMAGE } from "@/lib/content";
+import { bundlePrice, bundleWines, localizeBundle, FALLBACK_BOTTLE_IMAGE } from "@/lib/content";
 import { formatPrice } from "@/lib/format";
 import { useLocale, useT } from "@/components/i18n/LocaleProvider";
 import { localizedPath } from "@/lib/i18n";
@@ -23,7 +23,7 @@ export function BundleCard({ bundle }: { bundle: Bundle }) {
         {ws.slice(0, 6).map((w) => (
           <div key={w.slug} className="relative h-44 w-12">
             <Image
-              src={w.image?.src || FALLBACK_IMAGE}
+              src={w.image?.src || FALLBACK_BOTTLE_IMAGE}
               alt={w.name}
               fill
               sizes="10vw"

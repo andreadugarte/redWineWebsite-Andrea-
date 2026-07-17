@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { getBundle, bundleWines, bundlePrice, localizeBundle, FALLBACK_IMAGE } from "@/lib/content";
+import { getBundle, bundleWines, bundlePrice, localizeBundle, FALLBACK_BOTTLE_IMAGE } from "@/lib/content";
 import { formatPrice } from "@/lib/format";
 import { AddBundleToCart } from "@/components/bundles/AddBundleToCart";
 import { t, localizedPath, type Locale } from "@/lib/i18n";
@@ -21,7 +21,7 @@ export function BundleDetailView({ slug, locale = "en" }: { slug: string; locale
           <div className="sticky top-28 flex h-[420px] items-end justify-center gap-2 bg-bone-warm px-8 pb-8">
             {ws.map((w) => (
               <Link key={w.slug} href={localizedPath(`/wines/${w.slug}`, locale)} className="relative h-80 w-20 transition-transform hover:-translate-y-2">
-                <Image src={w.image?.src || FALLBACK_IMAGE} alt={w.name} fill sizes="15vw" className="object-contain object-bottom" />
+                <Image src={w.image?.src || FALLBACK_BOTTLE_IMAGE} alt={w.name} fill sizes="15vw" className="object-contain object-bottom" />
               </Link>
             ))}
           </div>

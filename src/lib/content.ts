@@ -203,6 +203,12 @@ export function getWine(slug: string, locale: Locale = "en"): Wine | undefined {
 
 /** Prefer a real portrait; otherwise fall back to a curated vineyard image. */
 export const FALLBACK_IMAGE = "/images/original/Red-del-Vino-Grapes.jpg";
+/**
+ * Same fallback image, letterboxed onto a tall bottle-shaped canvas so it
+ * doesn't look like a stray thumbnail next to tightly-cropped bottle photos
+ * in a bottle line-up (bundle cards/detail pages).
+ */
+export const FALLBACK_BOTTLE_IMAGE = "/images/original/Red-del-Vino-Grapes-bottle-shape.jpg";
 
 export function titleCase(s: string): string {
   return s
