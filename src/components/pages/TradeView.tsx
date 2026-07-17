@@ -16,9 +16,7 @@ export function TradeView({ locale = "en" }: { locale?: Locale }) {
       <div className="container-x grid gap-16 py-16 md:py-24 lg:grid-cols-2">
         <div>
           <p className="max-w-md font-sans text-base leading-relaxed text-charcoal-soft">
-            {locale === "es"
-              ? "Nuestra cartera reúne nueve marcas de pequeños productores del Valle de Colchagua, todas bajo certificación de comercio justo. Explora el catálogo completo y cuéntanos qué vinos te interesan."
-              : "Our portfolio brings together nine small-producer brands from the Colchagua Valley, all under Fairtrade certification. Browse the full catalogue and tell us which wines interest you."}
+            {t("trade.portfolioIntro", locale)}
           </p>
           <Link
             href={localizedPath("/wines", locale)}

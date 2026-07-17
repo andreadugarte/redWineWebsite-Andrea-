@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Conoce a las familias productoras de comercio justo detrás de Red del Vino — una cooperativa fundada en 2004 por diecinueve familias del Valle de Colchagua, Chile.",
   alternates: {
     canonical: "/es/producers",
-    languages: { en: "/producers", es: "/es/producers" },
+    languages: { en: "/producers", es: "/es/producers", pt: "/pt/producers", zh: "/zh/producers" },
   },
 };
 

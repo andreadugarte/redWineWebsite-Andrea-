@@ -8,7 +8,7 @@ import { FALLBACK_IMAGE, bundlePrice, localizeBundle, localizeWine } from "@/lib
 import { formatPrice } from "@/lib/format";
 import { useCart } from "@/components/cart/CartProvider";
 import { useLocale, useT } from "@/components/i18n/LocaleProvider";
-import { localizedPath } from "@/lib/i18n";
+import { localizedPath, type Locale } from "@/lib/i18n";
 
 type Occasion = "solo" | "meal" | "asado" | "gift";
 type Color = "red" | "white" | "rose" | "any";
@@ -227,7 +227,7 @@ export function WineQuiz({ wines, bundles }: { wines: Wine[]; bundles: Bundle[] 
               className="w-full border-b border-charcoal/25 bg-transparent py-2.5 font-sans text-sm focus:border-oxblood focus:outline-none"
             />
             <button type="submit" disabled={emailState === "loading"} className="btn-primary whitespace-nowrap disabled:opacity-60">
-              {locale === "es" ? "Envíame mis resultados" : "Email me my results"}
+              {tr("quiz.results.emailMe")}
             </button>
           </form>
         )}
@@ -248,7 +248,7 @@ export function WineQuiz({ wines, bundles }: { wines: Wine[]; bundles: Bundle[] 
   );
 }
 
-function BundleSuggestion({ bundle, locale }: { bundle: Bundle; locale: "en" | "es" }) {
+function BundleSuggestion({ bundle, locale }: { bundle: Bundle; locale: Locale }) {
   const price = bundlePrice(bundle);
   return (
     <Link

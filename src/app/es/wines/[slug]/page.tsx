@@ -15,7 +15,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     openGraph: { images: wine.image ? [wine.image.src] : [] },
     alternates: {
       canonical: `/es/wines/${params.slug}`,
-      languages: { en: `/wines/${params.slug}`, es: `/es/wines/${params.slug}` },
+      languages: { en: `/wines/${params.slug}`, es: `/es/wines/${params.slug}`, pt: `/pt/wines/${params.slug}`, zh: `/zh/wines/${params.slug}` },
     },
   };
 }

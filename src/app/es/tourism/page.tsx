@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Catas, tours vitivinícolas, arriendo de bicicletas y kayaks en el Valle de Colchagua con Red del Vino.",
   alternates: {
     canonical: "/es/tourism",
-    languages: { en: "/tourism", es: "/es/tourism" },
+    languages: { en: "/tourism", es: "/es/tourism", pt: "/pt/tourism", zh: "/zh/tourism" },
   },
 };
 

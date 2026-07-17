@@ -15,7 +15,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     description: es.description,
     alternates: {
       canonical: `/es/packs/${params.slug}`,
-      languages: { en: `/packs/${params.slug}`, es: `/es/packs/${params.slug}` },
+      languages: { en: `/packs/${params.slug}`, es: `/es/packs/${params.slug}`, pt: `/pt/packs/${params.slug}`, zh: `/zh/packs/${params.slug}` },
     },
   };
 }

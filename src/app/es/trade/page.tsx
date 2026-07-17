@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Ventas Mayoristas",
   description:
     "Restaurantes, tiendas y distribuidores: trabaja directamente con una cooperativa certificada Fairtrade de pequeños productores del Valle de Colchagua.",
-  alternates: { canonical: "/es/trade", languages: { en: "/trade", es: "/es/trade" } },
+  alternates: { canonical: "/es/trade", languages: { en: "/trade", es: "/es/trade", pt: "/pt/trade", zh: "/zh/trade" } },
 };
 
 export default function TradePageEs() {

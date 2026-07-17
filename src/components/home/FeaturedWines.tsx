@@ -8,7 +8,7 @@ import { FALLBACK_IMAGE, localizedWines } from "@/lib/content";
 import { formatPrice } from "@/components/cart/CartProvider";
 import { SectionHeading } from "@/components/layout/SectionHeading";
 import { useLocale, useT } from "@/components/i18n/LocaleProvider";
-import { localizedPath } from "@/lib/i18n";
+import { localizedPath, type Locale } from "@/lib/i18n";
 
 export function FeaturedWines({ wines: winesEn }: { wines: Wine[] }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -34,7 +34,7 @@ export function FeaturedWines({ wines: winesEn }: { wines: Wine[] }) {
   );
 }
 
-function WineCard({ wine, locale }: { wine: Wine; locale: "en" | "es" }) {
+function WineCard({ wine, locale }: { wine: Wine; locale: Locale }) {
   return (
     <Link href={localizedPath(`/wines/${wine.slug}`, locale)} className="group relative flex shrink-0 flex-col w-[78vw] sm:w-[46vw] lg:w-[30vw]">
       <div className="relative aspect-[3/4] overflow-hidden bg-oxblood-deep/40">

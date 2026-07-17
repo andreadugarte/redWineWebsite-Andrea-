@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "El catálogo completo de Red del Vino — vinos de comercio justo de nueve marcas de pequeños productores del Valle de Colchagua, Chile.",
   alternates: {
     canonical: "/es/wines",
-    languages: { en: "/wines", es: "/es/wines" },
+    languages: { en: "/wines", es: "/es/wines", pt: "/pt/wines", zh: "/zh/wines" },
   },
 };
 

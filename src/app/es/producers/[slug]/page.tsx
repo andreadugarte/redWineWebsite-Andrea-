@@ -16,7 +16,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     description: p.bio[0]?.slice(0, 160),
     alternates: {
       canonical: `/es/producers/${params.slug}`,
-      languages: { en: `/producers/${params.slug}`, es: `/es/producers/${params.slug}` },
+      languages: { en: `/producers/${params.slug}`, es: `/es/producers/${params.slug}`, pt: `/pt/producers/${params.slug}`, zh: `/zh/producers/${params.slug}` },
     },
   };
 }

@@ -49,9 +49,7 @@ export function QuizBanner() {
       <div className="container-x flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
         <div>
           <p className="font-sans text-xs uppercase tracking-[0.16em] text-bone/60">{tr("quiz.eyebrow")}</p>
-          <p className="mt-2 font-serif text-3xl font-light text-bone">
-            {locale === "es" ? "¿No sabes qué elegir?" : "Not sure what to choose?"}
-          </p>
+          <p className="mt-2 font-serif text-3xl font-light text-bone">{tr("quiz.notSure")}</p>
         </div>
         <Link
           href={localizedPath("/find-your-wine", locale)}

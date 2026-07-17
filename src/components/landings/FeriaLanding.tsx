@@ -11,11 +11,10 @@ import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import type { Bundle, Wine } from "@/lib/content";
 import { BundleCard } from "@/components/bundles/BundleCard";
-import { useLocale, useT } from "@/components/i18n/LocaleProvider";
+import { useT } from "@/components/i18n/LocaleProvider";
 
 export function FeriaLanding({ feriaBundle }: { feriaBundle: Bundle | undefined; wines: Wine[] }) {
   const tr = useT();
-  const locale = useLocale();
   const params = useSearchParams();
   const campaign = params.get("utm_campaign") || "";
   const [feria, setFeria] = useState(campaign);
@@ -55,7 +54,7 @@ export function FeriaLanding({ feriaBundle }: { feriaBundle: Bundle | undefined;
               <input
                 value={feria}
                 onChange={(e) => setFeria(e.target.value)}
-                placeholder={locale === "es" ? "Nombre de la feria" : "Feria name"}
+                placeholder={tr("feria.namePlaceholder")}
                 className="mt-2 w-full border-b border-charcoal/25 bg-transparent py-2.5 font-sans text-sm focus:border-oxblood focus:outline-none"
               />
             </label>
@@ -70,7 +69,7 @@ export function FeriaLanding({ feriaBundle }: { feriaBundle: Bundle | undefined;
               />
             </label>
             <button type="submit" disabled={state === "loading"} className="btn-primary justify-self-start disabled:opacity-60">
-              {locale === "es" ? "Quiero recibir novedades" : "Keep me posted"}
+              {tr("feria.keepPosted")}
             </button>
             {state === "error" && <p className="font-sans text-sm text-oxblood">{tr("form.error")}</p>}
           </form>

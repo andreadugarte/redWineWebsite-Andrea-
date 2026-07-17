@@ -17,7 +17,11 @@
     "valueAdd": "producerCard",
     "description": "Six bottles from six different producer families — a white, a rosé and four distinct reds. The easiest way to meet the cooperative in one case, with free shipping to Santiago included at six bottles.",
     "description_es": "Seis botellas de seis familias productoras distintas — un blanco, un rosado y cuatro tintos diferentes. La forma más fácil de conocer la cooperativa en una sola caja, con envío gratis a Santiago incluido por ser seis botellas.",
-    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% aplicado por instrucción de Andrea (2026-07-14), pendiente ratificación de Rodrigo. Guairabo retirado de packs (productor cerrado); se usan 6 viñas activas."
+    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% aplicado por instrucción de Andrea (2026-07-14), pendiente ratificación de Rodrigo. Guairabo retirado de packs (productor cerrado); se usan 6 viñas activas.",
+    "name_pt": "Descubra a Red del Vino",
+    "name_zh": "探索Red del Vino",
+    "description_pt": "Seis garrafas de seis famílias produtoras diferentes — um branco, um rosé e quatro tintos distintos. A forma mais fácil de conhecer a cooperativa em uma única caixa, com frete grátis para Santiago incluído a partir de seis garrafas.",
+    "description_zh": "六瓶来自六个不同生产家庭的美酒——一款白葡萄酒、一款桃红以及四款风格各异的红葡萄酒。这是在一箱之内认识整个合作社最简单的方式，凑够六瓶即可享圣地亚哥免费配送。"
   },
   {
     "slug": "asado-chileno",
@@ -35,7 +39,11 @@
     "valueAdd": "producerCard",
     "description": "Four reds made for the grill — Carménère and Cabernet Sauvignon from four different family vineyards. You don't need to know wine; you just need an asado.",
     "description_es": "Cuatro tintos hechos para la parrilla — Carménère y Cabernet Sauvignon de cuatro viñas familiares distintas. No necesitas saber de vino; solo necesitas un asado.",
-    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% pendiente de ratificación. La pauta CRO sugería Parcela 33 Carménère (no existe en tienda); se usó La Pascuala Carménère."
+    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% pendiente de ratificación. La pauta CRO sugería Parcela 33 Carménère (no existe en tienda); se usó La Pascuala Carménère.",
+    "name_pt": "Kit Asado Chileno",
+    "name_zh": "智利烤肉套装",
+    "description_pt": "Quatro tintos feitos para a churrasqueira — Carménère e Cabernet Sauvignon de quatro vinhedos familiares diferentes. Você não precisa entender de vinho; só precisa de um churrasco.",
+    "description_zh": "四款为烤肉而生的红葡萄酒——分别来自四个不同家庭酒庄的佳美娜（Carménère）和赤霞珠（Cabernet Sauvignon）。您无需精通葡萄酒知识，只需要一场烤肉聚会。"
   },
   {
     "slug": "vinos-para-empezar",
@@ -53,7 +61,11 @@
     "valueAdd": "producerCard",
     "description": "Four friendly, easy-drinking bottles at gentle prices — a white, a red, a rosé and a sweet late harvest. No wine vocabulary required.",
     "description_es": "Cuatro botellas amables y fáciles de tomar, a precios accesibles — un blanco, un tinto, un rosado y una cosecha tardía dulce. No se necesita vocabulario de vino.",
-    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% pendiente de ratificación. Guairabo retirado de packs (productor cerrado); se usan cosechas tardías/rosado de Don Clemente."
+    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% pendiente de ratificación. Guairabo retirado de packs (productor cerrado); se usan cosechas tardías/rosado de Don Clemente.",
+    "name_pt": "Kit para Iniciantes",
+    "name_zh": "入门套装",
+    "description_pt": "Quatro garrafas amigáveis e fáceis de beber a preços acessíveis — um branco, um tinto, um rosé e uma colheita tardia doce. Não é necessário nenhum vocabulário de vinho.",
+    "description_zh": "四款亲和易饮、价格亲民的美酒——一款白葡萄酒、一款红葡萄酒、一款桃红以及一款甜美的晚收甜酒。无需任何葡萄酒专业知识。"
   },
   {
     "slug": "regalo-colchagua",
@@ -69,7 +81,11 @@
     "valueAdd": "giftPackaging",
     "description": "The cellar's flagship — La Pascuala Tinaja, aged in Pañul clay amphorae — paired with Parcela 33's reserve Cabernet, in gift presentation with the story of the families who made them.",
     "description_es": "Lo más destacado de la bodega — La Pascuala Tinaja, criado en tinajas de arcilla de Pañul — junto al Cabernet reserva de Parcela 33, en presentación de regalo con la historia de las familias que los hicieron.",
-    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% pendiente de ratificación; confirmar empaque de regalo operativo."
+    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% pendiente de ratificación; confirmar empaque de regalo operativo.",
+    "name_pt": "Kit de Presente Colchagua",
+    "name_zh": "科尔查瓜礼品套装",
+    "description_pt": "O carro-chefe da adega — La Pascuala Tinaja, envelhecido em ânforas de argila de Pañul — combinado com o Cabernet reserva de Parcela 33, em embalagem de presente com a história das famílias que os produziram.",
+    "description_zh": "酒窖的招牌之作——在帕纽尔（Pañul）陶罐中陈酿的La Pascuala Tinaja——搭配Parcela 33珍藏赤霞珠，以礼品形式呈现，并附上酿造者家族的故事。"
   },
   {
     "slug": "vinos-de-la-feria",
@@ -86,6 +102,10 @@
     "valueAdd": "producerCard",
     "description": "The wines being poured at our latest feria — tasted them at the stand? Take the same bottles home. This selection rotates with every feria.",
     "description_es": "Los vinos que estamos sirviendo en la última feria — ¿los probaste en el stand? Llévate las mismas botellas a casa. Esta selección rota con cada feria.",
-    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% pendiente de ratificación. Actualizar wineSlugs con los vinos de cada feria."
+    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% pendiente de ratificación. Actualizar wineSlugs con los vinos de cada feria.",
+    "name_pt": "Favoritos da Feira",
+    "name_zh": "展会人气精选",
+    "description_pt": "Os vinhos que estamos servindo em nossa última feira — provou-os no estande? Leve as mesmas garrafas para casa. Esta seleção muda a cada feira.",
+    "description_zh": "这是我们最近一次展会上正在倒的美酒——在展位品尝过了吗？把同款带回家吧。这个精选组合会随每场展会更新。"
   }
 ]

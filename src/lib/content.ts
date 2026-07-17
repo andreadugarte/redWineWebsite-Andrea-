@@ -34,8 +34,10 @@ export type Producer = {
   varietals: string[];
   portrait: ImageRef | null;
   bio: string[];
-  /** Spanish bio (path-based i18n). Falls back to English when absent. */
+  /** Translated bios (path-based i18n). Fall back to English when absent. */
   bio_es?: string[];
+  bio_pt?: string[];
+  bio_zh?: string[];
 };
 
 export type Wine = {
@@ -63,9 +65,13 @@ export type Wine = {
   internalNote?: string;
   /** Kept in the data but not part of the current public store (e.g. discontinued/unconfirmed). */
   pending?: boolean;
-  /** Spanish content (path-based i18n). Falls back to English when absent. */
+  /** Translated content (path-based i18n). Fall back to English when absent. */
   notes_es?: string[];
   description_es?: string;
+  notes_pt?: string[];
+  description_pt?: string;
+  notes_zh?: string[];
+  description_zh?: string;
 };
 
 export type Tour = {
@@ -80,6 +86,8 @@ export type Bundle = {
   slug: string;
   name: string;
   name_es?: string;
+  name_pt?: string;
+  name_zh?: string;
   type: "discovery" | "occasion" | "beginner" | "gift" | "feria";
   permanence: "permanent" | "seasonal" | "campaign";
   wineSlugs: string[];
@@ -88,6 +96,8 @@ export type Bundle = {
   valueAdd: "producerCard" | "giftPackaging" | "freeShippingIncluded";
   description: string;
   description_es?: string;
+  description_pt?: string;
+  description_zh?: string;
   /** Internal-only note (not rendered). */
   internalNote?: string;
 };
@@ -141,8 +151,10 @@ export function bundlesContaining(wineSlug: string): Bundle[] {
 
 /** Localized bundle name/description. */
 export function localizeBundle(b: Bundle, locale: Locale): Bundle {
-  if (locale !== "es") return b;
-  return { ...b, name: b.name_es || b.name, description: b.description_es || b.description };
+  if (locale === "en") return b;
+  const name = { es: b.name_es, pt: b.name_pt, zh: b.name_zh }[locale];
+  const description = { es: b.description_es, pt: b.description_pt, zh: b.description_zh }[locale];
+  return { ...b, name: name || b.name, description: description || b.description };
 }
 
 /**
@@ -156,18 +168,21 @@ export function getPage(slug: string): Page | undefined {
   return pages[slug];
 }
 
-/** Swap a producer's text fields to Spanish, falling back to English. */
+/** Swap a producer's text fields to the given locale, falling back to English. */
 export function localizeProducer(p: Producer, locale: Locale): Producer {
-  if (locale === "es" && p.bio_es?.length) return { ...p, bio: p.bio_es };
+  const bio = { es: p.bio_es, pt: p.bio_pt, zh: p.bio_zh }[locale as "es" | "pt" | "zh"];
+  if (locale !== "en" && bio?.length) return { ...p, bio };
   return p;
 }
-/** Swap a wine's text fields to Spanish, falling back to English. */
+/** Swap a wine's text fields to the given locale, falling back to English. */
 export function localizeWine(w: Wine, locale: Locale): Wine {
-  if (locale !== "es") return w;
+  if (locale === "en") return w;
+  const notes = { es: w.notes_es, pt: w.notes_pt, zh: w.notes_zh }[locale as "es" | "pt" | "zh"];
+  const description = { es: w.description_es, pt: w.description_pt, zh: w.description_zh }[locale as "es" | "pt" | "zh"];
   return {
     ...w,
-    notes: w.notes_es?.length ? w.notes_es : w.notes,
-    description: w.description_es || w.description,
+    notes: notes?.length ? notes : w.notes,
+    description: description || w.description,
   };
 }
 export function localizedProducers(list: Producer[], locale: Locale): Producer[] {

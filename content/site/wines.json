@@ -35,7 +35,23 @@
     "brand": "Campesino",
     "vintage": 2021,
     "abv": "13.5%",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [
+      "Aspecto: A aparência deste vinho é um tom amarelo muito claro e limpo.",
+      "Nariz: Inicialmente mineral, com notas de amêndoa, avelã e melão, notas cítricas de lima/limão, e pêssego.",
+      "Boca: Acidez moderada, estrutura média e final curto.",
+      "Harmonização: Ideal para frutos do mar e peixes defumados, pratos de massa com molho branco pouco picante e comida vegana.",
+      "Temperatura de serviço: 12 °"
+    ],
+    "description_pt": "Um Chardonnay Gran Reserva de tom amarelo limpo e brilhante, mineral no nariz com notas de amêndoa, avelã, melão e cítricos. Na boca, acidez moderada e estrutura média.",
+    "notes_zh": [
+      "外观：这款酒呈现出非常清澈明亮的黄色。",
+      "香气：初闻带有矿物气息，伴有杏仁、榛子和甜瓜的香气，以及青柠、柠檬等柑橘香气和桃子的味道。",
+      "口感：酸度适中，结构中等，余味较短。",
+      "搭配：非常适合搭配海鲜和熏鱼、清淡白酱意面以及素食。",
+      "饮用温度：12°"
+    ],
+    "description_zh": "这款霞多丽珍藏酒呈清澈明亮的黄色，鼻息带有矿物气息及杏仁、榛子、甜瓜与柑橘香气。口感酸度适中，结构均衡。"
   },
   {
     "slug": "campesino-carmenere",
@@ -72,7 +88,21 @@
     "brand": "Campesino",
     "vintage": 2021,
     "abv": "13.5%",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [
+      "Aspecto: Vinho limpo, sem sedimentos e brilhante (jovem), com camada alta e cor rubi profundo.",
+      "Aromas: Aromas frutados como ameixa e cereja; seu envelhecimento em barricas proporciona notas de chocolate e baunilha, deixando um aroma agradável antes da degustação. Na boca: Este vinho tem boa estrutura na boca, seus taninos são equilibrados e muito rico em acidez.",
+      "Harmonização: Ideal para acompanhar carnes vermelhas de boi e carnes de caça de sabor intenso. Também combina bem com queijos maturados e de sabor marcante, como Parmesão, Gruyère e Camembert.",
+      "Temperatura de serviço: entre 16 ° e 18 °"
+    ],
+    "description_pt": "Um Carménère jovem, limpo e de cor rubi intenso. No nariz, ameixa e cereja com notas de chocolate e baunilha do tempo em barrica; na boca, boa estrutura e taninos equilibrados.",
+    "notes_zh": [
+      "外观：酒体清澈无沉淀，明亮（年轻酒体），层次饱满，呈深宝石红色。",
+      "香气：李子和樱桃等果香，经橡木桶陈酿带来巧克力与香草的气息，品尝前留下宜人的香气。口感：入口结构良好，单宁均衡，酸度丰富。",
+      "搭配：非常适合搭配牛肉等红肉，以及味道浓郁的野味。也非常适合搭配帕玛森、格鲁耶尔和卡门贝尔等成熟浓郁的奶酪。",
+      "饮用温度：16°至18°"
+    ],
+    "description_zh": "这是一款年轻的佳美娜，酒液清澈，呈浓郁宝石红色。鼻息中有李子与樱桃的果香，伴随橡木桶陈酿带来的巧克力与香草气息；入口结构良好，单宁均衡。"
   },
   {
     "slug": "campesino-cabernet-sauvignon-reserva",
@@ -111,7 +141,21 @@
     "internalNote": "Confirmado descontinuado por Rodrigo (2026-07-15): \"Está descontinuado. No tenemos stock.\" Se mantiene oculto y pending permanentemente; precio placeholder en USD sin corregir porque el producto no se vende.",
     "vintage": 2021,
     "abv": "14.0%",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [
+      "Aspecto: Vinho limpo, sem sedimentos e brilhante (jovem), com camada alta e cor rubi profundo.",
+      "Aromas: Aromas frutados como ameixa e cereja; seu envelhecimento em barricas proporciona notas de chocolate e baunilha, deixando um aroma agradável antes da degustação. Na boca: Este vinho tem boa estrutura na boca, seus taninos são equilibrados e muito rico em acidez.",
+      "Harmonização: Ideal para acompanhar carnes vermelhas de boi e carnes de caça de sabor intenso. Também combina bem com queijos maturados e de sabor marcante, como Parmesão, Gruyère e Camembert.",
+      "Temperatura de serviço: entre 16 ° e 18 °"
+    ],
+    "description_pt": "Um Cabernet Sauvignon Reserva de cor rubi intenso, com aromas de ameixa e cereja e notas de chocolate e baunilha de barrica. Na boca, boa estrutura e taninos equilibrados.",
+    "notes_zh": [
+      "外观：酒体清澈无沉淀，明亮（年轻酒体），层次饱满，呈深宝石红色。",
+      "香气：李子和樱桃等果香，经橡木桶陈酿带来巧克力与香草的气息，品尝前留下宜人的香气。口感：入口结构良好，单宁均衡，酸度丰富。",
+      "搭配：非常适合搭配牛肉等红肉，以及味道浓郁的野味。也非常适合搭配帕玛森、格鲁耶尔和卡门贝尔等成熟浓郁的奶酪。",
+      "饮用温度：16°至18°"
+    ],
+    "description_zh": "这款赤霞珠珍藏酒呈浓郁宝石红色，带有李子与樱桃的香气，以及橡木桶陈酿的巧克力与香草气息。入口结构良好，单宁均衡。"
   },
   {
     "slug": "campesino-chardonnay",
@@ -147,7 +191,21 @@
     "brand": "Campesino",
     "vintage": 2022,
     "abv": "13.0%",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [
+      "Aspecto: A aparência deste vinho é um tom amarelo muito claro e limpo.",
+      "Aroma: A primeira impressão no nariz é muito frutada, principalmente de manga e frutas tropicais maduras, evoluindo para notas cítricas e especiarias como canela. Na boca: Na boca apresenta corpo médio, macio e rico, que termina com uma acidez vibrante que confere comprimento médio ao paladar. O retrogosto evolui para nuances mais amadeiradas, como baunilha e tostado.",
+      "Harmonização: Perfeito para acompanhar peixes delicados como corvina, linguado e rodovalho, grelhados com molhos cremosos ou alcaparras ou ervas",
+      "Temperatura de serviço: 12 °"
+    ],
+    "description_pt": "Um Chardonnay de tom amarelo claro e brilhante, muito frutado no nariz com notas de manga e frutas tropicais que evoluem para cítricos e canela. Na boca, corpo médio e acidez vibrante.",
+    "notes_zh": [
+      "外观：这款酒呈现出非常清澈明亮的黄色。",
+      "香气：初闻果香浓郁，以芒果和成熟的热带水果为主，随后演变为柑橘及肉桂等香料的气息。口感：入口酒体中等、柔和且丰厚，以充满活力的酸度收尾，带来中等的余韵与口感层次。回味则逐渐显现出更多橡木气息，如香草与烘烤的味道。",
+      "搭配：非常适合搭配黄花鱼、鳎鱼和大菱鲆等细腻的鱼类，可搭配奶油酱汁、刺山柑或香草一起烤制。",
+      "饮用温度：12°"
+    ],
+    "description_zh": "这款霞多丽呈清澈明亮的黄色，鼻息果香浓郁，芒果与热带水果的香气逐渐转为柑橘与肉桂气息。口感酒体适中，酸度活泼。"
   },
   {
     "slug": "don-clemente-cabernet-sauvignon",
@@ -171,7 +229,11 @@
     "description_es": "Un Cabernet Sauvignon de Viña La Manda de Don Clemente, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 15000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Cabernet Sauvignon da Viña La Manda de Don Clemente, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款赤霞珠（Cabernet Sauvignon）产自智利科尔查瓜谷（Colchagua Valley）的Don Clemente酒庄（Viña La Manda），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "don-clemente-carmenere",
@@ -195,7 +257,11 @@
     "description_es": "Un Carménère de Viña La Manda de Don Clemente, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 12000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Carménère da Viña La Manda de Don Clemente, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款佳美娜（Carménère）产自智利科尔查瓜谷的Don Clemente酒庄（Viña La Manda），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "don-clemente-chardonnay-late-harvest",
@@ -219,7 +285,11 @@
     "description_es": "Un Chardonnay de cosecha tardía de Viña La Manda de Don Clemente, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 8000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Chardonnay de colheita tardia da Viña La Manda de Don Clemente, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款晚收霞多丽（Chardonnay）产自智利科尔查瓜谷的Don Clemente酒庄（Viña La Manda），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "don-clemente-merlot",
@@ -243,7 +313,11 @@
     "description_es": "Un Merlot de Viña La Manda de Don Clemente, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 12000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Merlot da Viña La Manda de Don Clemente, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款梅洛（Merlot）产自智利科尔查瓜谷的Don Clemente酒庄（Viña La Manda），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "don-clemente-rose",
@@ -267,7 +341,11 @@
     "description_es": "Un rosado de Viña La Manda de Don Clemente, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 8000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um rosé da Viña La Manda de Don Clemente, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款桃红葡萄酒（Rosé）产自智利科尔查瓜谷的Don Clemente酒庄（Viña La Manda），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "don-dago-merlot",
@@ -291,7 +369,11 @@
     "description_es": "Un Merlot de Viña Don Dago, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 12000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Merlot da Viña Don Dago, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款梅洛（Merlot）产自智利科尔查瓜谷的Don Dago酒庄（Viña Don Dago），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "un-buen-caballero-cabernet-sauvignon",
@@ -316,7 +398,11 @@
     "description_es": "Un Cabernet Sauvignon de Viña Don Lalo, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 6000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Cabernet Sauvignon da Viña Don Lalo, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款赤霞珠（Cabernet Sauvignon）产自智利科尔查瓜谷的Don Lalo酒庄（Viña Don Lalo），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "guairabo-cabernet-sauvignon",
@@ -341,7 +427,11 @@
     "price": 8000,
     "currency": "CLP",
     "stock": 0,
-    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio."
+    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio.",
+    "notes_pt": [],
+    "description_pt": "Um Cabernet Sauvignon da Viña Valle Herradura, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款赤霞珠（Cabernet Sauvignon）产自智利科尔查瓜谷的Valle Herradura酒庄（Viña Valle Herradura），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "guairabo-carignan",
@@ -366,7 +456,11 @@
     "price": 8000,
     "currency": "CLP",
     "stock": 0,
-    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio."
+    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio.",
+    "notes_pt": [],
+    "description_pt": "Um Carignan da Viña Valle Herradura, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款佳丽酿（Carignan）产自智利科尔查瓜谷的Valle Herradura酒庄（Viña Valle Herradura），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "guairabo-petit-verdot",
@@ -391,7 +485,11 @@
     "price": 8000,
     "currency": "CLP",
     "stock": 0,
-    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio."
+    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio.",
+    "notes_pt": [],
+    "description_pt": "Um Petit Verdot da Viña Valle Herradura, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款小味儿多（Petit Verdot）产自智利科尔查瓜谷的Valle Herradura酒庄（Viña Valle Herradura），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "guairabo-rose-late-harvest",
@@ -416,7 +514,11 @@
     "price": 6000,
     "currency": "CLP",
     "stock": 0,
-    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio."
+    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio.",
+    "notes_pt": [],
+    "description_pt": "Um rosé de colheita tardia da Viña Valle Herradura, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款晚收桃红葡萄酒（Rosé）产自智利科尔查瓜谷的Valle Herradura酒庄（Viña Valle Herradura），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "guairabo-semillon-late-harvest",
@@ -441,7 +543,11 @@
     "price": 6000,
     "currency": "CLP",
     "stock": 0,
-    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio."
+    "internalNote": "Marcado sin stock: Rodrigo confirmó que Valle Herradura (la viña detrás de Guairabo) cerró su producción por la crisis del rubro (correos 9 y 10 jul 2026). Decisión anterior de Andrea era mantenerlo a la venta espejando la tienda real; instrucción del 2026-07-14 revierte eso — se marca descontinuado en todo el sitio.",
+    "notes_pt": [],
+    "description_pt": "Um Semillón de colheita tardia da Viña Valle Herradura, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款晚收赛美蓉（Semillón）产自智利科尔查瓜谷的Valle Herradura酒庄（Viña Valle Herradura），是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "la-pascuala-cabernet-sauvignon",
@@ -465,7 +571,11 @@
     "description_es": "Un Cabernet Sauvignon de Viña La Pascuala, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 11000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Cabernet Sauvignon da Viña La Pascuala, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款赤霞珠（Cabernet Sauvignon）产自智利科尔查瓜谷的La Pascuala酒庄，是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "la-pascuala-carmenere",
@@ -489,7 +599,11 @@
     "description_es": "Un Carménère de Viña La Pascuala, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 11000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Carménère da Viña La Pascuala, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款佳美娜（Carménère）产自智利科尔查瓜谷的La Pascuala酒庄，是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "la-pascuala-malbec",
@@ -508,7 +622,11 @@
     "description_es": "Un Malbec de Viña La Pascuala, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 11000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Malbec da Viña La Pascuala, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款马尔贝克（Malbec）产自智利科尔查瓜谷的La Pascuala酒庄，是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "la-pascuala-tinaja",
@@ -532,7 +650,11 @@
     "description_es": "Un ensamblaje de Cabernet Sauvignon y Carménère criado en tinajas de arcilla de Pañul, de Viña La Pascuala — la familia Castro, productores de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 25000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um blend de Cabernet Sauvignon e Carménère envelhecido em ânforas de argila de Pañul (tinajas), da Viña La Pascuala — a família Castro, produtores de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这是一款赤霞珠与佳美娜（Cabernet Sauvignon–Carménère）混酿，在帕纽尔（Pañul）陶罐（tinajas）中陈酿，产自智利科尔查瓜谷的La Pascuala酒庄——Castro家族，Red del Vino公平贸易生产者。"
   },
   {
     "slug": "el-huape-loco-gera",
@@ -557,7 +679,11 @@
     "description_es": "Loco Gera, un vino tinto de El Huape (Gerardo Orellana Díaz) en el Valle de Colchagua, Chile. Actualmente sin stock.",
     "price": 6000,
     "currency": "CLP",
-    "stock": 0
+    "stock": 0,
+    "notes_pt": [],
+    "description_pt": "Loco Gera, um vinho tinto de El Huape (Gerardo Orellana Díaz) no Vale de Colchagua, Chile. Atualmente sem estoque.",
+    "notes_zh": [],
+    "description_zh": "Loco Gera是一款产自智利科尔查瓜谷El Huape酒庄（Gerardo Orellana Díaz）的红葡萄酒，目前暂无库存。"
   },
   {
     "slug": "cea-mito-carmenere",
@@ -581,7 +707,11 @@
     "description_es": "Un Carménère de Viña Cea, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 8000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Carménère da Viña Cea, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款佳美娜（Carménère）产自智利科尔查瓜谷的Cea酒庄，是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "cea-relato-cabernet-sauvignon",
@@ -605,7 +735,11 @@
     "description_es": "Un Cabernet Sauvignon de Viña Cea, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 8000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Cabernet Sauvignon da Viña Cea, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款赤霞珠（Cabernet Sauvignon）产自智利科尔查瓜谷的Cea酒庄，是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "parcela-33-cabernet-sauvignon-reserva",
@@ -629,7 +763,11 @@
     "description_es": "Un Cabernet Sauvignon de Viña Parcela 33, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
     "price": 15000,
     "currency": "CLP",
-    "stock": 300
+    "stock": 300,
+    "notes_pt": [],
+    "description_pt": "Um Cabernet Sauvignon da Viña Parcela 33, uma das famílias produtoras de comércio justo da Red del Vino no Vale de Colchagua, Chile.",
+    "notes_zh": [],
+    "description_zh": "这款赤霞珠珍藏（Cabernet Sauvignon Reserva）产自智利科尔查瓜谷的Parcela 33酒庄，是Red del Vino公平贸易生产者家庭之一。"
   },
   {
     "slug": "parcela-33-ensamblaje",
@@ -653,6 +791,10 @@
     "description_es": "Un ensamblaje tinto de Viña Parcela 33 (Gilberto López Arias) en el Valle de Colchagua, Chile. Actualmente sin stock.",
     "price": 15000,
     "currency": "CLP",
-    "stock": 0
+    "stock": 0,
+    "notes_pt": [],
+    "description_pt": "Um blend tinto da Viña Parcela 33 (Gilberto López Arias) no Vale de Colchagua, Chile. Atualmente sem estoque.",
+    "notes_zh": [],
+    "description_zh": "这是一款产自智利科尔查瓜谷Parcela 33酒庄（Gilberto López Arias）的红葡萄酒混酿，目前暂无库存。"
   }
 ]

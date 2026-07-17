@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { NAV, SITE } from "@/lib/site";
 import { useCart } from "@/components/cart/CartProvider";
 import { useLocale, useT } from "@/components/i18n/LocaleProvider";
-import { localizedPath, otherLocalePath } from "@/lib/i18n";
+import { LOCALES, LOCALE_LABEL, basePathOf, localizedPath } from "@/lib/i18n";
 
 const NAV_KEY: Record<string, string> = {
   "/wines": "nav.wines",
@@ -25,10 +25,11 @@ export function Header() {
   const pathname = usePathname() || "/";
   const locale = useLocale();
   const tr = useT();
-  const basePath = locale === "es" ? pathname.slice(3) || "/" : pathname;
+  const basePath = basePathOf(pathname);
   const isHome = basePath === "/";
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
   const { count, open } = useCart();
 
   useEffect(() => {
@@ -37,7 +38,10 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => setMenuOpen(false), [pathname]);
+  useEffect(() => {
+    setMenuOpen(false);
+    setLangOpen(false);
+  }, [pathname]);
 
   const solid = scrolled || !isHome || menuOpen;
   const text = solid ? "text-charcoal" : "text-bone";
@@ -82,13 +86,37 @@ export function Header() {
           </nav>
 
           <div className={`flex items-center gap-4 ${text}`}>
-            <Link
-              href={otherLocalePath(pathname)}
-              className="font-sans text-[12px] font-semibold tracking-[0.14em] opacity-80 hover:opacity-100"
-              aria-label={locale === "en" ? "Cambiar a español" : "Switch to English"}
-            >
-              {locale === "en" ? "ES" : "EN"}
-            </Link>
+            <div className="relative">
+              <button
+                onClick={() => setLangOpen((o) => !o)}
+                className="font-sans text-[12px] font-semibold tracking-[0.14em] opacity-80 hover:opacity-100"
+                aria-label={tr("header.menu")}
+                aria-expanded={langOpen}
+              >
+                {LOCALE_LABEL[locale]}
+              </button>
+              <AnimatePresence>
+                {langOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -6 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -6 }}
+                    className="absolute right-0 top-full mt-3 min-w-[96px] border border-charcoal/10 bg-bone py-2 text-charcoal shadow-lg"
+                  >
+                    {LOCALES.filter((l) => l !== locale).map((l) => (
+                      <Link
+                        key={l}
+                        href={localizedPath(basePath, l)}
+                        onClick={() => setLangOpen(false)}
+                        className="block px-4 py-2 font-sans text-[12px] font-semibold tracking-[0.14em] hover:bg-charcoal/5"
+                      >
+                        {LOCALE_LABEL[l]}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
             <button onClick={open} className="relative" aria-label={tr("header.openCart")}>
               <CartIcon />
               {count > 0 && (

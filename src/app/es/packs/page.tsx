@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Packs de vino seleccionados de las familias productoras de comercio justo del Valle de Colchagua — por ocasión, por presupuesto o para descubrir toda la cooperativa.",
   alternates: {
     canonical: "/es/packs",
-    languages: { en: "/packs", es: "/es/packs" },
+    languages: { en: "/packs", es: "/es/packs", pt: "/pt/packs", zh: "/zh/packs" },
   },
 };
 
