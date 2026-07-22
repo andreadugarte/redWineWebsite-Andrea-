@@ -7,7 +7,7 @@ export const IMG = {
   fairtradeBadge: `${O}/FairTrade.png`,
   certBadge: `${O}/ReddelVino-Cert.jpg`,
 
-  heroHome: `${O}/Vinos-Campesino-Slider-2.jpg`,
+  heroHome: `${O}/Vinos-Campesino-Slider-2-active-line.jpg`,
   heroValley: `${O}/Valle-Herradura-Red-del-Vino.jpg`,
   heroValleyAlt: `${O}/Valle-Herradura-Colchagua.jpg`,
   vineyard: `${O}/Red-del-Vino-Grapes.jpg`,

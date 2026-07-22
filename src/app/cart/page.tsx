@@ -34,7 +34,7 @@ export default function CartPage() {
                       <span className="w-10 text-center text-sm">{it.qty}</span>
                       <button className="px-3 py-1.5 hover:text-oxblood" onClick={() => setQty(it.slug, it.qty + 1)}>+</button>
                     </div>
-                    <span className="font-sans text-sm">{formatPrice(it.price * it.qty)}</span>
+                    <span className="font-sans text-sm">{formatPrice(it.price * it.qty, "CLP")}</span>
                   </div>
                 </div>
                 <button onClick={() => remove(it.slug)} className="self-start text-charcoal/40 hover:text-oxblood" aria-label="Remove">×</button>
@@ -46,11 +46,11 @@ export default function CartPage() {
             <p className="eyebrow">Order Summary</p>
             <div className="mt-6 flex justify-between border-b border-charcoal/10 pb-4 font-sans text-sm">
               <span>Subtotal · {count} bottles</span>
-              <span>{formatPrice(subtotal)}</span>
+              <span>{formatPrice(subtotal, "CLP")}</span>
             </div>
             <div className="mt-4 flex justify-between font-serif text-2xl">
               <span>Total</span>
-              <span>{formatPrice(subtotal)}</span>
+              <span>{formatPrice(subtotal, "CLP")}</span>
             </div>
             <Link href="/checkout" className="btn-primary mt-8 w-full">Checkout</Link>
             <p className="mt-3 text-center text-[11px] text-charcoal/50">Shipping &amp; taxes calculated at checkout.</p>

@@ -2,7 +2,7 @@
   "sustainability": {
     "slug": "sustainability",
     "title": "SUSTAINABILITY",
-    "hero_heading": "SUSTAINABILITY",
+    "hero_heading": "Sustainability",
     "hero_image": {
       "src": "/images/original/RDV-Sustentabilidad.jpg",
       "alt": "RDV Sustentabilidad",
@@ -94,7 +94,7 @@
   "home": {
     "slug": "home",
     "title": "HOME",
-    "hero_heading": "MAINTAINING THE TRADITIONS \nAND THE IDENTITY OF RURAL \nWINE FARMERS IN CHILE",
+    "hero_heading": "Maintaining the traditions and the identity of rural wine farmers in Chile",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Fair-Trade-Producers.jpg",
       "alt": "Red del Vino Fair Trade Producer",
@@ -137,7 +137,7 @@
   "reservation-policy": {
     "slug": "reservation-policy",
     "title": "RESERVATION POLICY",
-    "hero_heading": "RESERVATION POLICY",
+    "hero_heading": "Reservation policy",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Office.jpg",
       "alt": "Red del Vino Office",
@@ -185,7 +185,7 @@
   "fair-trade-wines-chile": {
     "slug": "fair-trade-wines-chile",
     "title": "WINES",
-    "hero_heading": "CAMPESINO WINES",
+    "hero_heading": "Campesino wines",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Colchagua-Chile-Wines.jpg",
       "alt": "Red del Vino Colchagua Chile Wines",
@@ -246,7 +246,7 @@
   "event-center": {
     "slug": "event-center",
     "title": "EVENT CENTER",
-    "hero_heading": "EVENT CENTER",
+    "hero_heading": "Event center",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Centro-de-Eventos-Colchagua.jpg",
       "alt": "Centro de Eventos",
@@ -341,7 +341,7 @@
   "social-responsibility": {
     "slug": "social-responsibility",
     "title": "SOCIAL RESPONSIBILITY",
-    "hero_heading": "SOCIAL RESPONSIBILITY",
+    "hero_heading": "Social responsibility",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Vendimia.jpg",
       "alt": "Red del Vino Vendimia",
@@ -374,7 +374,7 @@
   "our-team": {
     "slug": "our-team",
     "title": "OUR TEAM",
-    "hero_heading": "OUR TEAM",
+    "hero_heading": "Our team",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Office.jpg",
       "alt": "Red del Vino Office",
@@ -401,7 +401,7 @@
   "board-of-directors": {
     "slug": "board-of-directors",
     "title": "BOARD OF DIRECTORS",
-    "hero_heading": "BOARD OF DIRECTORS",
+    "hero_heading": "Board of directors",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Office.jpg",
       "alt": "Red del Vino Office",
@@ -428,7 +428,7 @@
   "tourism-colchagua-chile": {
     "slug": "tourism-colchagua-chile",
     "title": "TOURISM",
-    "hero_heading": "TOURISM",
+    "hero_heading": "Tourism",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Office.jpg",
       "alt": "Red del Vino Office",
@@ -476,14 +476,9 @@
         "text": "CONTACT US"
       },
       {
-        "type": "heading",
-        "text": "TOURISM OFFICE"
-      },
-      {
         "type": "text",
         "paragraphs": [
-          "The Tourism Office is located at:",
-          "Av Diego Portales 957, Santa Cruz, O’Higgins"
+          "Write to us at info@reddelvino.com or visit our online shop to see the full wine catalogue."
         ]
       }
     ]
@@ -491,7 +486,7 @@
   "fair-trade-certified-grapes-chile": {
     "slug": "fair-trade-certified-grapes-chile",
     "title": "FAIR TRADE CERTIFIED",
-    "hero_heading": "FAIR TRADE CERTIFIED",
+    "hero_heading": "Fair trade certified",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Fair-Trade-Chile-Cea.jpg",
       "alt": "Fair Trade Chile",
@@ -539,7 +534,7 @@
   "privacy-policy": {
     "slug": "privacy-policy",
     "title": "PRIVACY POLICY",
-    "hero_heading": "PRIVACY POLICY",
+    "hero_heading": "Privacy policy",
     "hero_image": null,
     "blocks": [
       {
@@ -578,7 +573,7 @@
   "fair-trade-wine-grape-producers": {
     "slug": "fair-trade-wine-grape-producers",
     "title": "PRODUCERS",
-    "hero_heading": "OUR PRODUCERS",
+    "hero_heading": "Our producers",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Fair-Trade-Producers.jpg",
       "alt": "Red del Vino Fair Trade Producer",
@@ -611,7 +606,7 @@
   "contact-us": {
     "slug": "contact-us",
     "title": "CONTACT US",
-    "hero_heading": "PHONE",
+    "hero_heading": "Contact us",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Office.jpg",
       "alt": "Red del Vino Office",
@@ -700,7 +695,7 @@
   "about-us": {
     "slug": "about-us",
     "title": "ABOUT US",
-    "hero_heading": "MAINTAINING THE \nTRADITIONS AND CUSTOMS \nOF RURAL FAMILIES",
+    "hero_heading": "Maintaining the traditions and customs of rural families",
     "hero_image": {
       "src": "/images/original/Red-del-Vino-Fair-Trade-Producers.jpg",
       "alt": "Red del Vino Fair Trade Producer",

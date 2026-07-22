@@ -39,7 +39,7 @@ export function StoryIntro({ body }: { body: string }) {
           <div className="mt-14 grid grid-cols-3 gap-6 border-t border-charcoal/15 pt-10">
             <Stat n={2004} label={tr("story.stat.founded")} />
             <Stat n={19} label={tr("story.stat.families")} />
-            <Stat n={1} label={tr("story.stat.valley")} />
+            <Stat text="Colchagua" label={tr("story.stat.valleyLabel")} />
           </div>
         </div>
       </div>
@@ -47,12 +47,10 @@ export function StoryIntro({ body }: { body: string }) {
   );
 }
 
-function Stat({ n, label }: { n: number; label: string }) {
+function Stat({ n, text, label }: { n?: number; text?: string; label: string }) {
   return (
     <div>
-      <p className="font-serif text-5xl text-oxblood">
-        <Counter to={n} />
-      </p>
+      <p className="font-serif text-5xl text-oxblood">{text ?? <Counter to={n ?? 0} />}</p>
       <p className="mt-2 font-sans text-xs uppercase tracking-[0.14em] text-charcoal/60">{label}</p>
     </div>
   );

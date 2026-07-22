@@ -88,13 +88,13 @@ export default function CheckoutPage() {
           {items.map((it) => (
             <div key={it.slug} className="flex justify-between font-sans text-sm">
               <span className="text-charcoal-soft">{it.qty} × {it.name}</span>
-              <span>{formatPrice(it.price * it.qty)}</span>
+              <span>{formatPrice(it.price * it.qty, "CLP")}</span>
             </div>
           ))}
         </div>
         <div className="mt-6 flex justify-between border-t border-charcoal/10 pt-4 font-serif text-2xl">
           <span>Total</span>
-          <span>{formatPrice(subtotal)}</span>
+          <span>{formatPrice(subtotal, "CLP")}</span>
         </div>
         <p className="mt-2 text-right text-[11px] text-charcoal/50">{count} bottles</p>
       </aside>

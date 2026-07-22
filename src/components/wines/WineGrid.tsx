@@ -46,12 +46,12 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
   return (
     <div className="container-x py-16 md:py-24">
       <div className="mb-12 flex flex-col gap-6 border-b border-charcoal/15 pb-8">
-        {brands.length > 1 && <Filter label={tr("filter.brand")} options={brands} value={brand} onChange={setBrand} />}
-        <Filter label={tr("filter.occasion")} options={occasions} value={occasion} onChange={setOccasion} />
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          {brands.length > 1 && <Filter label={tr("filter.brand")} options={brands} value={brand} onChange={setBrand} />}
           <Filter label={tr("filter.varietal")} options={varietals} value={varietal} onChange={setVarietal} />
-          <Filter label={tr("filter.style")} options={colors} value={color} onChange={setColor} cap />
         </div>
+        <Filter label={tr("filter.occasion")} options={occasions} value={occasion} onChange={setOccasion} />
+        <Filter label={tr("filter.style")} options={colors} value={color} onChange={setColor} cap />
         {hasActiveFilters && (
           <button onClick={clearFilters} className="self-start font-sans text-xs uppercase tracking-[0.14em] text-oxblood link-underline">
             {tr("filter.clear")}

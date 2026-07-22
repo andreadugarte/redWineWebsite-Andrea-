@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     url: SITE.url,
     siteName: SITE.name,
     type: "website",
-    images: ["/images/original/Vinos-Campesino-Slider-2.jpg"],
+    images: ["/images/original/Vinos-Campesino-Slider-2-active-line.jpg"],
   },
   twitter: { card: "summary_large_image" },
   alternates: {

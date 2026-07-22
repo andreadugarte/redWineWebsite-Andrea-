@@ -35,6 +35,7 @@ export function FeaturedWines({ wines: winesEn }: { wines: Wine[] }) {
 }
 
 function WineCard({ wine, locale }: { wine: Wine; locale: Locale }) {
+  const tr = useT();
   return (
     <Link href={localizedPath(`/wines/${wine.slug}`, locale)} className="group relative flex shrink-0 flex-col w-[78vw] sm:w-[46vw] lg:w-[30vw]">
       <div className="relative aspect-[3/4] overflow-hidden bg-oxblood-deep/40">
@@ -49,7 +50,7 @@ function WineCard({ wine, locale }: { wine: Wine; locale: Locale }) {
           {wine.vintage}
         </span>
         <span className="absolute bottom-5 right-5 font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-          View →
+          {tr("common.view")} →
         </span>
       </div>
       <div className="mt-5">

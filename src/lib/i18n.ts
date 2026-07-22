@@ -111,6 +111,7 @@ export const UI: Dict = {
   "story.stat.founded": { en: "Founded", es: "Fundada", pt: "Fundada", zh: "成立于" },
   "story.stat.families": { en: "Founding families", es: "Familias fundadoras", pt: "Famílias fundadoras", zh: "创始家庭" },
   "story.stat.valley": { en: "Valley · Colchagua", es: "Valle · Colchagua", pt: "Vale · Colchagua", zh: "山谷 · 科尔查瓜" },
+  "story.stat.valleyLabel": { en: "Valley", es: "Valle", pt: "Vale", zh: "山谷" },
 
   // Featured wines
   "wines.eyebrow": { en: "The Campesino Line", es: "La Línea Campesino", pt: "A Linha Campesino", zh: "Campesino系列" },
@@ -155,7 +156,7 @@ export const UI: Dict = {
   },
 
   // Filters (shared)
-  "filter.varietal": { en: "Varietal", es: "Cepa", pt: "Casta", zh: "葡萄品种" },
+  "filter.varietal": { en: "Variety", es: "Cepa", pt: "Casta", zh: "葡萄品种" },
   "filter.style": { en: "Style", es: "Estilo", pt: "Estilo", zh: "风格" },
   "filter.brand": { en: "Brand", es: "Marca", pt: "Marca", zh: "品牌" },
   "filter.occasion": { en: "Occasion", es: "Ocasión", pt: "Ocasião", zh: "场合" },
@@ -194,7 +195,7 @@ export const UI: Dict = {
   },
   // Footer link labels
   "link.wines": { en: "Wines", es: "Vinos", pt: "Vinhos", zh: "葡萄酒" },
-  "link.packs": { en: "Wine Packs", es: "Packs de Vino", pt: "Kits de Vinho", zh: "葡萄酒套装" },
+  "link.packs": { en: "Bundles", es: "Packs de Vino", pt: "Kits de Vinho", zh: "葡萄酒套装" },
   "link.producers": { en: "Producers", es: "Productores", pt: "Produtores", zh: "生产者" },
   "link.story": { en: "Our Story", es: "Nuestra Historia", pt: "Nossa História", zh: "我们的故事" },
   "link.sustainability": { en: "Sustainability", es: "Sostenibilidad", pt: "Sustentabilidade", zh: "可持续发展" },
@@ -229,20 +230,20 @@ export const UI: Dict = {
   "wine.moreFromCellar": { en: "More from the cellar", es: "Más de la bodega", pt: "Mais da adega", zh: "更多精选" },
 
   // Nav additions (commercial-path-first)
-  "nav.packs": { en: "Wine Packs", es: "Packs de Vino", pt: "Kits de Vinho", zh: "葡萄酒套装" },
+  "nav.packs": { en: "Bundles", es: "Packs de Vino", pt: "Kits de Vinho", zh: "葡萄酒套装" },
   "nav.findWine": { en: "Find Your Wine", es: "Encuentra tu Vino", pt: "Encontre seu Vinho", zh: "为您推荐" },
   "nav.trade": { en: "Trade / B2B", es: "Ventas Mayoristas", pt: "Venda por Atacado", zh: "批发业务" },
 
   // Packs / bundles
-  "packs.eyebrow": { en: "Curated Packs", es: "Packs Seleccionados", pt: "Kits Selecionados", zh: "精选套装" },
+  "packs.eyebrow": { en: "Curated Bundles", es: "Packs Seleccionados", pt: "Kits Selecionados", zh: "精选套装" },
   "packs.title": {
-    en: "Wine packs, chosen for you",
+    en: "Wine bundles, chosen for you",
     es: "Packs de vino, elegidos para ti",
     pt: "Kits de vinho, escolhidos para você",
     zh: "为您精心挑选的葡萄酒套装",
   },
   "packs.intro": {
-    en: "Nine producer families make choosing hard. These packs make it easy — by occasion, by budget, or to discover the whole cooperative in one case.",
+    en: "Nine producer families make choosing hard. These bundles make it easy — by occasion, by budget, or to discover the whole cooperative in one case.",
     es: "Con nueve familias productoras, elegir cuesta. Estos packs lo hacen fácil — por ocasión, por presupuesto, o para descubrir toda la cooperativa en una sola caja.",
     pt: "Nove famílias produtoras tornam a escolha difícil. Estes kits facilitam — por ocasião, por orçamento, ou para descobrir toda a cooperativa em uma única caixa.",
     zh: "九个生产家庭,选择实属不易。这些套装让选择变得简单——按场合、按预算,或一箱囊括整个合作社的风味。",
@@ -250,12 +251,12 @@ export const UI: Dict = {
   "packs.bottles": { en: "bottles", es: "botellas", pt: "garrafas", zh: "瓶" },
   "packs.includes": { en: "What's inside", es: "Qué incluye", pt: "O que está incluído", zh: "套装内容" },
   "packs.addAll": {
-    en: "Add the pack to cart",
+    en: "Add the bundle to cart",
     es: "Agregar el pack al carrito",
     pt: "Adicionar o kit ao carrinho",
     zh: "将套装加入购物车",
   },
-  "packs.viewPack": { en: "View pack", es: "Ver el pack", pt: "Ver kit", zh: "查看套装" },
+  "packs.viewPack": { en: "View bundle", es: "Ver el pack", pt: "Ver kit", zh: "查看套装" },
   "packs.valueAdd.producerCard": {
     en: "Includes a meet-the-producers card",
     es: "Incluye una tarjeta para conocer a los productores",
@@ -280,8 +281,8 @@ export const UI: Dict = {
     pt: "Esta seleção muda a cada feira.",
     zh: "该精选组合随每场展会更新。",
   },
-  "packs.featuredTitle": { en: "Featured wine packs", es: "Packs destacados", pt: "Kits de vinho em destaque", zh: "精选套装推荐" },
-  "packs.viewAll": { en: "View all packs", es: "Ver todos los packs", pt: "Ver todos os kits", zh: "查看所有套装" },
+  "packs.featuredTitle": { en: "Featured wine bundles", es: "Packs destacados", pt: "Kits de vinho em destaque", zh: "精选套装推荐" },
+  "packs.viewAll": { en: "View all bundles", es: "Ver todos los packs", pt: "Ver todos os kits", zh: "查看所有套装" },
 
   // Quiz
   "quiz.eyebrow": { en: "Guided choice", es: "Elección guiada", pt: "Escolha guiada", zh: "智能选酒" },

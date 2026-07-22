@@ -4,6 +4,92 @@ Everything here is flagged, not silently resolved. Items marked ✉️ were aske
 in the July 2026 email thread with Rodrigo ("Respuestas a requerimientos
 iniciales y accesos"); the rest are queued for the next email.
 
+## 2026-07-19 "Fix everything clearly wrong" audit — result
+
+Verified live in a real browser (not just build success), item by item:
+
+**Real bugs found and fixed:**
+- Home stat counters ("0/0/0") — real bug: display was continuously tied to
+  scroll position (`src/components/animations/StatCounter.tsx`), so it got
+  stuck at whatever fraction was showing when the user stopped scrolling,
+  including 0 if the page never scrolled that far. Rewrote as a one-shot
+  count-up animation triggered once the element becomes visible, decoupled
+  from further scroll events. Also fixed the 3rd stat, which was animating
+  a nonsensical `n=1` counter for "Valley · Colchagua" — now shows the
+  literal text "Colchagua".
+- Phantom 4th bottle in the home hero — real, and it's a photo asset issue,
+  not a data issue: `Vinos-Campesino-Slider-2.jpg` is a real photo of 4
+  actual Campesino bottles including the discontinued Cabernet Sauvignon
+  Reserva. Cropped a new version (`Vinos-Campesino-Slider-2-active-line.jpg`)
+  showing only the 3 active wines; swapped into both the hero and the
+  Open Graph share image (same source file, same bug).
+- "VIEW →" hardcoded in English on the Campesino wine cards regardless of
+  locale (`FeaturedWines.tsx`) — now uses the `common.view` translation key.
+- Checkout (`/checkout`) and the standalone `/cart` page were formatting
+  prices as USD ($) instead of CLP — same `formatPrice()`-missing-currency
+  bug fixed earlier in the cart drawer, but present in 4 more call sites.
+  Fixed all 4.
+- "Varietal" → "Variety" (EN only), "Wine Packs"/"Packs" → "Bundles" (EN
+  only, nav/titles/labels — ES untouched), filter order changed to
+  Brand+Variety before Occasion, Style last.
+- Home hero heading, and the hero heading on every EditorialPage-based page
+  (Sustainability, Social Responsibility, About/Story, Privacy Policy,
+  Reservation Policy) were ALL CAPS in `content/site/pages.json` — the
+  Spanish versions were separately hardcoded in sentence case and never
+  had this bug. Converted all `hero_heading` values to sentence case.
+- Tourism "Need more information" pointed to the old physical Tourism
+  Office street address — replaced with the real, already-used contact
+  email (`info@reddelvino.com`) and a nudge to the shop, in
+  `content/site/pages.json`.
+
+**Checked and did NOT reproduce (left as-is, not "fixed" for a bug that
+isn't there):**
+- Add to Cart — confirmed via cart localStorage + header badge + drawer
+  DOM content that adding a wine from the quiz results correctly populates
+  the cart (screenshots looked blank in this specific browser-automation
+  tool due to a Framer Motion animation quirk in headless testing — see
+  below — but the actual cart state was verified correct via JS).
+- Quiz recommending sold-out wines — tested Red → Bold → Over CLP 14,000;
+  all 3 results had working "Add to Cart", none were sold-out SKUs.
+- Guairabo (5 SKUs) + El Huape Loco Gera sold-out badges — still correct,
+  no regression found.
+- ES home mission quote wrapping "one word per line" — measured actual
+  rendered positions of each word span; they wrap normally, multiple words
+  per line. Does not reproduce in the current build.
+- Sustainability hero image not loading — loads correctly; an initial
+  `naturalWidth: 0` reading was a test-timing artifact, not a real 404/
+  broken file (confirmed the JPEG is valid and Next's image endpoint
+  returns it with HTTP 200).
+- Tourism hero image showing a "non-Red-del-Vino wine" — the image
+  (`Red-del-Vino-Tour-Wine-Glass.jpg`) actually shows real Red del Vino
+  bottles (Cea "Mito" Carménère label is legible), not a competitor wine.
+- ES producer/wine card links dropping into the English site — spot-
+  checked all 17 producer card links on `/es/producers`: 100% correctly
+  prefixed `/es/...`.
+
+**Known environment limitation (not a site bug):** this session's browser-
+automation tool never fires `IntersectionObserver` callbacks and
+`window.scrollTo()` never dispatches a real `scroll` event — both are used
+by Framer Motion's `whileInView` and by scroll-triggered reveals sitewide.
+Real user scrolling (mouse wheel / trackpad / touch) does dispatch real
+scroll events and was confirmed working (e.g. the header's scroll-linked
+solid/logo state). This made a few sections un-screenshotable in this tool
+(they render at `opacity: 0.15` — Framer's initial state — until a real
+scroll event fires) even though the underlying code is correct. Flagging
+so this isn't mistaken for a future regression.
+
+**Not independently re-audited this pass** (already covered by earlier
+fixes in this repo's history, no new report against them): Portuguese/
+Mandarin locales, real bottle/producer photos, off-trade RRP pricing table,
+the new Plumpton logo.
+
+**Blocked, not code-related:** `git push` is failing with "Invalid username
+or token" from the stored GitHub credential (osxkeychain) — all of the
+above is committed locally on `content/gmail-and-catalog-corrections` but
+not yet pushed/deployed. Needs Andrea to re-authenticate git (e.g.
+`gh auth login` or refresh the stored personal access token) before the
+live Vercel URL will reflect any of this.
+
 ## Commerce blockers
 - **Stripe account + API keys** ✉️ — checkout runs in clearly-labelled
   simulated mode until keys exist. Business/banking details were received by
