@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Fraunces, Inter, Oswald } from "next/font/google";
 import "./globals.css";
 import { SITE } from "@/lib/site";
 import { CartProvider } from "@/components/cart/CartProvider";
@@ -11,10 +11,20 @@ import { OrganizationJsonLd } from "@/components/seo/JsonLd";
 import { ScrollProgress } from "@/components/motion/ScrollProgress";
 import { LocaleProvider } from "@/components/i18n/LocaleProvider";
 
-const cormorant = Cormorant_Garamond({
+// Brand pack calls for Bookmania (titles), Knockout Welterweight w/ tracking 209
+// (subheadings), Coco Gothic (body) — all commercial, no licensed files available.
+// Fraunces (artisanal serif) and Oswald (condensed, poster-style) are the closest
+// free equivalents for the first two; Inter already fits the "clean, friendly" body brief.
+const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-cormorant",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-oswald",
   display: "swap",
 });
 const inter = Inter({
@@ -47,7 +57,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${oswald.variable} ${inter.variable}`}>
       <body className="grain font-sans antialiased">
         <OrganizationJsonLd />
         <LocaleProvider>

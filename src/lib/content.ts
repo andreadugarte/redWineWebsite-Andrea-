@@ -19,6 +19,10 @@ export type Page = {
   hero_heading: string;
   hero_image: ImageRef | null;
   blocks: Block[];
+  /** Translated blocks (path-based i18n). Fall back to English when absent. */
+  blocks_es?: Block[];
+  blocks_pt?: Block[];
+  blocks_zh?: Block[];
 };
 
 export type Producer = {
@@ -77,8 +81,14 @@ export type Wine = {
 export type Tour = {
   slug: string;
   name: string;
+  name_es?: string;
+  name_pt?: string;
+  name_zh?: string;
   image: ImageRef | null;
   body: string[];
+  body_es?: string[];
+  body_pt?: string[];
+  body_zh?: string[];
   blocks: Block[];
 };
 
@@ -164,8 +174,11 @@ export function localizeBundle(b: Bundle, locale: Locale): Bundle {
  */
 export const activeProducers = producers.filter((p) => p.status !== "inactive");
 
-export function getPage(slug: string): Page | undefined {
-  return pages[slug];
+export function getPage(slug: string, locale: Locale = "en"): Page | undefined {
+  const page = pages[slug];
+  if (!page) return page;
+  const blocks = { es: page.blocks_es, pt: page.blocks_pt, zh: page.blocks_zh }[locale as "es" | "pt" | "zh"];
+  return blocks?.length ? { ...page, blocks } : page;
 }
 
 /** Swap a producer's text fields to the given locale, falling back to English. */
@@ -187,6 +200,16 @@ export function localizeWine(w: Wine, locale: Locale): Wine {
 }
 export function localizedProducers(list: Producer[], locale: Locale): Producer[] {
   return list.map((p) => localizeProducer(p, locale));
+}
+/** Swap a tour's text fields to the given locale, falling back to English. */
+export function localizeTour(t: Tour, locale: Locale): Tour {
+  if (locale === "en") return t;
+  const name = { es: t.name_es, pt: t.name_pt, zh: t.name_zh }[locale as "es" | "pt" | "zh"];
+  const body = { es: t.body_es, pt: t.body_pt, zh: t.body_zh }[locale as "es" | "pt" | "zh"];
+  return { ...t, name: name || t.name, body: body?.length ? body : t.body };
+}
+export function localizedTours(list: Tour[], locale: Locale): Tour[] {
+  return list.map((t) => localizeTour(t, locale));
 }
 export function localizedWines(list: Wine[], locale: Locale): Wine[] {
   return list.map((w) => localizeWine(w, locale));

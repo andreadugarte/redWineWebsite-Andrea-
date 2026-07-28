@@ -18,7 +18,7 @@
       "Not included:",
       "Transportation",
       "Duration: Approximately 1 hour",
-      "Tour Hours: This tour is available between 10:00 am and 6:00 pm daily",
+      "Tour Hours: This tour is available on Saturdays, between 10:00 am and 6:00 pm",
       "The Tourism Office is located at:",
       "Av Diego Portales 957, Santa Cruz, O’Higgins"
     ],
@@ -74,207 +74,51 @@
           "Av Diego Portales 957, Santa Cruz, O’Higgins"
         ]
       }
-    ]
-  },
-  {
-    "slug": "wine-tastings",
-    "name": "WINE TASTINGS",
-    "image": {
-      "src": "/images/original/Wine-Tasting-Colchagua.jpg",
-      "alt": "Wine-Tasting-Colchagua",
-      "w": 585,
-      "h": 749
-    },
-    "body": [
-      "If you are interested in learning more about wine, we offer wine tastings at our wine shop. This lesson includes the 5 basic steps in tasting wine: color, swirl, smell, taste, and savor. During this process, we will also share the varietal character and ideal temperatures to serve the wine.",
-      "INCLUDES:",
-      "The tasting of 2 wines",
-      "A snack for pairing",
-      "Duration: Approximately 1 hour",
-      "Hours: Between 10:00 am and 6:00 pm daily",
-      "The Tourism Office is located at:",
+    ],
+    "name_es": "TOUR VITIVINÍCOLA",
+    "name_pt": "PASSEIO VINÍCOLA",
+    "name_zh": "葡萄园游览",
+    "body_es": [
+      "Pasa un día entretenido aprendiendo sobre el proceso de elaboración del vino en Colchagua. Como parte del programa, visitarás 3 viñedos privados y conocerás a los enólogos que tienen una larga historia en la zona. Ellos compartirán sus secretos y técnicas para la cosecha de la uva y te guiarán a través del proceso de producción.",
+      "Los viñedos están ubicados en Patagua, Chépica, Apalta, Palmilla, Nancagua y Peralillo.",
+      "Incluye:",
+      "Una visita privada a 1 viñedo en Colchagua",
+      "Guía en español",
+      "Degustación de 2 vinos",
+      "No incluye:",
+      "Transporte",
+      "Duración: Aproximadamente 1 hora",
+      "Horario del tour: Disponible los días sábado, entre las 10:00 y las 18:00 hrs",
+      "La Oficina de Turismo está ubicada en:",
       "Av Diego Portales 957, Santa Cruz, O’Higgins"
     ],
-    "blocks": [
-      {
-        "type": "heading",
-        "text": "WINE TASTING"
-      },
-      {
-        "type": "text",
-        "paragraphs": [
-          "If you are interested in learning more about wine, we offer wine tastings at our wine shop. This lesson includes the 5 basic steps in tasting wine: color, swirl, smell, taste, and savor. During this process, we will also share the varietal character and ideal temperatures to serve the wine.",
-          "INCLUDES:",
-          "The tasting of 2 wines",
-          "A snack for pairing"
-        ]
-      },
-      {
-        "type": "text",
-        "paragraphs": [
-          "Duration: Approximately 1 hour",
-          "Hours: Between 10:00 am and 6:00 pm daily"
-        ]
-      },
-      {
-        "type": "eyebrow",
-        "text": "WINE TASTING"
-      },
-      {
-        "type": "heading",
-        "text": "Photo Gallery"
-      },
-      {
-        "type": "eyebrow",
-        "text": "REQUEST FORM"
-      },
-      {
-        "type": "heading",
-        "text": "WINE TASTING"
-      },
-      {
-        "type": "heading",
-        "text": "TOURISM OFFICE"
-      },
-      {
-        "type": "text",
-        "paragraphs": [
-          "The Tourism Office is located at:",
-          "Av Diego Portales 957, Santa Cruz, O’Higgins"
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "kayak-rentals",
-    "name": "KAYAK RENTALS",
-    "image": {
-      "src": "/images/original/Kayak-Colchagua.jpg",
-      "alt": "Kayak Colchagua",
-      "w": 585,
-      "h": 749
-    },
-    "body": [
-      "We offer rental equipment for outdoor Kayaking and Stand Up Paddle-boards. It’s a fun and physical way to enjoy the outdoors while marveling at the scenery as you glide through the lakes.",
-      "INCLUDES:",
-      "Life Jacket",
-      "Kayaks and Table Sup are available between 10:00 am and  6:00 pm",
-      "The Tourism Office is located at:",
+    "body_pt": [
+      "Passe um dia divertido aprendendo sobre o processo de elaboração do vinho em Colchagua. Como parte do programa, você visitará 3 vinhedos privados e conhecerá os enólogos que têm uma longa história na região. Eles compartilharão seus segredos e técnicas na colheita das uvas e guiarão você pelo processo de produção.",
+      "Os vinhedos estão localizados em Patagua, Chépica, Apalta, Palmilla, Nancagua e Peralillo.",
+      "Inclui:",
+      "Uma visita privada a 1 vinhedo em Colchagua",
+      "Guia em espanhol",
+      "Degustação de 2 vinhos",
+      "Não inclui:",
+      "Transporte",
+      "Duração: Aproximadamente 1 hora",
+      "Horário do passeio: Disponível aos sábados, das 10h00 às 18h00",
+      "O Escritório de Turismo está localizado em:",
       "Av Diego Portales 957, Santa Cruz, O’Higgins"
     ],
-    "blocks": [
-      {
-        "type": "heading",
-        "text": "Kayak Rental"
-      },
-      {
-        "type": "text",
-        "paragraphs": [
-          "We offer rental equipment for outdoor Kayaking and Stand Up Paddle-boards. It’s a fun and physical way to enjoy the outdoors while marveling at the scenery as you glide through the lakes.",
-          "INCLUDES:",
-          "Life Jacket"
-        ]
-      },
-      {
-        "type": "text",
-        "paragraphs": [
-          "Kayaks and Table Sup are available between 10:00 am and  6:00 pm"
-        ]
-      },
-      {
-        "type": "eyebrow",
-        "text": "KAYAK RENTAL"
-      },
-      {
-        "type": "heading",
-        "text": "Photo Gallery"
-      },
-      {
-        "type": "eyebrow",
-        "text": "REQUEST FORM"
-      },
-      {
-        "type": "heading",
-        "text": "KAYAK RENTAL"
-      },
-      {
-        "type": "heading",
-        "text": "TOURISM OFFICE"
-      },
-      {
-        "type": "text",
-        "paragraphs": [
-          "The Tourism Office is located at:",
-          "Av Diego Portales 957, Santa Cruz, O’Higgins"
-        ]
-      }
-    ]
-  },
-  {
-    "slug": "bike-rentals",
-    "name": "BIKE RENTALS",
-    "image": {
-      "src": "/images/original/Bike-Rentals-Colchagua.jpg",
-      "alt": "Bike Rentals",
-      "w": 585,
-      "h": 749
-    },
-    "body": [
-      "As part of our service, we offer bike rentals so that you can explore Santa Cruz and its beautiful surroundings at your own pace. Depending on the type and level of activity you are looking for, we have mountain bikes and tandem bicycles. The bike costs vary based on a half or whole day rental.",
-      "We also provide helmets for each person.",
-      "Hours:",
-      "We are open between 10:00 am and 3:00 pm daily.",
-      "Payment is due at the time bikes are picked up.",
-      "The Tourism Office is located at:",
+    "body_zh": [
+      "在科尔查瓜度过愉快的一天，了解酿酒工艺。作为项目的一部分，您将参观3处私人葡萄园，结识在当地拥有悠久历史的酿酒师。他们将分享采摘葡萄的秘诀与技巧，并带您了解整个生产过程。",
+      "葡萄园分别位于Patagua、Chépica、Apalta、Palmilla、Nancagua和Peralillo。",
+      "包含：",
+      "科尔查瓜1处私人葡萄园的专属参观",
+      "西班牙语向导",
+      "品鉴2款葡萄酒",
+      "不包含：",
+      "交通",
+      "时长：约1小时",
+      "游览时间：仅限周六，10:00至18:00",
+      "旅游办公室地址：",
       "Av Diego Portales 957, Santa Cruz, O’Higgins"
-    ],
-    "blocks": [
-      {
-        "type": "heading",
-        "text": "BIKE RENTALS"
-      },
-      {
-        "type": "text",
-        "paragraphs": [
-          "As part of our service, we offer bike rentals so that you can explore Santa Cruz and its beautiful surroundings at your own pace. Depending on the type and level of activity you are looking for, we have mountain bikes and tandem bicycles. The bike costs vary based on a half or whole day rental.",
-          "We also provide helmets for each person."
-        ]
-      },
-      {
-        "type": "text",
-        "paragraphs": [
-          "Hours:",
-          "We are open between 10:00 am and 3:00 pm daily.",
-          "Payment is due at the time bikes are picked up."
-        ]
-      },
-      {
-        "type": "eyebrow",
-        "text": "BIKE RENTALS"
-      },
-      {
-        "type": "heading",
-        "text": "Photo Gallery"
-      },
-      {
-        "type": "eyebrow",
-        "text": "REQUEST FORM"
-      },
-      {
-        "type": "heading",
-        "text": "BIKE RENTALS"
-      },
-      {
-        "type": "heading",
-        "text": "TOURISM OFFICE"
-      },
-      {
-        "type": "text",
-        "paragraphs": [
-          "The Tourism Office is located at:",
-          "Av Diego Portales 957, Santa Cruz, O’Higgins"
-        ]
-      }
     ]
   }
 ]

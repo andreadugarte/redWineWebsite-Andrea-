@@ -92,7 +92,7 @@
     "name": "Feria Favourites",
     "name_es": "Vinos de la Feria",
     "type": "feria",
-    "permanence": "campaign",
+    "permanence": "permanent",
     "wineSlugs": [
       "campesino-carmenere",
       "cea-mito-carmenere",
@@ -100,12 +100,12 @@
     ],
     "discountPercent": 10,
     "valueAdd": "producerCard",
-    "description": "The wines being poured at our latest feria — tasted them at the stand? Take the same bottles home. This selection rotates with every feria.",
-    "description_es": "Los vinos que estamos sirviendo en la última feria — ¿los probaste en el stand? Llévate las mismas botellas a casa. Esta selección rota con cada feria.",
-    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% pendiente de ratificación. Actualizar wineSlugs con los vinos de cada feria.",
+    "description": "Our favourite wines from the feria, now a fixed selection you can always find in the shop. Tasted them at the stand? Take the same bottles home.",
+    "description_es": "Nuestros vinos favoritos de la feria, ahora una selección fija que siempre encontrarás en la tienda. ¿Los probaste en el stand? Llévate las mismas botellas a casa.",
+    "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% pendiente de ratificación. Bundle is now a fixed/static selection (Rodrigo, 23 Jul) — wineSlugs no longer rotate per feria.",
     "name_pt": "Favoritos da Feira",
     "name_zh": "展会人气精选",
-    "description_pt": "Os vinhos que estamos servindo em nossa última feira — provou-os no estande? Leve as mesmas garrafas para casa. Esta seleção muda a cada feira.",
-    "description_zh": "这是我们最近一次展会上正在倒的美酒——在展位品尝过了吗？把同款带回家吧。这个精选组合会随每场展会更新。"
+    "description_pt": "Nossos vinhos favoritos da feira, agora uma seleção fixa que você sempre encontra na loja. Provou-os no estande? Leve as mesmas garrafas para casa.",
+    "description_zh": "我们精选的展会人气美酒，如今成为门店常设的固定组合。在展位品尝过了吗？把同款带回家吧。"
   }
 ]

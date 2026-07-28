@@ -38,8 +38,7 @@ export const FOOTER_LINKS = {
     { label: "Trade / B2B", href: "/trade" },
   ],
   Visit: [
-    { label: "Wine Tastings & Tours", href: "/tourism" },
-    { label: "Event Center", href: "/event-center" },
+    { label: "Wine Tours", href: "/tourism" },
     { label: "Reservation Policy", href: "/reservation-policy" },
     { label: "Contact", href: "/contact" },
   ],

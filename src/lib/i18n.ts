@@ -206,8 +206,7 @@ export const UI: Dict = {
     pt: "Responsabilidade Social",
     zh: "社会责任",
   },
-  "link.tastings": { en: "Wine Tastings & Tours", es: "Catas y Tours", pt: "Degustações e Passeios", zh: "品鉴与游览" },
-  "link.eventCenter": { en: "Event Center", es: "Centro de Eventos", pt: "Centro de Eventos", zh: "活动中心" },
+  "link.tastings": { en: "Wine Tours", es: "Tours de Vino", pt: "Passeios de Vinho", zh: "葡萄酒游览" },
   "link.reservationPolicy": {
     en: "Reservation Policy",
     es: "Política de Reservas",
@@ -274,12 +273,6 @@ export const UI: Dict = {
     es: "Incluye envío gratis a Santiago",
     pt: "Frete grátis para Santiago incluído",
     zh: "含圣地亚哥免费配送",
-  },
-  "packs.feriaRotates": {
-    en: "This selection rotates with every feria.",
-    es: "Esta selección rota con cada feria.",
-    pt: "Esta seleção muda a cada feira.",
-    zh: "该精选组合随每场展会更新。",
   },
   "packs.featuredTitle": { en: "Featured wine bundles", es: "Packs destacados", pt: "Kits de vinho em destaque", zh: "精选套装推荐" },
   "packs.viewAll": { en: "View all bundles", es: "Ver todos los packs", pt: "Ver todos os kits", zh: "查看所有套装" },
@@ -454,7 +447,7 @@ export const UI: Dict = {
     pt: "Algo deu errado. Por favor, envie-nos um e-mail diretamente.",
     zh: "出现了一些问题,请直接给我们发送邮件。",
   },
-  "form.cta.reservation": { en: "Request a Tasting", es: "Solicitar reserva", pt: "Solicitar uma Degustação", zh: "预约品鉴" },
+  "form.cta.reservation": { en: "Request a Tour", es: "Solicitar tour", pt: "Solicitar um Passeio", zh: "预约游览" },
   "form.cta.event": { en: "Request Your Event", es: "Solicitar evento", pt: "Solicite seu Evento", zh: "申请举办活动" },
   "form.cta.contact": { en: "Send Message", es: "Enviar mensaje", pt: "Enviar Mensagem", zh: "发送消息" },
 
@@ -480,7 +473,6 @@ export const HREF_LABEL_KEY: Record<string, string> = {
   "/social-responsibility": "link.socialResponsibility",
   "/trade": "link.trade",
   "/tourism": "link.tastings",
-  "/event-center": "link.eventCenter",
   "/reservation-policy": "link.reservationPolicy",
   "/contact": "link.contact",
 };

@@ -4,11 +4,11 @@
  * instead of a hard cut. Purely decorative.
  */
 const TONE: Record<string, string> = {
-  bone: "#f4efe6",
-  "bone-warm": "#ece4d6",
+  bone: "#feefd1",
+  "bone-warm": "#f7e2b8",
   charcoal: "#26221f",
-  oxblood: "#5a1420",
-  "oxblood-deep": "#3d0d16",
+  oxblood: "#0f6343",
+  "oxblood-deep": "#0a4a32",
 };
 
 export function Seam({

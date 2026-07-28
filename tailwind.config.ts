@@ -5,32 +5,39 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Wine-heritage palette — warm, muted, earthy
+        // Plumpton brand palette (consultancy brand pack, Jul 2026) — dark green is the
+        // primary accent, replacing the old burgundy/oxblood. Token names (oxblood/gold/
+        // vine/bone) are kept as-is to avoid touching every call site; see DEPENDENCIES.md.
         oxblood: {
-          DEFAULT: "#5a1420",
-          deep: "#3d0d16",
-          soft: "#7a2231",
+          DEFAULT: "#0f6343", // Plumpton dark green — primary accent
+          deep: "#0a4a32",
+          soft: "#3d8265",
         },
-        bordeaux: "#6b1e2b",
+        bordeaux: "#e84848", // Plumpton red-coral — reserved for selective emphasis only
         charcoal: {
           DEFAULT: "#26221f",
           soft: "#3a3430",
         },
         bone: {
-          DEFAULT: "#f4efe6",
-          warm: "#ece4d6",
-          deep: "#e2d7c3",
+          DEFAULT: "#feefd1", // Plumpton cream-beige — main secondary
+          warm: "#f7e2b8",
+          deep: "#d1d5ce", // Plumpton grey-sage — contrast secondary
         },
         gold: {
-          DEFAULT: "#b08d4f",
-          soft: "#c7a86e",
-          pale: "#e3d2a8",
+          DEFAULT: "#fec425", // Plumpton yellow — highlight color
+          soft: "#f6d777",
+          pale: "#fbe9b8",
         },
-        vine: "#4a5a3c",
+        vine: "#3d8265",
+        blush: "#ecc7c2", // Plumpton pink-blush — secondary contrast background
       },
       fontFamily: {
-        serif: ["var(--font-cormorant)", "Georgia", "serif"],
+        // Brand pack fonts are commercial (Bookmania, Knockout Welterweight, Coco Gothic)
+        // and no licensed files are available; using the closest free equivalents.
+        // See DEPENDENCIES.md for the substitution note.
+        serif: ["var(--font-fraunces)", "Georgia", "serif"],
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        condensed: ["var(--font-oswald)", "Impact", "sans-serif"],
       },
       fontSize: {
         "display-xl": ["clamp(3rem, 9vw, 8.5rem)", { lineHeight: "0.95", letterSpacing: "-0.02em" }],

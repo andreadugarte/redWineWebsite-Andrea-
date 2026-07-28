@@ -481,6 +481,147 @@
           "Write to us at info@reddelvino.com or visit our online shop to see the full wine catalogue."
         ]
       }
+    ],
+    "blocks_es": [
+      {
+        "type": "eyebrow",
+        "text": "RURAL"
+      },
+      {
+        "type": "heading",
+        "text": "TURISMO"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Red del Vino te invita a vivir una actividad vitivinícola única e inolvidable en el Valle de Colchagua, que consiste en “un día de viaje” aprendiendo y experimentando la conexión entre el campesino y la tierra.",
+          "Hablaremos del manejo de las vides, el proceso de elaboración del vino, el patrimonio arquitectónico y el entorno que vive una familia campesina a lo largo de su vida. Conocerás el paisaje del valle central y visitarás lugares emblemáticos, incluyendo viñedos, el campo y monumentos nacionales, junto con la posibilidad de disfrutar de la cocina local."
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "EXPLORA ESTA HERMOSA REGIÓN VITIVINÍCOLA"
+      },
+      {
+        "type": "heading",
+        "text": "DESCUBRE EL VALLE DE COLCHAGUA"
+      },
+      {
+        "type": "eyebrow",
+        "text": "TURISMO"
+      },
+      {
+        "type": "heading",
+        "text": "Galería de Fotos"
+      },
+      {
+        "type": "eyebrow",
+        "text": "NECESITAS MÁS INFORMACIÓN"
+      },
+      {
+        "type": "heading",
+        "text": "CONTÁCTANOS"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Escríbenos a info@reddelvino.com o visita nuestra tienda en línea para ver el catálogo completo de vinos."
+        ]
+      }
+    ],
+    "blocks_pt": [
+      {
+        "type": "eyebrow",
+        "text": "RURAL"
+      },
+      {
+        "type": "heading",
+        "text": "TURISMO"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "A Red del Vino convida você a viver uma atividade vinícola única e inesquecível no Vale de Colchagua, que consiste em “um dia de viagem” aprendendo e vivenciando a conexão entre o camponês e a terra.",
+          "Falaremos sobre o manejo das videiras, o processo de elaboração do vinho, o patrimônio arquitetônico e o ambiente vivido por uma família camponesa ao longo de sua vida. Você vai conhecer a paisagem do vale central e visitar locais emblemáticos, incluindo vinhedos, o campo e monumentos nacionais, além de poder saborear a culinária local."
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "EXPLORE ESTA LINDA REGIÃO VINÍCOLA"
+      },
+      {
+        "type": "heading",
+        "text": "DESCUBRA O VALE DE COLCHAGUA"
+      },
+      {
+        "type": "eyebrow",
+        "text": "TURISMO"
+      },
+      {
+        "type": "heading",
+        "text": "Galeria de Fotos"
+      },
+      {
+        "type": "eyebrow",
+        "text": "PRECISA DE MAIS INFORMAÇÕES"
+      },
+      {
+        "type": "heading",
+        "text": "FALE CONOSCO"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Escreva para info@reddelvino.com ou visite nossa loja on-line para ver o catálogo completo de vinhos."
+        ]
+      }
+    ],
+    "blocks_zh": [
+      {
+        "type": "eyebrow",
+        "text": "乡村之旅"
+      },
+      {
+        "type": "heading",
+        "text": "旅游"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "Red del Vino邀请您在科尔查瓜山谷体验一次独特而难忘的葡萄酒之旅——这是「一段旅程」，让您了解并感受农户与土地之间的联结。",
+          "我们将探讨葡萄藤的管护、酿酒工艺、建筑遗产，以及一个农户家庭一生所经历的环境。您将了解中央山谷的风貌，参观包括葡萄园、乡村与国家纪念地在内的风景名胜，并有机会品尝当地美食。"
+        ]
+      },
+      {
+        "type": "eyebrow",
+        "text": "探索这片美丽的葡萄酒产区"
+      },
+      {
+        "type": "heading",
+        "text": "探访科尔查瓜山谷"
+      },
+      {
+        "type": "eyebrow",
+        "text": "旅游"
+      },
+      {
+        "type": "heading",
+        "text": "图片库"
+      },
+      {
+        "type": "eyebrow",
+        "text": "需要更多信息"
+      },
+      {
+        "type": "heading",
+        "text": "联系我们"
+      },
+      {
+        "type": "text",
+        "paragraphs": [
+          "请发邮件至info@reddelvino.com，或访问我们的在线商店查看完整的葡萄酒目录。"
+        ]
+      }
     ]
   },
   "fair-trade-certified-grapes-chile": {

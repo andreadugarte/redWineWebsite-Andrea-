@@ -4,6 +4,105 @@ Everything here is flagged, not silently resolved. Items marked ✉️ were aske
 in the July 2026 email thread with Rodrigo ("Respuestas a requerimientos
 iniciales y accesos"); the rest are queued for the next email.
 
+## 2026-07-28 Plumpton brand pack implementation — result
+
+Source: the two Plumpton consultancy PDFs Rodrigo/Andrea shared (Part 1 —
+Organisational Strategy, Part 2 — Shop Rebrand & Channel Strategy), plus
+Rodrigo's confirmed 23 Jul decisions. Nothing below was invented — colors were
+pixel-sampled from the actual brand-pack page, font names read directly off
+the spec page, bios transcribed verbatim (typos silently corrected) from
+Part 2's producer-stand appendix.
+
+**Colors** — full palette adopted (`tailwind.config.ts`, `globals.css`,
+`Seam.tsx`): dark green `#0f6343` is now the primary accent (was burgundy
+`#5a1420`), red-coral `#e84848` reserved for future selective emphasis
+(not applied to headings sitewide — that would be a much bigger visual
+change than "switch the accent," not requested), yellow `#fec425` for
+eyebrow/highlight text, cream `#feefd1` for backgrounds, grey-sage
+`#d1d5ce` and pink-blush `#ecc7c2` as secondary contrast tones. Tailwind
+token *names* (`oxblood`, `gold`, `bone`, `vine`) were kept as-is so ~35
+files didn't need touching — they're now aliases for the new palette, not
+literal wine-color names. Worth a follow-up rename for clarity, not urgent.
+
+**Fonts** — brand pack specifies Bookmania (titles), Knockout Welterweight
+with mandatory 209 tracking (subheadings), Coco Gothic (body). All three are
+commercial fonts; no licensed files were available. Substituted the closest
+free equivalents via `next/font/google`: **Fraunces** for `font-serif`
+(replacing Cormorant Garamond), **Oswald** for a new `font-condensed`
+(used on `.eyebrow` and `.btn`, approximating the wide-tracked condensed
+look), kept **Inter** for body (already fits "clean, friendly" brief).
+If Rodrigo can get the real font files from Plumpton, swapping them in is a
+`layout.tsx` + `tailwind.config.ts` change only — nothing else references
+font names directly.
+
+**Tourism** — cut down to tours only: removed Wine Tastings, Kayak Rentals,
+and Bike Rentals from `content/site/tourism.json`; unlinked Event Center
+from the footer's "Visit" group (`src/lib/site.ts`) and from
+`link.eventCenter`/`nav.events` (the `/event-center` page itself was left
+in place, not deleted, in case Rodrigo wants to repurpose it — it's just no
+longer discoverable from nav). Price CLP 10,000 → 20,000/person; Saturdays
+only (was every day). Updated hero copy, homepage teaser, and metadata
+descriptions across all 4 locales to drop "tastings, bikes, kayaks, event
+center for weddings" language.
+
+**Producer bios** — replaced with Plumpton's winery-level bios (Part 2,
+"Producer Stands Bios") for the 8 wineries that have one: Cea, Don Clemente,
+Parcela 33, Don Lalo (→ now under "Un Buen Caballero"), Valle Herradura,
+El Huape, Don Dago, La Pascuala (applied to all 4 shared family records —
+Segundo/Juan/José/Benito Castro Gaete — since Plumpton's bio is one
+winery-level text, not per-person; their pages are now near-identical
+except name/varietals/portrait — a known side effect of the current
+19-individual-producer architecture vs. Plumpton's 8-winery model). Growers
+with no Plumpton bio (José Luis Cáceres, José Raimundo López, Carlos Lorca
+Sandoval, Rosa Sánchez Bravo, Juan Amador Pérez, Ángel Cáceres, Adrián Lorca
+Sandoval, Adán Gálvez León) were left untouched — Plumpton simply didn't
+cover them in this appendix, so their existing bios stand.
+
+**Quotes** — deliberately NOT added, including Jaime Cea's confirmed "Es
+todo una vida" quote, per Rodrigo's explicit ask for a template/example
+first. The UI has no quote-display feature built at all right now.
+
+**Name fixes**:
+- Parcela 33 — Gilberto López Arias (founding partner) has passed away;
+  record renamed to **Roberto López** (his son), with a short succession
+  note prepended to the bio. Slug (`gilberto-lopez-arias`) was **not**
+  renamed, to avoid touching every `wineSlugs`/`producerSlug` reference —
+  only `name` changed. Portrait was set to `null` (falls back to the
+  generic image) rather than keep displaying Gilberto's actual photo under
+  Roberto's name — **a real photo of Roberto is needed from Rodrigo.**
+- Abelardo Becerra Meneses's `winery` field renamed **Don Lalo → Un Buen
+  Caballero** (matches the wine brand name, already correct); the Plumpton
+  "Don Lalo" bio text is used under the new name, per Rodrigo's instruction.
+
+**Feria pack** — `vinos-de-la-feria` bundle converted from
+`permanence: "campaign"` to `"permanent"`; removed "this selection rotates
+with every feria" copy (all 4 locales) and the `packs.feriaRotates` UI key
++ its render block in `BundleDetailView.tsx`. `wineSlugs` is now a fixed
+list, not something meant to change per feria event.
+
+**B2B/Trade form** — verified, no code change needed: `TradeForm.tsx` →
+`/api/contact` → `sendMail()` → single email to `info@reddelvino.com`
+(or `CONTACT_TO_EMAIL` if set). No auto-reply, no automated pricing email
+exists anywhere in the code.
+
+**i18n leak found and fixed (new, not from a prior pass):** the tourism
+page's editorial body ("Red del Vino invites you to experience...", "Need
+more information", etc.) was English-only on `/es`, `/pt`, `/zh` — the
+`pages.json`/`tourism.json` content models had no locale variants at all,
+unlike `wines.json`/`producers.json`. Added `blocks_es/pt/zh` support to
+the `Page` type + `getPage()`, and `name_es/pt/zh` + `body_es/pt/zh` to the
+`Tour` type + a new `localizeTour()`, and populated real translations for
+the tourism page and the one remaining tour. **Only this one page was
+migrated** — the other 9 `pages.json` entries (home, sustainability,
+social-responsibility, about-us, privacy-policy, reservation-policy, etc.
+— the ones actually rendered) still have the same English-only gap and
+would need the same `_es/_pt/_zh` treatment whenever that's prioritized.
+
+Verified end-to-end in a real dev server (colors/fonts across
+homepage/wines/producers, tourism page in EN+ES, both renamed producer
+pages, the Feria bundle detail page with live-recalculated pricing) and a
+clean `next build` + `tsc --noEmit` with zero errors across all 4 locales.
+
 ## 2026-07-19 "Fix everything clearly wrong" audit — result
 
 Verified live in a real browser (not just build success), item by item:

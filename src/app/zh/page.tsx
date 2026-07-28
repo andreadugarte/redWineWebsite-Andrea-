@@ -39,7 +39,7 @@ export default function HomePageZh() {
         image={IMG.tourism}
         eyebrow="葡萄酒旅游"
         heading="品味美酒诞生的山谷。"
-        body="在科尔查瓜体验品鉴、葡萄园游览、自行车与皮划艇——距圣克鲁斯仅几分钟车程的活动中心，是婚礼与庆典的理想之地，就在葡萄园之间。"
+        body="科尔查瓜葡萄园向导游览——参观一处私人家庭庄园，结识酒瓶背后的酿酒师。"
         cta={{ label: "规划您的行程", href: "/zh/tourism" }}
         align="right"
       />

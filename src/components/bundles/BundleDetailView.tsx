@@ -50,12 +50,6 @@ export function BundleDetailView({ slug, locale = "en" }: { slug: string; locale
           <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.14em] text-charcoal/40">
             {t(`packs.valueAdd.${raw.valueAdd}`, locale)}
           </p>
-          {raw.type === "feria" && (
-            <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.14em] text-charcoal/40">
-              {t("packs.feriaRotates", locale)}
-            </p>
-          )}
-
           <p className="mt-6 max-w-lg font-sans text-base leading-relaxed text-charcoal-soft">{b.description}</p>
 
           <div className="mt-8">

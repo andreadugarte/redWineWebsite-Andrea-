@@ -49,7 +49,7 @@ export default function HomePage() {
         image={IMG.tourism}
         eyebrow="Wine Tourism"
         heading="Taste the valley where the wine is born."
-        body="Tastings, viticultural tours, bikes and kayaks in Colchagua — and an Event Center minutes from Santa Cruz for weddings and celebrations set among the vines."
+        body="Guided viticultural tours through Colchagua — visit a private family vineyard and meet the winemakers behind the bottle."
         cta={{ label: "Plan your visit", href: "/tourism" }}
         align="right"
       />

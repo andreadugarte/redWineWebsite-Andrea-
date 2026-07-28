@@ -3,7 +3,7 @@ import { TourismView } from "@/components/pages/TourismView";
 
 export const metadata: Metadata = {
   title: "Enoturismo",
-  description: "Catas, tours vitivinícolas, arriendo de bicicletas y kayaks en el Valle de Colchagua con Red del Vino.",
+  description: "Tours vitivinícolas guiados en el Valle de Colchagua con Red del Vino.",
   alternates: {
     canonical: "/es/tourism",
     languages: { en: "/tourism", es: "/es/tourism", pt: "/pt/tourism", zh: "/zh/tourism" },

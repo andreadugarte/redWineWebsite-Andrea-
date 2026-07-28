@@ -39,7 +39,7 @@ export default function HomePagePt() {
         image={IMG.tourism}
         eyebrow="Enoturismo"
         heading="Prove o vale onde o vinho nasce."
-        body="Degustações, passeios pelos vinhedos, bicicletas e caiaques em Colchagua — e um Centro de Eventos a poucos minutos de Santa Cruz para casamentos e celebrações entre as vinhas."
+        body="Passeios guiados pelos vinhedos de Colchagua — visite uma propriedade familiar privada e conheça os enólogos por trás da garrafa."
         cta={{ label: "Planeje sua visita", href: "/pt/tourism" }}
         align="right"
       />
