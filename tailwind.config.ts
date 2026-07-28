@@ -24,9 +24,12 @@ const config: Config = {
           deep: "#d1d5ce", // Plumpton grey-sage — contrast secondary
         },
         gold: {
-          DEFAULT: "#fec425", // Plumpton yellow — highlight color
+          DEFAULT: "#fec425", // Plumpton yellow — highlight color. Only ever use on dark
+          // (oxblood/oxblood-deep/charcoal) backgrounds — on cream/bone it fails contrast
+          // (1.41:1, needs 4.5:1). Use `gold-deep` for text/rings on light backgrounds.
           soft: "#f6d777",
           pale: "#fbe9b8",
+          deep: "#8a6100", // darkened for AA-legible gold text/focus rings on bone/bone-warm
         },
         vine: "#3d8265",
         blush: "#ecc7c2", // Plumpton pink-blush — secondary contrast background

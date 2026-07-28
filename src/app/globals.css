@@ -5,6 +5,14 @@
 :root {
   --bone: #feefd1;
   --oxblood: #0f6343;
+  /* Bright yellow (#fec425) reads on dark oxblood/oxblood-deep sections but fails
+     contrast (1.41:1) on bone/cream — this deep variant covers light sections,
+     overridden back to the bright yellow inside dark ones below. */
+  --focus-ring: #8a6100;
+}
+
+[class*="bg-oxblood"], [class*="bg-charcoal"] {
+  --focus-ring: #fec425;
 }
 
 * {
@@ -29,10 +37,10 @@ body {
   color: #feefd1;
 }
 
-/* Accessible focus ring — gold reads on both bone and dark surfaces.
+/* Accessible focus ring — --focus-ring adapts per-section (see :root above).
    Only shows for keyboard users (focus-visible), never on mouse click. */
 :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
-  outline: 2px solid #fec425;
+  outline: 2px solid var(--focus-ring);
   outline-offset: 3px;
   border-radius: 1px;
 }
@@ -50,8 +58,12 @@ body {
 }
 
 @layer components {
+  /* Default assumes a light (bone/bone-warm) background — the vast majority of
+     usages. Dark-background usages (hero over image, footer, quote band, 404)
+     already override with text-gold-pale/text-gold-soft; utilities in this
+     later layer win over this @apply regardless of className order. */
   .eyebrow {
-    @apply font-condensed text-[11px] uppercase tracking-eyebrow text-gold font-bold;
+    @apply font-condensed text-[11px] uppercase tracking-eyebrow text-gold-deep font-bold;
   }
   .container-x {
     @apply mx-auto w-full max-w-[1400px] px-6 md:px-10 lg:px-16;

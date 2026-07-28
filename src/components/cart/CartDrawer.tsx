@@ -52,7 +52,7 @@ export function CartDrawer() {
                         <Image src={it.image} alt={it.name} fill className="object-contain" sizes="64px" />
                       </div>
                       <div className="flex flex-1 flex-col">
-                        <p className="eyebrow text-gold">{it.varietal}</p>
+                        <p className="eyebrow text-gold-deep">{it.varietal}</p>
                         <p className="font-serif text-lg leading-tight">{it.name}</p>
                         <div className="mt-auto flex items-center justify-between">
                           <div className="flex items-center border border-charcoal/20">

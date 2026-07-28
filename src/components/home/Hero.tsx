@@ -52,7 +52,7 @@ export function Hero({ heading }: { heading: string }) {
             transition={{ duration: 1, delay: 0.9 }}
             className="mt-10 flex flex-wrap items-center gap-4"
           >
-            <Link href={localizedPath("/wines", locale)} className="btn bg-bone px-8 py-4 text-charcoal hover:bg-gold hover:text-bone">
+            <Link href={localizedPath("/wines", locale)} className="btn bg-bone px-8 py-4 text-charcoal hover:bg-gold-deep hover:text-bone">
               {tr("hero.exploreWines")}
             </Link>
             {/* Secondary CTA: guided selling path (quiz), per CRO restructure */}
