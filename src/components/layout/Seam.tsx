@@ -7,8 +7,8 @@ const TONE: Record<string, string> = {
   bone: "#feefd1",
   "bone-warm": "#f7e2b8",
   charcoal: "#26221f",
-  oxblood: "#0f6343",
-  "oxblood-deep": "#0a4a32",
+  oxblood: "#1d5e40",
+  "oxblood-deep": "#164730",
 };
 
 export function Seam({

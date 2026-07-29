@@ -95,7 +95,7 @@ export function Header() {
               <button
                 onClick={() => setLangOpen((o) => !o)}
                 className="font-sans text-[12px] font-semibold tracking-[0.14em] opacity-80 hover:opacity-100"
-                aria-label={tr("header.menu")}
+                aria-label={tr("header.changeLanguage")}
                 aria-expanded={langOpen}
               >
                 {LOCALE_LABEL[locale]}

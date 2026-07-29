@@ -8,12 +8,20 @@ const config: Config = {
         // Plumpton brand palette (consultancy brand pack, Jul 2026) — dark green is the
         // primary accent, replacing the old burgundy/oxblood. Token names (oxblood/gold/
         // vine/bone) are kept as-is to avoid touching every call site; see DEPENDENCIES.md.
+        // Exact hex values re-verified 2026-07-28 against the live Canva brand-pack file
+        // (which has its own hex labels) — this corrected #0f6343→#1d5e40 and
+        // #e84848→#e8636e; the earlier values came from pixel-sampling a rendered PDF
+        // page, which was slightly off for these two. Cream/yellow/grey-sage/pink-blush
+        // were already pixel-exact and are unchanged.
         oxblood: {
-          DEFAULT: "#0f6343", // Plumpton dark green — primary accent
-          deep: "#0a4a32",
-          soft: "#3d8265",
+          DEFAULT: "#1d5e40", // Plumpton dark green — primary accent
+          deep: "#164730",
+          soft: "#2f9968",
         },
-        bordeaux: "#e84848", // Plumpton red-coral — reserved for selective emphasis only
+        // Plumpton red-coral — reserved for selective emphasis, not yet used anywhere.
+        // Only 2.87:1 against bone (fails 4.5:1) — darken before using as text on a
+        // light background, same reasoning as gold/gold-deep above.
+        bordeaux: "#e8636e",
         charcoal: {
           DEFAULT: "#26221f",
           soft: "#3a3430",

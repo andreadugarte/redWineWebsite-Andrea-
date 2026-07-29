@@ -4,6 +4,56 @@ Everything here is flagged, not silently resolved. Items marked ✉️ were aske
 in the July 2026 email thread with Rodrigo ("Respuestas a requerimientos
 iniciales y accesos"); the rest are queued for the next email.
 
+## 2026-07-28 Triple-check pass — Rodrigo's 7-point email, live Canva source, full QA
+
+Re-read Rodrigo's actual 23 Jul email verbatim (not from memory) and verified
+all 7 points against the live site:
+1. Colors ✓ 2. Tourism (tours only, CLP 20,000, Saturdays) ✓ 3. Producer
+bios (original Plumpton text) ✓ 4. Names (Roberto López, Un Buen Caballero)
+✓ 5. B2B (personalized, Rodrigo owns it) ✓ 6. Feria (static) ✓
+7. Typography — **still not literally exact**: Rodrigo's wording is strong
+("Debe calzar exactamente con el pack de marca... la tienda online refleje
+exactamente esa misma identidad visual") because they're aligning physical
+shop signage to this typography too. Bookmania/Knockout Welterweight/Coco
+Gothic are commercial fonts with no free license; Fraunces/Oswald/Inter are
+substitutes, not the real thing. Since Rodrigo says the real files are
+already in use for print, **worth asking him directly for the .otf/.ttf
+files** rather than continuing to approximate.
+
+**Color correction — the live Canva brand-pack file (not just the static
+PDF) has its own hex-code labels**, which are more precise than pixel-
+sampling a rendered PDF page. Cream `#feefd1`, yellow `#fec425`, grey-sage
+`#d1d5ce`, and pink-blush `#ecc7c2` were already pixel-exact. Green and red
+were both slightly off: corrected `#0f6343 → #1d5e40` (primary accent,
+sitewide) and `#e84848 → #e8636e` (reserved, not yet used as text anywhere).
+Re-verified every live contrast pair after the correction — all still pass
+AA comfortably. Also found (not yet used, optional per the brand pack —
+"seen a lot in RDV producers label designs... can be included"): a
+lavender `#d9b7ce` and plum `#864d72` as informal "additional colours."
+
+**Trello board** (`https://trello.com/b/lF06UK4g/red-del-vino-digital-priorities`)
+— needs a login the sandboxed browser doesn't have; not yet reviewed.
+
+**Two small real bugs found and fixed during QA**:
+- The language-switcher button and the mobile hamburger button shared the
+  exact same `aria-label` ("Menu") — screen readers couldn't distinguish
+  them, and "Menu" didn't describe what the language button does. Added
+  a proper `header.changeLanguage` key.
+- `/feria` (EN route) had its metadata `<title>` literally copy-pasted from
+  the Spanish version ("Vinos de la Feria") instead of an English title.
+  Fixed to "Feria Wines" — PT/ZH were already correctly translated.
+
+**Full functional QA, verified live** (add to cart with qty multiplier,
+quantity stepper, remove, cart page, checkout form + submission, the full
+4-question wine quiz + results + add-to-cart-from-results, nav links,
+language switcher dropdown + navigation, mobile hamburger menu, wine/
+producer filters, contact/trade/newsletter/feria form submissions, home
+stat counters reaching their real end values on scroll, scroll-reveal
+sections). One non-bug: `ScrollProgress` (top-of-page reading-progress bar)
+is imported in `layout.tsx` but never rendered — a
+`{/* Disabled: scroll performance */}` comment marks this as a prior
+deliberate decision, not something broken.
+
 ## 2026-07-28 Plumpton brand pack implementation — result
 
 Source: the two Plumpton consultancy PDFs Rodrigo/Andrea shared (Part 1 —

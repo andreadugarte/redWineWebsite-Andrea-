@@ -4,7 +4,7 @@
 
 :root {
   --bone: #feefd1;
-  --oxblood: #0f6343;
+  --oxblood: #1d5e40;
   /* Bright yellow (#fec425) reads on dark oxblood/oxblood-deep sections but fails
      contrast (1.41:1) on bone/cream — this deep variant covers light sections,
      overridden back to the bright yellow inside dark ones below. */
@@ -33,7 +33,7 @@ body {
 
 /* Refined selection */
 ::selection {
-  background: #0f6343;
+  background: #1d5e40;
   color: #feefd1;
 }
 
@@ -53,7 +53,7 @@ body {
   background: #f7e2b8;
 }
 ::-webkit-scrollbar-thumb {
-  background: #0f6343;
+  background: #1d5e40;
   border-radius: 0;
 }
 

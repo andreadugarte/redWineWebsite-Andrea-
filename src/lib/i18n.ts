@@ -70,6 +70,7 @@ export const UI: Dict = {
   "nav.contact": { en: "Contact", es: "Contacto", pt: "Contato", zh: "联系我们" },
   "header.openCart": { en: "Open cart", es: "Abrir carrito", pt: "Abrir carrinho", zh: "打开购物车" },
   "header.menu": { en: "Menu", es: "Menú", pt: "Menu", zh: "菜单" },
+  "header.changeLanguage": { en: "Change language", es: "Cambiar idioma", pt: "Mudar idioma", zh: "切换语言" },
   "header.closeMenu": { en: "Close menu", es: "Cerrar menú", pt: "Fechar menu", zh: "关闭菜单" },
 
   // Hero
