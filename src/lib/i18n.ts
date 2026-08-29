@@ -167,6 +167,12 @@ export const UI: Dict = {
   "filter.white": { en: "White", es: "Blanco", pt: "Branco", zh: "白葡萄酒" },
   "filter.rose": { en: "Rosé", es: "Rosado", pt: "Rosé", zh: "桃红葡萄酒" },
   "common.view": { en: "View", es: "Ver", pt: "Ver", zh: "查看" },
+  "common.chatWhatsapp": {
+    en: "Chat on WhatsApp",
+    es: "Chatea por WhatsApp",
+    pt: "Converse pelo WhatsApp",
+    zh: "通过WhatsApp聊天",
+  },
   "wines.soldOut": { en: "Sold out", es: "Sin stock", pt: "Esgotado", zh: "已售罄" },
   "wines.noMatch": {
     en: "No wines match that selection.",

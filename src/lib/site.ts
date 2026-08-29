@@ -12,6 +12,8 @@ export const SITE = {
   },
   email: "info@reddelvino.com",
   reservationsEmail: "reservas@reddelvino.com",
+  // Red del Vino's own number, confirmed by Rodrigo for the site-wide chat button (not personal).
+  whatsapp: "56998186442",
   facebook: "https://www.facebook.com/reddelvino.colchagua",
   instagram: "https://www.instagram.com/reddelvino",
 };

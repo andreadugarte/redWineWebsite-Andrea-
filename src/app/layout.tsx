@@ -10,6 +10,7 @@ import { AgeGate } from "@/components/AgeGate";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
 import { ScrollProgress } from "@/components/motion/ScrollProgress";
 import { LocaleProvider } from "@/components/i18n/LocaleProvider";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 // Brand pack calls for Bookmania (titles), Knockout Welterweight w/ tracking 209
 // (subheadings), Coco Gothic (body) — all commercial, no licensed files available.
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <main>{children}</main>
             <Footer />
             <CartDrawer />
+            <WhatsAppButton />
           </CartProvider>
         </LocaleProvider>
       </body>

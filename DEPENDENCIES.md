@@ -329,7 +329,7 @@ live Vercel URL will reflect any of this.
   `content/site/bundles.json` — the cart now correctly charges the
   discounted per-bottle price when a pack is added (fixed 2026-07-15; it
   previously added bottles at full price despite the pack page advertising a
-  discount). Rodrigo has not yet ratified the 10% figure. Some CRO-suggested
+  discount). **RESOLVED 2026-08-29 — Rodrigo ratified the 10% figure** (WhatsApp: "Confirmo Ok. Para descuento del 10% en los Packs ✅"). Some CRO-suggested
   bundle wines don't exist in the store; substitutions noted per-bundle in
   `internalNote`. Guairabo wines were never in any bundle (re-verified
   2026-07-15).
@@ -474,11 +474,16 @@ live Vercel URL will reflect any of this.
   López, so this is actually complete, not missing).
 
 ## Contact / channels
-- **WhatsApp** ✉️ — sales number confirmed +56 9 9818 6442 twice now (Jul 9
-  "solo dejar este número" and re-confirmed Jul 15 "Sí"); site-wide WhatsApp
-  button/link not yet added — this specific go-ahead (add a visible button?)
-  is a genuinely new, not-yet-answered question, distinct from the number
-  itself. WhatsApp Business API vs personal wa.me links also undecided.
+- **RESOLVED 2026-08-29 — WhatsApp button.** Sales number confirmed +56 9
+  9818 6442 (re-confirmed via WhatsApp: "Favor dejar el de Red del vino:
+  +56 9 98186442" — explicitly the business number, not personal). Rodrigo
+  approved a site-wide visible button. Implemented as `WhatsAppButton.tsx`
+  (fixed bottom-right, all locales, opens `wa.me/56998186442`), wired into
+  `layout.tsx`, `SITE.whatsapp` in `src/lib/site.ts`. Verified live in a
+  dev server on both `/` (EN) and `/es`: renders, correct href, translated
+  aria-label ("Chat on WhatsApp" / "Chatea por WhatsApp"). Uses a plain
+  `wa.me` link, not the WhatsApp Business API (no request from Rodrigo to
+  use anything more complex).
 - **Form recipient addresses** — reservations default to
   reservas@reddelvino.com, contact/newsletter to info@reddelvino.com (env
   overridable: RESERVATIONS_TO_EMAIL / CONTACT_TO_EMAIL). Confirm.
