@@ -2,7 +2,7 @@
 
 A modern, editorial, Duckhorn-inspired website for **Red del Vino** — fair-trade wines from the small producers of the Colchagua Valley, Chile. Built with Next.js (App Router), TypeScript, Tailwind and Framer Motion. All content and photography are extracted from the live reddelvino.com site — nothing is invented.
 
-> **Note on pricing & checkout:** wine prices are **placeholder/indicative** values (there are no prices on the current site). Checkout is a **simulated** flow by default — no payment is processed — and is wired so real Stripe payments can be enabled by adding keys. See [Payments](#payments-optional).
+> **Note on checkout:** prices are real (CLP), sourced from Rodrigo's confirmed pricing. Checkout is a **simulated** flow until Flow credentials are added in Vercel — no payment is processed — and is fully wired for real Flow payments once they are. See [Payments](#payments-optional).
 
 ---
 
@@ -62,8 +62,9 @@ npm run extract   # runs the 3 python scripts → refreshes content/ + images
 
 | Variable | Required? | Purpose |
 |---|---|---|
-| `STRIPE_SECRET_KEY` | optional | Enables live payments. Unset → **simulated** checkout. |
-| `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | optional | Stripe.js publishable key (client). |
+| `FLOW_API_KEY` | optional | Flow.cl API key (from **Mi Cuenta → Integraciones → Integración por API**). Both this and the secret key must be set to enable live payments. Unset → **simulated** checkout. |
+| `FLOW_SECRET_KEY` | optional | Flow.cl secret key, used to HMAC-sign every request. Never commit this — Vercel env var only. |
+| `FLOW_SANDBOX` | optional | Set to `true` to hit Flow's sandbox API instead of production while testing. |
 | `RESEND_API_KEY` | optional | Sends reservation/contact/newsletter emails via Resend. Unset → logged stub. |
 | `CONTACT_TO_EMAIL` | optional | Where contact + newsletter go (default `info@reddelvino.com`). |
 | `RESERVATIONS_TO_EMAIL` | optional | Where reservation/event requests go (default `reservas@reddelvino.com`). |
@@ -71,10 +72,11 @@ npm run extract   # runs the 3 python scripts → refreshes content/ + images
 
 ### Payments (optional)
 
-The purchase flow (cart → checkout → order confirmation) works today as a **simulation**. To go live with Stripe:
+The purchase flow (cart → checkout → Flow payment page → order confirmation) is fully wired (`src/lib/flow.ts`, `src/app/api/checkout/route.ts`, `src/app/api/checkout/confirm/route.ts`, `src/app/checkout/return/page.tsx`). Stripe was the original plan but doesn't support Chile as an account country, so this uses [Flow](https://www.flow.cl) instead. To go live:
 
-1. Add `STRIPE_SECRET_KEY` and `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`.
-2. In `src/app/api/checkout/route.ts`, replace the simulated response with a Stripe Checkout Session creation and return `session.url`; redirect to it from `src/app/checkout/page.tsx`. The redirect keeps all card handling on Stripe (no PCI scope here).
+1. Get the API key and secret key from **flow.cl → Mi Cuenta → Integraciones → Integración por API**.
+2. Add `FLOW_API_KEY` and `FLOW_SECRET_KEY` as Vercel environment variables (never commit them, never paste them anywhere else).
+3. That's it — checkout automatically switches from simulated to real Flow payments once both are set. No code changes needed.
 
 ### Email (optional)
 

@@ -20,6 +20,13 @@ export default function CheckoutPage() {
       body: JSON.stringify({ items, customer }),
     });
     const data = await res.json();
+    // Real Flow order: hand the browser off to Flow's payment page rather
+    // than showing our own confirmation — Flow redirects back to /checkout/return.
+    if (data.redirectUrl) {
+      clear();
+      window.location.href = data.redirectUrl;
+      return;
+    }
     setOrder(data);
     clear();
     setState("done");
@@ -36,7 +43,7 @@ export default function CheckoutPage() {
           </p>
           {order.simulated && (
             <p className="mx-auto mt-6 max-w-md border border-gold/40 bg-gold/5 px-6 py-4 font-sans text-xs leading-relaxed text-charcoal-soft">
-              This was a <strong>simulated checkout</strong> — no payment was processed. Add your Stripe keys in Vercel to enable live payments (see README).
+              This was a <strong>simulated checkout</strong> — no payment was processed. Add your Flow keys in Vercel to enable live payments (see README).
             </p>
           )}
           <Link href="/wines" className="btn-primary mt-10">Continue Exploring</Link>
