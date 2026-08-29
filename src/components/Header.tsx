@@ -61,7 +61,7 @@ export function Header() {
 
           <Link href={localizedPath("/", locale)} className="flex items-center leading-none">
             {solid ? (
-              <Image src="/images/original/Red-del-Vino-logo-2026.png" alt="Red del Vino" width={44} height={44} className="h-11 w-11" priority />
+              <Image src="/images/original/Red-del-Vino-logo-2026-transparent.png" alt="Red del Vino" width={44} height={44} className="h-11 w-11" priority />
             ) : (
               <span className={`font-serif text-2xl tracking-tight ${text}`}>Red del Vino</span>
             )}
