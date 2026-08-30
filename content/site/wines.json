@@ -9,7 +9,7 @@
       "light"
     ],
     "image": {
-      "src": "/images/original/Campesino-Chardonnay-Gran-Reserva.jpg",
+      "src": "/images/original/Campesino-Chardonnay-Gran-Reserva-transparent.png",
       "alt": "Campesino Chardonnay Gran Reserva",
       "w": 168,
       "h": 602
@@ -64,7 +64,7 @@
       "rich"
     ],
     "image": {
-      "src": "/images/original/Campesino-Carmenere.jpg",
+      "src": "/images/original/Campesino-Carmenere-transparent.png",
       "alt": "Campesino Carmenere",
       "w": 149,
       "h": 559
@@ -115,7 +115,7 @@
       "rich"
     ],
     "image": {
-      "src": "/images/original/Campesino-Cabernet-Sauvignon-Reserve-1.jpg",
+      "src": "/images/original/Campesino-Cabernet-Sauvignon-Reserve-1-transparent.png",
       "alt": "Campesino Cabernet Sauvignon Reserve",
       "w": 144,
       "h": 599
@@ -167,7 +167,7 @@
       "light"
     ],
     "image": {
-      "src": "/images/original/Campesino-Chardonnay-Fair-Trade-Wines-Chile.jpg",
+      "src": "/images/original/Campesino-Chardonnay-Fair-Trade-Wines-Chile-transparent.png",
       "alt": "Campesino Chardonnay",
       "w": 144,
       "h": 574
@@ -219,7 +219,7 @@
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
     "image": {
-      "src": "/images/original/Don-Clemente-Cabernet-Sauvignon.jpg",
+      "src": "/images/original/Don-Clemente-Cabernet-Sauvignon-transparent.png",
       "alt": "Don Clemente Cabernet Sauvignon",
       "w": 156,
       "h": 598
@@ -247,7 +247,7 @@
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
     "image": {
-      "src": "/images/original/Don-Clemente-Carmenere.jpg",
+      "src": "/images/original/Don-Clemente-Carmenere-transparent.png",
       "alt": "Don Clemente Carmenere",
       "w": 468,
       "h": 1828
@@ -275,7 +275,7 @@
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
     "image": {
-      "src": "/images/original/Don-Clemente-Chardonnay-Late-Harvest.jpg",
+      "src": "/images/original/Don-Clemente-Chardonnay-Late-Harvest-transparent.png",
       "alt": "Don Clemente Chardonnay Late Harvest",
       "w": 433,
       "h": 2182
@@ -303,7 +303,7 @@
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
     "image": {
-      "src": "/images/original/Don-Clemente-Merlot.jpg",
+      "src": "/images/original/Don-Clemente-Merlot-transparent.png",
       "alt": "Don Clemente Merlot",
       "w": 469,
       "h": 1818
@@ -331,7 +331,7 @@
     "brand": "Don Clemente",
     "producerSlug": "osvaldo-diaz-poblete",
     "image": {
-      "src": "/images/original/Don-Clemente-Rose.jpg",
+      "src": "/images/original/Don-Clemente-Rose-transparent.png",
       "alt": "Don Clemente Rose",
       "w": 434,
       "h": 2190
@@ -359,7 +359,7 @@
     "brand": "Don Dago",
     "producerSlug": "dagoberto-munoz-diaz",
     "image": {
-      "src": "/images/original/Don-Dago-Merlot.jpg",
+      "src": "/images/original/Don-Dago-Merlot-transparent.png",
       "alt": "Don Dago Merlot",
       "w": 469,
       "h": 1818
@@ -388,7 +388,7 @@
     "brand": "Un Buen Caballero",
     "producerSlug": "abelardo-becerra-meneses",
     "image": {
-      "src": "/images/original/Un-Buen-Caballero-Cabernet-Sauvignon.jpg",
+      "src": "/images/original/Un-Buen-Caballero-Cabernet-Sauvignon-transparent.png",
       "alt": "Un Buen Caballero Cabernet Sauvignon",
       "w": 453,
       "h": 1957
@@ -416,7 +416,7 @@
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
     "image": {
-      "src": "/images/original/Guairabo-Cabernet-Sauvignon.jpg",
+      "src": "/images/original/Guairabo-Cabernet-Sauvignon-transparent.png",
       "alt": "Guairabo Cabernet Sauvignon",
       "w": 156,
       "h": 587
@@ -445,7 +445,7 @@
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
     "image": {
-      "src": "/images/original/Guairabo-Carignan.jpg",
+      "src": "/images/original/Guairabo-Carignan-transparent.png",
       "alt": "Guairabo Carignan",
       "w": 467,
       "h": 1805
@@ -474,7 +474,7 @@
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
     "image": {
-      "src": "/images/original/Guairabo-Petit-Verdot.jpg",
+      "src": "/images/original/Guairabo-Petit-Verdot-transparent.png",
       "alt": "Guairabo Petit Verdot",
       "w": 470,
       "h": 1786
@@ -503,7 +503,7 @@
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
     "image": {
-      "src": "/images/original/Guairabo-Rose-Late-Harvest.jpg",
+      "src": "/images/original/Guairabo-Rose-Late-Harvest-transparent.png",
       "alt": "Guairabo Rose Late Harvest",
       "w": 436,
       "h": 2153
@@ -532,7 +532,7 @@
     "brand": "Guairabo",
     "producerSlug": "luis-orellana-aliaga",
     "image": {
-      "src": "/images/original/Guairabo-Semillon-Late-Harvest.jpg",
+      "src": "/images/original/Guairabo-Semillon-Late-Harvest-transparent.png",
       "alt": "Guairabo Semillon Late Harvest",
       "w": 433,
       "h": 2172
@@ -561,7 +561,7 @@
     "brand": "La Pascuala",
     "producerSlug": "benito-castro-gaete",
     "image": {
-      "src": "/images/original/La-Pascuala-Cabernet-Sauvignon.jpg",
+      "src": "/images/original/La-Pascuala-Cabernet-Sauvignon-transparent.png",
       "alt": "La Pascuala Cabernet Sauvignon",
       "w": 135,
       "h": 598
@@ -589,7 +589,7 @@
     "brand": "La Pascuala",
     "producerSlug": "benito-castro-gaete",
     "image": {
-      "src": "/images/original/La-Pascuala-Carmenere.jpg",
+      "src": "/images/original/La-Pascuala-Carmenere-transparent.png",
       "alt": "La Pascuala Carmenere",
       "w": 447,
       "h": 2038
@@ -640,7 +640,7 @@
     "brand": "La Pascuala",
     "producerSlug": "benito-castro-gaete",
     "image": {
-      "src": "/images/original/La-Pascuala-Tinaja.jpg",
+      "src": "/images/original/La-Pascuala-Tinaja-transparent.png",
       "alt": "La Pascuala Tinaja",
       "w": 163,
       "h": 618
@@ -669,7 +669,7 @@
     "brand": "El Huape",
     "producerSlug": "gerardo-orellana-diaz",
     "image": {
-      "src": "/images/original/El-Huape-Loco-Gera.jpg",
+      "src": "/images/original/El-Huape-Loco-Gera-transparent.png",
       "alt": "El Huape Loco Gera",
       "w": 159,
       "h": 600
@@ -697,7 +697,7 @@
     "brand": "Cea",
     "producerSlug": "jaime-cea-morales",
     "image": {
-      "src": "/images/original/Cea-Mito-Carmenere.jpg",
+      "src": "/images/original/Cea-Mito-Carmenere-transparent.png",
       "alt": "Cea Mito Carmenere",
       "w": 456,
       "h": 1922
@@ -725,7 +725,7 @@
     "brand": "Cea",
     "producerSlug": "jaime-cea-morales",
     "image": {
-      "src": "/images/original/Cea-Relato-Cabernet-Sauvignon.jpg",
+      "src": "/images/original/Cea-Relato-Cabernet-Sauvignon-transparent.png",
       "alt": "Cea Relato Cabernet Sauvignon",
       "w": 465,
       "h": 1853
@@ -753,7 +753,7 @@
     "brand": "Parcela 33",
     "producerSlug": "gilberto-lopez-arias",
     "image": {
-      "src": "/images/original/Parcela-33-Cabernet-Sauvignon-Reserva.jpg",
+      "src": "/images/original/Parcela-33-Cabernet-Sauvignon-Reserva-transparent.png",
       "alt": "Parcela 33 Cabernet Sauvignon Reserva",
       "w": 467,
       "h": 1811
@@ -781,7 +781,7 @@
     "brand": "Parcela 33",
     "producerSlug": "gilberto-lopez-arias",
     "image": {
-      "src": "/images/original/Parcela-33-Ensamblaje.jpg",
+      "src": "/images/original/Parcela-33-Ensamblaje-transparent.png",
       "alt": "Parcela 33 Ensamblaje",
       "w": 471,
       "h": 1779
