@@ -14,7 +14,7 @@ export function PageHero({
   intro?: string;
 }) {
   return (
-    <section className="relative flex min-h-[62vh] items-end overflow-hidden pb-16 pt-32">
+    <section className="relative flex min-h-[40vh] items-end overflow-hidden pb-12 pt-36">
       <Image src={image || FALLBACK_IMAGE} alt="" fill priority className="object-cover" sizes="100vw" />
       <div className="absolute inset-0 bg-gradient-to-t from-oxblood-deep/85 via-charcoal/40 to-charcoal/30" />
       <div className="container-x relative z-10">

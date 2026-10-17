@@ -53,6 +53,7 @@ export function Footer() {
       <div className="border-t border-bone/15">
         <div className="container-x pt-6">
           <PaymentBadges tone="light" />
+          <p className="mt-5 max-w-3xl font-sans text-[11px] leading-relaxed text-bone/55">{tr("footer.warning")}</p>
         </div>
         <div className="container-x flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
           <p className="font-sans text-xs text-bone/50">

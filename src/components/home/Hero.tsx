@@ -2,82 +2,30 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useReducedMotion } from "framer-motion";
-import { useRef } from "react";
 import { IMG } from "@/lib/images";
 import { useLocale, useT } from "@/components/i18n/LocaleProvider";
 import { localizedPath } from "@/lib/i18n";
 
+/** Compact, static hero: one image, one line, two clear buttons. No scroll cue, no staged animation. */
 export function Hero({ heading }: { heading: string }) {
-  const ref = useRef<HTMLElement>(null);
-  const reduce = useReducedMotion();
   const locale = useLocale();
   const tr = useT();
-  const lines = heading.split("\n");
-
   return (
-    <section ref={ref} className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
-      <div className="absolute inset-0">
-        <Image src={IMG.heroHome} alt="Vineyards of the Colchagua Valley at harvest" fill priority className="object-cover" sizes="100vw" />
+    <section className="relative flex min-h-[56svh] w-full items-center overflow-hidden pt-[104px]">
+      <Image src={IMG.heroHome} alt="" fill priority className="object-cover" sizes="100vw" />
+      <div className="absolute inset-0 bg-gradient-to-r from-oxblood-deep/85 via-oxblood-deep/55 to-charcoal/10" />
+      <div className="container-x relative z-10 py-14">
+        <p className="eyebrow text-gold-pale">{tr("hero.eyebrow")}</p>
+        <h1 className="mt-4 max-w-3xl font-serif text-display-md font-light text-bone">{heading}</h1>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link href={localizedPath("/wines", locale)} className="btn bg-bone px-8 py-4 text-charcoal hover:bg-gold-deep hover:text-bone">
+            {tr("hero.exploreWines")}
+          </Link>
+          <Link href={localizedPath("/packs", locale)} className="btn border border-bone/70 px-8 py-4 text-bone hover:bg-bone hover:text-charcoal">
+            {tr("hero.viewPacks")}
+          </Link>
+        </div>
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-oxblood-deep/50 via-charcoal/20 to-oxblood-deep/80" />
-
-      <motion.div className="relative z-10 flex h-full items-center">
-        <div className="container-x">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="eyebrow text-gold-pale"
-          >
-            {tr("hero.eyebrow")}
-          </motion.p>
-          <h1 className="mt-6 max-w-5xl font-serif font-light text-bone text-display-lg">
-            {lines.map((line, i) => (
-              <span key={i} className="block overflow-hidden">
-                <motion.span
-                  className="block"
-                  initial={{ y: "110%" }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 1.1, delay: 0.35 + i * 0.12, ease: [0.16, 1, 0.3, 1] }}
-                >
-                  {line}
-                </motion.span>
-              </span>
-            ))}
-          </h1>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.9 }}
-            className="mt-10 flex flex-wrap items-center gap-4"
-          >
-            <Link href={localizedPath("/wines", locale)} className="btn bg-bone px-8 py-4 text-charcoal hover:bg-gold-deep hover:text-bone">
-              {tr("hero.exploreWines")}
-            </Link>
-            {/* Secondary CTA: guided selling path (quiz), per CRO restructure */}
-            <Link href={localizedPath("/find-your-wine", locale)} className="btn border border-bone/60 px-8 py-4 text-bone hover:bg-bone hover:text-charcoal">
-              {tr("quiz.title")}
-            </Link>
-          </motion.div>
-        </div>
-      </motion.div>
-
-      <motion.div
-        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-bone/70"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.4 }}
-      >
-        <div className="flex flex-col items-center gap-2">
-          <span className="font-sans text-[10px] uppercase tracking-[0.25em]">Scroll</span>
-          <motion.span
-            className="block h-10 w-px bg-bone/50"
-            animate={{ scaleY: [0.3, 1, 0.3], originY: 0 }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </div>
-      </motion.div>
     </section>
   );
 }

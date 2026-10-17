@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
-import { IMG } from "@/lib/images";
 import { useT } from "@/components/i18n/LocaleProvider";
 
 const KEY = "rdv-age-ok";
@@ -27,35 +26,28 @@ export function AgeGate() {
     <AnimatePresence>
       {show && (
         <motion.div
-          className="fixed inset-0 z-[100] flex items-center justify-center"
-          initial={{ opacity: 0, pointerEvents: "none" }}
-          animate={{ opacity: 1, pointerEvents: "auto" }}
-          exit={{ opacity: 0, pointerEvents: "none" }}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-charcoal/70 px-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="age-title"
         >
-          <div className="absolute inset-0">
-            <Image src={IMG.heroValley} alt="" fill priority className="object-cover" sizes="100vw" />
-            <div className="absolute inset-0 bg-oxblood-deep/85" />
-          </div>
-          <motion.div
-            className="relative mx-6 max-w-lg bg-bone px-8 py-12 text-center md:px-14 md:py-16"
-            initial={{ scale: 0.94, y: 16 }}
-            animate={{ scale: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <p className="eyebrow">{tr("age.eyebrow")}</p>
-            <h2 className="mt-5 font-serif text-4xl md:text-5xl">{tr("age.title")}</h2>
-            <p className="mx-auto mt-5 max-w-sm font-sans text-sm leading-relaxed text-charcoal-soft">
-              {tr("age.body")}
-            </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:justify-center">
+          <div className="w-full max-w-md bg-bone px-8 py-10 text-center">
+            <Image src="/images/original/Red-del-Vino-logo-2026-transparent.png" alt="Red del Vino" width={64} height={64} className="mx-auto h-16 w-16" />
+            <h2 id="age-title" className="mt-5 font-serif text-3xl text-charcoal">{tr("age.title")}</h2>
+            <p className="mx-auto mt-3 max-w-sm font-sans text-sm leading-relaxed text-charcoal-soft">{tr("age.body")}</p>
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center">
               <button onClick={confirm} className="btn-primary">
                 {tr("age.yes")}
               </button>
-              <a href="https://www.responsibility.org" className="btn-outline">
+              <a href="https://www.responsibility.org" className="btn-outline text-charcoal">
                 {tr("age.no")}
               </a>
             </div>
-          </motion.div>
+            <p className="mt-6 border-t border-charcoal/10 pt-4 font-sans text-[11px] leading-snug text-charcoal/60">{tr("age.warning")}</p>
+          </div>
         </motion.div>
       )}
     </AnimatePresence>

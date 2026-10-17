@@ -1,13 +1,5 @@
-import { Hero } from "@/components/home/Hero";
-import { StoryIntro } from "@/components/home/StoryIntro";
-import { FeaturedPacks, QuizBanner } from "@/components/home/FeaturedPacks";
-import { FeaturedWines } from "@/components/home/FeaturedWines";
-import { FeatureBand } from "@/components/home/FeatureBand";
-import { QuoteBand } from "@/components/home/QuoteBand";
-import { ProducersStrip } from "@/components/home/ProducersStrip";
-import { Seam } from "@/components/layout/Seam";
-import { getPage, winesByBrand, activeProducers } from "@/lib/content";
-import { IMG } from "@/lib/images";
+import { HomeView } from "@/components/home/HomeView";
+import { getPage } from "@/lib/content";
 
 function firstText(slug: string): string {
   const page = getPage(slug);
@@ -19,40 +11,5 @@ export default function HomePage() {
   const home = getPage("home");
   const heading = home?.hero_heading || "Maintaining the traditions of rural wine farmers in Chile";
   const intro = firstText("home") || firstText("about-us");
-
-  return (
-    <>
-      <Hero heading={heading} />
-      <StoryIntro body={intro} />
-      <FeaturedPacks />
-      <Seam from="bone" to="charcoal" />
-      <FeaturedWines wines={winesByBrand("Campesino").filter((w) => !w.pending)} />
-      <QuizBanner />
-
-      <QuoteBand
-        quote="High-quality wines, made without harming the environment, honouring the land and the families who tend it."
-        attribution="The mission of Red del Vino"
-      />
-
-      <FeatureBand
-        image={IMG.sustainability}
-        eyebrow="Sustainability"
-        heading="Part of the change for a more sustainable world."
-        body="Biodiversity corridors, our own compost, sheep to manage weeds, organic gardens and a documented flora and fauna of the valley — small producers caring for the land that sustains them."
-        cta={{ label: "Our commitment", href: "/sustainability" }}
-        align="left"
-      />
-
-      <ProducersStrip producers={activeProducers} />
-
-      <FeatureBand
-        image={IMG.tourism}
-        eyebrow="Wine Tourism"
-        heading="Taste the valley where the wine is born."
-        body="Guided viticultural tours through Colchagua — visit a private family vineyard and meet the winemakers behind the bottle."
-        cta={{ label: "Plan your visit", href: "/tourism" }}
-        align="right"
-      />
-    </>
-  );
+  return <HomeView locale="en" heading={heading} storyBody={intro} />;
 }

@@ -31,7 +31,10 @@ export function PaymentBadges({ className = "", tone = "dark" }: { className?: s
       </span>
       <span role="listitem" className={`rounded border px-2 py-1 font-sans text-[11px] font-semibold ${pill}`}>Redcompra</span>
       <span role="listitem" className={`rounded border px-2 py-1 font-sans text-[11px] font-semibold ${pill}`}>Amex</span>
-      <span className={`w-full font-sans text-[11px] ${tone === "light" ? "text-bone/60" : "text-charcoal/55"}`}>🔒 {tr("pay.via")}</span>
+      <span className={`flex w-full items-center gap-1.5 font-sans text-[11px] ${tone === "light" ? "text-bone/60" : "text-charcoal/55"}`}>
+        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.2" aria-hidden><rect x="2" y="5.500" width="8" height="5.500" rx="1" /><path d="M4 5.500V4a2 2 0 014 0v1.500" /></svg>
+        {tr("pay.via")}
+      </span>
     </div>
   );
 }

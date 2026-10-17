@@ -1,18 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-import { useMemo, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useMemo, useState } from "react";
 import type { Wine } from "@/lib/content";
-import { FALLBACK_IMAGE } from "@/lib/content";
-import { formatPrice } from "@/components/cart/CartProvider";
-import { useLocale, useT } from "@/components/i18n/LocaleProvider";
-import { localizedPath } from "@/lib/i18n";
+import { useT } from "@/components/i18n/LocaleProvider";
+import { WineCard } from "@/components/wines/WineCard";
 
 export function WineGrid({ wines }: { wines: Wine[] }) {
   const tr = useT();
-  const locale = useLocale();
   const varietals = useMemo(() => ["All", ...Array.from(new Set(wines.map((w) => w.varietal)))], [wines]);
   const brands = useMemo(
     () => ["All", ...Array.from(new Set(wines.map((w) => w.brand).filter((b): b is string => Boolean(b)))).sort()],
@@ -24,6 +18,10 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
   const occasions = ["All", "beginner", "asado", "light", "rich"];
   const [varietal, setVarietal] = useState("All");
   const [color, setColor] = useState("All");
+  useEffect(() => {
+    const c = new URLSearchParams(window.location.search).get("color");
+    if (c && ["red", "white", "rose"].includes(c)) setColor(c);
+  }, []);
   const [brand, setBrand] = useState("All");
   const [occasion, setOccasion] = useState("All");
 
@@ -50,15 +48,13 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
 
   return (
     <div className="container-x py-16 md:py-24">
-      <div className="mb-12 flex flex-col gap-6 border-b border-charcoal/15 pb-8">
-        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-          {brands.length > 1 && <Filter label={tr("filter.brand")} options={brands} value={brand} onChange={setBrand} />}
-          <Filter label={tr("filter.varietal")} options={varietals} value={varietal} onChange={setVarietal} />
-        </div>
+      <div className="mb-10 flex flex-wrap items-end gap-x-5 gap-y-4 border-b border-charcoal/15 pb-6">
+        {brands.length > 1 && <Filter label={tr("filter.brand")} options={brands} value={brand} onChange={setBrand} />}
+        <Filter label={tr("filter.varietal")} options={varietals} value={varietal} onChange={setVarietal} />
+        <Filter label={tr("filter.style")} options={colors} value={color} onChange={setColor} />
         <Filter label={tr("filter.occasion")} options={occasions} value={occasion} onChange={setOccasion} />
-        <Filter label={tr("filter.style")} options={colors} value={color} onChange={setColor} cap />
         {hasActiveFilters && (
-          <button onClick={clearFilters} className="self-start font-sans text-xs uppercase tracking-[0.14em] text-oxblood link-underline">
+          <button onClick={clearFilters} className="pb-2 font-sans text-xs uppercase tracking-[0.14em] text-oxblood link-underline">
             {tr("filter.clear")}
           </button>
         )}
@@ -84,54 +80,12 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
 }
 
 function WineCards({ wines }: { wines: Wine[] }) {
-  const tr = useT();
-  const locale = useLocale();
   return (
-    <motion.div layout className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-      <AnimatePresence mode="popLayout">
-        {wines.map((w) => (
-          <motion.div
-            key={w.slug}
-            layout
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <Link href={localizedPath(`/wines/${w.slug}`, locale)} className="group block transition-transform duration-500 ease-out-expo hover:-translate-y-1.5">
-              <div className="relative aspect-[3/4] overflow-hidden bg-bone-warm">
-                <Image
-                  src={w.image?.src || FALLBACK_IMAGE}
-                  alt={w.name}
-                  fill
-                  sizes="(max-width:640px) 100vw, 33vw"
-                  className={`object-contain p-10 transition-transform duration-700 ease-out-expo group-hover:scale-105 ${w.stock === 0 ? "opacity-60" : ""}`}
-                />
-                {w.vintage && (
-                  <span className="absolute left-5 top-5 font-sans text-[11px] uppercase tracking-[0.14em] text-charcoal/40">{w.vintage}</span>
-                )}
-                {w.stock === 0 && (
-                  <span className="absolute left-5 top-5 bg-charcoal/85 px-2 py-1 font-sans text-[10px] uppercase tracking-[0.14em] text-bone">
-                    {tr("wines.soldOut")}
-                  </span>
-                )}
-                <span className="absolute bottom-5 right-5 font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  {tr("common.view")} →
-                </span>
-              </div>
-              <div className="mt-5 flex items-baseline justify-between">
-                <div>
-                  {w.brand && <p className="font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood/70">{w.brand}</p>}
-                  <p className="eyebrow mt-1">{w.varietal}</p>
-                  <p className="mt-1 font-serif text-2xl leading-tight">{w.name}</p>
-                </div>
-                <span className="font-sans text-sm text-charcoal-soft">{formatPrice(w.price, w.currency)}</span>
-              </div>
-            </Link>
-          </motion.div>
-        ))}
-      </AnimatePresence>
-    </motion.div>
+    <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+      {wines.map((w) => (
+        <WineCard key={w.slug} wine={w} />
+      ))}
+    </div>
   );
 }
 
@@ -151,7 +105,6 @@ function Filter({
   options,
   value,
   onChange,
-  cap,
 }: {
   label: string;
   options: string[];
@@ -161,18 +114,19 @@ function Filter({
 }) {
   const tr = useT();
   return (
-    <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-      <span className="eyebrow text-charcoal/40">{label}</span>
-      {options.map((o) => (
-        <button
-          key={o}
-          onClick={() => onChange(o)}
-          className={`font-sans text-sm transition-colors ${value === o ? "text-oxblood" : "text-charcoal/50 hover:text-charcoal"} ${cap ? "capitalize" : ""}`}
-        >
-          {OPTION_KEY[o] ? tr(OPTION_KEY[o]) : o}
-          {value === o && <span className="ml-1 inline-block h-1 w-1 rounded-full bg-oxblood align-middle" />}
-        </button>
-      ))}
-    </div>
+    <label className="flex min-w-[140px] flex-col gap-1">
+      <span className="font-condensed text-[11px] font-bold uppercase tracking-eyebrow text-charcoal/55">{label}</span>
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="border-b border-charcoal/30 bg-transparent py-2 pr-6 font-sans text-sm text-charcoal focus:border-oxblood focus:outline-none"
+      >
+        {options.map((o) => (
+          <option key={o} value={o}>
+            {OPTION_KEY[o] ? tr(OPTION_KEY[o]) : o}
+          </option>
+        ))}
+      </select>
+    </label>
   );
 }

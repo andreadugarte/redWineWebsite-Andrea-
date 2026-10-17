@@ -32,44 +32,38 @@ export function Header() {
   const locale = useLocale();
   const tr = useT();
   const basePath = basePathOf(pathname);
-  const isHome = basePath === "/";
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const { count, open } = useCart();
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     setMenuOpen(false);
     setLangOpen(false);
   }, [pathname]);
 
-  const solid = scrolled || !isHome || menuOpen;
-  const text = solid ? "text-charcoal" : "text-bone";
+  const text = "text-charcoal";
 
   return (
     <>
-      <motion.header
-        className={`fixed inset-x-0 top-0 z-[70] transition-colors duration-500 ${solid ? "bg-bone/95 backdrop-blur-md shadow-[0_1px_0_rgba(38,34,31,0.08)]" : "bg-transparent"}`}
-      >
-        <div className="container-x flex items-center justify-between py-4">
+      <header className="fixed inset-x-0 top-0 z-[70] bg-bone shadow-[0_1px_0_rgba(38,34,31,0.1)]">
+        <div className="bg-oxblood text-bone">
+          <p className="container-x flex items-center justify-center gap-3 py-2 text-center font-sans text-[12px] leading-tight">
+            <span>{tr("bar.text")}</span>
+            <Link href={localizedPath("/shipping", locale)} className="hidden underline underline-offset-2 hover:text-gold-pale sm:inline">
+              {tr("bar.more")}
+            </Link>
+          </p>
+        </div>
+        <div className="container-x flex items-center justify-between py-2.5">
           <button className={`lg:hidden ${text}`} aria-label={tr("header.menu")} aria-expanded={menuOpen} onClick={() => setMenuOpen((o) => !o)}>
             <span className="block h-px w-7 bg-current" />
             <span className="mt-1.5 block h-px w-7 bg-current" />
             <span className="mt-1.5 block h-px w-5 bg-current" />
           </button>
 
-          <Link href={localizedPath("/", locale)} className="flex items-center leading-none">
-            {solid ? (
-              <Image src="/images/original/Red-del-Vino-logo-2026-transparent.png" alt="Red del Vino" width={44} height={44} className="h-11 w-11" priority />
-            ) : (
-              <span className={`font-serif text-2xl tracking-tight ${text}`}>Red del Vino</span>
-            )}
+          <Link href={localizedPath("/", locale)} className="flex items-center gap-3 leading-none">
+            <Image src="/images/original/Red-del-Vino-logo-2026-transparent.png" alt="" width={44} height={44} className="h-10 w-10" priority />
+            <span className="hidden font-serif text-xl tracking-tight text-charcoal sm:block">Red del Vino</span>
           </Link>
 
           <nav className="hidden items-center gap-7 lg:flex">
@@ -143,12 +137,12 @@ export function Header() {
             </button>
           </div>
         </div>
-      </motion.header>
+      </header>
 
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed inset-0 z-[69] bg-bone px-6 pt-24"
+            className="fixed inset-0 z-[69] bg-bone px-6 pt-32"
             initial={{ opacity: 0, pointerEvents: "none" }}
             animate={{ opacity: 1, pointerEvents: "auto" }}
             exit={{ opacity: 0, pointerEvents: "none" }}

@@ -3,8 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SectionHeading } from "@/components/layout/SectionHeading";
-import { Parallax } from "@/components/motion/Parallax";
-import { Counter } from "@/components/animations/StatCounter";
 import { IMG } from "@/lib/images";
 import { useLocale, useT } from "@/components/i18n/LocaleProvider";
 import { localizedPath } from "@/lib/i18n";
@@ -13,13 +11,13 @@ export function StoryIntro({ body }: { body: string }) {
   const locale = useLocale();
   const tr = useT();
   return (
-    <section className="section-y bg-bone">
+    <section className="border-t border-charcoal/10 bg-bone py-14 md:py-16">
       <div className="container-x grid items-center gap-16 lg:grid-cols-2">
         <div className="relative order-2 lg:order-1">
-          <Parallax className="relative aspect-[4/5] overflow-hidden" distance={60}>
-            <Image src={IMG.grower} alt="A Colchagua wine grower in the vineyard" fill className="scale-110 object-cover" sizes="(max-width:1024px) 100vw, 45vw" />
-          </Parallax>
-          <div className="absolute -bottom-8 -right-4 hidden w-48 bg-oxblood p-6 text-bone md:block lg:-right-10">
+          <div className="relative aspect-[4/5] overflow-hidden">
+            <Image src={IMG.grower} alt="A Colchagua wine grower in the vineyard" fill className="object-cover" sizes="(max-width:1024px) 100vw, 45vw" />
+          </div>
+          <div className="absolute bottom-0 right-0 hidden w-48 bg-oxblood p-6 text-bone md:block">
             <Image src={IMG.fairtradeBadge} alt="Fairtrade certified" width={64} height={64} className="mb-3" />
             <p className="font-sans text-xs leading-relaxed">{tr("story.fairtradeCaption")}</p>
           </div>
@@ -50,7 +48,7 @@ export function StoryIntro({ body }: { body: string }) {
 function Stat({ n, text, label }: { n?: number; text?: string; label: string }) {
   return (
     <div>
-      <p className="font-serif text-5xl text-oxblood">{text ?? <Counter to={n ?? 0} />}</p>
+      <p className="font-serif text-4xl text-oxblood">{text ?? n}</p>
       <p className="mt-2 font-sans text-xs uppercase tracking-[0.14em] text-charcoal/60">{label}</p>
     </div>
   );

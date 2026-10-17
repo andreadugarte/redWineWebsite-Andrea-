@@ -532,6 +532,33 @@ export const UI: Dict = {
   "wines.soldOutTitle": { en: "Currently sold out", es: "Agotados por ahora", pt: "Esgotados no momento", zh: "暂时售罄" },
   "wines.soldOutNote": { en: "These wines are not available right now. Write to us on WhatsApp and we'll tell you when they're back or suggest an alternative.", es: "Estos vinos no están disponibles por ahora. Escríbenos por WhatsApp y te avisamos si vuelven o te sugerimos una alternativa.", pt: "Estes vinhos não estão disponíveis agora. Escreva no WhatsApp e avisaremos se voltarem ou sugeriremos uma alternativa.", zh: "这些葡萄酒目前暂无库存。请通过 WhatsApp 联系我们,我们会在补货时通知您或推荐替代品。" },
   "wines.available": { en: "available", es: "disponibles", pt: "disponíveis", zh: "有货" },
+
+  // Retail-structure pass (home, header bar, age warning)
+  "bar.text": { en: "Free shipping to Santiago from 6 bottles · Secure payment with Webpay and cards", es: "Envío gratis a Santiago desde 6 botellas · Pago seguro con Webpay y tarjetas", pt: "Frete grátis para Santiago a partir de 6 garrafas · Pagamento seguro com Webpay e cartões", zh: "6瓶起圣地亚哥免费配送 · Webpay及银行卡安全支付" },
+  "bar.more": { en: "Details", es: "Ver detalles", pt: "Detalhes", zh: "详情" },
+  "age.warning": { en: "WARNING: Alcohol consumption by minors under 18 is prohibited.", es: "ADVERTENCIA: El consumo de alcohol en menores de 18 años se encuentra prohibido.", pt: "AVISO: O consumo de álcool por menores de 18 anos é proibido.", zh: "警告:禁止18岁以下未成年人饮酒。" },
+  "hero.viewPacks": { en: "View packs", es: "Ver packs", pt: "Ver kits", zh: "查看套装" },
+  "home.benefit.ship": { en: "Free shipping to Santiago from 6 bottles", es: "Envío gratis a Santiago desde 6 botellas", pt: "Frete grátis para Santiago a partir de 6 garrafas", zh: "6瓶起圣地亚哥免费配送" },
+  "home.benefit.pay": { en: "Secure payment with Webpay and cards", es: "Pago seguro con Webpay y tarjetas", pt: "Pagamento seguro com Webpay e cartões", zh: "Webpay及银行卡安全支付" },
+  "home.benefit.fair": { en: "Fair Trade certified wines", es: "Vinos con certificación Comercio Justo", pt: "Vinhos certificados Fair Trade", zh: "公平贸易认证葡萄酒" },
+  "home.benefit.store": { en: "Shop in Santa Cruz, Colchagua", es: "Tienda en Santa Cruz, Colchagua", pt: "Loja em Santa Cruz, Colchagua", zh: "圣克鲁斯门店" },
+  "home.cat.eyebrow": { en: "Shop", es: "Comprar", pt: "Comprar", zh: "选购" },
+  "home.cat.title": { en: "Find your wine", es: "Encuentra tu vino", pt: "Encontre seu vinho", zh: "找到您的葡萄酒" },
+  "home.cat.red": { en: "Red wines", es: "Tintos", pt: "Tintos", zh: "红葡萄酒" },
+  "home.cat.white": { en: "White wines", es: "Blancos", pt: "Brancos", zh: "白葡萄酒" },
+    "home.cat.rose": { en: "Rosé", es: "Rosados", pt: "Rosés", zh: "桃红葡萄酒" },
+  "home.cat.packs": { en: "Packs", es: "Packs", pt: "Kits", zh: "套装" },
+  "home.cat.view": { en: "View", es: "Ver", pt: "Ver", zh: "查看" },
+  "home.featured.eyebrow": { en: "Selection", es: "Selección", pt: "Seleção", zh: "精选" },
+  "home.featured.title": { en: "Featured wines", es: "Vinos destacados", pt: "Vinhos em destaque", zh: "精选葡萄酒" },
+  "home.viewAllWines": { en: "View all wines", es: "Ver todos los vinos", pt: "Ver todos os vinhos", zh: "查看全部葡萄酒" },
+  "home.visit.eyebrow": { en: "Visit us", es: "Visítanos", pt: "Visite-nos", zh: "欢迎到访" },
+  "home.visit.title": { en: "Our shop and tastings in Santa Cruz", es: "Nuestra tienda y catas en Santa Cruz", pt: "Nossa loja e degustações em Santa Cruz", zh: "圣克鲁斯门店与品鉴" },
+  "home.visit.body": { en: "Come by our shop at 957 Av. Diego Portales, Santa Cruz, taste the wines and meet the families behind them. We also run guided tours through Colchagua's family vineyards.", es: "Pasa por nuestra tienda en Av. Diego Portales 957, Santa Cruz, prueba los vinos y conoce a las familias que los hacen. También hacemos tours guiados por los viñedos familiares de Colchagua.", pt: "Visite nossa loja na Av. Diego Portales 957, Santa Cruz, prove os vinhos e conheça as famílias que os produzem. Também fazemos passeios guiados pelos vinhedos familiares de Colchagua.", zh: "欢迎光临我们位于圣克鲁斯 Av. Diego Portales 957 的门店,品尝美酒,结识背后的酿酒家庭。我们也提供科尔查瓜家庭酒庄导览之旅。" },
+  "home.visit.tours": { en: "Plan your visit", es: "Planifica tu visita", pt: "Planeje sua visita", zh: "规划行程" },
+  "home.visit.contact": { en: "Contact us", es: "Contáctanos", pt: "Fale conosco", zh: "联系我们" },
+  "footer.warning": { en: "WARNING: Alcohol consumption by minors under 18 is prohibited. Drink responsibly.", es: "ADVERTENCIA: El consumo de alcohol en menores de 18 años se encuentra prohibido. Disfruta con responsabilidad.", pt: "AVISO: O consumo de álcool por menores de 18 anos é proibido. Beba com responsabilidade.", zh: "警告:禁止18岁以下未成年人饮酒。请理性饮酒。" },
+  "cart.add": { en: "Add to cart", es: "Agregar al carrito", pt: "Adicionar ao carrinho", zh: "加入购物车" },
 };
 
 /** Map a footer/link href to its translation key. */

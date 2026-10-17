@@ -555,3 +555,20 @@ live Vercel URL will reflect any of this.
 - **Open question from Rodrigo, needs Andrea's call, not mine**: he asked
   whether to send the current site link to Plumpton College now for their
   technical/qualitative input, or wait until this phase is fully finished.
+
+
+## Retail-structure redesign (2026-10)
+Structure modelled on established Chilean wine retailers with physical stores
+(La Vinoteca, CAV) and Berry Bros. & Rudd — NOT copied visually. Changes:
+announcement bar + always-visible logo header; short hero; benefit strip;
+shop-by-type tiles; product cards with visible price and "Agregar al carrito";
+packs as a grid; one-row select filters; compact age gate with the Chilean
+minors-alcohol warning (also in footer); removed film-grain overlay, scroll
+progress bar, page-transition fade, scroll cue, staged hero animation, two
+horizontal scrollers, quote band, quiz banner and the full-bleed feature bands.
+**Fonts:** only the three Plumpton families, in free equivalents (Fraunces for
+Bookmania, Oswald for Knockout Welterweight, Inter for Coco Gothic); subheading
+tracking set to the pack's 209 (0.209em). The exact commercial font files
+still need a web licence from Plumpton/Rodrigo to replace the equivalents.
+Warning text copied from the wording used by La Vinoteca/CAV — confirm with
+Rodrigo/legal that it is the required wording.

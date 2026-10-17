@@ -73,15 +73,9 @@ export function CartDrawer() {
                 <div className="border-t border-charcoal/10 px-6 py-5">
                   {/* Free-shipping nudge: 6-bottle threshold to Santiago (live policy) */}
                   <div className="mb-4">
-                    <div className="h-1.5 w-full overflow-hidden rounded-full bg-charcoal/10">
-                      <div
-                        className="h-full rounded-full bg-vine transition-all duration-500"
-                        style={{ width: `${Math.min(100, (count / FREE_SHIPPING_BOTTLES) * 100)}%` }}
-                      />
-                    </div>
-                    <p className="mt-2 font-sans text-xs text-charcoal-soft">
+                    <p className="font-sans text-xs text-charcoal-soft">
                       {bottlesToFree === 0
-                        ? `✓ ${tr("cart.freeShipEarned")}`
+                        ? tr("cart.freeShipEarned")
                         : `${bottlesToFree} ${tr("cart.freeShipRemaining")}`}
                     </p>
                   </div>

@@ -56,7 +56,8 @@ const config: Config = {
         "display-md": ["clamp(2rem, 4vw, 3.5rem)", { lineHeight: "1.05" }],
       },
       letterSpacing: {
-        eyebrow: "0.28em",
+        // Plumpton brand pack: subheadings set with tracking 209 (= 0.209em).
+        eyebrow: "0.209em",
       },
       transitionTimingFunction: {
         "out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",

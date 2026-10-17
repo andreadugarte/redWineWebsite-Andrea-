@@ -8,7 +8,6 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AgeGate } from "@/components/AgeGate";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
-import { ScrollProgress } from "@/components/motion/ScrollProgress";
 import { LocaleProvider } from "@/components/i18n/LocaleProvider";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
@@ -59,12 +58,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${oswald.variable} ${inter.variable}`}>
-      <body className="grain font-sans antialiased">
+      <body className="font-sans antialiased">
         <OrganizationJsonLd />
         <LocaleProvider>
           <CartProvider>
             <AgeGate />
-            {/* Disabled: scroll performance */}
             <Header />
             <main>{children}</main>
             <Footer />
