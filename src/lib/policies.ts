@@ -10,7 +10,7 @@ type PolicyKey = "shipping" | "returns";
 
 const WA = "+56 9 9818 6442";
 
-export const POLICIES: Record<PolicyKey, { en: Policy; es: Policy }> = {
+export const POLICIES: Record<PolicyKey, { en: Policy; es: Policy; pt: Policy; zh: Policy }> = {
   shipping: {
     es: {
       eyebrow: "Ayuda",
@@ -65,6 +65,44 @@ export const POLICIES: Record<PolicyKey, { en: Policy; es: Policy }> = {
         { h: "Shipping outside Chile", p: ["We don't regularly ship internationally yet. If you're interested, write to us and we'll look at your case."] },
       ],
     },
+    pt: {
+      eyebrow: "Ajuda",
+      title: "Envios",
+      intro: "Enviamos de Santa Cruz, no Vale de Colchagua. Veja como funciona.",
+      sections: [
+        { h: "Frete grátis para Santiago", p: ["Pedidos de 6 garrafas ou mais com destino a Santiago têm frete grátis. No carrinho você vê quantas garrafas faltam."] },
+        {
+          h: "Outros pedidos e destinos",
+          p: [
+            "Enviamos com a Blue Express. Para pedidos com menos de 6 garrafas, ou com destino fora de Santiago, confirmamos o valor e o prazo do frete por e-mail ou WhatsApp antes de despachar, para que não haja surpresas.",
+            `Quer saber antes de comprar? Escreva no WhatsApp ${WA} ou para info@reddelvino.com com sua região e as garrafas que lhe interessam.`,
+          ],
+        },
+        { h: "Acompanhamento", p: ["Quando seu pedido sai da vinícola, avisamos por e-mail ou WhatsApp. Se tiver dúvidas sobre onde ele está, escreva com seu número de pedido."] },
+        { h: "Retirada em Santa Cruz", p: ["Você também pode retirar seu pedido em nossa loja: Av. Diego Portales 957, Santa Cruz. Avise-nos antes para deixarmos tudo pronto."] },
+        { h: "Entrega a maiores de 18 anos", p: ["Por se tratar de bebidas alcoólicas, a entrega é apenas para pessoas com 18 anos ou mais, que podem ser solicitadas a mostrar documento na entrega."] },
+        { h: "Envios para fora do Chile", p: ["Por enquanto não fazemos envios internacionais de forma regular. Se tiver interesse, escreva e avaliaremos seu caso."] },
+      ],
+    },
+    zh: {
+      eyebrow: "帮助",
+      title: "配送",
+      intro: "我们从科尔查瓜山谷的圣克鲁斯发货。流程如下。",
+      sections: [
+        { h: "圣地亚哥免费配送", p: ["订购6瓶或以上并送至圣地亚哥,即可享受免费配送。购物车会显示您还差几瓶。"] },
+        {
+          h: "其他订单与地区",
+          p: [
+            "我们使用 Blue Express 发货。不足6瓶或送往圣地亚哥以外的订单,我们会在发货前通过邮件或 WhatsApp 向您确认运费和时效,绝不让您意外多付。",
+            `想在购买前了解?请通过 WhatsApp ${WA} 或 info@reddelvino.com 告知您所在地区和想购买的酒款。`,
+          ],
+        },
+        { h: "物流跟踪", p: ["订单从酒庄发出时,我们会通过邮件或 WhatsApp 通知您。如想了解包裹位置,请提供订单号联系我们。"] },
+        { h: "圣克鲁斯门店自提", p: ["您也可以到我们的门店自提:Av. Diego Portales 957, Santa Cruz。请提前告知,以便我们备好。"] },
+        { h: "仅限年满18周岁者收货", p: ["由于属于酒精饮品,仅向年满18周岁的人员配送,收货时可能需要出示身份证件。"] },
+        { h: "智利境外配送", p: ["目前我们尚未常规提供国际配送。如有需要,请联系我们,我们会评估您的情况。"] },
+      ],
+    },
   },
   returns: {
     es: {
@@ -113,6 +151,40 @@ export const POLICIES: Record<PolicyKey, { en: Policy; es: Policy }> = {
         },
         { h: "How refunds work", p: ["Refunds go back through the same payment method you used on Flow. How soon it shows up depends on your bank or card."] },
         { h: "Questions?", p: ["Write to us and we'll answer personally — we're a small cooperative and want you to be happy."] },
+      ],
+    },
+    pt: {
+      eyebrow: "Ajuda",
+      title: "Trocas e devoluções",
+      intro: "Se algo não chegar como deveria, resolvemos.",
+      sections: [
+        {
+          h: "Garrafa danificada ou errada",
+          p: [`Se seu pedido chegar com uma garrafa quebrada, danificada ou diferente da que você pediu, escreva o quanto antes no WhatsApp ${WA} ou para info@reddelvino.com com seu número de pedido e uma foto. Ofereceremos a reposição ou o reembolso.`],
+        },
+        {
+          h: "Direito de arrependimento",
+          p: ["Como em toda compra a distância no Chile, aplica-se a Lei nº 19.496 de Proteção dos Direitos dos Consumidores: você pode desistir da compra em até 10 dias após receber o pedido, escrevendo para info@reddelvino.com. Os produtos devem estar lacrados e na embalagem original."],
+        },
+        { h: "Como funcionam os reembolsos", p: ["Os reembolsos são feitos pelo mesmo meio de pagamento usado no Flow. O prazo para aparecer depende do seu banco ou cartão."] },
+        { h: "Dúvidas?", p: ["Escreva e responderemos pessoalmente: somos uma cooperativa pequena e queremos que você fique satisfeito."] },
+      ],
+    },
+    zh: {
+      eyebrow: "帮助",
+      title: "退换货",
+      intro: "如果收到的商品有问题,我们会妥善处理。",
+      sections: [
+        {
+          h: "酒瓶破损或发错",
+          p: [`如果您的订单中有酒瓶破裂、受损或与所订不符,请尽快通过 WhatsApp ${WA} 或 info@reddelvino.com 联系我们,并提供订单号和照片。我们将为您补发或退款。`],
+        },
+        {
+          h: "撤销购买权",
+          p: ["与智利所有远程购物一样,适用第19.496号《消费者权益保护法》:您可在收到订单后10天内,发送邮件至 info@reddelvino.com 撤销购买。商品须未开封且保留原包装。"],
+        },
+        { h: "退款方式", p: ["退款将原路退回您在 Flow 使用的支付方式。到账时间取决于您的银行或银行卡。"] },
+        { h: "有疑问?", p: ["请联系我们,我们会亲自回复 — 我们是一家小型合作社,希望您满意。"] },
       ],
     },
   },

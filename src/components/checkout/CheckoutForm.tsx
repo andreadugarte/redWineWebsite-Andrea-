@@ -11,6 +11,7 @@ import { TrustStrip } from "@/components/trust/TrustStrip";
 
 export function CheckoutForm({ flowConfigured }: { flowConfigured: boolean }) {
   const { items, subtotal, count, clear } = useCart();
+  const [error, setError] = useState<"email" | "payment" | null>(null);
   const tr = useT();
   const locale = useLocale();
   const [state, setState] = useState<"form" | "loading" | "done">("form");
@@ -20,12 +21,23 @@ export function CheckoutForm({ flowConfigured }: { flowConfigured: boolean }) {
     e.preventDefault();
     const customer = Object.fromEntries(new FormData(e.currentTarget).entries());
     setState("loading");
-    const res = await fetch("/api/checkout", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ items, customer, locale }),
-    });
-    const data = await res.json();
+    setError(null);
+    let data: { ok?: boolean; error?: string; redirectUrl?: string; orderId: string; simulated: boolean };
+    try {
+      const res = await fetch("/api/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ items, customer, locale }),
+      });
+      data = await res.json();
+    } catch {
+      data = { ok: false, error: "payment", orderId: "", simulated: false };
+    }
+    if (data.ok === false) {
+      setError(data.error === "email" ? "email" : "payment");
+      setState("form");
+      return;
+    }
     // Real Flow order: hand the browser off to Flow's payment page rather
     // than showing our own confirmation — Flow redirects back to /checkout/return.
     if (data.redirectUrl) {
@@ -86,6 +98,11 @@ export function CheckoutForm({ flowConfigured }: { flowConfigured: boolean }) {
             <F name="region" label={tr("checkout.region")} />
             <F name="country" label={tr("checkout.country")} required />
           </div>
+          {error && (
+            <p role="alert" className="border border-oxblood/40 bg-oxblood/5 px-4 py-3 font-sans text-sm text-oxblood">
+              {error === "email" ? tr("checkout.err.email") : tr("checkout.err.payment")}
+            </p>
+          )}
           <button type="submit" disabled={state === "loading"} className="btn-primary mt-4 justify-self-start disabled:opacity-60">
             {state === "loading" ? tr("checkout.placing") : tr("checkout.place")}
           </button>

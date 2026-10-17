@@ -10,9 +10,9 @@ import { PaymentBadges } from "@/components/trust/PaymentBadges";
 
 export function PolicyPage({ kind }: { kind: "shipping" | "returns" }) {
   const locale = useLocale();
-  const policy = POLICIES[kind][locale === "es" ? "es" : "en"];
+  const policy = POLICIES[kind][locale];
   const other = kind === "shipping" ? "/returns" : "/shipping";
-  const otherLabel = POLICIES[other === "/returns" ? "returns" : "shipping"][locale === "es" ? "es" : "en"].title;
+  const otherLabel = POLICIES[other === "/returns" ? "returns" : "shipping"][locale].title;
 
   return (
     <>

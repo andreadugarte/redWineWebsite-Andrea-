@@ -15,9 +15,14 @@ export async function POST(req: Request) {
   const total = (items as { price: number; qty: number }[]).reduce((n, i) => n + i.price * i.qty, 0);
   const orderId = "RDV-" + Math.random().toString(36).slice(2, 8).toUpperCase();
 
+  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String((customer as Record<string, unknown>).email || "").trim());
+  if (flowConfigured() && total > 0 && !emailOk) {
+    return NextResponse.json({ ok: false, error: "email" }, { status: 400 });
+  }
+
   if (flowConfigured() && total > 0) {
     try {
-      const email = String((customer as Record<string, unknown>).email || "");
+      const email = String((customer as Record<string, unknown>).email || "").trim();
       const payment = await createFlowPayment({
         commerceOrder: orderId,
         subject: `Red del Vino — pedido ${orderId}`,
@@ -35,8 +40,11 @@ export async function POST(req: Request) {
         redirectUrl: `${payment.url}?token=${payment.token}`,
       });
     } catch (err) {
-      // Fail safe into simulated mode rather than breaking checkout for the customer.
-      console.error("Flow payment/create failed, falling back to simulated checkout:", err);
+      // With Flow live, never fall back to a fake order: the customer must know the payment did not start.
+      console.error("Flow payment/create failed:", err);
+      const msg = err instanceof Error ? err.message : "";
+      const code = /1620|e-?mail/i.test(msg) ? "email" : "payment";
+      return NextResponse.json({ ok: false, error: code }, { status: 502 });
     }
   }
 

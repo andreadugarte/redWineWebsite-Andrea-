@@ -559,6 +559,8 @@ export const UI: Dict = {
   "home.visit.contact": { en: "Contact us", es: "Contáctanos", pt: "Fale conosco", zh: "联系我们" },
   "footer.warning": { en: "WARNING: Alcohol consumption by minors under 18 is prohibited. Drink responsibly.", es: "ADVERTENCIA: El consumo de alcohol en menores de 18 años se encuentra prohibido. Disfruta con responsabilidad.", pt: "AVISO: O consumo de álcool por menores de 18 anos é proibido. Beba com responsabilidade.", zh: "警告:禁止18岁以下未成年人饮酒。请理性饮酒。" },
   "cart.add": { en: "Add to cart", es: "Agregar al carrito", pt: "Adicionar ao carrinho", zh: "加入购物车" },
+  "checkout.err.email": { en: "We couldn't verify that email address. Please check it is spelled correctly and that the mailbox exists, then try again — your cart is saved.", es: "No pudimos validar ese correo. Revisa que esté bien escrito y que exista, e inténtalo de nuevo — tu carrito sigue guardado.", pt: "Não foi possível validar esse e-mail. Verifique se está escrito corretamente e se a caixa existe, e tente novamente — seu carrinho continua salvo.", zh: "无法验证该邮箱地址。请检查拼写及邮箱是否存在后重试 — 您的购物车已保存。" },
+  "checkout.err.payment": { en: "We couldn't start the payment. Please try again in a moment, or write to us on WhatsApp and we'll help you complete your order.", es: "No pudimos iniciar el pago. Inténtalo de nuevo en un momento o escríbenos por WhatsApp y te ayudamos a completar tu pedido.", pt: "Não foi possível iniciar o pagamento. Tente novamente em instantes ou escreva no WhatsApp e ajudaremos a concluir seu pedido.", zh: "无法发起付款。请稍后重试,或通过 WhatsApp 联系我们,我们会协助您完成订单。" },
 };
 
 /** Map a footer/link href to its translation key. */
