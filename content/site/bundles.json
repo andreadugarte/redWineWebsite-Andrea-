@@ -79,13 +79,13 @@
     ],
     "discountPercent": 10,
     "valueAdd": "giftPackaging",
-    "description": "The cellar's flagship — La Pascuala Tinaja, aged in Pañul clay amphorae — paired with Parcela 33's reserve Cabernet, in gift presentation with the story of the families who made them.",
-    "description_es": "Lo más destacado de la bodega — La Pascuala Tinaja, criado en tinajas de arcilla de Pañul — junto al Cabernet reserva de Parcela 33, en presentación de regalo con la historia de las familias que los hicieron.",
+    "description": "The cellar's flagship — La Pascuala Tinaja, aged in Pañul clay amphorae — paired with Parcela 33's reserve Cabernet.",
+    "description_es": "Lo más destacado de la bodega — La Pascuala Tinaja, criado en tinajas de arcilla de Pañul — junto al Cabernet reserva de Parcela 33.",
     "internalNote": "REQUIRES CONFIRMATION FROM RED DEL VINO: descuento 10% pendiente de ratificación; confirmar empaque de regalo operativo.",
     "name_pt": "Kit de Presente Colchagua",
     "name_zh": "科尔查瓜礼品套装",
-    "description_pt": "O carro-chefe da adega — La Pascuala Tinaja, envelhecido em ânforas de argila de Pañul — combinado com o Cabernet reserva de Parcela 33, em embalagem de presente com a história das famílias que os produziram.",
-    "description_zh": "酒窖的招牌之作——在帕纽尔（Pañul）陶罐中陈酿的La Pascuala Tinaja——搭配Parcela 33珍藏赤霞珠，以礼品形式呈现，并附上酿造者家族的故事。"
+    "description_pt": "O carro-chefe da adega — La Pascuala Tinaja, envelhecido em ânforas de argila de Pañul — combinado com o Cabernet reserva de Parcela 33.",
+    "description_zh": "酒窖的招牌之作——在帕纽尔（Pañul）陶罐中陈酿的La Pascuala Tinaja——搭配Parcela 33珍藏赤霞珠。"
   },
   {
     "slug": "vinos-de-la-feria",

@@ -9,7 +9,7 @@ import { localizedPath } from "@/lib/i18n";
 import { PaymentBadges } from "@/components/trust/PaymentBadges";
 
 export function CartDrawer() {
-  const { items, isOpen, close, subtotal, setQty, remove, count, isGift, setGift } = useCart();
+  const { items, isOpen, close, subtotal, setQty, remove, count } = useCart();
   const tr = useT();
   const locale = useLocale();
   const bottlesToFree = Math.max(0, FREE_SHIPPING_BOTTLES - count);
@@ -85,20 +85,6 @@ export function CartDrawer() {
                         : `${bottlesToFree} ${tr("cart.freeShipRemaining")}`}
                     </p>
                   </div>
-
-                  {/* Gift option — recorded as an order note, no fulfillment automation yet */}
-                  <label className="mb-4 flex cursor-pointer items-start gap-3">
-                    <input
-                      type="checkbox"
-                      checked={isGift}
-                      onChange={(e) => setGift(e.target.checked)}
-                      className="mt-0.5 accent-oxblood"
-                    />
-                    <span>
-                      <span className="font-sans text-sm">{tr("cart.gift")}</span>
-                      {isGift && <span className="block font-sans text-xs text-charcoal/50">{tr("cart.giftNote")}</span>}
-                    </span>
-                  </label>
 
                   <div className="mb-4 flex items-center justify-between">
                     <span className="eyebrow">{tr("cart.subtotal")} · {count} {count === 1 ? tr("cart.bottle") : tr("cart.bottles")}</span>

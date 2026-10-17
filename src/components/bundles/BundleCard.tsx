@@ -55,9 +55,6 @@ export function BundleCard({ bundle }: { bundle: Bundle }) {
             {tr("packs.save")} {formatPrice(price.full - price.final, price.currency)} {tr("packs.vsSeparately")}
           </p>
         )}
-        <p className="mt-3 font-sans text-[11px] uppercase tracking-[0.12em] text-charcoal/50">
-          {tr(`packs.valueAdd.${bundle.valueAdd}`)}
-        </p>
       </div>
     </Link>
   );
