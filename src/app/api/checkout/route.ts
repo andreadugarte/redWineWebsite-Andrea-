@@ -10,7 +10,8 @@ import { flowConfigured, createFlowPayment } from "@/lib/flow";
  *   purchase flow works end-to-end for demos and staging.
  */
 export async function POST(req: Request) {
-  const { items = [], customer = {} } = await req.json().catch(() => ({}));
+  const { items = [], customer = {}, locale = "es" } = await req.json().catch(() => ({}));
+  const lang = ["en", "es", "pt", "zh"].includes(locale) ? locale : "es";
   const total = (items as { price: number; qty: number }[]).reduce((n, i) => n + i.price * i.qty, 0);
   const orderId = "RDV-" + Math.random().toString(36).slice(2, 8).toUpperCase();
 
@@ -23,7 +24,7 @@ export async function POST(req: Request) {
         amount: total,
         email,
         urlConfirmation: `${SITE.url}/api/checkout/confirm`,
-        urlReturn: `${SITE.url}/checkout/return`,
+        urlReturn: `${SITE.url}/api/checkout/return?lang=${lang}`,
       });
       return NextResponse.json({
         ok: true,

@@ -39,9 +39,13 @@ export const FOOTER_LINKS = {
     { label: "Social Responsibility", href: "/social-responsibility" },
     { label: "Trade / B2B", href: "/trade" },
   ],
+  Help: [
+    { label: "Shipping", href: "/shipping" },
+    { label: "Returns & Exchanges", href: "/returns" },
+    { label: "Contact", href: "/contact" },
+  ],
   Visit: [
     { label: "Wine Tours", href: "/tourism" },
     { label: "Reservation Policy", href: "/reservation-policy" },
-    { label: "Contact", href: "/contact" },
   ],
 };

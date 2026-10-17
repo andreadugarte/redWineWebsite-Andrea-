@@ -487,9 +487,24 @@ live Vercel URL will reflect any of this.
 - **Form recipient addresses** — reservations default to
   reservas@reddelvino.com, contact/newsletter to info@reddelvino.com (env
   overridable: RESERVATIONS_TO_EMAIL / CONTACT_TO_EMAIL). Confirm.
-- **Returns/damaged-bottle policy wording** — not published; needs exact text.
+- **Returns/damaged-bottle policy wording** — PUBLISHED 2026-10 at `/returns`
+  (`src/lib/policies.ts`) as a conservative DRAFT: damaged/wrong bottle →
+  replacement or refund; 10-day retracto citing Ley 19.496 (unopened, original
+  packaging); refunds via the original Flow payment method. Rodrigo must
+  confirm or correct this wording, especially the "unopened" condition.
 - **Public delivery-time promises** — internal numbers exist (Blu Express
-  domestic) but not confirmed as a customer-facing commitment.
+  domestic) but not confirmed as a customer-facing commitment. `/shipping`
+  (2026-10) deliberately states NO delivery days and NO paid-shipping rates:
+  free to Santiago from 6 bottles; otherwise cost/timing confirmed by
+  email/WhatsApp before dispatch; pickup at Av. Diego Portales 957; 18+ only;
+  no regular international shipping. Needs Rodrigo's OK. NOTE: checkout charges
+  the subtotal only — paid shipping is not collected online yet.
+- **Reviews / social proof** — none published; none invented. Needs real
+  customer reviews (Instagram, Google, WhatsApp) from Rodrigo before adding.
+- **Order details not stored** — checkout sends only the email to Flow; the
+  shipping address and items are not persisted or emailed to Red del Vino
+  (the Flow confirm webhook only logs). Needs the Resend email (pending
+  Francisco's DNS records) or a DB before real orders can be fulfilled.
 
 ## Analytics / tooling
 - **GA4 property** — Rodrigo delegated the choice 2026-07-16 ("como sea

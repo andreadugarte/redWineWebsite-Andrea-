@@ -8,7 +8,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import { NAV, SITE } from "@/lib/site";
 import { useCart } from "@/components/cart/CartProvider";
 import { useLocale, useT } from "@/components/i18n/LocaleProvider";
-import { LOCALES, LOCALE_LABEL, basePathOf, localizedPath } from "@/lib/i18n";
+import { LOCALES, basePathOf, localizedPath, type Locale } from "@/lib/i18n";
+import { Flag, LOCALE_NAME } from "@/components/i18n/Flag";
+
+const rememberLocale = (l: Locale) => {
+  document.cookie = `rdv-locale=${l}; path=/; max-age=${60 * 60 * 24 * 365}; samesite=lax`;
+};
 
 const NAV_KEY: Record<string, string> = {
   "/wines": "nav.wines",
@@ -94,11 +99,12 @@ export function Header() {
             <div className="relative">
               <button
                 onClick={() => setLangOpen((o) => !o)}
-                className="font-sans text-[12px] font-semibold tracking-[0.14em] opacity-80 hover:opacity-100"
-                aria-label={tr("header.changeLanguage")}
+                className="flex items-center gap-1.5 opacity-90 hover:opacity-100"
+                aria-label={`${tr("header.changeLanguage")} (${LOCALE_NAME[locale]})`}
                 aria-expanded={langOpen}
               >
-                {LOCALE_LABEL[locale]}
+                <Flag locale={locale} className="h-[15px] w-[22px]" />
+                <svg width="9" height="9" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden><path d="M2 3.5l3 3 3-3" /></svg>
               </button>
               <AnimatePresence>
                 {langOpen && (
@@ -106,16 +112,21 @@ export function Header() {
                     initial={{ opacity: 0, y: -6 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -6 }}
-                    className="absolute right-0 top-full mt-3 min-w-[96px] border border-charcoal/10 bg-bone py-2 text-charcoal shadow-lg"
+                    className="absolute right-0 top-full mt-3 min-w-[150px] border border-charcoal/10 bg-bone py-2 text-charcoal shadow-lg"
                   >
                     {LOCALES.filter((l) => l !== locale).map((l) => (
                       <Link
                         key={l}
                         href={localizedPath(basePath, l)}
-                        onClick={() => setLangOpen(false)}
-                        className="block px-4 py-2 font-sans text-[12px] font-semibold tracking-[0.14em] hover:bg-charcoal/5"
+                        onClick={() => {
+                          rememberLocale(l);
+                          setLangOpen(false);
+                        }}
+                        hrefLang={l}
+                        className="flex items-center gap-2.5 whitespace-nowrap px-4 py-2 font-sans text-[13px] hover:bg-charcoal/5"
                       >
-                        {LOCALE_LABEL[l]}
+                        <Flag locale={l} />
+                        {LOCALE_NAME[l]}
                       </Link>
                     ))}
                   </motion.div>

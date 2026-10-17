@@ -4,11 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useCart, formatPrice, FREE_SHIPPING_BOTTLES } from "./CartProvider";
-import { useT } from "@/components/i18n/LocaleProvider";
+import { useLocale, useT } from "@/components/i18n/LocaleProvider";
+import { localizedPath } from "@/lib/i18n";
+import { PaymentBadges } from "@/components/trust/PaymentBadges";
 
 export function CartDrawer() {
   const { items, isOpen, close, subtotal, setQty, remove, count, isGift, setGift } = useCart();
   const tr = useT();
+  const locale = useLocale();
   const bottlesToFree = Math.max(0, FREE_SHIPPING_BOTTLES - count);
 
   return (
@@ -30,17 +33,17 @@ export function CartDrawer() {
             transition={{ type: "tween", duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           >
             <div className="flex items-center justify-between border-b border-charcoal/10 px-6 py-5">
-              <h2 className="font-serif text-2xl">Your Cellar Selection</h2>
-              <button type="button" onClick={close} aria-label="Close cart" className="text-2xl leading-none hover:text-oxblood">
+              <h2 className="font-serif text-2xl">{tr("cart.title")}</h2>
+              <button type="button" onClick={close} aria-label={tr("cart.close")} className="text-2xl leading-none hover:text-oxblood">
                 &times;
               </button>
             </div>
 
             {items.length === 0 ? (
               <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 text-center">
-                <p className="font-serif text-2xl text-charcoal-soft">Your selection is empty.</p>
-                <Link href="/wines" onClick={close} className="btn-primary">
-                  Explore the Wines
+                <p className="font-serif text-2xl text-charcoal-soft">{tr("cart.empty")}</p>
+                <Link href={localizedPath("/wines", locale)} onClick={close} className="btn-primary">
+                  {tr("cart.explore")}
                 </Link>
               </div>
             ) : (
@@ -56,14 +59,14 @@ export function CartDrawer() {
                         <p className="font-serif text-lg leading-tight">{it.name}</p>
                         <div className="mt-auto flex items-center justify-between">
                           <div className="flex items-center border border-charcoal/20">
-                            <button type="button" className="px-2 py-1 hover:text-oxblood" onClick={() => setQty(it.slug, it.qty - 1)} aria-label="Decrease">−</button>
+                            <button type="button" className="px-2 py-1 hover:text-oxblood" onClick={() => setQty(it.slug, it.qty - 1)} aria-label={tr("cart.decrease")}>−</button>
                             <span className="w-8 text-center text-sm">{it.qty}</span>
-                            <button type="button" className="px-2 py-1 hover:text-oxblood" onClick={() => setQty(it.slug, it.qty + 1)} aria-label="Increase">+</button>
+                            <button type="button" className="px-2 py-1 hover:text-oxblood" onClick={() => setQty(it.slug, it.qty + 1)} aria-label={tr("cart.increase")}>+</button>
                           </div>
                           <span className="font-sans text-sm">{formatPrice(it.price * it.qty, "CLP")}</span>
                         </div>
                       </div>
-                      <button type="button" onClick={() => remove(it.slug)} aria-label="Remove" className="self-start text-charcoal/40 hover:text-oxblood">×</button>
+                      <button type="button" onClick={() => remove(it.slug)} aria-label={tr("cart.remove")} className="self-start text-charcoal/40 hover:text-oxblood">×</button>
                     </div>
                   ))}
                 </div>
@@ -98,13 +101,19 @@ export function CartDrawer() {
                   </label>
 
                   <div className="mb-4 flex items-center justify-between">
-                    <span className="eyebrow">Subtotal · {count} {count === 1 ? "bottle" : "bottles"}</span>
+                    <span className="eyebrow">{tr("cart.subtotal")} · {count} {count === 1 ? tr("cart.bottle") : tr("cart.bottles")}</span>
                     <span className="font-serif text-2xl">{formatPrice(subtotal, "CLP")}</span>
                   </div>
-                  <Link href="/checkout" onClick={close} className="btn-primary w-full">
-                    Proceed to Checkout
+                  <Link href={localizedPath("/checkout", locale)} onClick={close} className="btn-primary w-full">
+                    {tr("cart.checkout")}
                   </Link>
-                  <p className="mt-3 text-center text-[11px] text-charcoal/50">Shipping &amp; taxes calculated at checkout.</p>
+                  <p className="mt-3 text-center text-[11px] text-charcoal/60">
+                    {tr("cart.shippingNote")}{" "}
+                    <Link href={localizedPath("/shipping", locale)} onClick={close} className="underline underline-offset-2 hover:text-oxblood">
+                      {tr("cart.shippingInfo")}
+                    </Link>
+                  </p>
+                  <PaymentBadges className="mt-4 justify-center" />
                 </div>
               </>
             )}

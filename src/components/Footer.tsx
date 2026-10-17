@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { SITE, FOOTER_LINKS } from "@/lib/site";
+import { PaymentBadges } from "@/components/trust/PaymentBadges";
 import { NewsletterForm } from "@/components/forms/NewsletterForm";
 import { useLocale, useT } from "@/components/i18n/LocaleProvider";
 import { localizedPath, HREF_LABEL_KEY } from "@/lib/i18n";
 
-const SECTION_KEY: Record<string, string> = { Explore: "footer.explore", Visit: "footer.visit" };
+const SECTION_KEY: Record<string, string> = { Explore: "footer.explore", Visit: "footer.visit", Help: "footer.help" };
 
 export function Footer() {
   const locale = useLocale();
@@ -14,7 +15,7 @@ export function Footer() {
 
   return (
     <footer className="relative bg-oxblood-deep text-bone">
-      <div className="container-x grid gap-12 py-20 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container-x grid gap-12 py-20 md:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-1">
           <p className="font-serif text-3xl">Red del Vino</p>
           <p className="mt-4 max-w-xs font-sans text-sm leading-relaxed text-bone/70">{tr("footer.tagline")}</p>
@@ -50,6 +51,9 @@ export function Footer() {
       </div>
 
       <div className="border-t border-bone/15">
+        <div className="container-x pt-6">
+          <PaymentBadges tone="light" />
+        </div>
         <div className="container-x flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
           <p className="font-sans text-xs text-bone/50">
             © {new Date().getFullYear()} Red del Vino S.A. · Colchagua Valley, Chile

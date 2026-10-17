@@ -4,11 +4,13 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { IMG } from "@/lib/images";
+import { useT } from "@/components/i18n/LocaleProvider";
 
 const KEY = "rdv-age-ok";
 
 export function AgeGate() {
   const [show, setShow] = useState(false);
+  const tr = useT();
 
   useEffect(() => {
     const ok = document.cookie.includes(`${KEY}=1`) || localStorage.getItem(KEY) === "1";
@@ -40,17 +42,17 @@ export function AgeGate() {
             animate={{ scale: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
-            <p className="eyebrow">Red del Vino · Colchagua Valley</p>
-            <h2 className="mt-5 font-serif text-4xl md:text-5xl">Are you of legal drinking age?</h2>
+            <p className="eyebrow">{tr("age.eyebrow")}</p>
+            <h2 className="mt-5 font-serif text-4xl md:text-5xl">{tr("age.title")}</h2>
             <p className="mx-auto mt-5 max-w-sm font-sans text-sm leading-relaxed text-charcoal-soft">
-              You must be of legal drinking age in your country to enter. Please enjoy our wines responsibly.
+              {tr("age.body")}
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:justify-center">
               <button onClick={confirm} className="btn-primary">
-                Yes, I am
+                {tr("age.yes")}
               </button>
               <a href="https://www.responsibility.org" className="btn-outline">
-                No
+                {tr("age.no")}
               </a>
             </div>
           </motion.div>

@@ -35,6 +35,11 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
       (occasion === "All" || w.occasions?.includes(occasion))
   );
 
+  // Available wines first; sold-out ones live in their own section so a first-time
+  // buyer isn't met with a catalog that looks mostly empty.
+  const inStock = filtered.filter((w) => w.stock !== 0);
+  const soldOut = filtered.filter((w) => w.stock === 0);
+
   const hasActiveFilters = varietal !== "All" || color !== "All" || brand !== "All" || occasion !== "All";
   const clearFilters = () => {
     setVarietal("All");
@@ -59,58 +64,74 @@ export function WineGrid({ wines }: { wines: Wine[] }) {
         )}
       </div>
 
-      <motion.div layout className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-        <AnimatePresence mode="popLayout">
-          {filtered.map((w) => (
-            <motion.div
-              key={w.slug}
-              layout
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -12 }}
-              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            >
-              <Link href={localizedPath(`/wines/${w.slug}`, locale)} className="group block transition-transform duration-500 ease-out-expo hover:-translate-y-1.5">
-                <div className="relative aspect-[3/4] overflow-hidden bg-bone-warm">
-                  <Image
-                    src={w.image?.src || FALLBACK_IMAGE}
-                    alt={w.name}
-                    fill
-                    sizes="(max-width:640px) 100vw, 33vw"
-                    className={`object-contain p-10 transition-transform duration-700 ease-out-expo group-hover:scale-105 ${w.stock === 0 ? "opacity-60" : ""}`}
-                  />
-                  {w.vintage && (
-                    <span className="absolute left-5 top-5 font-sans text-[11px] uppercase tracking-[0.14em] text-charcoal/40">
-                      {w.vintage}
-                    </span>
-                  )}
-                  {w.stock === 0 && (
-                    <span className="absolute left-5 top-5 bg-charcoal/85 px-2 py-1 font-sans text-[10px] uppercase tracking-[0.14em] text-bone">
-                      {tr("wines.soldOut")}
-                    </span>
-                  )}
-                  <span className="absolute bottom-5 right-5 font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    {tr("common.view")} →
-                  </span>
-                </div>
-                <div className="mt-5 flex items-baseline justify-between">
-                  <div>
-                    {w.brand && <p className="font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood/70">{w.brand}</p>}
-                    <p className="eyebrow mt-1">{w.varietal}</p>
-                    <p className="mt-1 font-serif text-2xl leading-tight">{w.name}</p>
-                  </div>
-                  <span className="font-sans text-sm text-charcoal-soft">{formatPrice(w.price, w.currency)}</span>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </motion.div>
+      <WineCards wines={inStock} />
+
+      {soldOut.length > 0 && (
+        <section className="mt-24 border-t border-charcoal/15 pt-12">
+          <h2 className="font-serif text-3xl">{tr("wines.soldOutTitle")}</h2>
+          <p className="mt-3 max-w-2xl font-sans text-sm text-charcoal-soft">{tr("wines.soldOutNote")}</p>
+          <div className="mt-10">
+            <WineCards wines={soldOut} />
+          </div>
+        </section>
+      )}
 
       {filtered.length === 0 && (
         <p className="py-20 text-center font-serif text-2xl text-charcoal/50">{tr("wines.noMatch")}</p>
       )}
     </div>
+  );
+}
+
+function WineCards({ wines }: { wines: Wine[] }) {
+  const tr = useT();
+  const locale = useLocale();
+  return (
+    <motion.div layout className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+      <AnimatePresence mode="popLayout">
+        {wines.map((w) => (
+          <motion.div
+            key={w.slug}
+            layout
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <Link href={localizedPath(`/wines/${w.slug}`, locale)} className="group block transition-transform duration-500 ease-out-expo hover:-translate-y-1.5">
+              <div className="relative aspect-[3/4] overflow-hidden bg-bone-warm">
+                <Image
+                  src={w.image?.src || FALLBACK_IMAGE}
+                  alt={w.name}
+                  fill
+                  sizes="(max-width:640px) 100vw, 33vw"
+                  className={`object-contain p-10 transition-transform duration-700 ease-out-expo group-hover:scale-105 ${w.stock === 0 ? "opacity-60" : ""}`}
+                />
+                {w.vintage && (
+                  <span className="absolute left-5 top-5 font-sans text-[11px] uppercase tracking-[0.14em] text-charcoal/40">{w.vintage}</span>
+                )}
+                {w.stock === 0 && (
+                  <span className="absolute left-5 top-5 bg-charcoal/85 px-2 py-1 font-sans text-[10px] uppercase tracking-[0.14em] text-bone">
+                    {tr("wines.soldOut")}
+                  </span>
+                )}
+                <span className="absolute bottom-5 right-5 font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  {tr("common.view")} →
+                </span>
+              </div>
+              <div className="mt-5 flex items-baseline justify-between">
+                <div>
+                  {w.brand && <p className="font-sans text-[11px] uppercase tracking-[0.14em] text-oxblood/70">{w.brand}</p>}
+                  <p className="eyebrow mt-1">{w.varietal}</p>
+                  <p className="mt-1 font-serif text-2xl leading-tight">{w.name}</p>
+                </div>
+                <span className="font-sans text-sm text-charcoal-soft">{formatPrice(w.price, w.currency)}</span>
+              </div>
+            </Link>
+          </motion.div>
+        ))}
+      </AnimatePresence>
+    </motion.div>
   );
 }
 

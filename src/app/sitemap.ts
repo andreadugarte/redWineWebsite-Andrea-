@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tourism",
     "/event-center",
     "/reservation-policy",
+    "/shipping",
+    "/returns",
     "/contact",
     "/trade",
     "/privacy-policy",
