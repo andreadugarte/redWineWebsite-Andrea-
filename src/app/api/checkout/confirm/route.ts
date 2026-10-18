@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getFlowStatus } from "@/lib/flow";
 import { sendMail } from "@/lib/mail";
 import { SITE } from "@/lib/site";
-import { listedWines } from "@/lib/content";
+import { decodeOrder } from "@/lib/order";
 
 /**
  * Flow's `urlConfirmation` callback. Flow POSTs a `token` here once the
@@ -30,23 +30,15 @@ export async function POST(req: Request) {
     console.log(`Flow payment ${status.commerceOrder}: status=${status.status} amount=${status.amount} payer=${status.payer}`, optional);
 
     if (status.status === 2) {
-      const lines = (optional.pedido || "")
-        .split(";")
-        .map((p) => p.trim())
-        .filter(Boolean)
-        .map((p) => {
-          const [slug, qty] = p.split(" x");
-          const w = listedWines.find((x) => x.slug === slug);
-          return `- ${qty ?? "?"} × ${w ? w.name : slug}`;
-        });
+      const d = decodeOrder(optional);
       const body = [
         `PEDIDO PAGADO ${status.commerceOrder}`,
         `Monto: CLP ${status.amount}`,
-        `Cliente: ${optional.nombre || "(sin nombre)"} <${status.payer}>`,
-        `Despacho: ${[optional.direccion, optional.ciudad, optional.region, optional.pais].filter(Boolean).join(", ") || "(sin dirección)"}`,
+        `Cliente: ${d.nombre || "(sin nombre)"} <${status.payer}>`,
+        `Despacho: ${d.direccion || "(sin dirección)"}`,
         "",
         "Productos:",
-        ...(lines.length ? lines : ["(detalle no disponible — revisar monto en Flow)"]),
+        ...(d.lines.length ? d.lines : ["(detalle no disponible — revisar monto en Flow)"]),
         "",
         `Flow orden Nº ${status.flowOrder}`,
       ].join("\n");

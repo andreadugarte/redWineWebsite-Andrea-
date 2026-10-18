@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { SITE } from "@/lib/site";
 import { flowConfigured, createFlowPayment } from "@/lib/flow";
-
-const clip = (v: unknown, n: number) => String(v ?? "").replace(/\s+/g, " ").trim().slice(0, n);
+import { encodeOrder } from "@/lib/order";
 
 /**
  * Checkout endpoint.
@@ -24,26 +23,28 @@ export async function POST(req: Request) {
 
   if (flowConfigured() && total > 0) {
     try {
+      console.log("[order]", orderId, JSON.stringify({ items, customer }));
       const email = String((customer as Record<string, unknown>).email || "").trim();
-      const payment = await createFlowPayment({
+      const base = {
         commerceOrder: orderId,
         subject: `Red del Vino — pedido ${orderId}`,
         amount: total,
         email,
         urlConfirmation: `${SITE.url}/api/checkout/confirm`,
         urlReturn: `${SITE.url}/api/checkout/return?lang=${lang}`,
-        optional: {
-          nombre: clip((customer as Record<string, unknown>).name, 80),
-          direccion: clip((customer as Record<string, unknown>).address, 120),
-          ciudad: clip((customer as Record<string, unknown>).city, 60),
-          region: clip((customer as Record<string, unknown>).region, 60),
-          pais: clip((customer as Record<string, unknown>).country, 40),
-          pedido: clip(
-            (items as { slug?: string; qty: number }[]).map((i) => `${i.slug ?? "?"} x${i.qty}`).join("; "),
-            350
-          ),
-        },
-      });
+      };
+      let payment;
+      try {
+        payment = await createFlowPayment({
+          ...base,
+          optional: encodeOrder(items as { slug?: string; qty: number }[], customer as Record<string, unknown>),
+        });
+      } catch (first) {
+        // Never lose a sale over the optional order details: retry once without them (the [order] log line still has them).
+        if (/1620|e-?mail/i.test(first instanceof Error ? first.message : "")) throw first;
+        console.error("Flow rejected order details, retrying without them:", first);
+        payment = await createFlowPayment(base);
+      }
       return NextResponse.json({
         ok: true,
         simulated: false,
