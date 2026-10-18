@@ -616,7 +616,12 @@
     ],
     "brand": "La Pascuala",
     "producerSlug": "benito-castro-gaete",
-    "image": null,
+    "image": {
+      "src": "/images/original/La-Pascuala-Malbec-transparent.png",
+      "alt": "La Pascuala Malbec",
+      "w": 436,
+      "h": 1801
+    },
     "notes": [],
     "description": "A Malbec from Viña La Pascuala, one of the Red del Vino fair-trade producer families in the Colchagua Valley, Chile.",
     "description_es": "Un Malbec de Viña La Pascuala, una de las familias productoras de comercio justo de Red del Vino en el Valle de Colchagua, Chile.",
