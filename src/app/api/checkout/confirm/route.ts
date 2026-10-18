@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { getFlowStatus } from "@/lib/flow";
 import { sendMail } from "@/lib/mail";
-import { SITE } from "@/lib/site";
+import { buildOrderEmails } from "@/lib/orderEmail";
 import { decodeOrder } from "@/lib/order";
 
 /**
@@ -31,22 +31,19 @@ export async function POST(req: Request) {
 
     if (status.status === 2) {
       const d = decodeOrder(optional);
-      const body = [
-        `PEDIDO PAGADO ${status.commerceOrder}`,
-        `Monto: CLP ${status.amount}`,
-        `Cliente: ${d.nombre || "(sin nombre)"} <${status.payer}>`,
-        `Despacho: ${d.direccion || "(sin dirección)"}`,
-        "",
-        "Productos:",
-        ...(d.lines.length ? d.lines : ["(detalle no disponible — revisar monto en Flow)"]),
-        "",
-        `Flow orden Nº ${status.flowOrder}`,
-      ].join("\n");
-      await sendMail({
-        to: process.env.ORDER_NOTIFY_EMAIL || SITE.email,
-        subject: `Pedido pagado ${status.commerceOrder} — CLP ${status.amount}`,
-        body,
+      const mails = buildOrderEmails({
+        orderId: status.commerceOrder,
+        flowOrder: status.flowOrder,
+        amount: status.amount,
+        payerEmail: status.payer,
+        name: d.nombre,
+        address: d.direccion,
+        lang: d.lang,
+        items: d.items,
       });
+      // Red del Vino first (never lose the order), then the customer's confirmation.
+      await sendMail(mails.internal);
+      await sendMail(mails.customer);
     }
   } catch (err) {
     console.error("Flow confirmation webhook failed:", err);

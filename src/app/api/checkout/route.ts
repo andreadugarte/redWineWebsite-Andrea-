@@ -37,7 +37,7 @@ export async function POST(req: Request) {
       try {
         payment = await createFlowPayment({
           ...base,
-          optional: encodeOrder(items as { slug?: string; qty: number }[], customer as Record<string, unknown>),
+          optional: encodeOrder(items as { slug?: string; qty: number }[], customer as Record<string, unknown>, lang),
         });
       } catch (first) {
         // Never lose a sale over the optional order details: retry once without them (the [order] log line still has them).

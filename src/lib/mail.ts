@@ -3,7 +3,19 @@
  * When no key is present the submission is logged server-side and treated as a
  * successful "inquiry stub" so the site works fully without any secrets.
  */
-export async function sendMail({ to, subject, body }: { to: string; subject: string; body: string }) {
+export async function sendMail({
+  to,
+  subject,
+  body,
+  html,
+  replyTo,
+}: {
+  to: string;
+  subject: string;
+  body: string;
+  html?: string;
+  replyTo?: string;
+}) {
   const key = process.env.RESEND_API_KEY;
   if (!key) {
     console.log(`[inquiry-stub] → ${to} | ${subject}\n${body}`);
@@ -18,6 +30,8 @@ export async function sendMail({ to, subject, body }: { to: string; subject: str
         to,
         subject,
         text: body,
+        ...(html ? { html } : {}),
+        ...(replyTo ? { reply_to: replyTo } : {}),
       }),
     });
     if (!res.ok) console.error("[mail] Resend rejected the email:", res.status, await res.text().catch(() => ""));
