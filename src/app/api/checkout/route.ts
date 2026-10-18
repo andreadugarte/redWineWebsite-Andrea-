@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { SITE } from "@/lib/site";
 import { flowConfigured, createFlowPayment } from "@/lib/flow";
 
+const clip = (v: unknown, n: number) => String(v ?? "").replace(/\s+/g, " ").trim().slice(0, n);
+
 /**
  * Checkout endpoint.
  * - With FLOW_API_KEY / FLOW_SECRET_KEY set, creates a real Flow payment
@@ -30,6 +32,17 @@ export async function POST(req: Request) {
         email,
         urlConfirmation: `${SITE.url}/api/checkout/confirm`,
         urlReturn: `${SITE.url}/api/checkout/return?lang=${lang}`,
+        optional: {
+          nombre: clip((customer as Record<string, unknown>).name, 80),
+          direccion: clip((customer as Record<string, unknown>).address, 120),
+          ciudad: clip((customer as Record<string, unknown>).city, 60),
+          region: clip((customer as Record<string, unknown>).region, 60),
+          pais: clip((customer as Record<string, unknown>).country, 40),
+          pedido: clip(
+            (items as { slug?: string; qty: number }[]).map((i) => `${i.slug ?? "?"} x${i.qty}`).join("; "),
+            350
+          ),
+        },
       });
       return NextResponse.json({
         ok: true,

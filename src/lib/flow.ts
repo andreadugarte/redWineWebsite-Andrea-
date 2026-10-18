@@ -40,6 +40,8 @@ export async function createFlowPayment(input: {
   email: string;
   urlConfirmation: string;
   urlReturn: string;
+  /** Order details Flow stores with the payment and returns from getStatus (shipping address, items). */
+  optional?: Record<string, string>;
 }): Promise<FlowPaymentCreated> {
   const { apiKey, secretKey } = credentials();
   const params: Record<string, string | number> = {
@@ -51,6 +53,7 @@ export async function createFlowPayment(input: {
     email: input.email,
     urlConfirmation: input.urlConfirmation,
     urlReturn: input.urlReturn,
+    ...(input.optional ? { optional: JSON.stringify(input.optional) } : {}),
   };
   const s = sign(params, secretKey);
   const body = new URLSearchParams({ ...(params as Record<string, string>), s });
@@ -77,6 +80,7 @@ export type FlowStatus = {
   currency: string;
   amount: number;
   payer: string;
+  optional?: Record<string, string> | string | null;
 };
 
 export async function getFlowStatus(token: string): Promise<FlowStatus> {

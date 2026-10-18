@@ -14,12 +14,13 @@ export async function sendMail({ to, subject, body }: { to: string; subject: str
       method: "POST",
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
       body: JSON.stringify({
-        from: "Red del Vino <noreply@reddelvino.com>",
+        from: process.env.MAIL_FROM || "Red del Vino <noreply@reddelvino.com>",
         to,
         subject,
         text: body,
       }),
     });
+    if (!res.ok) console.error("[mail] Resend rejected the email:", res.status, await res.text().catch(() => ""));
     return { ok: res.ok, simulated: false };
   } catch (e) {
     console.error("[mail] send failed", e);
