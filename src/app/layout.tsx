@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Fraunces, Inter, Oswald } from "next/font/google";
 import "./globals.css";
 import { SITE } from "@/lib/site";
@@ -70,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <WhatsAppButton />
           </CartProvider>
         </LocaleProvider>
+        <Analytics />
       </body>
     </html>
   );
