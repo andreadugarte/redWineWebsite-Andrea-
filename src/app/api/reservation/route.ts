@@ -3,7 +3,7 @@ import { sendMail } from "@/lib/mail";
 
 export async function POST(req: Request) {
   const d = await req.json().catch(() => ({}));
-  const to = process.env.RESERVATIONS_TO_EMAIL || "reservas@reddelvino.com";
+  const to = process.env.RESERVATIONS_TO_EMAIL || "info@reddelvino.com";
   const body = [
     `New ${d.variant || "reservation"} request`,
     d.subject ? `Subject: ${d.subject}` : "",
