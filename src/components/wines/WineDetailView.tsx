@@ -7,6 +7,7 @@ import { AddToCart } from "@/components/wines/AddToCart";
 import { Reveal } from "@/components/motion/Reveal";
 import { ProductJsonLd } from "@/components/seo/JsonLd";
 import { t, localizedPath, type Locale } from "@/lib/i18n";
+import { ViewContentPixel } from "@/components/analytics/PixelEvents";
 
 const OCCASION_KEY: Record<string, string> = {
   beginner: "occasion.beginner",
@@ -50,6 +51,7 @@ export function WineDetailView({ slug, locale = "en" }: { slug: string; locale?:
   return (
     <>
       <ProductJsonLd wine={wine} />
+      <ViewContentPixel id={wine.slug} name={wine.name} price={wine.price} />
       <article className="pt-24">
         <div className="container-x grid gap-14 py-12 lg:grid-cols-2 lg:py-20">
           {/* Bottle */}

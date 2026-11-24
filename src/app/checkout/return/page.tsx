@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getFlowStatus } from "@/lib/flow";
 import { formatPrice } from "@/components/cart/CartProvider";
 import { PaymentBadges } from "@/components/trust/PaymentBadges";
+import { PurchasePixel } from "@/components/analytics/PixelEvents";
 import { t, localizedPath, isLocale, type Locale } from "@/lib/i18n";
 
 /** Flow's `urlReturn` target — the customer's browser lands here after paying. */
@@ -42,6 +43,7 @@ export default async function CheckoutReturnPage({
 
   return (
     <div className="container-x flex min-h-[70vh] flex-col items-center justify-center pt-24 text-center">
+      {paid && status && <PurchasePixel orderId={String(status.commerceOrder)} value={Number(status.amount)} />}
       <p className="eyebrow">{paid ? tr("checkout.confirmed") : tr("checkout.eyebrow")}</p>
       <h1 className="mt-4 font-serif text-display-md font-light">{heading}</h1>
       <p className="mt-4 font-sans text-sm text-charcoal-soft">{body}</p>

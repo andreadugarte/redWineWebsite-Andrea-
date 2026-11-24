@@ -8,6 +8,7 @@ import { useLocale, useT } from "@/components/i18n/LocaleProvider";
 import { localizedPath } from "@/lib/i18n";
 import { PaymentBadges } from "@/components/trust/PaymentBadges";
 import { TrustStrip } from "@/components/trust/TrustStrip";
+import { trackInitiateCheckout } from "@/lib/metaPixel";
 
 export function CheckoutForm({ flowConfigured }: { flowConfigured: boolean }) {
   const { items, subtotal, count, clear } = useCart();
@@ -22,6 +23,7 @@ export function CheckoutForm({ flowConfigured }: { flowConfigured: boolean }) {
     const customer = Object.fromEntries(new FormData(e.currentTarget).entries());
     setState("loading");
     setError(null);
+    trackInitiateCheckout(items.map((i) => ({ id: i.slug, name: i.name, price: i.price, quantity: i.qty })));
     let data: { ok?: boolean; error?: string; redirectUrl?: string; orderId: string; simulated: boolean };
     try {
       const res = await fetch("/api/checkout", {

@@ -11,6 +11,8 @@ import { AgeGate } from "@/components/AgeGate";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
 import { LocaleProvider } from "@/components/i18n/LocaleProvider";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { Suspense } from "react";
+import MetaPixel from "@/components/analytics/MetaPixel";
 
 // Brand pack calls for Bookmania (titles), Knockout Welterweight w/ tracking 209
 // (subheadings), Coco Gothic (body) — all commercial, no licensed files available.
@@ -50,6 +52,8 @@ export const metadata: Metadata = {
     images: ["/images/original/Vinos-Campesino-Slider-2-active-line.jpg"],
   },
   twitter: { card: "summary_large_image" },
+  // Meta Business domain verification for reddelvino.com
+  other: { "facebook-domain-verification": "sx7rpgmnfc1y2i7bh871jgwf83mocd" },
   alternates: {
     canonical: "/",
     languages: { en: "/", es: "/es", pt: "/pt", zh: "/zh" },
@@ -72,6 +76,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </CartProvider>
         </LocaleProvider>
         <Analytics />
+        <Suspense fallback={null}>
+          <MetaPixel />
+        </Suspense>
       </body>
     </html>
   );
