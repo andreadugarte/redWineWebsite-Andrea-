@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
+import { trackAddToCart } from "@/lib/metaPixel";
 
 export type CartItem = {
   slug: string;
@@ -73,12 +74,14 @@ export function CartProvider({ children }: { children: ReactNode }) {
       setGift: setIsGift,
       open: () => setOpen(true),
       close: () => setOpen(false),
-      add: (item, qty = 1) =>
+      add: (item, qty = 1) => {
+        trackAddToCart({ id: item.slug, name: item.name, price: item.price, quantity: qty });
         setItems((prev) => {
           const found = prev.find((p) => p.slug === item.slug);
           if (found) return prev.map((p) => (p.slug === item.slug ? { ...p, qty: p.qty + qty } : p));
           return [...prev, { ...item, qty }];
-        }),
+        });
+      },
       remove: (slug) => setItems((prev) => prev.filter((p) => p.slug !== slug)),
       setQty: (slug, qty) =>
         setItems((prev) => prev.map((p) => (p.slug === slug ? { ...p, qty: Math.max(1, qty) } : p)).filter((p) => p.qty > 0)),
