@@ -5,6 +5,7 @@ import { getBundle, bundleWines, bundlePrice, localizeBundle, FALLBACK_BOTTLE_IM
 import { formatPrice } from "@/lib/format";
 import { AddBundleToCart } from "@/components/bundles/AddBundleToCart";
 import { t, localizedPath, type Locale } from "@/lib/i18n";
+import { ViewContentPixel } from "@/components/analytics/PixelEvents";
 
 export function BundleDetailView({ slug, locale = "en" }: { slug: string; locale?: Locale }) {
   const raw = getBundle(slug);
@@ -15,6 +16,7 @@ export function BundleDetailView({ slug, locale = "en" }: { slug: string; locale
 
   return (
     <article className="pt-24">
+      <ViewContentPixel id={`pack-${raw.slug}`} name={b.name} price={price.final} />
       <div className="container-x grid gap-14 py-12 lg:grid-cols-2 lg:py-20">
         {/* Bottle line-up */}
         <div className="relative">
